@@ -1,0 +1,181 @@
+.header {
+  width: 100%;
+  height: 50px; }
+  .header .navbar-default {
+    background: #303030;
+    border-radius: 0; }
+    .header .navbar-default .header-logo {
+      width: 130px;
+      height: 50px;
+      text-align: center; }
+      .header .navbar-default .header-logo img {
+        width: 100px; }
+  .header .navbar {
+    border: 0;
+    padding: 0 30px; }
+    .header .navbar .navbar-nav .open a {
+      background: #D93740;
+      color: #fff; }
+    .header .navbar .navbar-nav .dropdown-menu a {
+      background: #fff;
+      color: #303030; }
+    .header .navbar .navbar-nav .dropdown:hover a {
+      color: #303030; }
+  .header .navbar-nav.navbar-right li:hover {
+    background: #303030; }
+    .header .navbar-nav.navbar-right li:hover a {
+      color: #fff; }
+
+.banner {
+  width: 100%;
+  height: 420px;
+  position: relative; }
+  .banner .carousel {
+    width: 100%;
+    height: 100%; }
+    .banner .carousel .carousel-inner {
+      width: 100%;
+      height: 420px; }
+      .banner .carousel .carousel-inner .item {
+        width: 100%;
+        height: 420px; }
+        .banner .carousel .carousel-inner .item img {
+          width: 100%;
+          height: 420px; }
+    .banner .carousel .icon {
+      width: 50px;
+      height: 50px;
+      font-size: 30px;
+      display: block;
+      border: 2px solid #fff;
+      padding: 10px;
+      border-radius: 50%;
+      font-weight: 100;
+      line-height: 1;
+      color: #fff;
+      position: absolute; }
+      .banner .carousel .icon.left {
+        left: 20%;
+        top: 46%; }
+      .banner .carousel .icon.right {
+        right: 20%;
+        top: 46%; }
+
+.content {
+  width: 100%;
+  background: #f0f0f0;
+  padding-bottom: 60px; }
+  .content .row .col-md-12 h3 {
+    text-align: center;
+    margin: 45px 0 20px;
+    color: #727272; }
+  .content .row .col-md-12 p {
+    color: #727272;
+    text-align: center;
+    margin-bottom: 40px; }
+    .content .row .col-md-12 p a {
+      color: #D93740; }
+  .content .row .col-md-3 .trade-list {
+    width: 100%;
+    height: 310px;
+    transition: all .3s ease-out;
+    margin-bottom: 30px; }
+    .content .row .col-md-3 .trade-list:hover {
+      box-shadow: 0px 0px 5px #cf2731; }
+    .content .row .col-md-3 .trade-list .profile {
+      width: 100%;
+      height: 140px;
+      background: #303030;
+      padding: 15px 0 0; }
+      .content .row .col-md-3 .trade-list .profile .user {
+        width: 50px;
+        height: 50px;
+        position: relative;
+        margin: 0px auto 20px; }
+        .content .row .col-md-3 .trade-list .profile .user img {
+          width: 100%;
+          height: 100%;
+          border-radius: 50%; }
+        .content .row .col-md-3 .trade-list .profile .user .user-state {
+          display: block;
+          height: 11px;
+          width: 11px;
+          border-radius: 11px;
+          border: 1px solid #fff;
+          background: #c9d2dc;
+          position: absolute;
+          right: 0;
+          bottom: 0; }
+      .content .row .col-md-3 .trade-list .profile table {
+        width: 100%;
+        padding: 0 50px; }
+        .content .row .col-md-3 .trade-list .profile table td {
+          color: #fff;
+          text-align: center; }
+    .content .row .col-md-3 .trade-list .caption {
+      padding: 9px;
+      color: #727272;
+      background: #fff;
+      text-align: center; }
+      .content .row .col-md-3 .trade-list .caption h3 {
+        margin: 0;
+        font-size: 16px;
+        padding: 12px 22px;
+        border-bottom: solid 2px #ddd;
+        display: inline-block;
+        margin-bottom: 11px; }
+      .content .row .col-md-3 .trade-list .caption p {
+        margin: 0;
+        color: #777777;
+        font-size: 12px; }
+      .content .row .col-md-3 .trade-list .caption .btn {
+        margin-top: 11px; }
+        .content .row .col-md-3 .trade-list .caption .btn.btn-sm {
+          padding: 5px 10px;
+          font-size: 12px;
+          line-height: 1.5;
+          border-radius: 3px; }
+        .content .row .col-md-3 .trade-list .caption .btn.btn-primary {
+          color: #fff;
+          background-color: #D93740;
+          border-color: #cf2731; }
+
+.site-info {
+  background-color: #fff;
+  padding: 35px 0;
+  margin: 20px 0;
+  width: 100%;
+  overflow: hidden; }
+  .site-info .site-item {
+    width: 25%;
+    float: left;
+    text-align: center;
+    padding: 0 2px; }
+    .site-info .site-item img {
+      width: 27px;
+      height: 28px; }
+    .site-info .site-item h3 {
+      font-size: 24px;
+      margin-top: 22px;
+      margin-bottom: 11px; }
+    .site-info .site-item p {
+      margin: 0 0 11px;
+      padding: 0 30px; }
+
+.language-select {
+  padding: 22px 0;
+  background: #f0f0f0; }
+  .language-select ul {
+    width: 250px;
+    overflow: hidden;
+    list-style-type: none;
+    padding: 0;
+    margin: 0 auto; }
+    .language-select ul li {
+      margin-left: 8px;
+      padding-right: 8px;
+      border-right: solid 1px #d7d6d6;
+      line-height: 100%;
+      float: left; }
+
+/*# sourceMappingURL=index.css.map */

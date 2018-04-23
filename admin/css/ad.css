@@ -1,0 +1,128 @@
+.clear {
+  clear: both;
+  height: 0;
+  overflow: hidden;
+}
+body {
+  background: #f0f0f0;
+}
+.container {
+  padding: 0;
+  width: 1140px;
+  font-size: 14px;
+  clear: both;
+  margin-top: 20px;
+  padding-bottom: 100px;
+}
+.side {
+  width: 140px;
+  background: #fff;
+  float: left;
+  height: 870px;
+}
+.side .item_title {
+  color: #333;
+  font-weight: 700;
+}
+.item > div {
+  height: 40px;
+  line-height: 40px;
+  text-indent: 20px;
+}
+.item .item_list {
+  text-indent: 0;
+  text-align: center;
+  cursor: pointer;
+}
+.item .item_list_active {
+  color: #d93740;
+  background: #fff4f4;
+  border-right: 4px solid #d93740;
+}
+.content {
+  width: 980px;
+  background: #fff;
+  float: right;
+  height: 870px;
+  text-align: center;
+}
+.content .number {
+  width: 120px;
+  text-align: center;
+}
+.content tbody tr {
+  height: 70px;
+}
+.content tbody .number {
+  padding-top: 25px;
+}
+.content .content_title_list {
+  width: 120px;
+  height: 100%;
+  line-height: 40px;
+  text-align: center;
+  float: left;
+  background: #e6e6e6;
+  cursor: pointer;
+  color: #aaa;
+}
+.content .content_title_list_active {
+  color: #333;
+  background: #fff;
+  border-top: 4px solid #d93740;
+  line-height: 36px;
+}
+.content .content_title {
+  background: #e6e6e6;
+  height: 40px;
+  clear: both;
+}
+.thead_tr {
+  height: 50px;
+}
+.thead_tr th {
+  vertical-align: middle !important;
+}
+.tbody_tr td {
+  padding-top: 25px !important;
+}
+.table-striped>tbody>tr:nth-of-type(odd) {
+  background: #fff4f4;
+}
+.content_list_ing {
+  display: block;
+}
+.content_list_off {
+  display: none;
+}
+table .type {
+  width: 50px;
+  text-align: center;
+}
+table .ad_type {
+  width: 120px;
+  text-align: center;
+}
+table .price {
+  width: 120px;
+  text-align: center;
+}
+table .sum_type {
+  width: 180px;
+  text-align: center;
+}
+table .date {
+  width: 150px;
+  text-align: center;
+}
+table .status {
+  width: 100px;
+  text-align: center;
+}
+table .operate {
+  width: 100px;
+  text-align: center;
+}
+table .operate a {
+  color: #d93740;
+}

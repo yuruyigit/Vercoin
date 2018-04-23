@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="renderer" content="webkit">
+  <link rel="stylesheet" href="../lib/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../admin/css/pub_ad.css">
+  <title>发布广告</title>
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-10 col-md-offset-1">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <img src="./images/pub_ad.png" alt="">
+            发布一个交易广告
+          </div>
+          <div class="panel-body panel-body-title">
+            <p>如果您是一个频繁的交易者，可以发布自己的交易广告。如果您只想购买或出售一次，我们建议您直接从购买或出售列表中下单交易。</p>
+            <p>发布一则交易广告是免费的。</p>
+            <p>您的钱包中至少需要有 所售币种的可用余额，您的广告才会显示在交易列表中。</p>
+
+            <p>您必须在交易广告或交易聊天中提供您的付款详细信息，发起交易后，价格会锁定，除非定价中有明显的错误。</p>
+            <p>所有交流必须在 VERCOIN 上进行，请注意高风险有欺诈风险的付款方式。</p>
+          </div>
+          <hr >
+          <div class="panel-body panel-body-forms">
+            <form class="form-horizontal" method="POST" action="https://vercoin.io/counter/create"
+                  id="CreateCounterForm">
+              <input type="hidden" name="_token" value="g5k9M9AlNlvLLaLuWO2e8qLgtoLuyNiCzyEqwnJv">
+
+              <h4>交易类型</h4>
+
+              <div class="form-group" id="form-group-coin">
+                <label class="col-md-3 control-label">选择币种</label>
+
+                <div class="col-md-6">
+                  <label for="input-coin-VER" class="radio-inline">
+                    <input
+                        type="radio"
+                        id="input-coin-VER"
+                        name="coin"
+                        value="VER"
+                        checked>
+                    VER
+                  </label>
+
+                  <p id="help-block-coin" class="help-block">请选择你想交易的币种类型。</p>
+                </div>
+              </div>
+              <div class="form-group" id="form-group-type">
+                <label class="col-md-3 control-label">选择广告类型</label>
+
+                <div class="col-md-6">
+                  <label for="input-type-OnlineBuy" class="radio-inline">
+                    <input
+                        type="radio"
+                        id="input-type-OnlineBuy"
+                        name="type"
+                        value="OnlineBuy"
+                        checked>
+                    在线购买
+                  </label>
+                  <label for="input-type-OnlineSell" class="radio-inline">
+                    <input
+                        type="radio"
+                        id="input-type-OnlineSell"
+                        name="type"
+                        value="OnlineSell"
+                    >
+                    在线出售
+                  </label>
+
+                  <p id="help-block-type" class="help-block">您想要创建什么样的交易广告？如果您想出售，请确保您在 VERCOIN 的钱包中有足够余额。</p>
+                </div>
+              </div>
+
+
+              <h4>交易定价</h4>
+              <hr>
+              <div class="form-group" id="form-group-settlement">
+                <label class="col-md-3 control-label">结算方式</label>
+
+                <div class="col-md-6">
+                  <label for="input-settlement-CASH" class="checkbox-inline">
+                    <input
+                        type="checkbox"
+                        id="input-settlement-CASH"
+                        name="settlement[]"
+                        value="CASH"
+                        checked="checked">
+                    现金支付
+                  </label>
+                  <label for="input-settlement-BTC" class="checkbox-inline">
+                    <input
+                        type="checkbox"
+                        id="input-settlement-BTC"
+                        name="settlement[]"
+                        value="BTC"
+                    >
+                    BTC
+                  </label>
+                  <label for="input-settlement-ETH" class="checkbox-inline">
+                    <input
+                        type="checkbox"
+                        id="input-settlement-ETH"
+                        name="settlement[]"
+                        value="ETH"
+                    >
+                    ETH
+                  </label>
+
+                </div>
+              </div>
+              <div class="form-group" id="form-group-price">
+                <label for="input-price" class="col-md-3 control-label">Settlement_vc</label>
+
+                <div class="col-md-6">
+                  <div class="input-group"><input
+                      id="input-price"
+                      type="tel"
+                      class="form-control"
+                      name="price"
+                      value=""
+                      placeholder="您想交易的VER定价，单位为人民币"
+                  >
+                    <span class="input-group-addon" id="input-text-price-addon_after">CNY/VER </span>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group" id="form-group-transaction_price_btc">
+                <label for="input-transaction_price_btc" class="col-md-3 control-label">BTC价格</label>
+
+                <div class="col-md-6">
+                  <div class="input-group"><input
+                      id="input-transaction_price_btc"
+                      type="tel"
+                      class="form-control"
+                      name="transaction_price_btc"
+                      value="0"
+                      placeholder="您想交易的BTC定价，单位为人民币"
+                  >
+                    <span class="input-group-addon" id="input-text-transaction_price_btc-addon_after">CNY/BTC</span>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="form-group" id="form-group-transaction_price_eth">
+                <label for="input-transaction_price_eth" class="col-md-3 control-label">ETH价格</label>
+
+                <div class="col-md-6">
+                  <div class="input-group"><input
+                      id="input-transaction_price_eth"
+                      type="tel"
+                      class="form-control"
+                      name="transaction_price_eth"
+                      value="0"
+                      placeholder="您想交易的ETH定价，单位为人民币"
+                  >
+                    <span class="input-group-addon" id="input-text-transaction_price_eth-addon_after">CNY/ETH</span>
+                  </div>
+                </div>
+              </div>
+              <h4>更多信息</h4>
+              <hr>
+
+
+              <div class="form-group" id="form-group-min_amount">
+                <label for="input-min_amount"
+                       class="col-md-3 control-label">最小限额</label>
+                <div class="col-md-6">
+                  <div class="input-group"><input
+                      id="input-min_amount"
+                      type="tel"
+                      class="form-control"
+                      name="min_amount"
+                      value=""
+                      placeholder="最小限额"
+                      required="required"
+                      >
+                    <span class="input-group-addon" id="input-text-min_amount-addon_after">CNY</span>
+                  </div>
+                  <p id="help-block-min_amount" class="help-block">一次交易的最低的交易限制。</p>
+                </div>
+              </div>
+              <div class="form-group" id="form-group-max_amount">
+                <label for="input-max_amount" class="col-md-3 control-label">最大限额</label>
+
+                <div class="col-md-6">
+                  <div class="input-group"><input
+                      id="input-max_amount"
+                      type="tel"
+                      class="form-control"
+                      name="max_amount"
+                      value=""
+                      placeholder="最大限额"
+                      required="required">
+                    <span class="input-group-addon" id="input-text-max_amount-addon_after">CNY</span>
+                  </div>
+                  <p id="help-block-max_amount" class="help-block">一次交易中的最大交易限制，您的钱包余额也会影响最大量的设置。</p>
+                </div>
+              </div>
+              <div class="form-group" id="form-group-payment_window_minutes">
+                <label for="input-payment_window_minutes" class="col-md-3 control-label">付款期限</label>
+
+                <div class="col-md-6">
+                  <div class="input-group"><input
+                      id="input-payment_window_minutes"
+                      type="tel"
+                      class="form-control"
+                      name="payment_window_minutes"
+                      value=""
+                      placeholder="请输入您的付款期限（10-30分钟）"
+                  >
+                    <span class="input-group-addon" id="input-text-payment_window_minutes-addon_after">分钟</span>
+                  </div>
+                  <p id="help-block-payment_window_minutes" class="help-block">可接受买方在多少时间内付款，请输入整数。</p>
+                </div>
+              </div>
+
+
+              <div class="form-group" id="form-group-message">
+                <label for="input-message" class="col-md-3 control-label">广告留言</label>
+
+                <div class="col-md-6">
+						<textarea
+                id="input-message"
+                type="text"
+                class="form-control"
+                name="message"
+                placeholder="请说明有关您交易的相关条款或备注您的支付方式，如微信号，支付宝号等，以便对方可以快速和您交易。（下单前后都可见）。"
+                rows="3" required="required"></textarea>
+                </div>
+              </div>
+              <hr>
+
+              <div class="form-group">
+                <div class="col-md-2 col-md-offset-4">
+                  <button type="submit" class="btn btn-block">
+                    立即发布
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
+

@@ -30,10 +30,9 @@ body {
 .qrCode-list {
   margin-left: 10px;
   margin-right: 10px;
-  color: #808080;
-!important
+  color: #808080;!important
 }
-!important
+
 .wrap-dialog {
   position: fixed;
   top: 0;
@@ -106,7 +105,6 @@ hr {
   color: #fff;
 }
 .panel-heading {
-  background: #fff;
   padding-top: 20px;
   background-color: #fff !important;
   font-weight: 700;
@@ -145,4 +143,70 @@ hr {
 .panel-body-forms {
   font-size: 14px;
   padding: 0;
+}
+
+.form-group {
+  margin-left:0 !important;
+  margin-right:0 !important;
+}
+
+.help-block {
+  font-size:12px;
+  color: #CCCCCC;
+}
+input[type="radio"], input[type="checkbox"] {
+  width:16px;
+  height:16px;
+}
+input[type="text"], input[type="tel"]  {
+  width:300px !important;
+}
+.input-group-addon {
+  width:100px;
+}
+#form-group-coin {
+  margin-bottom:0;
+}
+.help-block {
+  margin-top:4px;
+  margin-bottom:0;
+}
+#form-group-type {
+  margin-top:3px;
+}
+#form-group-settlement {
+  margin-top:3px;
+}
+#input-message {
+  width:400px;
+  height:200px;
+}
+.now_publish {
+  margin-left: 288px;
+}
+#form-group-amount .help-block,
+#form-group-payment_window_minutes .help-block,
+#form-group-min_amount .help-block,
+#form-group-max_amount .help-block,
+#form-group-price .help-block,
+#form-group-transaction_price_btc .help-block,
+#form-group-transaction_price_eth .help-block,
+#form-group-transaction_price_usdt .help-block
+{
+  margin-top:6px;
+  margin-bottom:10px;
+}
+#form-group-amount,
+#form-group-payment_window_minutes,
+#form-group-min_amount,
+#form-group-max_amount,
+#form-group-price,
+#form-group-transaction_price_btc,
+#form-group-transaction_price_eth,
+#form-group-transaction_price_usdt
+{
+  margin-bottom:0;
+}
+.form-group-publish {
+  margin-top:40px;
 }

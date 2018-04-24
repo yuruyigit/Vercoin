@@ -38,22 +38,61 @@ a.blue{color:#3399e0}
     width: 100px; }
 .header .navbar {
     border: 0;
-    padding: 0 30px; }
+    padding: 0 105px; }
 .header .navbar .navbar-nav .open a {
     background: #D93740;
     color: #fff; }
 .header .navbar .navbar-nav .dropdown-menu a {
-    background: #fff;
-    color: #303030; }
+    background: #444;
+    padding: 10px 0;
+    color: #fff;
+    text-align: center;}
+.header .navbar .navbar-nav .dropdown-menu a.default-color {
+    background: #303030;
+    padding: 10px 0;
+    color: #AAA;
+    text-align: center;}
 .header .navbar .navbar-nav .dropdown:hover a {
     color: #303030; }
-.header .navbar-nav.navbar-right li:hover {
-    background: #303030; }
-.header .navbar-nav.navbar-right li:hover a {
-    color: #fff; }
+.header .navbar .navbar-nav.navbar-right .dropdown-menu li.conversion:hover{
+    background: #f0f0f0;
+}
+.header .navbar .navbar-nav .dropdown-menu .conversion:hover{
+    background-color: #f0f0f0;
+}
+.header .navbar-nav.navbar-right .dropdown-menu dt {
+    display: inline-block;
+    vertical-align: top; }
+.header .navbar-nav.navbar-right .dropdown-menu dd {
+    display: inline-block; }
+.header .navbar .navbar-nav .open .dropdown-menu li{
+    background: #303030;
+}
+.header .navbar .navbar-nav .open .dropdown-menu{
+    padding: 0;
+    min-width: 68px;
+}
+.header .navbar-nav .dropdown-menu li:hover{
+    background: #444;
+}
+.header .navbar-nav.navbar-right .dropdown-menu button {
+    width: 100%;
+    border: 0;
+    text-align: left;
+    padding-left: 30px; }
+.header .navbar-default .navbar-nav>li>a:hover{
+    background-color: #D93740;
+    color:#FFF;
+}
+.header .navbar-default .navbar-right>li>a:hover{
+    background: #303030;
+}
+.header .navbar-default .navbar-nav>li>a{
+    color: #AAA;
+}
 /*页面公共尾部样式*/
 .language-select {
-    padding: 22px 0;
+    padding: 18px 0;
     background: #f0f0f0; }
 .language-select ul {
     width: 250px;
@@ -66,4 +105,12 @@ a.blue{color:#3399e0}
     padding-right: 8px;
     border-right: solid 1px #d7d6d6;
     line-height: 100%;
-    float: left; }
+    float: left;
+    font-size: 14px;}
+.language-select ul li a{
+    color:#AAAAAA;
+}
+.language-select ul li a:hover{
+    color:#333333;
+    text-decoration: underline;
+}

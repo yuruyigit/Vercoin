@@ -1,12 +1,29 @@
 @import "base.css";
+body{
+    background: #f0f0f0;
+}
 @media (max-width: 768px) {
-  .nav-list {
+  .navbar-nav {
     display: none; } }
+@media (max-width: 768px) {
+    .navbar-header .header-logo{
+        position: relative;
+        left: 50%;
+        margin-left: -65px;
+    } }
 /*首页banner图样式*/
 .banner {
   width: 100%;
   height: 420px;
   position: relative; }
+.banner .carousel-indicators{
+    position: absolute;
+    bottom: 66px;
+    left: 38%;
+}
+.banner .carousel-indicators li{
+    margin-right: 10px;
+}
 .banner .carousel {
     width: 100%;
     height: 100%; }
@@ -15,7 +32,30 @@
       height: 420px; }
 .banner .carousel .carousel-inner .item {
         width: 100%;
-        height: 420px; }
+        height: 420px;
+        position: relative;}
+.banner .carousel .carousel-inner .item .remark{
+       position: absolute;
+       top: 90px;
+       left:21%;
+}
+.banner .carousel .carousel-inner .item .remark h3{
+    font-size: 50px;
+    color:#FFF;
+    border-bottom: 1px solid #FFF;
+    width: 150px;
+    height: 70px;
+    margin-bottom: 20px;
+}
+.banner .carousel .carousel-inner .item .remark p{
+    font-size: 30px;
+    color:#FFF;
+}
+.banner .carousel .carousel-inner .item .remark span{
+    font-size: 20px;
+    color:#FFF;
+    font-weight: 100;
+}
 .banner .carousel .carousel-inner .item img {
           width: 100%;
           height: 420px; }
@@ -24,24 +64,36 @@
       height: 50px;
       font-size: 30px;
       display: block;
-      border: 2px solid #fff;
-      padding: 10px;
       border-radius: 50%;
       font-weight: 100;
       line-height: 1;
       color: #fff;
-      position: absolute; }
+      position: absolute;
+     }
+.banner .carousel .icon:hover{
+     opacity:1;
+}
+.banner .carousel .carousel-control.left{
+    background-image: none;
+}
+.banner .carousel .carousel-control.right{
+    background-image: none;
+}
+.banner .carousel .icon img{
+    width: 100%;
+    height: 100%;
+}
 .banner .carousel .icon.left {
-        left: 20%;
-        top: 46%; }
+        left: 68%;
+        top: 40%; }
 .banner .carousel .icon.right {
-        right: 20%;
-        top: 46%; }
+        right: 68%;
+        top: 40%; }
 /*首页买卖安全内容*/
 .content {
   width: 100%;
   background: #f0f0f0;
-  padding-bottom: 60px; }
+  }
 .content .row .col-md-12 h3 {
     text-align: center;
     margin: 45px 0 20px;
@@ -52,13 +104,22 @@
     margin-bottom: 40px; }
 .content .row .col-md-12 p a {
       color: #D93740; }
+.content .row .col-md-12 p .glyphicon-volume-up{
+    color:#D93740;
+    width: 20px;
+    height: 20px;
+    font-size: 20px;
+    position: relative;
+    top: 6px;
+    left: -5px;
+}
 .content .row .col-md-3 .trade-list {
     width: 100%;
     height: 310px;
     transition: all .3s ease-out;
     margin-bottom: 30px; }
 .content .row .col-md-3 .trade-list:hover {
-      box-shadow: 0px 0px 5px #cf2731; }
+       }
 .content .row .col-md-3 .trade-list .profile {
       width: 100%;
       height: 140px;
@@ -107,20 +168,28 @@
         font-size: 12px; }
 .content .row .col-md-3 .trade-list .caption .btn {
         margin-top: 11px; }
-.content .row .col-md-3 .trade-list .caption .btn.btn-sm {
+.content .row .col-md-3 .trade-list .caption .btn {
           padding: 5px 10px;
           font-size: 12px;
           line-height: 1.5;
           border-radius: 3px; }
-.content .row .col-md-3 .trade-list .caption .btn.btn-primary {
+.content .row .col-md-3 .trade-list .caption .btn {
           color: #fff;
-          background-color: #D93740;
-          border-color: #cf2731; }
+          background-color: #D93740;}
+.content .row .col-md-3 .trade-list .caption .btn.buy:hover{
+    background-color: #B20610;
+}
+.content .row .col-md-3 .trade-list .caption .btn.sell{
+          background-color: #27C1C3;
+}
+.content .row .col-md-3 .trade-list .caption .btn.sell:hover{
+         background-color: #039497;
+}
 /*首页规范信息*/
 .site-info {
   background-color: #fff;
-  padding: 35px 0;
-  margin: 20px 0;
+  padding: 35px 55px;
+  margin: 10px 0;
   width: 100%;
   overflow: hidden; }
 .site-info .site-item {
@@ -134,10 +203,13 @@
 .site-info .site-item h3 {
       font-size: 24px;
       margin-top: 22px;
-      margin-bottom: 11px; }
+      margin-bottom: 11px;
+      color:#727272;}
 .site-info .site-item p {
       margin: 0 0 11px;
-      padding: 0 30px; }
+      padding: 0 20px;
+      font-size: 14px;
+      color:#727272;}
 
 /*用户基本信息页面样式*/
 .content-usercenter {
@@ -310,4 +382,97 @@
 .content-account  .col-md-10 .tip p {
   font-size: 14px;
   color: #AAAAAA; }
+
+/*信任您的人页面样式*/
+.content-trust-you {
+    width: 100%;
+    padding-top: 20px}
+.content-trust-you .col-md-2 .panel-body {
+    padding: 0; }
+.content-trust-you .col-md-2 .panel-body a {
+    width: 100%;
+    display: block;
+    padding: 10px 0 10px 35px;
+    color: #333; }
+.content-trust-you .col-md-2 .panel{
+    margin: 0;
+    border-bottom: 0;
+}
+.content-trust-you .col-md-2 .panel .title{
+    padding: 10px 0 15px 20px;
+}
+.content-trust-you .col-md-2 .panel.panel-default{
+    border-color:#fff;
+}
+.content-trust-you .col-md-2 .panel-body a:hover {
+    background: #FFF4F4;
+    color: #D93740;
+    border-right: 1px solid #D93740;
+    }
+.content-trust-you .col-md-10 .title{
+ padding: 15px 0 15px 20px;
+ border-bottom: 1px solid #E6E6E6;
+}
+.content-trust-you .col-md-10 .panel{
+    margin-bottom: 0;
+}
+.content-trust-you .col-md-10 .panel-body {
+    width: 100%;
+    padding: 0; }
+.content-trust-you .col-md-10 .panel-body table {
+    width: 100%; }
+.content-trust-you .col-md-10 .panel-body table tbody tr:nth-child(2n) {
+    background: #FFF4F4; }
+.content-trust-you .col-md-10 .panel-body table tbody tr {
+    height: 90px; }
+.content-trust-you .col-md-10 .panel-body table tbody tr td{
+    text-align: center;
+}
+.content-trust-you .col-md-10 .panel-body table tbody tr td .user {
+    width: 50px;
+    height: 50px;
+    position: relative;
+    border-radius: 50%;
+    display: inline-block;
+    margin-left: 15px; }
+.content-trust-you .col-md-10 .panel-body table tbody tr td .user img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%; }
+.content-trust-you .col-md-10 .panel-body table tbody tr td .user span {
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    right: 2px;
+    bottom: 2px;
+    border-radius: 50%;
+    background: #7ED321;
+    padding: 2px; }
+.content-trust-you .col-md-10 .panel-body table tbody tr td em {
+    font-style: normal;
+    font-size: 16px;
+    color: #D93740; }
+.content-trust-you .col-md-10 .panel-body table tbody tr td .number {
+    font-size: 16px;
+    color: #333; }
+.content-trust-you .col-md-10 .panel-body table tbody tr td .trade-number {
+    font-size: 14px;
+    color: #AAAAAA; }
+.content-trust-you .col-md-10 .panel-body table tbody tr td p {
+    font-size: 16px;
+    color: #333; }
+.pagination>li:hover a{
+    background: #D93740 ;
+    color:#FFF;
+}
+.pagination{
+    width: 100%;
+    background: #fff;
+    margin: 0;
+    padding: 20px 0 20px 62%;
+}
+.pagination>li>a, .pagination>li>span{
+    color:#333;
+}
+/*您信任的人页面样式*/
 

@@ -1,17 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8958a1de-ddbc-4b6c-ab50-87c84e06485f" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/account.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/account.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/authentication.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/authentication.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/security.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/security.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/trust-you.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/trust-you.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/usercenter.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/usercenter.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/you-block.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/you-block.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/you-trust.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/you-trust.html" afterDir="false" />
-    </list>
+    <list default="true" id="8958a1de-ddbc-4b6c-ab50-87c84e06485f" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -28,7 +18,7 @@
         <entry file="file://$PROJECT_DIR$/web/security.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="378">
-              <caret line="179" column="53" lean-forward="true" selection-start-line="179" selection-start-column="53" selection-end-line="179" selection-end-column="53" />
+              <caret line="179" column="53" selection-start-line="179" selection-start-column="53" selection-end-line="179" selection-end-column="53" />
               <folding>
                 <element signature="n#div#0;n#body#0;n#html#0;n#!!top" />
                 <element signature="n#ul#1;n#div#1;n#div#0;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" />
@@ -49,7 +39,7 @@
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="135">
-              <caret line="5" column="5" lean-forward="true" selection-start-line="5" selection-start-column="5" selection-end-line="5" selection-end-column="5" />
+              <caret line="5" column="5" selection-start-line="5" selection-start-column="5" selection-end-line="5" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -58,7 +48,7 @@
         <entry file="file://$PROJECT_DIR$/web/css/base.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="116">
-              <caret line="78" column="30" lean-forward="true" selection-start-line="78" selection-start-column="30" selection-end-line="78" selection-end-column="30" />
+              <caret line="78" column="30" selection-start-line="78" selection-start-column="30" selection-end-line="78" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -66,8 +56,8 @@
       <file leaf-file-name="vercoin.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/css/vercoin.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="561">
-              <caret line="1254" column="22" lean-forward="true" selection-start-line="1254" selection-start-column="22" selection-end-line="1254" selection-end-column="22" />
+            <state relative-caret-position="13656">
+              <caret line="1739" column="22" selection-start-line="1739" selection-start-column="22" selection-end-line="1739" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -193,18 +183,17 @@
       <updated>1524463072996</updated>
       <workItem from="1524463075142" duration="23652000" />
       <workItem from="1524534104606" duration="5888000" />
-      <workItem from="1524540083093" duration="16925000" />
+      <workItem from="1524540083093" duration="17596000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="46465000" />
+    <option name="totallyTimeSpent" value="47136000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="7" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17712471" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27402702" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
@@ -347,7 +336,7 @@
     <entry file="file://$PROJECT_DIR$/web/css/base.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="116">
-          <caret line="78" column="30" lean-forward="true" selection-start-line="78" selection-start-column="30" selection-end-line="78" selection-end-column="30" />
+          <caret line="78" column="30" selection-start-line="78" selection-start-column="30" selection-end-line="78" selection-end-column="30" />
         </state>
       </provider>
     </entry>
@@ -448,15 +437,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/css/vercoin.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="1254" column="22" lean-forward="true" selection-start-line="1254" selection-start-column="22" selection-end-line="1254" selection-end-column="22" />
+        <state relative-caret-position="13656">
+          <caret line="1739" column="22" selection-start-line="1739" selection-start-column="22" selection-end-line="1739" selection-end-column="22" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/security.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="378">
-          <caret line="179" column="53" lean-forward="true" selection-start-line="179" selection-start-column="53" selection-end-line="179" selection-end-column="53" />
+          <caret line="179" column="53" selection-start-line="179" selection-start-column="53" selection-end-line="179" selection-end-column="53" />
           <folding>
             <element signature="n#div#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#ul#1;n#div#1;n#div#0;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" />
@@ -475,7 +464,7 @@
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
-          <caret line="5" column="5" lean-forward="true" selection-start-line="5" selection-start-column="5" selection-end-line="5" selection-end-column="5" />
+          <caret line="5" column="5" selection-start-line="5" selection-start-column="5" selection-end-line="5" selection-end-column="5" />
         </state>
       </provider>
     </entry>

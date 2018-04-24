@@ -2,20 +2,31 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8958a1de-ddbc-4b6c-ab50-87c84e06485f" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/web/images/2 copy 2@2x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/images/2 copy@2x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/images/2@2x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/images/Group 10@2x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/images/Group 11@2x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/images/Group 8@1x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vercoin-resources.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/watcherTasks.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/account.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/account.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/authentication.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/authentication.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/css/base.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/css/base.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/css/ad.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/css/draw.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/css/log_reg.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/css/order.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/css/pub_ad.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/css/vercoin.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/js/draw.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/js/draw.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/js/myad.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/js/myad.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/js/register.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/js/register.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/js/world.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/js/world.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/advertisement.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/advertisement.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/charge.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/charge.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/css/vercoin.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/css/vercoin.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/security.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/security.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/usercenter.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/usercenter.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/draw.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/draw.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/order.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/order.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/publish_advertisement.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/publish_advertisement.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/register.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -33,7 +44,7 @@
         <entry file="file://$PROJECT_DIR$/web/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="299">
-              <caret line="14" column="16" lean-forward="true" selection-start-line="14" selection-end-line="51" selection-end-column="6" />
+              <caret line="14" column="16" selection-start-line="14" selection-end-line="51" selection-end-column="6" />
               <folding>
                 <element signature="n#div#0;n#body#0;n#html#0;n#!!top" />
                 <element signature="n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" />
@@ -47,11 +58,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="usercenter.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="usercenter.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/usercenter.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="189">
-              <caret line="7" column="63" lean-forward="true" selection-start-line="7" selection-start-column="63" selection-end-line="7" selection-end-column="63" />
+              <caret line="7" column="63" selection-start-line="7" selection-start-column="63" selection-end-line="7" selection-end-column="63" />
               <folding>
                 <element signature="n#div#0;n#body#0;n#html#0;n#!!top" />
                 <element signature="n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" />
@@ -67,16 +78,16 @@
         <entry file="file://$PROJECT_DIR$/web/css/base.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="370">
-              <caret line="40" column="22" lean-forward="true" selection-start-line="40" selection-start-column="22" selection-end-line="40" selection-end-column="23" />
+              <caret line="40" column="22" selection-start-line="40" selection-start-column="22" selection-end-line="40" selection-end-column="23" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="vercoin.css" pinned="false" current-in-tab="false">
+      <file leaf-file-name="vercoin.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/css/vercoin.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-4617">
-              <caret line="39" column="16" lean-forward="true" selection-start-line="39" selection-start-column="16" selection-end-line="39" selection-end-column="16" />
+            <state relative-caret-position="189">
+              <caret line="990" column="21" selection-start-line="990" selection-start-column="21" selection-end-line="990" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -114,10 +125,10 @@
         <option value="$PROJECT_DIR$/web/authentication.html" />
         <option value="$PROJECT_DIR$/web/security.html" />
         <option value="$PROJECT_DIR$/web/css/base.css" />
-        <option value="$PROJECT_DIR$/web/css/vercoin.css" />
         <option value="$PROJECT_DIR$/web/index.html" />
         <option value="$PROJECT_DIR$/web/trust-you.html" />
         <option value="$PROJECT_DIR$/web/usercenter.html" />
+        <option value="$PROJECT_DIR$/web/css/vercoin.css" />
       </list>
     </option>
   </component>
@@ -136,6 +147,7 @@
     <option name="width" value="1890" />
     <option name="height" value="930" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -201,15 +213,15 @@
       <option name="presentableId" value="Default" />
       <updated>1524463072996</updated>
       <workItem from="1524463075142" duration="23652000" />
-      <workItem from="1524534104606" duration="5526000" />
+      <workItem from="1524534104606" duration="5820000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="29178000" />
+    <option name="totallyTimeSpent" value="29472000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
+    <frame x="-7" y="-7" width="1295" height="695" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17712471" />
@@ -329,21 +341,14 @@
     <entry file="file://$PROJECT_DIR$/web/css/base.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="370">
-          <caret line="40" column="22" lean-forward="true" selection-start-line="40" selection-start-column="22" selection-end-line="40" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/css/vercoin.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4617">
-          <caret line="39" column="16" lean-forward="true" selection-start-line="39" selection-start-column="16" selection-end-line="39" selection-end-column="16" />
+          <caret line="40" column="22" selection-start-line="40" selection-start-column="22" selection-end-line="40" selection-end-column="23" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="299">
-          <caret line="14" column="16" lean-forward="true" selection-start-line="14" selection-end-line="51" selection-end-column="6" />
+          <caret line="14" column="16" selection-start-line="14" selection-end-line="51" selection-end-column="6" />
           <folding>
             <element signature="n#div#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" />
@@ -374,7 +379,7 @@
     <entry file="file://$PROJECT_DIR$/web/usercenter.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="189">
-          <caret line="7" column="63" lean-forward="true" selection-start-line="7" selection-start-column="63" selection-end-line="7" selection-end-column="63" />
+          <caret line="7" column="63" selection-start-line="7" selection-start-column="63" selection-end-line="7" selection-end-column="63" />
           <folding>
             <element signature="n#div#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" />
@@ -382,6 +387,13 @@
             <element signature="n#div#1;n#body#0;n#html#0;n#!!top" />
             <element signature="n#div#2;n#body#0;n#html#0;n#!!top" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/css/vercoin.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="990" column="21" selection-start-line="990" selection-start-column="21" selection-end-line="990" selection-end-column="21" />
         </state>
       </provider>
     </entry>

@@ -5,41 +5,81 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="renderer" content="webkit">
   <link rel="stylesheet" href="../lib/css/bootstrap.min.css">
-  <link rel="stylesheet" href="../admin/css/order.css">
+  <link rel="stylesheet" href="./css/vercoin.css">
   <title>订单</title>
 </head>
 <body>
-<div class="container">
-<ul class="order_status_header clearfix">
-  <li class="order_status_active">全部订单</li>
-  <li class="order_status">未付款</li>
-  <li class="order_status">已付款</li>
-  <li class="order_status">已完成</li>
-  <li class="order_status">已取消</li>
-  <li class="order_status">申诉中</li>
-</ul>
-<ul class="table_header clearfix">
-  <li>订单号</li>
-  <li>状态</li>
-  <li>创建时间</li>
-  <li>币种</li>
-  <li>类型</li>
-  <li>交易对象</li>
-  <li>交易价格</li>
-  <li>数量</li>
-  <li>金额</li>
-  <li>手续费</li>
-  <li>参考号</li>
-</ul>
-  <hr>
-
-
-
-
-
-
+<div id="zyhPageOrder">
+  <div class="container">
+    <ul class="order_status_header clearfix">
+      <li class="order_status_active">全部订单</li>
+      <li class="order_status">未付款</li>
+      <li class="order_status">已付款</li>
+      <li class="order_status">已完成</li>
+      <li class="order_status">已取消</li>
+      <li class="order_status">申诉中</li>
+      <li class="order_search">
+        <input type="text"
+               placeholder="请输入订单单号"
+               class="form-control order_search_input">
+        <button type="button" class="btn btn-danger order_search_btn">搜索</button>
+      </li>
+    </ul>
+    <ul class="table_header clearfix">
+      <li class="order_id">订单号</li>
+      <li class="order_status">状态</li>
+      <li class="order_time">创建时间</li>
+      <li class="order_coin_type">币种</li>
+      <li class="order_type">类型</li>
+      <li class="order_target">交易对象</li>
+      <li class="order_price">交易价格</li>
+      <li class="order_num">数量</li>
+      <li class="order_money">金额</li>
+      <li class="order_fee">手续费</li>
+      <li class="order_refer">参考号</li>
+    </ul>
+    <hr>
+    <ul class="table_content clearfix">
+      <li class="order_id">#115462436384474</li>
+      <li class="order_status">待放行</li>
+      <li class="order_time">2018-1-22 12:23</li>
+      <li class="order_coin_type">VC</li>
+      <li class="order_type">出售</li>
+      <li class="order_target">WJL</li>
+      <li class="order_price">0.4CNY</li>
+      <li class="order_num">100</li>
+      <li class="order_money">1,000,000</li>
+      <li class="order_fee">0</li>
+      <li class="order_refer">0</li>
+    </ul>
+    <ul class="table_content clearfix">
+      <li class="order_id">#115462436384474</li>
+      <li class="order_status">待放行</li>
+      <li class="order_time">2018-1-22 12:23</li>
+      <li class="order_coin_type">VC</li>
+      <li class="order_type">出售</li>
+      <li class="order_target">WJL</li>
+      <li class="order_price">0.4CNY</li>
+      <li class="order_num">100</li>
+      <li class="order_money">1,000,000</li>
+      <li class="order_fee">0</li>
+      <li class="order_refer">0</li>
+    </ul>
+    <ul class="table_content clearfix">
+      <li class="order_id">#115462436384474</li>
+      <li class="order_status">待放行</li>
+      <li class="order_time">2018-1-22 12:23</li>
+      <li class="order_coin_type">VC</li>
+      <li class="order_type">出售</li>
+      <li class="order_target">WJL</li>
+      <li class="order_price">0.4CNY</li>
+      <li class="order_num">100</li>
+      <li class="order_money">1,000,000</li>
+      <li class="order_fee">0</li>
+      <li class="order_refer">0</li>
+    </ul>
+  </div>
 </div>
-
 
 
 

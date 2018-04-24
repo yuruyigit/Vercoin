@@ -220,6 +220,26 @@
                 </div>
               </div>
 
+              <div class="form-group" id="form-group-amount-sell">
+                <label for="input-min_amount"
+                       class="col-md-3 control-label">出售数量</label>
+                <div class="col-md-6">
+                  <div class="input-group"><input
+                      id="input-amount-sell"
+                      type="tel"
+                      class="form-control"
+                      name="min_amount"
+                      value=""
+                      placeholder="可用1000个"
+                      required="required"
+                  >
+                    <span class="input-group-addon">VER</span>
+                  </div>
+                  <p class="help-block">请输入想要够买或出售的总数量，剩余数量实时更新。</p>
+                </div>
+              </div>
+
+
               <div class="form-group" id="form-group-payment_window_minutes">
                 <label for="input-payment_window_minutes" class="col-md-3 control-label">付款期限</label>
 
@@ -307,6 +327,20 @@
     </div>
   </div>
 </div>
+<script src="../lib/js/jquery.min.js"></script>
+<script>
+  $(function(){
+
+    $("#input-type-OnlineSell").on("click",function(){
+      $("#form-group-amount").hide()
+      $("#form-group-amount-sell").show()
+    })
+    $("#input-type-OnlineBuy").on("click",function(){
+      $("#form-group-amount-sell").hide()
+      $("#form-group-amount").show()
+    })
+  })
+</script>
 </body>
 </html>
 

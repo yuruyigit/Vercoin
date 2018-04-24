@@ -46,9 +46,16 @@
   /***
    * @send the code
    */
+
   CODEBTN.on("click",function(e){
     e.preventDefault();
     if(SENDING) return;
+    if($("#phone").val().length < 10){
+      var text="<div class='form_error'>您的手机号码有误</div>"
+      $("#phone").parent().parent().append($(text))
+      
+      return;
+    }
     SENDING = 1;
     var time = 10;
     $(this).addClass("code_sending")

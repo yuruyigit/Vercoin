@@ -115,7 +115,7 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="15" />
     <option name="y" value="30" />
     <option name="width" value="1890" />
@@ -133,6 +133,11 @@
             <path>
               <item name="vercoin-resources" type="b2602c69:ProjectViewProjectNode" />
               <item name="vercoin-resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="vercoin-resources" type="b2602c69:ProjectViewProjectNode" />
+              <item name="vercoin-resources" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -183,15 +188,16 @@
       <updated>1524463072996</updated>
       <workItem from="1524463075142" duration="23652000" />
       <workItem from="1524534104606" duration="5888000" />
-      <workItem from="1524540083093" duration="17596000" />
+      <workItem from="1524540083093" duration="18218000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="47136000" />
+    <option name="totallyTimeSpent" value="47758000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1295" height="695" extended-state="7" />
+    <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27402702" />
       <window_info anchor="bottom" id="TODO" order="6" />

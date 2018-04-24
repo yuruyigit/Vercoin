@@ -19,15 +19,16 @@
           <img src="./images/logo.jpg" alt="">
         </a>
       </div>
-      <div class="nav-list">
+      <div>
         <ul class="nav navbar-nav">
-          <li><a href="#">首页</a></li>
-          <li>
+          <li ><a href="#">首页</a></li>
+          <li >
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
                aria-haspopup="true" aria-expanded="false">购买<span class="caret"></span>
             </a>
             <ul class="dropdown-menu">
               <li><a href="#">Vc</a></li>
+              <li><a href="#" >默认</a></li>
             </ul>
           </li>
           <li>
@@ -35,13 +36,15 @@
                aria-haspopup="true" aria-expanded="false">出售<span class="caret"></span></a>
             <ul class="dropdown-menu">
               <li><a href="#">Vc</a></li>
+              <li><a href="#">默认</a></li>
             </ul>
           </li>
           <li><a href="#">发布广告</a></li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
           <li>
-            <a href=""><span class="glyphicon glyphicon-list-alt"></span>
+            <a href="" data-toggle="dropdown" role="button" aria-expanded="true"
+               class="dropdown-toggle"><span aria-hidden="true" class="glyphicon glyphicon-list-alt"></span>
               订单
             </a>
           </li>
@@ -121,17 +124,17 @@
     <div class="raw">
       <div class="col-md-2">
         <div class="panel panel-default">
-          <div class="panel-heading">用户资料</div>
+          <div class="title">用户资料</div>
           <div class="panel-body">
             <a href="">基本信息</a>
             <a href="">身份验证</a>
           </div>
         </div>
         <div class="panel panel-default">
-          <div class="panel-heading">账户安全</div>
+          <div class="title">账户安全</div>
           <div class="panel-body">
             <a href="">账户设置</a>
-            <a href="">安全设置</a>
+            <a href="" class="active">安全设置</a>
           </div>
         </div>
       <!--  <div class="panel panel-default">
@@ -142,7 +145,7 @@
           </div>
         </div>-->
         <div class="panel panel-default">
-          <div class="panel-heading">信任人数</div>
+          <div class="title">信任人数</div>
           <div class="panel-body">
             <a href="">信任您的人</a>
             <a href="">您信任的人</a>
@@ -152,7 +155,7 @@
       </div>
       <div class="col-md-10">
         <div class="panel panel-default">
-          <div class="panel-heading">安全设置</div>
+          <div class="title">安全设置</div>
           <div class="panel-body">
             <form class="form-horizontal">
               <div class="form-group"><label class="col-md-2 control-label">用户名</label>
@@ -179,38 +182,80 @@
                   <ul class="media-list">
                     <li class="media">
                       <div class="media-left">
-                        <span class="media-object label label-success"><i aria-hidden="true" class="glyphicon glyphicon-credit-card"></i></span>
+                        <span ><img src="./images/credit_card%20-%20material@2x.png" alt=""></span>
                       </div>
                       <div class="media-body">
-                        <h4 class="media-heading">资金密码</h4> 提现、修改安全设置时输入
+                        <span >资金密码</span> 提现、修改安全设置时输入
                       </div>
                       <div class="media-right">
                         <div style="width: 150px; text-align: right;">
-                          <a href="https://www.vercoin.io/password/secondary/reset" role="button"  class="btn btn-default btn-sm">忘记</a>
-                          <a href="https://www.vercoin.io/password/secondary"  role="button" class="btn btn-default btn-sm">修改</a>
+                          <a href="" role="button"  class="btn ">创建</a>
                         </div>
                       </div>
                     </li>
                     <li class="media">
                       <div class="media-left">
-                        <span class="media-object label label-primary"><i aria-hidden="true"  class="glyphicon glyphicon-phone"></i></span>
+                        <span ><img src="./images/email%20-%20material@2x.png" alt=""></span>
                       </div>
                       <div class="media-body">
-                        <h4 class="media-heading">绑定手机</h4>提现，修改密码，及安全设置时用以收取验证短信
+                        <span >绑定邮箱</span>用于登录、提币、修改安全设置时输入
                       </div>
                       <div class="media-right">
-                        <a href="https://www.vercoin.io/security/mobile" role="button"  class="btn btn-default btn-sm">修改</a>
+                        <a href="" role="button"  class="btn">修改</a>
                       </div>
                     </li>
                     <li class="media">
                       <div class="media-left">
-                        <span class="media-object label label-info"><i aria-hidden="true" class="glyphicon glyphicon-lock"></i></span>
+                        <span class="phone"><img src="./images/phone_iphone%20-%20material@2x.png" alt=""></span>
                       </div>
                       <div class="media-body">
-                        <h4 class="media-heading">登录密码</h4>用于登录账户时输入
+                        <span>绑定手机</span>提现、修改密码，及安全设置时用以收取验证短信
                       </div>
                       <div class="media-right">
-                        <a href="https://www.vercoin.io/password/login" role="button"  class="btn btn-default btn-sm">修改</a>
+                        <a href="" role="button"  class="btn modify">修改</a>
+                      </div>
+                    </li>
+                    <li class="media">
+                      <div class="media-left">
+                        <span class="phone"><img src="./images/https%20-%20material@2x.png" alt=""></span>
+                      </div>
+                      <div class="media-body">
+                        <span>登录密码</span>用于登录账户时输入
+                      </div>
+                      <div class="media-right">
+                        <a href="" role="button"  class="btn modify">修改</a>
+                      </div>
+                    </li>
+                    <li class="media">
+                      <div class="media-left">
+                        <span ><img src="./images/credit_card%20-%20material%20copy@2x.png" alt=""></span>
+                      </div>
+                      <div class="media-right pull-right">
+                          <div class="line"></div>
+                      </div>
+                    </li>
+                    <li class="media">
+                      <div class="media-left">
+                        <span><img src="./images/email%20-%20material%20copy@2x.png" alt=""></span>
+                      </div>
+                      <div class="media-right pull-right">
+                        <div class="line note"></div>
+                      </div>
+                    </li>
+                    <li class="media">
+                      <div class="media-left">
+                        <span class="phone"><img src="./images/phone_iphone%20-%20material%20copy@2x.png" alt=""></span>
+                      </div>
+                      <div class="media-right pull-right">
+                        <div class="line phone"></div>
+                      </div>
+                    </li>
+                    <li class="media">
+                      <div class="media-left">
+                        <span class="phone"><img src="./images/https%20-%20material%20copy@2x.png" alt=""></span>
+                      </div>
+                      <div class="media-right pull-right">
+                        <div class="line lock"></div>
                       </div>
                     </li>
                   </ul>
@@ -225,9 +270,9 @@
 </div>
 <div class="language-select">
   <ul>
-    <li>English</li>
-    <li>简体中文</li>
-    <li>繁体中文</li>
+    <li><a href="">English</a></li>
+    <li><a href="">简体中文</a></li>
+    <li><a href="">繁体中文</a></li>
   </ul>
 </div>
 </body>

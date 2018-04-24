@@ -5,18 +5,18 @@
       CODEBTN = $("#getCode");
   
   var SENDING = 0;
-  function renderCountryList(list,target){
-    var x = 0, len = list.length;
-    for(; x<len;x++){
-      var country_data = list[x].split("-"),
-      _frags = $("<div class='country'></div>");
-      _frags.attr("data-code",country_data[2]).text(country_data[1])
-      target.append(_frags)
-    }
-  }
-  setTimeout(function(){
-    renderCountryList(country_list,COUNTRYLIST)
-  })
+  // function renderCountryList(list,target){
+  //   var x = 0, len = list.length;
+  //   for(; x<len;x++){
+  //     var country_data = list[x].split("-"),
+  //     _frags = $("<div class='country'></div>");
+  //     _frags.attr("data-code",country_data[2]).text(country_data[1])
+  //     target.append(_frags)
+  //   }
+  // }
+  // setTimeout(function(){
+  //   renderCountryList(country_list,COUNTRYLIST)
+  // })
 
   
   COUNTRYLIST.on('click','.country',function(){
@@ -25,17 +25,17 @@
   })
   
   
-  /**
-   * @toggle country list
-   */
-  $(".select_country").on("click",function(){
-    COUNTRYLIST.slideToggle();
-  })
+  // /**
+  //  * @toggle country list
+  //  */
+  // $(".select_country").on("click",function(){
+  //   COUNTRYLIST.slideToggle();
+  // })
   
   /**
    * @check if the user agree
    */
-  $("#check").on("click",function(){
+  $("#check1").on("click",function(){
     if($(this).is(':checked')){
       SUBMIT.removeAttr("disabled")
     }else {

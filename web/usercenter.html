@@ -5,10 +5,10 @@
     <title>用户基本信息</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="../lib/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/vercoin.css">
-    <script src="./js/jquery-3.3.1.min.js"></script>
-    <script src="./js/bootstrap.min.js"></script>
+    <script src="../lib/js/jquery-3.3.1.min.js"></script>
+    <script src="../lib/js/bootstrap.min.js"></script>
 </head>
 <body>
 <div class="header">
@@ -19,15 +19,16 @@
                     <img src="./images/logo.jpg" alt="">
                 </a>
             </div>
-            <div class="nav-list">
+            <div>
                 <ul class="nav navbar-nav">
-                    <li><a href="#">首页</a></li>
-                    <li>
+                    <li ><a href="#">首页</a></li>
+                    <li >
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
                            aria-haspopup="true" aria-expanded="false">购买<span class="caret"></span>
                         </a>
                         <ul class="dropdown-menu">
                             <li><a href="#">Vc</a></li>
+                            <li><a href="#" >默认</a></li>
                         </ul>
                     </li>
                     <li>
@@ -35,13 +36,15 @@
                            aria-haspopup="true" aria-expanded="false">出售<span class="caret"></span></a>
                         <ul class="dropdown-menu">
                             <li><a href="#">Vc</a></li>
+                            <li><a href="#">默认</a></li>
                         </ul>
                     </li>
                     <li><a href="#">发布广告</a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a href=""><span aria-hidden="true" class="glyphicon glyphicon-list-alt"></span>
+                        <a href="" data-toggle="dropdown" role="button" aria-expanded="true"
+                           class="dropdown-toggle"><span aria-hidden="true" class="glyphicon glyphicon-list-alt"></span>
                             订单
                         </a>
                     </li>
@@ -121,14 +124,14 @@
         <div class="raw">
             <div class="col-md-2">
                 <div class="panel panel-default">
-                    <div class="panel-heading">用户资料</div>
+                    <div class="title">用户资料</div>
                     <div class="panel-body">
-                        <a href="">基本信息</a>
+                        <a href="" class="active">基本信息</a>
                         <a href="">身份验证</a>
                     </div>
                 </div>
                 <div class="panel panel-default">
-                    <div class="panel-heading">账户安全</div>
+                    <div class="title">账户安全</div>
                     <div class="panel-body">
                         <a href="">账户设置</a>
                         <a href="">安全设置</a>
@@ -142,7 +145,7 @@
                     </div>
                 </div>-->
                 <div class="panel panel-default">
-                    <div class="panel-heading">信任人数</div>
+                    <div class="title">信任人数</div>
                     <div class="panel-body">
                         <a href="">信任您的人</a>
                         <a href="">您信任的人</a>
@@ -152,7 +155,7 @@
             </div>
             <div class="col-md-10">
                 <div class="panel panel-default">
-                    <div class="panel-heading">基本信息</div>
+                    <div class="title">基本信息</div>
                     <div class="panel-body">
                         <form method="POST" action="https://www.vercoin.io/profile" class="form-horizontal">
                             <div class="form-group">
@@ -216,9 +219,9 @@
 </div>
 <div class="language-select">
     <ul>
-        <li>English</li>
-        <li>简体中文</li>
-        <li>繁体中文</li>
+        <li><a href="">English</a></li>
+        <li><a href="">简体中文</a></li>
+        <li><a href="">繁体中文</a></li>
     </ul>
 </div>
 </body>

@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>VERCOIN</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../lib/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/vercoin.css">
+  <script src="../lib/js/jquery-3.3.1.min.js"></script>
+  <script src="../lib/js/bootstrap.min.js"></script>
+</head>
+<body>
+  <div class="header">
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand header-logo" href="#">
+          <img src="./images/logo.jpg" alt="">
+        </a>
+      </div>
+      <div>
+        <ul class="nav navbar-nav">
+          <li ><a href="#">首页</a></li>
+          <li >
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+               aria-haspopup="true" aria-expanded="false">购买<span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Vc</a></li>
+              <li><a href="#" >默认</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+               aria-haspopup="true" aria-expanded="false">出售<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Vc</a></li>
+              <li><a href="#">默认</a></li>
+            </ul>
+          </li>
+          <li><a href="#">发布广告</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li>
+            <a href="" data-toggle="dropdown" role="button" aria-expanded="true"
+               class="dropdown-toggle"><span aria-hidden="true" class="glyphicon glyphicon-list-alt"></span>
+              订单
+            </a>
+          </li>
+          <li>
+            <a href="" data-toggle="dropdown" role="button" aria-expanded="true"
+               class="dropdown-toggle"><span aria-hidden="true" class="glyphicon glyphicon-book"></span>
+              钱包<span class="caret"></span>
+            </a>
+            <ul role="menu" class="dropdown-menu">
+              <li class="dropdown-header">
+                <dl>
+                  <dt>可用资产:</dt>
+                  <dd>
+                    0.00000000
+                    <span class="coin">BTC</span><br>
+
+                    0.00000000
+                    <span class="coin">ETH</span><br>
+
+                    19,900.00
+                    <span class="coin">VER</span><br></dd>
+                </dl>
+              </li>
+              <li class="dropdown-header">
+                <dl>
+                  <dt>冻结资产:</dt>
+                  <dd>
+                    0.00000000
+                    <span class="coin">BTC</span><br>
+                    0.00000000
+                    <span class="coin">ETH</span><br>
+                    0.00
+                    <span class="coin">VER</span><br></dd>
+                </dl>
+              </li>
+              <li class="dropdown-header">
+                <dl>
+                  <dt>总资产:</dt>
+                  <dd>
+                    0.00000000
+                    <span class="coin">BTC</span><br>
+                    0.00000000
+                    <span class="coin">ETH</span><br>
+                    19,900.00
+                    <span class="coin">VER</span><br></dd>
+                </dl>
+              </li>
+              <li role="separator" class="divider"></li>
+              <li><a href="">充值</a></li>
+              <li><a href="">提现</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="" data-toggle="dropdown" role="button" aria-expanded="true"
+               class="dropdown-toggle"><span aria-hidden="true" class="glyphicon glyphicon-user"></span>
+              nuoee <span class="caret"></span>
+            </a>
+            <ul role="menu" class="dropdown-menu">
+              <li><a href="">用户中心</a></li>
+              <li><a href="">我的广告</a></li>
+              <li role="separator" class="divider"></li>
+              <li>
+                <form action="" method="post"><input type="hidden" name="_token"
+                                                     value="12ZSOsEG3hGb67zOtaX3uIdEBZuWdwt4o1eBkHMF">
+                  <button type="submit" class="btn btn-default">退出</button>
+                </form>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</div>
+  <div class="content-trust-you">
+   <div class="container">
+    <div class="raw">
+      <div class="col-md-2">
+        <div class="panel panel-default">
+          <div class="title">用户资料</div>
+          <div class="panel-body">
+            <a href="">基本信息</a>
+            <a href="">身份验证</a>
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div class="title">账户安全</div>
+          <div class="panel-body">
+            <a href="">账户设置</a>
+            <a href="">安全设置</a>
+          </div>
+        </div>
+        <!--<div class="panel panel-default">
+          <div class="panel-heading">广告管理</div>
+          <div class="panel-body">
+            <a href="">购买广告</a>
+            <a href="">出售广告</a>
+          </div>
+        </div>-->
+        <div class="panel panel-default">
+          <div class="title">信任人数</div>
+          <div class="panel-body">
+            <a href="" class="active">信任您的人</a>
+            <a href="">您信任的人</a>
+            <a href="">您屏蔽的人</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-10">
+        <div class="panel panel-default">
+          <div class="title">信任您的人</div>
+          <div class="panel-body">
+             <table>
+                <tbody>
+                 <tr>
+                    <td>
+                       <div class="user">
+                         <img src="./images/user.png" alt="">
+                         <span class="circle"></span>
+                       </div>
+                      <em>adam lambert</em>
+                    </td>
+                    <td>
+                      <p class="number">999+</p>
+                      <p>交易次数</p>
+                    </td>
+                    <td>
+                      <p class="number">999+</p>
+                      <p>信任人数</p>
+                    </td>
+                    <td>
+                      <p class="number">100%</p>
+                      <p>好评度</p>
+                    </td>
+                    <td>
+                      <p>累计交易量 100,000.00VC</p>
+                    </td>
+                    <td>
+                      <p class="trade-number">跟TA交易过0次</p>
+                    </td>
+                 </tr>
+                 <tr>
+                   <td>
+                     <div class="user">
+                       <img src="./images/user.png" alt="">
+                       <span class="circle"></span>
+                     </div>
+                     <em>adam lambert</em>
+                   </td>
+                   <td>
+                     <p class="number">999+</p>
+                     <p>交易次数</p>
+                   </td>
+                   <td>
+                     <p class="number">999+</p>
+                     <p>信任人数</p>
+                   </td>
+                   <td>
+                     <p class="number">100%</p>
+                     <p>好评度</p>
+                   </td>
+                   <td>
+                     <p>累计交易量 100,000.00VC</p>
+                   </td>
+                   <td>
+                     <p class="trade-number">跟TA交易过0次</p>
+                   </td>
+                 </tr>
+                 <tr>
+                   <td>
+                     <div class="user">
+                       <img src="./images/user.png" alt="">
+                       <span class="circle"></span>
+                     </div>
+                     <em>adam lambert</em>
+                   </td>
+                   <td>
+                     <p class="number">999+</p>
+                     <p>交易次数</p>
+                   </td>
+                   <td>
+                     <p class="number">999+</p>
+                     <p>信任人数</p>
+                   </td>
+                   <td>
+                     <p class="number">100%</p>
+                     <p>好评度</p>
+                   </td>
+                   <td>
+                     <p>累计交易量 100,000.00VC</p>
+                   </td>
+                   <td>
+                     <p class="trade-number">跟TA交易过0次</p>
+                   </td>
+                 </tr>
+                 <tr>
+                   <td>
+                     <div class="user">
+                       <img src="./images/user.png" alt="">
+                       <span class="circle"></span>
+                     </div>
+                     <em>adam lambert</em>
+                   </td>
+                   <td>
+                     <p class="number">999+</p>
+                     <p>交易次数</p>
+                   </td>
+                   <td>
+                     <p class="number">999+</p>
+                     <p>信任人数</p>
+                   </td>
+                   <td>
+                     <p class="number">100%</p>
+                     <p>好评度</p>
+                   </td>
+                   <td>
+                     <p>累计交易量 100,000.00VC</p>
+                   </td>
+                   <td>
+                     <p class="trade-number">跟TA交易过0次</p>
+                   </td>
+                 </tr>
+                 <tr>
+                   <td>
+                     <div class="user">
+                       <img src="./images/user.png" alt="">
+                       <span class="circle"></span>
+                     </div>
+                     <em>adam lambert</em>
+                   </td>
+                   <td>
+                     <p class="number">999+</p>
+                     <p>交易次数</p>
+                   </td>
+                   <td>
+                     <p class="number">999+</p>
+                     <p>信任人数</p>
+                   </td>
+                   <td>
+                     <p class="number">100%</p>
+                     <p>好评度</p>
+                   </td>
+                   <td>
+                     <p>累计交易量 100,000.00VC</p>
+                   </td>
+                   <td>
+                     <p class="trade-number">跟TA交易过0次</p>
+                   </td>
+                 </tr>
+                 <tr>
+                   <td>
+                     <div class="user">
+                       <img src="./images/user.png" alt="">
+                       <span class="circle"></span>
+                     </div>
+                     <em>adam lambert</em>
+                   </td>
+                   <td>
+                     <p class="number">999+</p>
+                     <p>交易次数</p>
+                   </td>
+                   <td>
+                     <p class="number">999+</p>
+                     <p>信任人数</p>
+                   </td>
+                   <td>
+                     <p class="number">100%</p>
+                     <p>好评度</p>
+                   </td>
+                   <td>
+                     <p>累计交易量 100,000.00VC</p>
+                   </td>
+                   <td>
+                     <p class="trade-number">跟TA交易过0次</p>
+                   </td>
+                 </tr>
+                 <tr>
+                   <td>
+                     <div class="user">
+                       <img src="./images/user.png" alt="">
+                       <span class="circle"></span>
+                     </div>
+                     <em>adam lambert</em>
+                   </td>
+                   <td>
+                     <p class="number">999+</p>
+                     <p>交易次数</p>
+                   </td>
+                   <td>
+                     <p class="number">999+</p>
+                     <p>信任人数</p>
+                   </td>
+                   <td>
+                     <p class="number">100%</p>
+                     <p>好评度</p>
+                   </td>
+                   <td>
+                     <p>累计交易量 100,000.00VC</p>
+                   </td>
+                   <td>
+                     <p class="trade-number">跟TA交易过0次</p>
+                   </td>
+                 </tr>
+                 <tr>
+                   <td>
+                     <div class="user">
+                       <img src="./images/user.png" alt="">
+                       <span class="circle"></span>
+                     </div>
+                     <em>adam lambert</em>
+                   </td>
+                   <td>
+                     <p class="number">999+</p>
+                     <p>交易次数</p>
+                   </td>
+                   <td>
+                     <p class="number">999+</p>
+                     <p>信任人数</p>
+                   </td>
+                   <td>
+                     <p class="number">100%</p>
+                     <p>好评度</p>
+                   </td>
+                   <td>
+                     <p>累计交易量 100,000.00VC</p>
+                   </td>
+                   <td>
+                     <p class="trade-number">跟TA交易过0次</p>
+                   </td>
+                 </tr>
+                </tbody>
+             </table>
+          </div>
+        </div>
+        <nav aria-label="Page navigation">
+          <ul class="pagination">
+            <li>
+              <a href="#" aria-label="Previous">
+                <span aria-hidden="true">&laquo;</span>
+              </a>
+            </li>
+            <li><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">5</a></li>
+            <li>
+              <a href="#" aria-label="Next">
+                <span aria-hidden="true">&raquo;</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+    </div>
+   </div>
+  </div>
+</div>
+  <div class="language-select">
+    <ul>
+      <li><a href="">English</a></li>
+      <li><a href="">简体中文</a></li>
+      <li><a href="">繁体中文</a></li>
+    </ul>
+  </div>
+</body>
+</html>

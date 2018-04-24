@@ -38,32 +38,71 @@ a.blue{color:#3399e0}
     width: 100px; }
 .header .navbar {
     border: 0;
-    padding: 0 30px; }
-.header .navbar .navbar-nav .open a {
-    background: #D93740;
-    color: #fff; }
+    padding: 0 105px; }
 .header .navbar .navbar-nav .dropdown-menu a {
-    background: #fff;
-    color: #303030; }
+    padding: 10px 0;
+    color: #303030;
+    text-align: center;}
+/*.header .navbar .navbar-nav .dropdown-menu a.default-color {
+    background: #303030;
+    padding: 10px 0;
+    color: #AAA;
+    text-align: center;}*/
 .header .navbar .navbar-nav .dropdown:hover a {
     color: #303030; }
-.header .navbar-nav.navbar-right li:hover {
-    background: #303030; }
-.header .navbar-nav.navbar-right li:hover a {
-    color: #fff; }
+.header .navbar-nav.navbar-right .dropdown-menu dt {
+    display: inline-block;
+    padding: 6px 0 0 0;
+    vertical-align: top; }
+.header .navbar-nav.navbar-right .dropdown-menu dd {
+    display: inline-block;
+    padding: 6px 0 0 0;}
+.header .navbar .navbar-nav .open .dropdown-menu{
+    padding: 0;
+    min-width: 68px;
+}
+.header .navbar .navbar-right .open .dropdown-menu{
+    padding: 0;
+    min-width: 100px;
+}
+.header .navbar-nav.navbar-right .dropdown-menu button {
+    width: 100%;
+    border: 0;
+    text-align: center;
+    border-radius: 0;
+}
+.header .navbar-default .navbar-nav>li>a:hover{
+     background-color: #D93740;
+     color:#FFF;
+ }
+.header .navbar-default .navbar-nav.index>li>a:hover{
+    background-color: #303030;
+    color:#FFF;
+}
+.header .navbar-default .navbar-nav>li>a{
+    color: #AAA;
+}
 /*页面公共尾部样式*/
 .language-select {
-    padding: 22px 0;
+    padding: 18px 0;
     background: #f0f0f0; }
 .language-select ul {
-    width: 250px;
+    width: 280px;
     overflow: hidden;
     list-style-type: none;
-    padding: 0;
-    margin: 0 auto; }
+    padding: 0 0 0 70px;
+    margin: 0 auto;}
 .language-select ul li {
     margin-left: 8px;
     padding-right: 8px;
     border-right: solid 1px #d7d6d6;
     line-height: 100%;
-    float: left; }
+    float: left;
+    font-size: 14px;}
+.language-select ul li a{
+    color:#AAAAAA;
+}
+.language-select ul li a:hover{
+    color:#333333;
+    text-decoration: underline;
+}

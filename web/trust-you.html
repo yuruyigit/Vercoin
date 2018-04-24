@@ -28,7 +28,7 @@
             </a>
             <ul class="dropdown-menu">
               <li><a href="#">Vc</a></li>
-              <li><a href="#" class="default-color">默认</a></li>
+              <li><a href="#" >默认</a></li>
             </ul>
           </li>
           <li>
@@ -36,14 +36,84 @@
                aria-haspopup="true" aria-expanded="false">出售<span class="caret"></span></a>
             <ul class="dropdown-menu">
               <li><a href="#">Vc</a></li>
-              <li><a href="#" class="default-color">默认</a></li>
+              <li><a href="#">默认</a></li>
             </ul>
           </li>
           <li><a href="#">发布广告</a></li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
-          <li><a href="#">登录</a></li>
-          <li > <a href="#" >注册</a> </li>
+          <li>
+            <a href="" data-toggle="dropdown" role="button" aria-expanded="true"
+               class="dropdown-toggle"><span aria-hidden="true" class="glyphicon glyphicon-list-alt"></span>
+              订单
+            </a>
+          </li>
+          <li>
+            <a href="" data-toggle="dropdown" role="button" aria-expanded="true"
+               class="dropdown-toggle"><span aria-hidden="true" class="glyphicon glyphicon-book"></span>
+              钱包<span class="caret"></span>
+            </a>
+            <ul role="menu" class="dropdown-menu">
+              <li class="dropdown-header">
+                <dl>
+                  <dt>可用资产:</dt>
+                  <dd>
+                    0.00000000
+                    <span class="coin">BTC</span><br>
+
+                    0.00000000
+                    <span class="coin">ETH</span><br>
+
+                    19,900.00
+                    <span class="coin">VER</span><br></dd>
+                </dl>
+              </li>
+              <li class="dropdown-header">
+                <dl>
+                  <dt>冻结资产:</dt>
+                  <dd>
+                    0.00000000
+                    <span class="coin">BTC</span><br>
+                    0.00000000
+                    <span class="coin">ETH</span><br>
+                    0.00
+                    <span class="coin">VER</span><br></dd>
+                </dl>
+              </li>
+              <li class="dropdown-header">
+                <dl>
+                  <dt>总资产:</dt>
+                  <dd>
+                    0.00000000
+                    <span class="coin">BTC</span><br>
+                    0.00000000
+                    <span class="coin">ETH</span><br>
+                    19,900.00
+                    <span class="coin">VER</span><br></dd>
+                </dl>
+              </li>
+              <li role="separator" class="divider"></li>
+              <li><a href="">充值</a></li>
+              <li><a href="">提现</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="" data-toggle="dropdown" role="button" aria-expanded="true"
+               class="dropdown-toggle"><span aria-hidden="true" class="glyphicon glyphicon-user"></span>
+              nuoee <span class="caret"></span>
+            </a>
+            <ul role="menu" class="dropdown-menu">
+              <li><a href="">用户中心</a></li>
+              <li><a href="">我的广告</a></li>
+              <li role="separator" class="divider"></li>
+              <li>
+                <form action="" method="post"><input type="hidden" name="_token"
+                                                     value="12ZSOsEG3hGb67zOtaX3uIdEBZuWdwt4o1eBkHMF">
+                  <button type="submit" class="btn btn-default">退出</button>
+                </form>
+              </li>
+            </ul>
+          </li>
         </ul>
       </div>
     </div>
@@ -77,7 +147,7 @@
         <div class="panel panel-default">
           <div class="title">信任人数</div>
           <div class="panel-body">
-            <a href="">信任您的人</a>
+            <a href="" class="active">信任您的人</a>
             <a href="">您信任的人</a>
             <a href="">您屏蔽的人</a>
           </div>
@@ -331,13 +401,13 @@
     </div>
    </div>
   </div>
+</div>
   <div class="language-select">
     <ul>
-      <li>English</li>
-      <li>简体中文</li>
-      <li>繁体中文</li>
+      <li><a href="">English</a></li>
+      <li><a href="">简体中文</a></li>
+      <li><a href="">繁体中文</a></li>
     </ul>
   </div>
-</div>
 </body>
 </html>

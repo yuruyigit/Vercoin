@@ -39,53 +39,45 @@ a.blue{color:#3399e0}
 .header .navbar {
     border: 0;
     padding: 0 105px; }
-.header .navbar .navbar-nav .open a {
-    background: #D93740;
-    color: #fff; }
 .header .navbar .navbar-nav .dropdown-menu a {
-    background: #444;
     padding: 10px 0;
-    color: #fff;
+    color: #303030;
     text-align: center;}
-.header .navbar .navbar-nav .dropdown-menu a.default-color {
+/*.header .navbar .navbar-nav .dropdown-menu a.default-color {
     background: #303030;
     padding: 10px 0;
     color: #AAA;
-    text-align: center;}
+    text-align: center;}*/
 .header .navbar .navbar-nav .dropdown:hover a {
     color: #303030; }
-.header .navbar .navbar-nav.navbar-right .dropdown-menu li.conversion:hover{
-    background: #f0f0f0;
-}
-.header .navbar .navbar-nav .dropdown-menu .conversion:hover{
-    background-color: #f0f0f0;
-}
 .header .navbar-nav.navbar-right .dropdown-menu dt {
     display: inline-block;
+    padding: 6px 0 0 0;
     vertical-align: top; }
 .header .navbar-nav.navbar-right .dropdown-menu dd {
-    display: inline-block; }
-.header .navbar .navbar-nav .open .dropdown-menu li{
-    background: #303030;
-}
+    display: inline-block;
+    padding: 6px 0 0 0;}
 .header .navbar .navbar-nav .open .dropdown-menu{
     padding: 0;
     min-width: 68px;
 }
-.header .navbar-nav .dropdown-menu li:hover{
-    background: #444;
+.header .navbar .navbar-right .open .dropdown-menu{
+    padding: 0;
+    min-width: 100px;
 }
 .header .navbar-nav.navbar-right .dropdown-menu button {
     width: 100%;
     border: 0;
-    text-align: left;
-    padding-left: 30px; }
-.header .navbar-default .navbar-nav>li>a:hover{
-    background-color: #D93740;
-    color:#FFF;
+    text-align: center;
+    border-radius: 0;
 }
-.header .navbar-default .navbar-right>li>a:hover{
-    background: #303030;
+.header .navbar-default .navbar-nav>li>a:hover{
+     background-color: #D93740;
+     color:#FFF;
+ }
+.header .navbar-default .navbar-nav.index>li>a:hover{
+    background-color: #303030;
+    color:#FFF;
 }
 .header .navbar-default .navbar-nav>li>a{
     color: #AAA;
@@ -95,11 +87,11 @@ a.blue{color:#3399e0}
     padding: 18px 0;
     background: #f0f0f0; }
 .language-select ul {
-    width: 250px;
+    width: 280px;
     overflow: hidden;
     list-style-type: none;
-    padding: 0;
-    margin: 0 auto; }
+    padding: 0 0 0 70px;
+    margin: 0 auto;}
 .language-select ul li {
     margin-left: 8px;
     padding-right: 8px;

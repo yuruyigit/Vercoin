@@ -1,13 +1,16 @@
-@import "base.css";
 .clear {
   clear: both;
   height: 0;
   overflow: hidden;
 }
+
 .clearfix:after{content:".";display:block;height:0;clear:both;visibility:hidden}
-.clearfix{*+height:1%;}
+.clearfix{*+height:1%}
 li {
   list-style: none;
+}
+hr {
+  background: #e6e6e6;
 }
 body {
   background: #f0f0f0;
@@ -143,6 +146,38 @@ body {
 #zyhPageOrder .table_content:nth-child(odd) {
   background-color: #fff4f4;
   background: #fff4f4;
+}
+#zyhPageOrder .page_count {
+  height: 80px;
+  position: relative;
+}
+#zyhPageOrder .page_counts {
+  float: right;
+  position: absolute;
+  right: 20px;
+  top: 25px;
+}
+#zyhPageOrder .page_counts .prev,
+#zyhPageOrder .page_counts .next {
+  font-size: 10px;
+}
+#zyhPageOrder .page_counts div {
+  background: #fff;
+  border: 1px solid #e6e6e6;
+  border-radius: 2px;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  border: 1px solid #e6e6e6;
+  float: left;
+  cursor: pointer;
+  color: #333;
+  margin-right: 10px;
+}
+#zyhPageOrder .pagen_active {
+  color: #fff !important;
+  background: #d93740 !important;
 }
 #zyhPageAd .container {
   padding: 0;
@@ -671,6 +706,8 @@ body {
   width: 372px;
   padding: 0;
   margin: 0;
+  height:40px;
+  line-height:40px;
 }
 #zyhPubAd .btn-block {
   width: 484px;
@@ -745,6 +782,7 @@ body {
 }
 #zyhPubAd input[type="text"], #zyhPubAd input[type="tel"]  {
   width:300px !important;
+  height:40px;
 }
 #zyhPubAd .input-group-addon {
   width:100px;
@@ -769,342 +807,811 @@ body {
 #zyhPubAd .now_publish {
   margin-left: 288px;
 }
-#zyhPubAd #form-group-amount .help-block,
-#zyhPubAd #form-group-payment_window_minutes .help-block,
-#zyhPubAd #form-group-min_amount .help-block,
-#zyhPubAd #form-group-max_amount .help-block,
-#zyhPubAd #form-group-price .help-block,
-#zyhPubAd #form-group-transaction_price_btc .help-block,
-#zyhPubAd #form-group-transaction_price_eth .help-block,
-#zyhPubAd #form-group-transaction_price_usdt .help-block
+#zyhPubAd #form-group-amount .help-block,#zyhPubAd #form-group-payment_window_minutes .help-block,#zyhPubAd #form-group-min_amount .help-block,#zyhPubAd #form-group-max_amount .help-block,#zyhPubAd #form-group-price .help-block,#zyhPubAd #form-group-transaction_price_btc .help-block,#zyhPubAd #form-group-transaction_price_eth .help-block,#zyhPubAd #form-group-transaction_price_usdt .help-block
 {
   margin-top:6px;
   margin-bottom:10px;
 }
-#zyhPubAd #form-group-amount,
-#zyhPubAd #form-group-payment_window_minutes,
-#zyhPubAd #form-group-min_amount,
-#zyhPubAd #form-group-max_amount,
-#zyhPubAd #form-group-price,
-#zyhPubAd #form-group-transaction_price_btc,
-#zyhPubAd #form-group-transaction_price_eth,
-#zyhPubAd #form-group-transaction_price_usdt
+#zyhPubAd #form-group-amount,#zyhPubAd #form-group-payment_window_minutes,#zyhPubAd #form-group-min_amount,#zyhPubAd #form-group-max_amount,#zyhPubAd #form-group-price,#zyhPubAd #form-group-transaction_price_btc,#zyhPubAd #form-group-transaction_price_eth,#zyhPubAd #form-group-transaction_price_usdt
 {
   margin-bottom:0;
 }
 #zyhPubAd .form-group-publish {
   margin-top:40px;
 }
-
-@media (max-width: 768px) {
-  .nav-list {
-    display: none; } }
-/*首页banner图样式*/
-.banner {
+#zyhSellList,
+#zyhBuyList {
   width: 100%;
-  height: 420px;
-  position: relative; }
-.banner .carousel {
-    width: 100%;
-    height: 100%; }
-.banner .carousel .carousel-inner {
-      width: 100%;
-      height: 420px; }
-.banner .carousel .carousel-inner .item {
-        width: 100%;
-        height: 420px; }
-.banner .carousel .carousel-inner .item img {
-          width: 100%;
-          height: 420px; }
-.banner .carousel .icon {
-      width: 50px;
-      height: 50px;
-      font-size: 30px;
-      display: block;
-      border: 2px solid #fff;
-      padding: 10px;
-      border-radius: 50%;
-      font-weight: 100;
-      line-height: 1;
-      color: #fff;
-      position: absolute; }
-.banner .carousel .icon.left {
-        left: 20%;
-        top: 46%; }
-.banner .carousel .icon.right {
-        right: 20%;
-        top: 46%; }
-/*首页买卖安全内容*/
-.content {
-  width: 100%;
-  background: #f0f0f0;
-  padding-bottom: 60px; }
-.content .row .col-md-12 h3 {
-    text-align: center;
-    margin: 45px 0 20px;
-    color: #727272; }
-.content .row .col-md-12 p {
-    color: #727272;
-    text-align: center;
-    margin-bottom: 40px; }
-.content .row .col-md-12 p a {
-      color: #D93740; }
-.content .row .col-md-3 .trade-list {
-    width: 100%;
-    height: 310px;
-    transition: all .3s ease-out;
-    margin-bottom: 30px; }
-.content .row .col-md-3 .trade-list:hover {
-      box-shadow: 0px 0px 5px #cf2731; }
-.content .row .col-md-3 .trade-list .profile {
-      width: 100%;
-      height: 140px;
-      background: #303030;
-      padding: 15px 0 0; }
-.content .row .col-md-3 .trade-list .profile .user {
-        width: 50px;
-        height: 50px;
-        position: relative;
-        margin: 0px auto 20px; }
-.content .row .col-md-3 .trade-list .profile .user img {
-          width: 100%;
-          height: 100%;
-          border-radius: 50%; }
-.content .row .col-md-3 .trade-list .profile .user .user-state {
-          display: block;
-          height: 11px;
-          width: 11px;
-          border-radius: 11px;
-          border: 1px solid #fff;
-          background: #c9d2dc;
-          position: absolute;
-          right: 0;
-          bottom: 0; }
-.content .row .col-md-3 .trade-list .profile table {
-        width: 100%;
-        padding: 0 50px; }
-.content .row .col-md-3 .trade-list .profile table td {
-          color: #fff;
-          text-align: center; }
-.content .row .col-md-3 .trade-list .caption {
-      padding: 9px;
-      color: #727272;
-      background: #fff;
-      text-align: center; }
-.content .row .col-md-3 .trade-list .caption h3 {
-        margin: 0;
-        font-size: 16px;
-        padding: 12px 22px;
-        border-bottom: solid 2px #ddd;
-        display: inline-block;
-        margin-bottom: 11px; }
-.content .row .col-md-3 .trade-list .caption p {
-        margin: 0;
-        color: #777777;
-        font-size: 12px; }
-.content .row .col-md-3 .trade-list .caption .btn {
-        margin-top: 11px; }
-.content .row .col-md-3 .trade-list .caption .btn.btn-sm {
-          padding: 5px 10px;
-          font-size: 12px;
-          line-height: 1.5;
-          border-radius: 3px; }
-.content .row .col-md-3 .trade-list .caption .btn.btn-primary {
-          color: #fff;
-          background-color: #D93740;
-          border-color: #cf2731; }
-/*首页规范信息*/
-.site-info {
-  background-color: #fff;
-  padding: 35px 0;
-  margin: 20px 0;
-  width: 100%;
-  overflow: hidden; }
-.site-info .site-item {
-    width: 25%;
-    float: left;
-    text-align: center;
-    padding: 0 2px; }
-.site-info .site-item img {
-      width: 27px;
-      height: 28px; }
-.site-info .site-item h3 {
-      font-size: 24px;
-      margin-top: 22px;
-      margin-bottom: 11px; }
-.site-info .site-item p {
-      margin: 0 0 11px;
-      padding: 0 30px; }
-
-/*用户基本信息页面样式*/
-.content-usercenter {
-  width: 100%; }
-.content-usercenter .col-md-2 .panel-body {
-  padding: 0; }
-.content-usercenter .col-md-2 .panel-body a {
-  width: 100%;
-  display: block;
-  padding: 15px 0 15px 15px;
-  color: #D93740; }
-.content-usercenter .col-md-2 .panel-body a:hover {
-  background: #ddd; }
-.content-usercenter .col-md-3 .avatar {
-  width: 50px;
+  margin-top: 30px;
+}
+#zyhSellList ul,
+#zyhBuyList ul {
+  padding: 0;
+  margin: 0;
+}
+#zyhSellList .container,
+#zyhBuyList .container {
+  width: 1140px;
+  color: #333;
+}
+#zyhSellList .shop_list_search,
+#zyhBuyList .shop_list_search {
+  height: 36px;
+  margin-bottom: 20px;
+}
+#zyhSellList .search_btn,
+#zyhBuyList .search_btn {
+  float: right;
+  width: 80px;
+  height: 36px;
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
+}
+#zyhSellList .filter_select,
+#zyhBuyList .filter_select {
+  width: 160px;
+  height: 36px;
+  text-align: left;
+  text-indent: 10px;
+  line-height: 36px;
+  float: right;
+  background: #fff;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  border: 1px solid #e6e6e6;
+}
+#zyhSellList .filter_select .form-control,
+#zyhBuyList .filter_select .form-control {
+  border: none;
+  -webkit-border-radius: none;
+  -moz-border-radius: none;
+  -ms-border-radius: none;
+  -o-border-radius: none;
+  border-radius: none;
+}
+#zyhSellList .main_block_left,
+#zyhBuyList .main_block_left {
+  width: 90px;
+  height: 1030px;
+  float: left;
+  background: #fff;
+}
+#zyhSellList .main_block_left .coin_type,
+#zyhBuyList .main_block_left .coin_type {
+  background: #fff4f4;
   height: 50px;
-  border-radius: 50%;
-  position: relative; }
-.content-usercenter .col-md-3 .avatar img {
+  line-height: 50px;
+  text-indent: 20px;
+  cursor: pointer;
+}
+#zyhSellList .main_block_right,
+#zyhBuyList .main_block_right {
+  width: 1000px;
+  float: right;
+  background: #fff;
+  height: 1030px;
+}
+#zyhSellList .table_header li,
+#zyhBuyList .table_header li {
+  float: left;
+  height: 50px;
+  line-height: 50px;
+  text-align: left;
+}
+#zyhSellList .table_header .shoplist_merchants,
+#zyhBuyList .table_header .shoplist_merchants {
+  width: 83px;
+  text-indent: 30px;
+}
+#zyhSellList .table_header .shoplist_credit,
+#zyhBuyList .table_header .shoplist_credit {
+  width: 267px;
+}
+#zyhSellList .table_header .shoplist_balance,
+#zyhBuyList .table_header .shoplist_balance {
+  width: 146px;
+}
+#zyhSellList .table_header .shoplist_limit,
+#zyhBuyList .table_header .shoplist_limit {
+  width: 230px;
+}
+#zyhSellList .table_header .shoplist_price,
+#zyhBuyList .table_header .shoplist_price {
+  width: 204px;
+}
+#zyhSellList .table_header .shoplist_operate,
+#zyhBuyList .table_header .shoplist_operate {
+  width: 68px;
+}
+#zyhSellList .merchant,
+#zyhBuyList .merchant {
+  height: 90px;
+}
+#zyhSellList .merchant li,
+#zyhBuyList .merchant li {
+  float: left;
+  height: 100%;
+  line-height: 90px;
+}
+#zyhSellList .merchant .merchant_avatar,
+#zyhBuyList .merchant .merchant_avatar {
+  width: 70px;
+}
+#zyhSellList .merchant .merchant_avatar img,
+#zyhBuyList .merchant .merchant_avatar img {
+  width: 50px;
+  vertical-align: middle;
+  margin-left: 20px;
+  display: inline-block;
+  cursor: pointer;
+}
+#zyhSellList .merchant .merchant_profile,
+#zyhBuyList .merchant .merchant_profile {
+  width: 277px;
+  padding-left: 12px;
+}
+#zyhSellList .merchant .merchat_name,
+#zyhBuyList .merchant .merchat_name {
+  height: 22px;
+  line-height: 22px;
+  font-size: 16px;
+  margin-top: 20px;
+  color: #d93740;
+}
+#zyhSellList .merchant .merchat_data,
+#zyhBuyList .merchant .merchat_data {
+  height: 17px;
+  line-height: 17px;
+  font-size: 12px;
+  margin-top: 10px;
+  color: #aaa;
+}
+#zyhSellList .merchant .merchant_balance,
+#zyhBuyList .merchant .merchant_balance {
+  width: 146px;
+}
+#zyhSellList .merchant .merchant_balance img,
+#zyhBuyList .merchant .merchant_balance img {
+  width: 20px;
+  margin-right: 6px;
+  margin-left: 0;
+}
+#zyhSellList .merchant .merchant_counts,
+#zyhBuyList .merchant .merchant_counts {
+  width: 230px;
+}
+#zyhSellList .merchant .merchant_price,
+#zyhBuyList .merchant .merchant_price {
+  padding-left: 4px;
+  width: 200px;
+}
+#zyhSellList .merchant .merchant_price .line1,
+#zyhBuyList .merchant .merchant_price .line1 {
+  height: 25px;
+  line-height: 25px;
+  font-size: 18px;
+  color: #d93740;
+  margin-top: 20px;
+}
+#zyhSellList .merchant .merchant_price .line2,
+#zyhBuyList .merchant .merchant_price .line2 {
+  height: 20px;
+  line-height: 20px;
+  font-size: 14px;
+  color: #aaa;
+}
+#zyhSellList .merchant .merchant_ope,
+#zyhBuyList .merchant .merchant_ope {
+  width: 60px;
+}
+#zyhSellList .merchant .merchant_ope button,
+#zyhBuyList .merchant .merchant_ope button {
+  width: 80px;
+  height: 36px;
+  position: relative;
+  left: -15px;
+  background: #27c1c3;
+  border-color: #27c1c3;
+  border-radius: 2px;
+}
+#zyhSellList .merchant:hover,
+#zyhBuyList .merchant:hover {
+  background: #fff4f4;
+}
+#zyhSellList .merchant:hover .btn-primary,
+#zyhBuyList .merchant:hover .btn-primary {
+  background: #039497;
+}
+#zyhBuyList .merchant_ope button {
+  border-color: #d93740 !important;
+  background: #d93740 !important;
+}
+#zyhBuyList .merchant:hover .btn-primary {
+  background: #b20610 !important;
+}
+#zyhSell hr,
+#zyhBuy hr {
+  margin-top: 20px;
+  margin-bottom: 0;
+  height: 1px;
+  border: none;
+}
+#zyhSell .container,
+#zyhBuy .container {
+  width: 1140px;
+  height: 803px;
+  position: relative;
+  padding: 0;
+  margin-left: auto;
+  margin-right: auto;
+  color: #333;
+}
+#zyhSell .container .label_price,
+#zyhBuy .container .label_price,
+#zyhSell .container .label_content_price,
+#zyhBuy .container .label_content_price {
+  height: 28px;
+  line-height: 28px;
+  float: left;
+}
+#zyhSell .sell_contents,
+#zyhBuy .sell_contents {
+  width: 900px;
+  height: 803px;
+  background: #fff;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+#zyhSell .sell_leave_messages,
+#zyhBuy .sell_leave_messages {
+  width: 220px;
+  height: 803px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  background: #fff;
+}
+#zyhSell .sell_message_header,
+#zyhBuy .sell_message_header {
+  height: 50px;
+  line-height: 50px;
+  text-indent: 20px;
+  border-bottom: 1px solid #e6e6e6;
+}
+#zyhSell .sell_message_header img,
+#zyhBuy .sell_message_header img {
+  margin-right: 10px;
+}
+#zyhSell .sell_message_texts,
+#zyhBuy .sell_message_texts {
+  padding-left: 20px;
+  padding-right: 18px;
+  padding-top: 14px;
+}
+#zyhSell .sell_content_main,
+#zyhBuy .sell_content_main {
+  width: 100%;
+  height: 120px;
+  border-bottom: 1px solid #e6e6e6;
+  position: relative;
+}
+#zyhSell .seller_avatar,
+#zyhBuy .seller_avatar {
+  width: 75px;
+  height: 75px;
+  position: relative;
+  top: 20px;
+}
+#zyhSell .seller_avatar img,
+#zyhBuy .seller_avatar img {
+  width: 100%;
+}
+#zyhSell .seller_name,
+#zyhBuy .seller_name {
+  width: 100px;
+  position: absolute;
+  height: 28px;
+  color: #d93740;
+  font-size: 20px;
+  line-height: 28px;
+  left: 95px;
+  top: 33px;
+}
+#zyhSell .seller_amount,
+#zyhBuy .seller_amount {
+  position: absolute;
+  right: 0;
+  width: 180px;
+  height: 17px;
+  line-height: 17px;
+  color: #a0a0a0;
+  font-size: 12px;
+  top: 20px;
+  text-align: right;
+}
+#zyhSell .seller_credit,
+#zyhBuy .seller_credit {
+  height: 44px;
+  width: 234px;
+  position: absolute;
+  bottom: 20px;
+  right: -5px;
+  text-align: center;
+}
+#zyhSell .seller_credit .seller_item,
+#zyhBuy .seller_credit .seller_item {
+  width: 56px;
+  float: right;
+  margin-left: 20px;
+}
+#zyhSell .seller_credit .item1,
+#zyhBuy .seller_credit .item1 {
+  font-size: 16px;
+  color: #d93740;
+  font-weight: 700;
+  height: 22px;
+  line-height: 22px;
+}
+#zyhSell .seller_credit .item2,
+#zyhBuy .seller_credit .item2 {
+  font-size: 14px;
+  font-weight: 500;
+  height: 20px;
+  line-height: 20px;
+  margin-top: 2px;
+}
+#zyhSell .seller_status,
+#zyhBuy .seller_status {
+  height: 24px;
+  width: 120px;
+  position: absolute;
+  left: 95px;
+  bottom: 20px;
+}
+#zyhSell .seller_status #statusText,
+#zyhBuy .seller_status #statusText {
+  display: block;
+  position: absolute;
   width: 100%;
   height: 100%;
-  border-radius: 50%; }
-.content-usercenter .col-md-3 .avatar .avatar-edit {
+  line-height: 29px;
+  z-index: 100;
+  text-align: center;
+  font-size: 12px;
+}
+#zyhSell .seller_status .tool_tip,
+#zyhBuy .seller_status .tool_tip {
   position: absolute;
+  width: 90px;
+  top: -110%;
+  left: 4px;
+  height: 29px;
+  display: none;
+}
+#zyhSell .seller_status .tool_tip img,
+#zyhBuy .seller_status .tool_tip img {
+  position: absolute;
+  top: 0;
   left: 0;
+  width: 100%;
+}
+#zyhSell .seller_status > div,
+#zyhBuy .seller_status > div {
+  height: 24px;
+  width: 24px;
+  float: left;
+  margin-right: 10px;
+}
+#zyhSell .seller_status img,
+#zyhBuy .seller_status img {
+  width: 100%;
+}
+#zyhSell .notice,
+#zyhBuy .notice {
+  margin-top: 20px;
+}
+#zyhSell .notice p,
+#zyhBuy .notice p {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  color: #aaa;
+  font-size: 14px;
+  line-height: 1.5;
+}
+#zyhSell .seller_forms,
+#zyhBuy .seller_forms {
+  padding-top: 20px;
+}
+#zyhSell .seller_forms .seller_limit,
+#zyhBuy .seller_forms .seller_limit {
+  margin-top: 8px;
+  height: 20px;
+  line-height: 20px;
+  font-size: 14px;
+  color: #333;
+}
+#zyhSell .seller_forms .seller_limit > div,
+#zyhBuy .seller_forms .seller_limit > div {
+  display: inline-block;
+}
+#zyhSell .seller_forms .seller_type,
+#zyhBuy .seller_forms .seller_type {
+  height: 36px;
+  line-height: 36px;
+}
+#zyhSell .seller_forms .seller_type select,
+#zyhBuy .seller_forms .seller_type select {
+  padding-left: 8px;
+}
+#zyhSell .seller_forms .seller_type >div,
+#zyhBuy .seller_forms .seller_type >div {
+  display: inline-block;
+}
+#zyhSell .seller_forms .seller_type .label_content_type,
+#zyhBuy .seller_forms .seller_type .label_content_type {
+  height: 36px;
+  line-height: 36px;
+}
+#zyhSell .seller_forms .seller_type .form-control,
+#zyhBuy .seller_forms .seller_type .form-control {
+  height: 36px;
+}
+#zyhSell .seller_forms .seller_price,
+#zyhBuy .seller_forms .seller_price {
+  height: 28px;
+  line-height: 28px;
+  margin-top: 20px;
+}
+#zyhSell .seller_forms .seller_price > div,
+#zyhBuy .seller_forms .seller_price > div {
+  display: inline-block;
+}
+#zyhSell .seller_forms .seller_price .label_content_price,
+#zyhBuy .seller_forms .seller_price .label_content_price {
+  font-size: 20px;
+  color: #d93740;
+}
+#zyhSell .seller_forms .label_content_counts,
+#zyhBuy .seller_forms .label_content_counts {
+  color: #d93740;
+}
+#zyhSell .seller_forms .seller_price2,
+#zyhBuy .seller_forms .seller_price2 {
+  margin-top: 0;
+}
+#zyhSell .seller_forms .labels,
+#zyhBuy .seller_forms .labels {
+  width: 75px;
+  text-align: right;
+  margin-right: 20px;
+  float: left;
+}
+#zyhSell .seller_forms .seller_counts,
+#zyhBuy .seller_forms .seller_counts,
+#zyhSell .seller_forms .seller_limit_time,
+#zyhBuy .seller_forms .seller_limit_time {
+  margin-top: 10px;
+}
+#zyhSell .seller_forms .seller_counts > div,
+#zyhBuy .seller_forms .seller_counts > div,
+#zyhSell .seller_forms .seller_limit_time > div,
+#zyhBuy .seller_forms .seller_limit_time > div {
+  display: inline-block;
+}
+#zyhSell .seller_forms .sell_transform,
+#zyhBuy .seller_forms .sell_transform {
+  height: 40px;
+  margin-top: 26px;
+}
+#zyhSell .seller_forms .sell_transform > div,
+#zyhBuy .seller_forms .sell_transform > div {
+  float: left;
+}
+#zyhSell .seller_forms .sell_transform .convert,
+#zyhBuy .seller_forms .sell_transform .convert {
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  width: 58px;
+}
+#zyhSell .seller_forms .sell_transform input,
+#zyhBuy .seller_forms .sell_transform input {
+  width: 320px;
+  height: 40px;
+}
+#zyhSell .seller_forms .sell_transform span,
+#zyhBuy .seller_forms .sell_transform span {
+  width: 80px;
+  height: 38px;
+  line-height: 38px;
+  padding: 0;
+}
+#zyhSell .seller_forms .sell_total,
+#zyhBuy .seller_forms .sell_total {
+  margin-top: 10px;
+  height: 28px;
+  line-height: 28px;
+}
+#zyhSell .seller_forms .sell_total span,
+#zyhBuy .seller_forms .sell_total span {
+  display: inline-block;
+  float: right;
+  height: 28px;
+  line-height: 28px;
+}
+#zyhSell .seller_forms .sell_total .con1,
+#zyhBuy .seller_forms .sell_total .con1 {
+  font-size: 12px;
+  color: #ccc;
+  margin-right: 10px;
+}
+#zyhSell .seller_forms .sell_total .con2,
+#zyhBuy .seller_forms .sell_total .con2 {
+  font-size: 14px;
+  color: #333;
+  margin-right: 10px;
+}
+#zyhSell .seller_forms .sell_total .con3,
+#zyhBuy .seller_forms .sell_total .con3 {
+  color: #d93740;
+  font-size: 20px;
+}
+#zyhSell .seller_forms .submit,
+#zyhBuy .seller_forms .submit {
+  margin-top: 20px;
+}
+#zyhSell .seller_forms .btn-submit,
+#zyhBuy .seller_forms .btn-submit {
+  width: 860px;
+  height: 40px;
+  background: #27c1c3;
+  border-radius: 2px;
+  color: #fff;
+}
+#zyhBuy .btn-submit {
+  background: #d93740 !important;
+}
+#zyhBuy .seller_forms .seller_price {
+  margin-top: 2px;
+}
+#zyhBuy .seller_type {
+  margin-top: 12px;
+}
+#zyhBuy .seller_type select {
+  padding-left: 8px;
+}
+.order_in_progress {
+  width: 1140px;
+  padding: 0;
+  margin-left: auto;
+  margin-right: auto;
+  color: #333;
+  font-size: 14px;
+}
+.order_in_progress .progress_header {
+  width: 1140px;
+  height: 70px;
+  background: #fff;
+  border-bottom: 1px solid #e6e6e6;
+}
+.order_in_progress .progress_header #time {
+  color: #10b60e;
+  margin: 0 10px;
+}
+.order_in_progress .progress_header >div {
+  width: auto;
+  display: inline-block;
+  height: 100%;
+  line-height: 69px;
+  float: left;
+}
+.order_in_progress .progress_header .title {
+  font-size: 20px;
+  color: #d93740;
+  padding-left: 20px;
+  margin-right: 20px;
+}
+.order_in_progress .order_detail {
+  height: 140px;
+  background: #fff;
+  width: 100%;
+  padding: 20px;
+}
+.order_in_progress .order_detail_header {
+  width: 100%;
+  border-bottom: 1px solid #e6e6e6;
+  height: 30px;
+}
+.order_in_progress .order_detail_header img {
+  width: 14px;
+  margin-right: 10px;
+}
+.order_in_progress .order_detail_content {
+  width: 100%;
+  height: 70px;
+}
+.order_in_progress .order_detail_content .item {
+  font-size: 14px;
+  display: inline-block;
+  height: 20px;
+  line-height: 20px;
+  margin-right: 20px;
+  margin-top: 10px;
+}
+.order_in_progress .order_detail_content .item_label {
+  color: #aaa;
+  margin-right: 10px;
+}
+.order_in_progress .order_bottom {
+  width: 100%;
+  margin-top: 10px;
+  background: #fff;
+  height: 680px;
+  position: relative;
+}
+.order_in_progress .information {
+  height: 100%;
+  width: 390px;
+  border-left: 10px solid #f0f0f0;
+  position: absolute;
   top: 0;
   right: 0;
-  bottom: 0;
-  border-radius: 50px;
-  overflow: hidden; }
-.content-usercenter .col-md-3 .avatar .avatar-edit span {
+  padding: 20px;
+}
+.order_in_progress .information .trade_notice {
+  margin-top: -10px;
+}
+.order_in_progress .information .trade_hr {
+  margin-top: 80px;
+}
+.order_in_progress .information .trade_notice_head {
+  height: 30px;
+}
+.order_in_progress .information .trade_notice_head img {
+  margin-right: 10px;
+  width: 18px;
+}
+.order_in_progress .information .trade_notice_text p {
+  margin: 0;
   font-size: 12px;
-  text-align: center;
-  width: 100%;
-  position: absolute;
-  bottom: 0;
-  z-index: 3;
-  background-color: rgba(0, 0, 0, 0.5);
-  color: #fff;
-  opacity: 1; }
-.content-usercenter .col-md-3 .avatar .avatar-edit input {
-  cursor: pointer;
-  opacity: 0;
-  width: 100px;
-  height: 100px;
-  position: absolute;
-  left: -10px;
-  bottom: 0;
-  z-index: 5; }
-.content-usercenter .col-md-3 .avatar .avatar-edit input:hover {
-  opacity: 1; }
-.content-usercenter .col-md-6 .username {
-  position: relative;
-  top: 15px; }
-
-/*身份验证页面*/
-.content-authentication{
-  width: 100%; }
-.content-authentication .col-md-2 .panel-body {
-  padding: 0; }
-.content-authentication .col-md-2 .panel-body a {
-  width: 100%;
-  display: block;
-  padding: 15px 0 15px 15px;
-  color: #D93740; }
-.content-authentication .col-md-2 .panel-body a:hover {
-  background: #ddd; }
-.content-authentication .col-md-10 .panel-body .id-card {
-  color: #D93740;
-  font-size: 14px; }
-.content-authentication .col-md-10 .panel-body .id-card .glyphicon-user {
-  position: relative;
-  top: 2px;
-  margin: 0 10px 40px 0; }
-.content-authentication .col-md-10 .panel-body .col-md-6 label {
-  font-size: 14px;
-  color: #AAAAAA; }
-.content-authentication .col-md-10 .panel-body .col-md-6 select {
-  width: 100%;
-  height: 36px;
-  text-indent: 10px; }
-.content-authentication .col-md-10 .panel-body .col-md-6 input {
-  width: 100%;
-  font-size: 14px;
-  color: #AAAAAA;
-  text-indent: 10px; }
-.content-authentication .col-md-10 .panel-body .col-md-6 button {
-  width: 100%;
-  background: #D93740;
-  color: #fff; }
-.content-authentication .col-md-10 .tip {
-  padding: 0 0 0 20px; }
-.content-authentication .col-md-10 .tip h3 {
-  font-size: 14px;
-  color: #AAAAAA; }
-.content-authentication .col-md-10 .tip p {
-  font-size: 14px;
-  color: #AAAAAA; }
-
-/*安全设置页面*/
-.content-security {
-  width: 100%; }
-.content-security .col-md-2 .panel-body {
-  padding: 0; }
-.content-security .col-md-2 .panel-body a {
-  width: 100%;
-  display: block;
-  padding: 15px 0 15px 15px;
-  color: #D93740; }
-.content-security .col-md-2 .panel-body a:hover {
-  background: #ddd; }
-.content-security .col-md-10 .progress {
-  margin-left: 20px; }
-.content-security .col-md-10 .row {
-  margin-bottom: 30px;
-  padding: 40px 0 0;
-  border-top: 1px solid #f0f0f0; }
-.content-security .col-md-10 .row .media {
-  margin-bottom: 30px; }
-.content-security .col-md-10 .row .media .media-object {
-  width: 40px;
-  height: 40px;
-  border-radius: 40px;
-  text-align: center;
-  line-height: 45px;
-  font-size: 22px;
+}
+.order_in_progress .information .information_head {
+  height: 32px;
+  border-bottom: 2px solid #e6e6e6;
+}
+.order_in_progress .information .information_head img {
+  width: 18px;
+  margin-right: 10px;
+}
+.order_in_progress .information .bank {
   padding: 0;
-  display: block; }
-
-/* 账户设置页面*/
-.content-account {
-  width: 100%; }
-.content-account  .col-md-2 .panel-body {
-  padding: 0; }
-.content-account  .col-md-2 .panel-body a {
+  margin-top: 10px;
+}
+.order_in_progress .information .bank li {
+  height: 20px;
+  line-height: 20px;
+  margin-bottom: 10px;
+}
+.order_in_progress .information .bank_label {
+  width: 90px;
+  text-align: left;
+  display: inline-block;
+  color: #aaa;
+}
+.order_in_progress .information .address {
+  margin-top: -10px;
+}
+.order_in_progress .information .address .bank_label {
+  width: 52px;
+}
+.order_in_progress .chat {
+  width: 750px;
+  height: 100%;
+}
+.order_in_progress .chat .chat_title {
+  height: 52px;
+  text-align: center;
+  line-height: 50px;
+  border-bottom: 2px solid #e6e6e6;
+}
+.order_in_progress .chat .chat_content {
   width: 100%;
-  display: block;
-  padding: 15px 0 15px 15px;
-  color: #D93740; }
-.content-account  .col-md-2 .panel-body a:hover {
-  background: #ddd; }
-.content-account  .col-md-10 .panel-body .id-card {
-  color: #D93740;
-  font-size: 14px; }
-.content-account  .col-md-10 .panel-body .id-card .glyphicon-credit-card {
+  height: 498px;
+  border-bottom: 2px solid #e6e6e6;
   position: relative;
-  top: 2px;
-  margin: 0 10px 40px 0; }
-.content-account .col-md-10 .panel-body label {
-  font-size: 14px;
-  color: #AAAAAA; }
-.content-account  .col-md-10 .panel-body .col-md-6 select {
+}
+.order_in_progress .chat .chat_content .system_message_list {
+  width: 440px;
+  position: absolute;
+  left: 160px;
+  top: 40px;
+}
+.order_in_progress .chat .chat_content .system_message {
   width: 100%;
-  height: 36px;
-  text-indent: 10px; }
-.content-account  .col-md-10 .panel-body .col-md-6 input {
+  height: 125px;
+  background: #f0f0f0;
+  border: 1px solid #e6e6e6;
+  margin-bottom: 10px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 2px;
+  padding: 20px;
+  position: relative;
+}
+.order_in_progress .chat .chat_content .system_message .title {
+  font-size: 16px;
+  font-weight: 700;
+}
+.order_in_progress .chat .chat_content .system_message .detail {
+  margin-top: 10px;
+}
+.order_in_progress .chat .chat_content .system_message .date {
+  text-align: right;
+  position: absolute;
+  bottom: 20px;
   width: 100%;
-  font-size: 14px;
-  color: #AAAAAA;
-  text-indent: 10px; }
-.content-account  .col-md-10 .panel-body .col-md-6 button {
+  right: 20px;
+}
+.order_in_progress .chat .chat_input {
   width: 100%;
-  background: #D93740;
-  color: #fff; }
-.content-account  .col-md-10 .tip {
-  padding: 0 0 0 20px; }
-.content-account t .col-md-10 .tip h3 {
-  font-size: 14px;
-  color: #AAAAAA; }
-.content-account  .col-md-10 .tip p {
-  font-size: 14px;
-  color: #AAAAAA; }
-
+  height: 128px;
+  position: relative;
+}
+.order_in_progress .chat .chat_input #file {
+  padding-left: 20px;
+  padding-top: 10px;
+  cursor: pointer;
+  position: relative;
+}
+.order_in_progress .chat .chat_input #file img {
+  width: 20px;
+}
+.order_in_progress .chat .chat_input #upload {
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  width: 50px;
+  height: 16px;
+  z-index: 100;
+  opacity: 0;
+  -moz-opacity: 0;
+  -khtml-opacity: 0;
+  filter: Alpha(opacity = 0);
+}
+.order_in_progress .chat .chat_send {
+  width: 100px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  text-align: center;
+  line-height: 128px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+.order_in_progress .chat .chat_input_panel {
+  width: 650px;
+  height: 100%;
+  border-right: 2px solid #e6e6e6;
+}
+.order_in_progress #userMessage {
+  margin-left: 20px;
+  margin-top: 13px;
+  border: none;
+  width: 620px;
+  height: 80px;
+  outline: none;
+}

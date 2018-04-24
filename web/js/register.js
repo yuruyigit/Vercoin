@@ -50,7 +50,7 @@
     e.preventDefault();
     if(SENDING) return;
     SENDING = 1;
-    var time = 120;
+    var time = 10;
     $(this).addClass("code_sending")
     var renderText = setInterval(function(){
       if(time){
@@ -58,17 +58,17 @@
       }else {
         window.clearInterval(renderText);
         SENDING = 0 ;
-        CODEBTN.text("发送验证码")
+        CODEBTN.text("重新获取验证码").removeClass("code_sending")
       }
     },1000)
   })
   
   
-  
-  SUBMIT.on("click",function(e){
-    e.preventDefault();
-    console.log($("#check").is(':checked'))
-  })
+  //
+  // SUBMIT.on("click",function(e){
+  //   e.preventDefault();
+  //   console.log($("#check").is(':checked'))
+  // })
   
   
   

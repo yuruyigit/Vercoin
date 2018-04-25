@@ -1,26 +1,14 @@
-
 @import "base.css";
-body{
-    background: #f0f0f0;
-}
 
-.clear {
-  clear: both;
-  height: 0;
-  overflow: hidden;
-}
+body{background: #f0f0f0;}
+.clear {clear: both;height: 0;overflow: hidden;}
+.clearfix:before,.clearfix:after {content:"";display:table;}
+.clearfix:after { clear:both; }
+em {font-style: normal;}
+li {list-style: none;}
+hr {background: #e6e6e6;}
+body {background: #f0f0f0;}
 
-.clearfix:after{content:".";display:block;height:0;clear:both;visibility:hidden}
-.clearfix{*+height:1%}
-li {
-  list-style: none;
-}
-hr {
-  background: #e6e6e6;
-}
-body {
-  background: #f0f0f0;
-}
 #zyhPageOrder .container {
   width: 1140px;
   padding: 0;
@@ -85,11 +73,17 @@ body {
   color: #fff;
   border-bottom-right-radius: 2px;
   border-top-right-radius: 2px;
-  border-bottom-left-radius: 0px;
-  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
 }
 #zyhPageOrder .table_header {
   background: #fff;
+}
+#zyhPageOrder .order_table {
+  display:none;
+}
+#zyhPageOrder .order_all {
+  display:block;
 }
 #zyhPageOrder .table_header li {
   background: #fff;
@@ -153,21 +147,28 @@ body {
   background-color: #fff4f4;
   background: #fff4f4;
 }
-#zyhPageOrder .page_count {
+#zyhPageOrder .page_count,
+#zyhPageAd .page_count {
   height: 80px;
   position: relative;
 }
-#zyhPageOrder .page_counts {
+#zyhPageOrder .page_counts,
+#zyhPageAd .page_counts
+{
   float: right;
   position: absolute;
   right: 20px;
   top: 25px;
 }
-#zyhPageOrder .page_counts .prev,
-#zyhPageOrder .page_counts .next {
+#zyhPageOrder .page_counts .prev, #zyhPageOrder .page_counts .next,
+#zyhPageAd .page_counts .prev, #zyhPageAd .page_counts .next
+
+{
   font-size: 10px;
 }
-#zyhPageOrder .page_counts div {
+#zyhPageOrder .page_counts div,
+#zyhPageAd .page_counts div
+{
   background: #fff;
   border: 1px solid #e6e6e6;
   border-radius: 2px;
@@ -175,23 +176,23 @@ body {
   height: 30px;
   line-height: 30px;
   text-align: center;
-  border: 1px solid #e6e6e6;
   float: left;
   cursor: pointer;
   color: #333;
   margin-right: 10px;
 }
-#zyhPageOrder .pagen_active {
+#zyhPageOrder .pagen_active,
+#zyhPageAd .pagen_active
+{
   color: #fff !important;
   background: #d93740 !important;
 }
 #zyhPageAd .container {
-  padding: 0;
+  padding: 0 0 100px 0;
   width: 1140px;
   font-size: 14px;
   clear: both;
   margin-top: 20px;
-  padding-bottom: 100px;
 }
 #zyhPageAd .side {
   width: 140px;
@@ -207,6 +208,9 @@ body {
   height: 40px;
   line-height: 40px;
   text-indent: 20px;
+}
+#zyhPageAd table {
+  margin-bottom:0;
 }
 #zyhPageAd .item .item_list {
   text-indent: 0;
@@ -336,6 +340,13 @@ body {
 #zyhDraw .container .coin_content {
   background: #fff;
   padding-left: 20px;
+  display:none;
+}
+#zyhDraw .container  .coin_content2 {
+  display:block;
+}
+#zyhDraw .container .ver_data {
+  display:block;
 }
 #zyhDraw .container .assets {
   background: #fff;
@@ -418,6 +429,7 @@ body {
 }
 #zyhDraw .container .record {
   margin-top: 20px;
+  padding-bottom:40px;
 }
 #zyhDraw .container .record .title {
   height: 20px;
@@ -426,13 +438,47 @@ body {
 }
 #zyhDraw .container .record_list {
   padding: 0;
+  background: #f6f6f6;
+  border-right:20px solid #fff;
 }
-#zyhDraw .container .record_list .record_active {
-  background: #fff;
-  color: #000;
-  border-top: 4px solid #d93740;
-  line-height: 36px;
+#zyhDraw .records_data {
+  display:none;
 }
+
+#zyhDraw .records_data1 {
+  display:block;
+}
+
+#zyhDraw .record_head {
+  height:50px;
+  line-height:50px;
+  border-bottom: 1px solid  #E6E6E6;
+}
+#zyhDraw .record_head li{
+  float:left;
+}
+#zyhDraw  .empty_data {
+  height:30px;
+  line-height:30px;
+  font-size: 14px;
+  color: #CCCCCC;
+}
+#zyhDraw .record_head .record_time,
+#zyhDraw .record_head .record_type,
+#zyhDraw .record_head .record_num,
+#zyhDraw .record_head .record_des
+{
+  width:68px;
+  text-align:center;
+  margin-right:260px;
+}
+#zyhDraw .record_head .record_type {
+  margin-right:104px;
+}
+#zyhDraw .record_head .record_num {
+  margin-right:128px;
+}
+
 #zyhDraw .container .record_list li {
   display: inline-block;
   width: 100px;
@@ -444,6 +490,15 @@ body {
   float: left;
   cursor: pointer;
 }
+
+#zyhDraw .container .record_list .record_active {
+  background: #fff;
+  color: #000;
+  border-top: 4px solid #d93740;
+  line-height: 36px;
+  border-bottom:none;
+}
+
 #zyhDraw .container #address {
   width: 300px;
   height: 40px;
@@ -452,6 +507,19 @@ body {
 #zyhDraw .container .charge .form-group {
   height: 40px;
 }
+
+#zyhDraw .record_table_tr {
+  height:30px;
+  line-height:30px;
+}
+#zyhDraw .record_table_tr span {
+  display:block;
+  float:left;
+  width:150px;
+}
+#zyhDraw .record_table_tr .record_table_type {margin-left:200px;}
+#zyhDraw .record_table_tr .record_table_count {margin-left:20px;}
+#zyhDraw .record_table_tr .record_table_des {margin-left:50px;}
 #zyhDraw .container .charge label {
   padding: 0;
   margin: 0;
@@ -490,6 +558,7 @@ body {
   border: 1px solid #e6e6e6;
   font-size: 14px;
 }
+
 #zyhLogReg .log_reg_form label {
   width: 25%;
 }
@@ -507,8 +576,19 @@ body {
   background: #e6e6e6;
   margin-bottom: 20px;
 }
+#zyhLogReg .log_reg_form .error_text {
+  height: 20px;
+  position: absolute;
+  width: 400px;
+  top: 38px;
+  font-size: 12px;
+  left: 260px;
+  color: #d93740;
+  display:none;
+}
 #zyhLogReg .log_reg_form .form-group {
   margin-bottom: 20px;
+  position:relative;
 }
 #zyhLogReg .log_reg_form .input_div {
   width: 440px;
@@ -637,6 +717,9 @@ body {
   color: #ccc !important;
 }
 
+#zyhPubAd #form-group-amount-sell{
+  display:none;
+}
 #zyhPubAd #imgshow {
   color: #000;
   margin-left: 10px;
@@ -745,9 +828,7 @@ body {
 #zyhPubAd .container {
   width: 1140px;
   padding: 0;
-  margin: 0;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
 }
 #zyhPubAd .container .row {
   margin: 0;
@@ -839,6 +920,7 @@ body {
 #zyhPubAd .form-group-publish {
   margin-top:40px;
 }
+
 #zyhSellList,
 #zyhBuyList {
   width: 100%;
@@ -848,6 +930,11 @@ body {
 #zyhBuyList ul {
   padding: 0;
   margin: 0;
+}
+#zyhSellList .table_header ,
+#zyhBuyList .table_header
+{
+  border-bottom: 1px solid #e6e6e6;
 }
 #zyhSellList .container,
 #zyhBuyList .container {
@@ -882,7 +969,6 @@ body {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
-  -o-user-select: none;
   user-select: none;
   border: 1px solid #e6e6e6;
 }
@@ -892,7 +978,6 @@ body {
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
   -ms-border-radius: 0;
-  -o-border-radius: 0;
   border-radius: 0;
 }
 #zyhSellList .main_block_left,
@@ -904,7 +989,26 @@ body {
 }
 #zyhSellList .main_block_left .coin_type,
 #zyhBuyList .main_block_left .coin_type {
+  background: #fff;
+  color:#333;
+  width:90px;
+  height:50px;
+  line-height:50px;
+  text-indent:20px;
+  cursor:pointer;
+}
+#zyhSellList .main_block_left .coin_type_active ,
+#zyhBuyList .main_block_left .coin_type_active
+{
   background: #fff4f4;
+  color:#D93740;
+  border-right:4px solid #D93740;
+}
+#zyhBuyList .main_block_right {
+  display:none;
+}
+#zyhBuyList .ver_list {
+  display:block;
 }
 
 @media (max-width: 768px) {
@@ -1418,10 +1522,13 @@ body {
   border-color: #27c1c3;
   border-radius: 2px;
 }
-#zyhSellList .merchant:hover,
-#zyhBuyList .merchant:hover {
+
+#zyhSellList .merchant_o ,
+#zyhBuyList .merchant_o
+{
   background: #fff4f4;
 }
+
 #zyhSellList .merchant:hover .btn-primary,
 #zyhBuyList .merchant:hover .btn-primary {
   background: #039497;
@@ -1727,7 +1834,6 @@ body {
   padding: 0;
   font-size: 14px;
   color: #aaa;
-  font-size: 14px;
   line-height: 1.5;
 }
 #zyhSell .seller_forms,
@@ -1949,6 +2055,7 @@ body {
   height: 28px;
   line-height: 28px;
 }
+
 #zyhSell .seller_forms .sell_total span,
 #zyhBuy .seller_forms .sell_total span {
   display: inline-block;
@@ -1966,6 +2073,11 @@ body {
 #zyhBuy .seller_forms .sell_total .con2 {
   display: block; }
 
+#zyhSell .seller_forms .sell_total .left_asset,
+#zyhBuy  .seller_forms .sell_total .left_asset
+{
+  float:left;
+}
 /* 账户设置页面*/
 .content-account {
   width: 100%;
@@ -2001,7 +2113,8 @@ body {
 .content-account  .col-md-10 .panel-body .id-card .glyphicon-credit-card {
   position: relative;
   top: 2px;
-  margin: 0 10px 40px 0; }
+  margin: 0 10px 40px 0;
+}
 .content-account .col-md-10 .panel-body label {
   font-size: 14px;
   color: #333;
@@ -2153,6 +2266,21 @@ body {
   text-align: left;
   display: inline-block;
   color: #aaa;
+  height:20px;
+  line-height:20px;
+}
+.order_in_progress .information .code {
+  font-size:12px;
+  height:20px;
+  line-height:20px;
+  display: inline-block;
+}
+.order_in_progress .information .copy {
+  margin-left:20px;
+  cursor: pointer;
+}
+.order_in_progress .information .copy img {
+  width:14px;
 }
 .order_in_progress .information .address {
   margin-top: -10px;
@@ -2191,7 +2319,6 @@ body {
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
   -ms-border-radius: 2px;
-  -o-border-radius: 2px;
   border-radius: 2px;
   padding: 20px;
   position: relative;
@@ -2248,7 +2375,6 @@ body {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
-  -o-user-select: none;
   user-select: none;
 }
 .order_in_progress .chat .chat_input_panel {
@@ -2287,6 +2413,137 @@ body {
   color:#FFF;
   background: #D93740;
 }
+.order_in_progress .order_detail_progress1,
+.order_in_progress .order_detail_progress2,
+.order_in_progress .order_detail_progress3
+{
+  width:260px;
+  height:36px;
+  position:absolute;
+  bottom:20px;
+  right:20px;
+}
+.order_in_progress .order_detail_progress1_u .confirm_pass{
+  visibility: hidden;
+}
+.order_in_progress .order_detail_progress3 .btn{
+  width:120px;
+  border-radius: 2px;
+}
+.order_in_progress .order_detail_progress3 .appeal {
+  background: #ccc;
+  border-color: #ccc;
+}
+.order_in_progress .order_detail_progress2 {
+  width:390px;
+}
+.order_in_progress .order_detail_progress2 .radio {
+  width:50px;
+  display: inline-block;
+  margin-right:40px;
+}
+.order_in_progress .order_detail_progress2 .input-radio {
+  width:16px;
+  height:16px;
+  position: relative;
+  top:-2px;
+  margin-right:6px;
+}
+.order_in_progress .progress_unpay_detail {
+  position: relative;
+
+}
+.order_in_progress .progress_unpay_detail .btn {
+  width:120px;
+  float:left;
+  height:36px;
+}
+.order_in_progress .progress_unpay_detail .payed {
+  margin-right:20px;
+}
+.progress_unpay_detail_u {
+  width:260px;
+  position:absolute;
+  right:20px;
+  bottom:20px;
+}
+.order_in_progress .order_detail_progress1 .btn,
+.order_in_progress .order_detail_progress2 .btn_evaluation{
+  width:120px;
+  height:36px;
+  float:left;
+  background: #D93740;
+  border-radius: 2px;
+}
+.order_in_progress .order_detail_progress2 .btn_evaluation_u {
+  border: 1px solid #E6E6E6;
+  background: #fff;
+  color:#333;
+}
+
+.order_in_progress .order_detail_progress2 .btn_evaluation {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.order_in_progress .order_detail_progress1 .confirm_pass {
+  margin-right:20px;
+ }
+.order_in_progress .progress_daifangxing_detail,
+.order_in_progress .progress_over_detail,
+.order_in_progress .progress_appeal_detail
+{
+  position: relative;
+}
+.order_in_progress .modal_appeal .modal-dialog{
+  width:450px;
+  height:300px;
+  background: #fff;
+  border-radius:2px;
+}
+.order_in_progress .modal_appeal .modal_top {
+  height:52px;
+  line-height:52px;
+  text-align:center;
+  background:#D93740;
+  font-size:14px;
+  color:#fff;
+}
+
+.order_in_progress .modal_appeal .modal_body {
+  position:relative;
+  height:248px;
+  width:100%;
+}
+.modal_body_text {
+  padding: 25px 34px 0 34px;
+}
+.order_in_progress .modal_appeal .modal_confirm,
+.order_in_progress .modal_appeal .modal_close {
+    width:100px;
+    height:40px;
+  text-align:center;
+    line-height:20px;
+  background: #D93740;
+  border-radius: 2px;
+  color:#fff;
+  position: absolute;
+  top:148px;
+}
+.order_in_progress .modal_appeal .modal_confirm {
+  left:110px;
+}
+
+.order_in_progress .modal_appeal .modal_close {
+  right:110px;
+  background: #fff;
+  color:#333;
+  border: 1px solid #E6E6E6;
+}
+
+
+
 .content-account  .col-md-10 .tip {
   padding: 0 0 0 20px; }
 .content-account  .col-md-10 .tip h3 {
@@ -2408,6 +2665,5 @@ body {
     color:#333;
   margin-right: 8px;
 }
-/*您信任的人页面样式等同于信任您的人页面样式，只是文件命名不一样*/
-/*您屏蔽的人页面样式等同于信任您的人页面样式，只是文件命名不一样*/
+
 

@@ -10,26 +10,27 @@
 </head>
 <body>
 <div class="container order_in_progress">
-  <!-- 头部1 等待对方付款 -->
-  <div class="progress_header clearfix progress_unpay">
+
+  <!-- 头部3 交易结束 -->
+  <div class="progress_header clearfix progress_over">
     <div class="title">
-      等待对方付款
+      对方已收货
     </div>
     <div class="detail">
-      订单将在托管中保存<span id="time">14分16秒</span>后，买家仍未付款的，系统会自动取消交易。
+      感谢您的本次交易，请对广告主做一下评价。
     </div>
   </div>
-  <!--订单详情 -->
-  <div class="order_detail">
+  <!--头部3 交易结束订单详情 -->
+  <div class="order_detail progress_over_detail">
     <div class="order_detail_header">
       <img src="./images/order.png" alt="">
       订单信息
     </div>
     <div class="order_detail_content">
-     <div class="item">
-       <span class="item_label">订单编号:</span>
-       <span class="item_text">BTC#115462436384474</span>
-     </div>
+      <div class="item">
+        <span class="item_label">订单编号:</span>
+        <span class="item_text">BTC#115462436384474</span>
+      </div>
       <div class="item">
         <span class="item_label">结算类型:</span>
         <span class="item_text">BTC</span>
@@ -48,7 +49,30 @@
         <span class="item_text">0.001630 BTC &nbsp;&nbsp;   ≈1,000  CNY</span>
       </div>
     </div>
+    <div class="order_detail_progress2 clearfix">
+      <div class="radio">
+        <label>
+          <input type="radio" class="input-radio"  name="optionsRadios"
+                 value="option1" checked>好评
+        </label>
+      </div>
+      <div class="radio">
+        <label>
+          <input type="radio" class="input-radio" name="optionsRadios"
+                 value="option2" checked>中评
+        </label>
+      </div>
+      <div class="radio">
+        <label>
+          <input type="radio" class="input-radio" name="optionsRadios"
+                 value="option3" checked>差评
+        </label>
+      </div>
+      <button class="btn btn-danger btn_evaluation">提交</button>
+    </div>
   </div>
+
+
   <div class="order_bottom">
     <div class="chat">
       <div class="chat_title">
@@ -130,15 +154,18 @@
         <li>充值地址</li>
         <li>
           <span class="bank_label">BTC</span>
-          Tomas Jackse
+          <span class="code">1KTuf2KHRH7PkZQayorJS8cJsyBvJcvfCA</span>
+          <span class="copy"><img src="./images/copy.png" alt=""></span>
         </li>
         <li>
-          <span class="bank_label">ETH</span>
-          6225 8802 4142 7831
+          <span class="bank_label">BTC</span>
+          <span class="code">1KTuf2KHRH7PkZQayorJS8cJsyBvJcvfCA</span>
+          <span class="copy"><img src="./images/copy.png" alt=""></span>
         </li>
         <li>
-          <span class="bank_label">USDT</span>
-          浙江省杭州市江干区学院路支行
+          <span class="bank_label">BTC</span>
+          <span class="code">1KTuf2KHRH7PkZQayorJS8cJsyBvJcvfCA</span>
+          <span class="copy"><img src="./images/copy.png" alt=""></span>
         </li>
       </ul>
       <hr>
@@ -163,8 +190,6 @@
   </div>
 
 </div>
-<div style="width:100%;height:100px;background:#000">
-
 </div>
 </body>
 </html>

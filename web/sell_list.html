@@ -24,17 +24,16 @@
     </div>
     <div class="main_block clearfix">
       <div class="main_block_left">
-        <div class="coin_type">
-          VC
-        </div>
+        <div class="coin_type coin_type_active" data-target="ver_list">VER</div>
+        <div class="coin_type" data-target="btc_list">BTC</div>
       </div>
-      <div class="main_block_right">
+      <div class="main_block_right ver_list">
         <ul class="table_header clearfix">
           <li class="shoplist_merchants">商家</li>
           <li class="shoplist_credit">信用</li>
           <li class="shoplist_balance">结算类型</li>
           <li class="shoplist_limit">交易数量</li>
-          <li class="shoplist_price">价格/VC</li>
+          <li class="shoplist_price">价格/VER</li>
           <li class="shoplist_operate">操作</li>
         </ul>
         <ul class="merchant clearfix">
@@ -51,7 +50,7 @@
             <img src="./images/pay_type_3.png" alt="">
           </li>
           <li class="merchant_counts">
-            1,000,000.00VC
+            1,000,000.00VER
           </li>
           <li class="merchant_price">
             <div class="line1">6.95 CNY</div>
@@ -61,7 +60,7 @@
             <button type="button" class="btn btn-primary">出售</button>
           </li>
         </ul>
-        <ul class="merchant clearfix">
+        <ul class="merchant merchant_o clearfix">
           <li class="merchant_avatar">
             <img src="./images/avatar_f_2.png" alt="">
           </li>
@@ -75,7 +74,7 @@
             <img src="./images/pay_type_3.png" alt="">
           </li>
           <li class="merchant_counts">
-            1,000,000.00VC
+            1,000,000.00VER
           </li>
           <li class="merchant_price">
             <div class="line1">6.95 CNY</div>
@@ -99,7 +98,90 @@
             <img src="./images/pay_type_3.png" alt="">
           </li>
           <li class="merchant_counts">
-            1,000,000.00VC
+            1,000,000.00VER
+          </li>
+          <li class="merchant_price">
+            <div class="line1">6.95 CNY</div>
+            <div class="line2">1.0-10,000CNY</div>
+          </li>
+          <li class="merchant_ope">
+            <button type="button" class="btn btn-primary">出售</button>
+          </li>
+        </ul>
+      </div>
+
+      <div class="main_block_right btc_list">
+        <ul class="table_header clearfix">
+          <li class="shoplist_merchants">商家</li>
+          <li class="shoplist_credit">信用</li>
+          <li class="shoplist_balance">结算类型</li>
+          <li class="shoplist_limit">交易数量</li>
+          <li class="shoplist_price">价格/BTC</li>
+          <li class="shoplist_operate">操作</li>
+        </ul>
+        <ul class="merchant clearfix">
+          <li class="merchant_avatar">
+            <img src="./images/avatar_f_2.png" alt="">
+          </li>
+          <li class="merchant_profile">
+            <div class="merchat_name">Lee</div>
+            <div class="merchat_data">交易次数35 信任人数6 好评度88%</div>
+          </li>
+          <li class="merchant_balance">
+            <img src="./images/pay_type_1.png" alt="">
+            <img src="./images/pay_type_2.png" alt="">
+            <img src="./images/pay_type_3.png" alt="">
+          </li>
+          <li class="merchant_counts">
+            1,000,000BTC
+          </li>
+          <li class="merchant_price">
+            <div class="line1">6.95 CNY</div>
+            <div class="line2">1.0-10,000CNY</div>
+          </li>
+          <li class="merchant_ope">
+            <button type="button" class="btn btn-primary">出售</button>
+          </li>
+        </ul>
+        <ul class="merchant merchant_o clearfix ">
+          <li class="merchant_avatar">
+            <img src="./images/avatar_f_2.png" alt="">
+          </li>
+          <li class="merchant_profile">
+            <div class="merchat_name">zhangsan</div>
+            <div class="merchat_data">交易次数35 信任人数6 好评度88%</div>
+          </li>
+          <li class="merchant_balance">
+            <img src="./images/pay_type_1.png" alt="">
+            <img src="./images/pay_type_2.png" alt="">
+            <img src="./images/pay_type_3.png" alt="">
+          </li>
+          <li class="merchant_counts">
+            1,000,000BTC
+          </li>
+          <li class="merchant_price">
+            <div class="line1">6.95 CNY</div>
+            <div class="line2">1.0-10,000CNY</div>
+          </li>
+          <li class="merchant_ope">
+            <button type="button" class="btn btn-primary">出售</button>
+          </li>
+        </ul>
+        <ul class="merchant clearfix">
+          <li class="merchant_avatar">
+            <img src="./images/avatar_f_2.png" alt="">
+          </li>
+          <li class="merchant_profile">
+            <div class="merchat_name">Song</div>
+            <div class="merchat_data">交易次数35 信任人数6 好评度88%</div>
+          </li>
+          <li class="merchant_balance">
+            <img src="./images/pay_type_1.png" alt="">
+            <img src="./images/pay_type_2.png" alt="">
+            <img src="./images/pay_type_3.png" alt="">
+          </li>
+          <li class="merchant_counts">
+            1,000,000BTC
           </li>
           <li class="merchant_price">
             <div class="line1">6.95 CNY</div>
@@ -113,5 +195,17 @@
     </div>
   </div>
 </div>
+<script src="../lib/js/jquery.min.js"></script>
+<script>
+  $(function(){
+    $(".coin_type").on("click",function(){
+      $(".coin_type").removeClass("coin_type_active");
+      $(this).addClass("coin_type_active");
+      $(".main_block_right").hide()
+      $("."+ $(this).attr("data-target") ).show()
+    })
+
+  })
+</script>
 </body>
 </html>

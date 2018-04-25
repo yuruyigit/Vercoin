@@ -19,6 +19,7 @@
   /***
    * @send the code
    */
+
   CODEBTN.on("click",function(e){
     //$post("/sendSms", {"cell":cell, "countriesId", countriesId})
     e.preventDefault();
@@ -54,6 +55,7 @@
 
 
   });
+
   
   
 

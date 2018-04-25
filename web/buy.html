@@ -95,11 +95,11 @@
             结算类型
           </div>
           <div class="label_content_type">
-            <select class="form-control">
-              <option>现金支付</option>
-              <option>ETC</option>
-              <option>USDT</option>
-              <option>BTC</option>
+            <select class="form-control" id="walletTypeSelect">
+              <option value="0">现金支付</option>
+              <option value="1">ETH</option>
+              <option value="2">USDT</option>
+              <option value="3">BTC</option>
             </select>
           </div>
         </div>
@@ -139,6 +139,10 @@
           </div>
         </div>
         <div class="sell_total clearfix">
+          <span class="left_asset">
+              <em id="walletType"></em>
+              钱包可用余额: 0.00000000
+          </span>
           <span class="con3">100 BTC</span>
           <span class="con2">您应获得</span>
           <span class="con1">输入数量得出</span>
@@ -195,6 +199,11 @@
       show().find("#statusText").text(data[index1][index2]);
     }).on("mouseout",'div',function(){
       $(".tool_tip").hide()
+    })
+    $("#walletTypeSelect").on("change",function(){
+      $("#walletType").text(
+        ['','ETH','USDT','BTC'][parseInt($(this).val())]
+      )
     })
   })
 </script>

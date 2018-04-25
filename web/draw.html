@@ -12,79 +12,75 @@
 <div id="zyhDraw">
   <div class="container">
     <div class="coin_list clearfix">
-      <div class="coin coin_active">VC</div>
-      <div class="coin coin_normal">BTC</div>
-      <div class="coin coin_normal">ETC</div>
-      <div class="coin coin_normal">USDT</div>
+      <div class="coin coin_active" data-target="ver_data">VER</div>
+      <div class="coin " data-target="btc_data">BTC</div>
+      <div class="coin " data-target="etc_data">ETC</div>
+      <div class="coin " data-target="usdt_data">USDT</div>
     </div>
-    <div class="coin_content">
+    <div class="coin_content ver_data">
       <div class="assets">
         <div class="left">钱包可用余额：
           <span id="coinAssets">1,0000,000</span>
-          <span class="coin_type">VC</span>
+          <span class="coin_type">VER</span>
         </div>
         <ul class="assets_list">
           <li>可用资产: 1,000,000
-            <span class="coin_type">VC</span>
+            <span class="coin_type">VER</span>
           </li>
           <li>冻结资产: 0
-            <span class="coin_type">VC</span>
+            <span class="coin_type">VER</span>
           </li>
           <li>总资产: 1,000,000
-            <span class="coin_type">VC</span>
+            <span class="coin_type">VER</span>
           </li>
         </ul>
       </div>
       <div class="mline"></div>
       <div class="operate clearfix">
         <div class="in">
-          转入 <span class="coin_type">VC</span>
+          转入 <span class="coin_type">VER</span>
         </div>
         <div class="out operate_active">
-          转出 <span class="coin_type">VC</span>
+          转出 <span class="coin_type">VER</span>
         </div>
       </div>
 
       <form class="form-horizontal">
         <div class="form-group">
-          <label for="inputEmail3" class="col-sm-2 control-label">转出地址</label>
+          <label for="inputEmail31" class="col-sm-2 control-label">转出地址</label>
           <div class="col-sm-10">
-            <input type="text" class="form-control" id="inputEmail3"
+            <input type="text" class="form-control" id="inputEmail31"
                    placeholder="请输入转出地址">
           </div>
         </div>
         <div class="form-group">
-          <label for="inputPassword3" class="col-sm-2 control-label">
+          <label for="inputPassword31" class="col-sm-2 control-label">
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;数量</label>
           <div class="col-sm-10">
-            <input type="text" class="form-control" id="inputPassword3"
-                   placeholder="可用1000VC">
+            <input type="text" class="form-control" id="inputPassword31"
+                   placeholder="可用1000VER">
           </div>
         </div>
-
         <div class="form-group">
-          <label for="pass" class="col-sm-2 control-label">资金密码</label>
+          <label for="pass2" class="col-sm-2 control-label">资金密码</label>
           <div class="col-sm-10">
-            <input type="password" class="form-control" id="pass"
+            <input type="password" class="form-control" id="pass2"
                    placeholder="">
           </div>
         </div>
-
         <div class="form-group">
-          <label for="note" class="col-sm-2 control-label">备注</label>
+          <label for="note2" class="col-sm-2 control-label">备注</label>
           <div class="col-sm-10">
-            <input type="text" class="form-control" id="note"
+            <input type="text" class="form-control" id="note2"
                    placeholder="">
           </div>
         </div>
-
         <div class="form-group form_submit">
           <div class="col-sm-offset-2 col-sm-10">
             <button type="submit" class="btn btn-danger">确定</button>
           </div>
         </div>
       </form>
-
       <ul class="notice">
         <li>温馨提示：</li>
         <li>１、请勿向上述地址充值任何非该类货币资产，否则资产将不可找回。</li>
@@ -94,7 +90,288 @@
         <li>５、请务必确认电脑及浏览器安全，防止信息被篡改或泄露。</li>
       </ul>
       <div class="mline"></div>
+      <div class="record">
+        <div class="title">
+          <img src="./images/draw_record.png" alt="">
+          交易记录
+        </div>
+        <ul class="record_list clearfix">
+          <li class="record_active" data-target="records_data1">所有交易</li>
+          <li data-target="records_data2">网络转入</li>
+          <li data-target="records_data3">网络转出</li>
+          <li data-target="records_data4">交易买入</li>
+          <li data-target="records_data5">交易卖出</li>
+          <li data-target="records_data6">平台转入</li>
+          <li data-target="records_data7">平台转出</li>
+        </ul>
+        <ul class="record_head clearfix">
+          <li class="record_time">时间</li>
+          <li class="record_type">类型</li>
+          <li class="record_num">数量</li>
+          <li class="record_des">说明</li>
+        </ul>
+        <div class="records_data records_data1">
+          <ul class="record_table">
+            <li class="record_table_tr clearfix">
+              <span class="record_table_date">2016.11.11 11:11:11</span>
+              <span class="record_table_type">VER</span>
+              <span class="record_table_count">1000</span>
+              <span class="record_table_des">所有交易 </span>
+            </li>
+          </ul>
+          <ul class="record_table">
+            <li class="record_table_tr clearfix">
+              <span class="record_table_date">2016.11.11 11:11:11</span>
+              <span class="record_table_type">VER</span>
+              <span class="record_table_count">1000</span>
+              <span class="record_table_des">no </span>
+            </li>
+          </ul>
+          <ul class="record_table">
+            <li class="record_table_tr clearfix">
+              <span class="record_table_date">2016.11.11 11:11:11</span>
+              <span class="record_table_type">VER</span>
+              <span class="record_table_count">1000</span>
+              <span class="record_table_des">no </span>
+            </li>
+          </ul>
+        </div>
+        <div class="records_data records_data2">
+          <ul class="record_table">
+            <li class="record_table_tr clearfix">
+              <span class="record_table_date">2016.11.11 11:11:11</span>
+              <span class="record_table_type">VER</span>
+              <span class="record_table_count">1000</span>
+              <span class="record_table_des">网络转入 </span>
+            </li>
+          </ul>
+          <ul class="record_table">
+            <li class="record_table_tr clearfix">
+              <span class="record_table_date">2016.11.11 11:11:11</span>
+              <span class="record_table_type">VER</span>
+              <span class="record_table_count">1000</span>
+              <span class="record_table_des">no </span>
+            </li>
+          </ul>
+          <ul class="record_table">
+            <li class="record_table_tr clearfix">
+              <span class="record_table_date">2016.11.11 11:11:11</span>
+              <span class="record_table_type">VER</span>
+              <span class="record_table_count">1000</span>
+              <span class="record_table_des">no </span>
+            </li>
+          </ul>
+        </div>
+        <div class="records_data records_data3">
+          <ul class="record_table">
+            <li class="record_table_tr clearfix">
+              <span class="record_table_date">2016.11.11 11:11:11</span>
+              <span class="record_table_type">VER</span>
+              <span class="record_table_count">1000</span>
+              <span class="record_table_des">网络转出 </span>
+            </li>
+          </ul>
+          <ul class="record_table">
+            <li class="record_table_tr clearfix">
+              <span class="record_table_date">2016.11.11 11:11:11</span>
+              <span class="record_table_type">VER</span>
+              <span class="record_table_count">1000</span>
+              <span class="record_table_des">no </span>
+            </li>
+          </ul>
+          <ul class="record_table">
+            <li class="record_table_tr clearfix">
+              <span class="record_table_date">2016.11.11 11:11:11</span>
+              <span class="record_table_type">VER</span>
+              <span class="record_table_count">1000</span>
+              <span class="record_table_des">no </span>
+            </li>
+          </ul>
+        </div>
+        <div class="records_data records_data4">
+          <ul class="record_table">
+            <li class="record_table_tr clearfix">
+              <span class="record_table_date">2016.11.11 11:11:11</span>
+              <span class="record_table_type">VER</span>
+              <span class="record_table_count">1000</span>
+              <span class="record_table_des">交易买入 </span>
+            </li>
+          </ul>
+          <ul class="record_table">
+            <li class="record_table_tr clearfix">
+              <span class="record_table_date">2016.11.11 11:11:11</span>
+              <span class="record_table_type">VER</span>
+              <span class="record_table_count">1000</span>
+              <span class="record_table_des">no </span>
+            </li>
+          </ul>
+          <ul class="record_table">
+            <li class="record_table_tr clearfix">
+              <span class="record_table_date">2016.11.11 11:11:11</span>
+              <span class="record_table_type">VER</span>
+              <span class="record_table_count">1000</span>
+              <span class="record_table_des">no </span>
+            </li>
+          </ul>
+        </div>
+        <div class="records_data records_data5">
+          <ul class="record_table">
+            <li class="record_table_tr clearfix">
+              <span class="record_table_date">2016.11.11 11:11:11</span>
+              <span class="record_table_type">VER</span>
+              <span class="record_table_count">1000</span>
+              <span class="record_table_des">交易卖出 </span>
+            </li>
+          </ul>
+          <ul class="record_table">
+            <li class="record_table_tr clearfix">
+              <span class="record_table_date">2016.11.11 11:11:11</span>
+              <span class="record_table_type">VER</span>
+              <span class="record_table_count">1000</span>
+              <span class="record_table_des">no </span>
+            </li>
+          </ul>
+          <ul class="record_table">
+            <li class="record_table_tr clearfix">
+              <span class="record_table_date">2016.11.11 11:11:11</span>
+              <span class="record_table_type">VER</span>
+              <span class="record_table_count">1000</span>
+              <span class="record_table_des">no </span>
+            </li>
+          </ul>
+        </div>
+        <div class="records_data records_data6">
+          <ul class="record_table">
+            <li class="record_table_tr clearfix">
+              <span class="record_table_date">2016.11.11 11:11:11</span>
+              <span class="record_table_type">VER</span>
+              <span class="record_table_count">1000</span>
+              <span class="record_table_des">平台转入 </span>
+            </li>
+          </ul>
+          <ul class="record_table">
+            <li class="record_table_tr clearfix">
+              <span class="record_table_date">2016.11.11 11:11:11</span>
+              <span class="record_table_type">VER</span>
+              <span class="record_table_count">1000</span>
+              <span class="record_table_des">no </span>
+            </li>
+          </ul>
+          <ul class="record_table">
+            <li class="record_table_tr clearfix">
+              <span class="record_table_date">2016.11.11 11:11:11</span>
+              <span class="record_table_type">VER</span>
+              <span class="record_table_count">1000</span>
+              <span class="record_table_des">no </span>
+            </li>
+          </ul>
+        </div>
+        <div class="records_data records_data7">
+          <ul class="record_table">
+            <li class="record_table_tr clearfix">
+              <span class="record_table_date">2016.11.11 11:11:11</span>
+              <span class="record_table_type">VER</span>
+              <span class="record_table_count">1000</span>
+              <span class="record_table_des">平台转出 </span>
+            </li>
+          </ul>
+          <ul class="record_table">
+            <li class="record_table_tr clearfix">
+              <span class="record_table_date">2016.11.11 11:11:11</span>
+              <span class="record_table_type">VER</span>
+              <span class="record_table_count">1000</span>
+              <span class="record_table_des">no </span>
+            </li>
+          </ul>
+          <ul class="record_table">
+            <li class="record_table_tr clearfix">
+              <span class="record_table_date">2016.11.11 11:11:11</span>
+              <span class="record_table_type">VER</span>
+              <span class="record_table_count">1000</span>
+              <span class="record_table_des">no </span>
+            </li>
+          </ul>
+        </div>
 
+        <div class="empty_data" style="display:none">
+          暂时没有任何数据！
+        </div>
+      </div>
+    </div>
+
+    <div class="coin_content btc_data">
+      <div class="assets">
+        <div class="left">钱包可用余额：
+          <span id="coinAssets">1,0000,000</span>
+          <span class="coin_type">BTC</span>
+        </div>
+        <ul class="assets_list">
+          <li>可用资产: 1,000,000
+            <span class="coin_type">BTC</span>
+          </li>
+          <li>冻结资产: 0
+            <span class="coin_type">BTC</span>
+          </li>
+          <li>总资产: 1,000,000
+            <span class="coin_type">BTC</span>
+          </li>
+        </ul>
+      </div>
+      <div class="mline"></div>
+      <div class="operate clearfix">
+        <div class="in">
+          转入 <span class="coin_type">BTC</span>
+        </div>
+        <div class="out operate_active">
+          转出 <span class="coin_type">BTC</span>
+        </div>
+      </div>
+
+      <form class="form-horizontal">
+        <div class="form-group">
+          <label for="inputEmail32" class="col-sm-2 control-label">转出地址</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" id="inputEmail32"
+                   placeholder="请输入转出地址">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="inputPassword32" class="col-sm-2 control-label">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;数量</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" id="inputPassword32"
+                   placeholder="可用1000BTC">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="pass3" class="col-sm-2 control-label">资金密码</label>
+          <div class="col-sm-10">
+            <input type="password" class="form-control" id="pass3"
+                   placeholder="">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="note3" class="col-sm-2 control-label">备注</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" id="note3"
+                   placeholder="">
+          </div>
+        </div>
+        <div class="form-group form_submit">
+          <div class="col-sm-offset-2 col-sm-10">
+            <button type="submit" class="btn btn-danger">确定</button>
+          </div>
+        </div>
+      </form>
+      <ul class="notice">
+        <li>温馨提示：</li>
+        <li>１、请勿向上述地址充值任何非该类货币资产，否则资产将不可找回。</li>
+        <li>２、您充值至上述地址后，需要整个网络节点的确认，我们会在收到对应币种网络确认后给您入账，到账时间一般为10分钟-60分钟。</li>
+        <li>３、本平台内转账维实时到账，且不收取任何费用，由本平台的转到三方平台的转出行为将收取0.001个该类货币作转出手续费。</li>
+        <li>４、您的充值地址不会经常改变，可以重复充值；如有更改，我们会尽量通过网站公告或邮件通知您。</li>
+        <li>５、请务必确认电脑及浏览器安全，防止信息被篡改或泄露。</li>
+      </ul>
+      <div class="mline"></div>
       <div class="record">
         <div class="title">
           <img src="./images/draw_record.png" alt="">
@@ -109,13 +386,215 @@
           <li>平台转入</li>
           <li>平台转出</li>
         </ul>
-
-
+        <ul class="record_head clearfix">
+          <li class="record_time">时间</li>
+          <li class="record_type">类型</li>
+          <li class="record_num">数量</li>
+          <li class="record_des">说明</li>
+        </ul>
+        <div class="empty_data" >
+          暂时没有任何数据！
+        </div>
       </div>
-
-
     </div>
 
+    <div class="coin_content etc_data">
+      <div class="assets">
+        <div class="left">钱包可用余额：
+          <span id="coinAssets">1,0000,000</span>
+          <span class="coin_type">ETC</span>
+        </div>
+        <ul class="assets_list">
+          <li>可用资产: 1,000,000
+            <span class="coin_type">ETC</span>
+          </li>
+          <li>冻结资产: 0
+            <span class="coin_type">ETC</span>
+          </li>
+          <li>总资产: 1,000,000
+            <span class="coin_type">ETC</span>
+          </li>
+        </ul>
+      </div>
+      <div class="mline"></div>
+      <div class="operate clearfix">
+        <div class="in">
+          转入 <span class="coin_type">ETC</span>
+        </div>
+        <div class="out operate_active">
+          转出 <span class="coin_type">ETC</span>
+        </div>
+      </div>
+
+      <form class="form-horizontal">
+        <div class="form-group">
+          <label for="inputEmail33" class="col-sm-2 control-label">转出地址</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" id="inputEmail33"
+                   placeholder="请输入转出地址">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="inputPassword33" class="col-sm-2 control-label">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;数量</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" id="inputPassword33"
+                   placeholder="可用1000ETC">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="pass4" class="col-sm-2 control-label">资金密码</label>
+          <div class="col-sm-10">
+            <input type="password" class="form-control" id="pass4"
+                   placeholder="">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="note4" class="col-sm-2 control-label">备注</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" id="note4"
+                   placeholder="">
+          </div>
+        </div>
+        <div class="form-group form_submit">
+          <div class="col-sm-offset-2 col-sm-10">
+            <button type="submit" class="btn btn-danger">确定</button>
+          </div>
+        </div>
+      </form>
+      <ul class="notice">
+        <li>温馨提示：</li>
+        <li>１、请勿向上述地址充值任何非该类货币资产，否则资产将不可找回。</li>
+        <li>２、您充值至上述地址后，需要整个网络节点的确认，我们会在收到对应币种网络确认后给您入账，到账时间一般为10分钟-60分钟。</li>
+        <li>３、本平台内转账维实时到账，且不收取任何费用，由本平台的转到三方平台的转出行为将收取0.001个该类货币作转出手续费。</li>
+        <li>４、您的充值地址不会经常改变，可以重复充值；如有更改，我们会尽量通过网站公告或邮件通知您。</li>
+        <li>５、请务必确认电脑及浏览器安全，防止信息被篡改或泄露。</li>
+      </ul>
+      <div class="mline"></div>
+      <div class="record">
+        <div class="title">
+          <img src="./images/draw_record.png" alt="">
+          交易记录
+        </div>
+        <ul class="record_list clearfix">
+          <li class="record_active">所有交易</li>
+          <li>网络转入</li>
+          <li>网络转出</li>
+          <li>交易买入</li>
+          <li>交易卖出</li>
+          <li>平台转入</li>
+          <li>平台转出</li>
+        </ul>
+        <ul class="record_head clearfix">
+          <li class="record_time">时间</li>
+          <li class="record_type">类型</li>
+          <li class="record_num">数量</li>
+          <li class="record_des">说明</li>
+        </ul>
+        <div class="empty_data">
+          暂时没有任何数据！
+        </div>
+      </div>
+    </div>
+
+    <div class="coin_content usdt_data">
+      <div class="assets">
+        <div class="left">钱包可用余额：
+          <span id="coinAssets">1,0000,000</span>
+          <span class="coin_type">USDT</span>
+        </div>
+        <ul class="assets_list">
+          <li>可用资产: 1,000,000
+            <span class="coin_type">USDT</span>
+          </li>
+          <li>冻结资产: 0
+            <span class="coin_type">USDT</span>
+          </li>
+          <li>总资产: 1,000,000
+            <span class="coin_type">USDT</span>
+          </li>
+        </ul>
+      </div>
+      <div class="mline"></div>
+      <div class="operate clearfix">
+        <div class="in">
+          转入 <span class="coin_type">USDT</span>
+        </div>
+        <div class="out operate_active">
+          转出 <span class="coin_type">USDT</span>
+        </div>
+      </div>
+
+      <form class="form-horizontal">
+        <div class="form-group">
+          <label for="inputEmail34" class="col-sm-2 control-label">转出地址</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" id="inputEmail34"
+                   placeholder="请输入转出地址">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="inputPassword34" class="col-sm-2 control-label">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;数量</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" id="inputPassword34"
+                   placeholder="可用1000USDT">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="pass1" class="col-sm-2 control-label">资金密码</label>
+          <div class="col-sm-10">
+            <input type="password" class="form-control" id="pass1"
+                   placeholder="">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="note1" class="col-sm-2 control-label">备注</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" id="note1"
+                   placeholder="">
+          </div>
+        </div>
+        <div class="form-group form_submit">
+          <div class="col-sm-offset-2 col-sm-10">
+            <button type="submit" class="btn btn-danger">确定</button>
+          </div>
+        </div>
+      </form>
+      <ul class="notice">
+        <li>温馨提示：</li>
+        <li>１、请勿向上述地址充值任何非该类货币资产，否则资产将不可找回。</li>
+        <li>２、您充值至上述地址后，需要整个网络节点的确认，我们会在收到对应币种网络确认后给您入账，到账时间一般为10分钟-60分钟。</li>
+        <li>３、本平台内转账维实时到账，且不收取任何费用，由本平台的转到三方平台的转出行为将收取0.001个该类货币作转出手续费。</li>
+        <li>４、您的充值地址不会经常改变，可以重复充值；如有更改，我们会尽量通过网站公告或邮件通知您。</li>
+        <li>５、请务必确认电脑及浏览器安全，防止信息被篡改或泄露。</li>
+      </ul>
+      <div class="mline"></div>
+      <div class="record">
+        <div class="title">
+          <img src="./images/draw_record.png" alt="">
+          交易记录
+        </div>
+        <ul class="record_list clearfix">
+          <li class="record_active">所有交易</li>
+          <li>网络转入</li>
+          <li>网络转出</li>
+          <li>交易买入</li>
+          <li>交易卖出</li>
+          <li>平台转入</li>
+          <li>平台转出</li>
+        </ul>
+        <ul class="record_head clearfix">
+          <li class="record_time">时间</li>
+          <li class="record_type">类型</li>
+          <li class="record_num">数量</li>
+          <li class="record_des">说明</li>
+        </ul>
+        <div class="empty_data">
+          暂时没有任何数据！
+        </div>
+      </div>
+    </div>
 
   </div>
 </div>

@@ -7,7 +7,12 @@ $(function(){
       $("." + $(this).attr("data-child")).show();
   })
 
-
+  $(".item_list").on("click",function(){
+      $(".item_list").removeClass("item_list_active")
+      $(this).addClass("item_list_active")
+      $(".content").hide()
+      $("."+$(this).attr("data-tar")).show()
+  })
 
 
 

@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8958a1de-ddbc-4b6c-ab50-87c84e06485f" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/css/base.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/css/base.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/css/vercoin.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/css/vercoin.css" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -15,14 +17,14 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.4724689">
+    <splitter split-orientation="horizontal" split-proportion="0.38543516">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/web/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="945">
-                  <caret line="80" column="52" selection-start-line="80" selection-start-column="52" selection-end-line="80" selection-end-column="52" />
+                <state relative-caret-position="378">
+                  <caret line="59" column="65" lean-forward="true" selection-start-line="59" selection-start-column="65" selection-end-line="59" selection-end-column="65" />
                   <folding>
                     <element signature="n#ul#1;n#div#1;n#div#0;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" />
                     <element signature="n#div#2;n#body#0;n#html#0;n#!!top" />
@@ -57,8 +59,32 @@
           <file leaf-file-name="vercoin.css" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/web/css/vercoin.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="312">
-                  <caret line="1056" column="8" selection-start-line="1056" selection-start-column="6" selection-end-line="1056" selection-end-column="31" />
+                <state relative-caret-position="733">
+                  <caret line="1232" column="22" lean-forward="true" selection-start-line="1232" selection-start-column="22" selection-end-line="1232" selection-end-column="22" />
+                  <folding>
+                    <element signature="e#21397#21440#0" />
+                    <element signature="e#21469#21541#0" />
+                    <element signature="e#21569#21641#0" />
+                    <element signature="e#21671#21696#0" />
+                    <element signature="e#21744#21876#0" />
+                    <element signature="e#21913#22011#0" />
+                    <element signature="e#22054#22064#0" />
+                    <element signature="e#22110#22205#0" />
+                    <element signature="e#22257#22362#0" />
+                    <element signature="e#22418#22498#0" />
+                    <element signature="e#22562#22805#0" />
+                    <element signature="e#22961#23017#0" />
+                    <element signature="e#23063#23158#0" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="base.css" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/web/css/base.css">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="262">
+                  <caret line="40" column="23" lean-forward="true" selection-start-line="40" selection-start-column="23" selection-end-line="40" selection-end-column="23" />
                 </state>
               </provider>
             </entry>
@@ -88,6 +114,7 @@
       <find>.content-usercenter</find>
       <find>.content-acc</find>
       <find>.content-au</find>
+      <find>.ba</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -103,16 +130,16 @@
         <option value="$PROJECT_DIR$/web/css/security.css" />
         <option value="$PROJECT_DIR$/web/css/acount.css" />
         <option value="$PROJECT_DIR$/web/css/index.css" />
-        <option value="$PROJECT_DIR$/web/css/base.css" />
         <option value="$PROJECT_DIR$/web/trust-you.html" />
         <option value="$PROJECT_DIR$/web/you-block.html" />
         <option value="$PROJECT_DIR$/web/you-trust.html" />
         <option value="$PROJECT_DIR$/web/security.html" />
-        <option value="$PROJECT_DIR$/web/index.html" />
         <option value="$PROJECT_DIR$/web/usercenter.html" />
         <option value="$PROJECT_DIR$/web/account.html" />
         <option value="$PROJECT_DIR$/web/authentication.html" />
+        <option value="$PROJECT_DIR$/web/index.html" />
         <option value="$PROJECT_DIR$/web/css/vercoin.css" />
+        <option value="$PROJECT_DIR$/web/css/base.css" />
       </list>
     </option>
   </component>
@@ -148,6 +175,12 @@
               <item name="vercoin-resources" type="b2602c69:ProjectViewProjectNode" />
               <item name="vercoin-resources" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="vercoin-resources" type="b2602c69:ProjectViewProjectNode" />
+              <item name="vercoin-resources" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="vercoin-resources" type="b2602c69:ProjectViewProjectNode" />
@@ -205,18 +238,18 @@
       <workItem from="1524463075142" duration="23652000" />
       <workItem from="1524534104606" duration="5888000" />
       <workItem from="1524540083093" duration="23581000" />
-      <workItem from="1524620736994" duration="21695000" />
+      <workItem from="1524620736994" duration="23523000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="74816000" />
+    <option name="totallyTimeSpent" value="76644000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1056394" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.29785544" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
@@ -292,6 +325,21 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="25434">
           <caret line="942" column="8" selection-start-line="942" selection-start-column="8" selection-end-line="942" selection-end-column="8" />
+          <folding>
+            <element signature="e#21397#21440#0" />
+            <element signature="e#21469#21541#0" />
+            <element signature="e#21569#21641#0" />
+            <element signature="e#21671#21696#0" />
+            <element signature="e#21744#21876#0" />
+            <element signature="e#21913#22011#0" />
+            <element signature="e#22054#22064#0" />
+            <element signature="e#22110#22205#0" />
+            <element signature="e#22257#22362#0" />
+            <element signature="e#22418#22498#0" />
+            <element signature="e#22562#22805#0" />
+            <element signature="e#22961#23017#0" />
+            <element signature="e#23063#23158#0" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -382,13 +430,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1399">
           <caret line="74" column="10" lean-forward="true" selection-start-line="74" selection-start-column="10" selection-end-line="74" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/css/base.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2106">
-          <caret line="78" column="30" selection-start-line="78" selection-start-column="30" selection-end-line="78" selection-end-column="30" />
         </state>
       </provider>
     </entry>
@@ -536,8 +577,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="945">
-          <caret line="80" column="52" selection-start-line="80" selection-start-column="52" selection-end-line="80" selection-end-column="52" />
+        <state relative-caret-position="378">
+          <caret line="59" column="65" lean-forward="true" selection-start-line="59" selection-start-column="65" selection-end-line="59" selection-end-column="65" />
           <folding>
             <element signature="n#ul#1;n#div#1;n#div#0;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#div#2;n#body#0;n#html#0;n#!!top" />
@@ -547,10 +588,32 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/web/css/base.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="262">
+          <caret line="40" column="23" lean-forward="true" selection-start-line="40" selection-start-column="23" selection-end-line="40" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/web/css/vercoin.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="1056" column="8" selection-start-line="1056" selection-start-column="6" selection-end-line="1056" selection-end-column="31" />
+        <state relative-caret-position="733">
+          <caret line="1232" column="22" lean-forward="true" selection-start-line="1232" selection-start-column="22" selection-end-line="1232" selection-end-column="22" />
+          <folding>
+            <element signature="e#21397#21440#0" />
+            <element signature="e#21469#21541#0" />
+            <element signature="e#21569#21641#0" />
+            <element signature="e#21671#21696#0" />
+            <element signature="e#21744#21876#0" />
+            <element signature="e#21913#22011#0" />
+            <element signature="e#22054#22064#0" />
+            <element signature="e#22110#22205#0" />
+            <element signature="e#22257#22362#0" />
+            <element signature="e#22418#22498#0" />
+            <element signature="e#22562#22805#0" />
+            <element signature="e#22961#23017#0" />
+            <element signature="e#23063#23158#0" />
+          </folding>
         </state>
       </provider>
     </entry>

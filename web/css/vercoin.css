@@ -1106,15 +1106,16 @@ body {background: #f0f0f0;}
     height: 100%;
 }
 .banner .carousel .icon.left {
-        left: 68%;
+        left: 58%;
         top: 40%; }
 .banner .carousel .icon.right {
-        right: 68%;
+        right: 58%;
         top: 40%; }
 /*首页买卖安全内容*/
 .content {
   width: 100%;
   background: #f0f0f0;
+  padding: 0 130px;
   }
 .content .row .col-md-12 h3 {
     text-align: center;
@@ -1210,7 +1211,7 @@ body {background: #f0f0f0;}
 /*首页规范信息*/
 .site-info {
   background-color: #fff;
-  padding: 35px 55px;
+  padding: 35px 90px;
   margin: 10px 0;
   width: 100%;
   overflow: hidden; }
@@ -1229,7 +1230,7 @@ body {background: #f0f0f0;}
       color:#727272;}
 .site-info .site-item p {
       margin: 0 0 11px;
-      padding: 0 20px;
+      padding: 0 45px;
       font-size: 14px;
       color:#727272;}
 

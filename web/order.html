@@ -12,12 +12,12 @@
 <div id="zyhPageOrder">
   <div class="container">
     <ul class="order_status_header clearfix">
-      <li class="order_status_active">全部订单</li>
-      <li class="order_status">未付款</li>
-      <li class="order_status">已付款</li>
-      <li class="order_status">已完成</li>
-      <li class="order_status">已取消</li>
-      <li class="order_status">申诉中</li>
+      <li class="order_status order_status_active" data-target="order_all">全部订单</li>
+      <li class="order_status" data-target="order_notpay">未付款</li>
+      <li class="order_status" data-target="order_payed">已付款</li>
+      <li class="order_status" data-target="order_over">已完成</li>
+      <li class="order_status" data-target="order_canceled">已取消</li>
+      <li class="order_status" data-target="order_shensuzhong">申诉中</li>
       <li class="order_search">
         <input type="text"
                placeholder="请输入订单单号"
@@ -25,68 +25,435 @@
         <button type="button" class="btn btn-danger order_search_btn">搜索</button>
       </li>
     </ul>
-    <ul class="table_header clearfix">
-      <li class="order_id">订单号</li>
-      <li class="order_status">状态</li>
-      <li class="order_time">创建时间</li>
-      <li class="order_coin_type">币种</li>
-      <li class="order_type">类型</li>
-      <li class="order_target">交易对象</li>
-      <li class="order_price">交易价格</li>
-      <li class="order_num">数量</li>
-      <li class="order_money">金额</li>
-      <li class="order_fee">手续费</li>
-      <li class="order_refer">参考号</li>
-    </ul>
-    <hr>
-    <ul class="table_content clearfix">
-      <li class="order_id">#115462436384474</li>
-      <li class="order_status">待放行</li>
-      <li class="order_time">2018-1-22 12:23</li>
-      <li class="order_coin_type">VER</li>
-      <li class="order_type">出售</li>
-      <li class="order_target">WJL</li>
-      <li class="order_price">0.4CNY</li>
-      <li class="order_num">100</li>
-      <li class="order_money">1,000,000</li>
-      <li class="order_fee">0</li>
-      <li class="order_refer">0</li>
-    </ul>
-    <ul class="table_content clearfix">
-      <li class="order_id">#115462436384474</li>
-      <li class="order_status">待放行</li>
-      <li class="order_time">2018-1-22 12:23</li>
-      <li class="order_coin_type">VER</li>
-      <li class="order_type">出售</li>
-      <li class="order_target">WJL</li>
-      <li class="order_price">0.4CNY</li>
-      <li class="order_num">100</li>
-      <li class="order_money">1,000,000</li>
-      <li class="order_fee">0</li>
-      <li class="order_refer">0</li>
-    </ul>
-    <ul class="table_content clearfix">
-      <li class="order_id">#115462436384474</li>
-      <li class="order_status">待放行</li>
-      <li class="order_time">2018-1-22 12:23</li>
-      <li class="order_coin_type">VER</li>
-      <li class="order_type">出售</li>
-      <li class="order_target">WJL</li>
-      <li class="order_price">0.4CNY</li>
-      <li class="order_num">100</li>
-      <li class="order_money">1,000,000</li>
-      <li class="order_fee">0</li>
-      <li class="order_refer">0</li>
-    </ul>
-    <div class="page_count ">
-      <div class="page_counts clearfix">
-        <div class="prev">
-          <span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span>
+
+    <!-- 所有订单-->
+    <div class="order_table order_all">
+      <ul class="table_header clearfix">
+        <li class="order_id">订单号</li>
+        <li class="order_status">状态</li>
+        <li class="order_time">创建时间</li>
+        <li class="order_coin_type">币种</li>
+        <li class="order_type">类型</li>
+        <li class="order_target">交易对象</li>
+        <li class="order_price">交易价格</li>
+        <li class="order_num">数量</li>
+        <li class="order_money">金额</li>
+        <li class="order_fee">手续费</li>
+        <li class="order_refer">参考号</li>
+      </ul>
+      <ul class="table_content clearfix">
+        <li class="order_id">#115462436384474</li>
+        <li class="order_status">待放行</li>
+        <li class="order_time">2018-1-22 12:23</li>
+        <li class="order_coin_type">VER</li>
+        <li class="order_type">出售</li>
+        <li class="order_target">WJL</li>
+        <li class="order_price">0.4CNY</li>
+        <li class="order_num">100</li>
+        <li class="order_money">1,000,000</li>
+        <li class="order_fee">0</li>
+        <li class="order_refer">0</li>
+      </ul>
+      <ul class="table_content clearfix">
+        <li class="order_id">#115462436384474</li>
+        <li class="order_status">未付款</li>
+        <li class="order_time">2018-1-22 12:23</li>
+        <li class="order_coin_type">VER</li>
+        <li class="order_type">出售</li>
+        <li class="order_target">WJL</li>
+        <li class="order_price">0.4CNY</li>
+        <li class="order_num">100</li>
+        <li class="order_money">1,000,000</li>
+        <li class="order_fee">0</li>
+        <li class="order_refer">0</li>
+      </ul>
+      <ul class="table_content clearfix">
+        <li class="order_id">#115462436384474</li>
+        <li class="order_status">待放行</li>
+        <li class="order_time">2018-1-22 12:23</li>
+        <li class="order_coin_type">VER</li>
+        <li class="order_type">出售</li>
+        <li class="order_target">WJL</li>
+        <li class="order_price">0.4CNY</li>
+        <li class="order_num">100</li>
+        <li class="order_money">1,000,000</li>
+        <li class="order_fee">0</li>
+        <li class="order_refer">0</li>
+      </ul>
+      <ul class="table_content clearfix">
+        <li class="order_id">#115462436384474</li>
+        <li class="order_status">待放行</li>
+        <li class="order_time">2018-1-22 12:23</li>
+        <li class="order_coin_type">VER</li>
+        <li class="order_type">出售</li>
+        <li class="order_target">WJL</li>
+        <li class="order_price">0.4CNY</li>
+        <li class="order_num">100</li>
+        <li class="order_money">1,000,000</li>
+        <li class="order_fee">0</li>
+        <li class="order_refer">0</li>
+      </ul>
+      <ul class="table_content clearfix">
+        <li class="order_id">#115462436384499</li>
+        <li class="order_status">已完成</li>
+        <li class="order_time">2018-1-22 18:23</li>
+        <li class="order_coin_type">VER</li>
+        <li class="order_type">出售</li>
+        <li class="order_target">WJL</li>
+        <li class="order_price">0.4CNY</li>
+        <li class="order_num">100</li>
+        <li class="order_money">1,000,000</li>
+        <li class="order_fee">0</li>
+        <li class="order_refer">0</li>
+      </ul>
+      <div class="page_count ">
+        <div class="page_counts clearfix">
+          <div class="prev">
+            <span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span>
+          </div>
+          <div class="pagen pagen_active">1</div>
+          <div class="pagen">2</div>
+          <div class="pagen">3</div>
+          <div class="pagen page_many">...</div>
+          <div class="pagen">9</div>
+          <div class="next">
+            <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+          </div>
         </div>
-        <div class="pagen pagen_active">1</div>
-        <div class="pagen">2</div>
-        <div class="next">
-          <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+      </div>
+    </div>
+    <!-- 未付款-->
+    <div class="order_table order_notpay">
+      <ul class="table_header clearfix">
+        <li class="order_id">订单号</li>
+        <li class="order_status">状态</li>
+        <li class="order_time">创建时间</li>
+        <li class="order_coin_type">币种</li>
+        <li class="order_type">类型</li>
+        <li class="order_target">交易对象</li>
+        <li class="order_price">交易价格</li>
+        <li class="order_num">数量</li>
+        <li class="order_money">金额</li>
+        <li class="order_fee">手续费</li>
+        <li class="order_refer">参考号</li>
+      </ul>
+      <ul class="table_content clearfix">
+        <li class="order_id">#115462436384474</li>
+        <li class="order_status">未付款</li>
+        <li class="order_time">2018-1-22 12:23</li>
+        <li class="order_coin_type">VER</li>
+        <li class="order_type">出售</li>
+        <li class="order_target">WJL</li>
+        <li class="order_price">0.4CNY</li>
+        <li class="order_num">100</li>
+        <li class="order_money">1,000,000</li>
+        <li class="order_fee">0</li>
+        <li class="order_refer">0</li>
+      </ul>
+      <ul class="table_content clearfix">
+        <li class="order_id">#115462436384474</li>
+        <li class="order_status">未付款</li>
+        <li class="order_time">2018-1-22 12:23</li>
+        <li class="order_coin_type">VER</li>
+        <li class="order_type">出售</li>
+        <li class="order_target">WJL</li>
+        <li class="order_price">0.4CNY</li>
+        <li class="order_num">100</li>
+        <li class="order_money">1,000,000</li>
+        <li class="order_fee">0</li>
+        <li class="order_refer">0</li>
+      </ul>
+      <ul class="table_content clearfix">
+        <li class="order_id">#115462436384474</li>
+        <li class="order_status">未付款</li>
+        <li class="order_time">2018-1-22 12:23</li>
+        <li class="order_coin_type">VER</li>
+        <li class="order_type">出售</li>
+        <li class="order_target">WJL</li>
+        <li class="order_price">0.4CNY</li>
+        <li class="order_num">100</li>
+        <li class="order_money">1,000,000</li>
+        <li class="order_fee">0</li>
+        <li class="order_refer">0</li>
+      </ul>
+      <div class="page_count ">
+        <div class="page_counts clearfix">
+          <div class="prev">
+            <span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span>
+          </div>
+          <div class="pagen pagen_active">1</div>
+          <div class="pagen">2</div>
+          <div class="next">
+            <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 已付款-->
+    <div class="order_table order_payed">
+      <ul class="table_header clearfix">
+        <li class="order_id">订单号</li>
+        <li class="order_status">状态</li>
+        <li class="order_time">创建时间</li>
+        <li class="order_coin_type">币种</li>
+        <li class="order_type">类型</li>
+        <li class="order_target">交易对象</li>
+        <li class="order_price">交易价格</li>
+        <li class="order_num">数量</li>
+        <li class="order_money">金额</li>
+        <li class="order_fee">手续费</li>
+        <li class="order_refer">参考号</li>
+      </ul>
+      <ul class="table_content clearfix">
+        <li class="order_id">#115462436384474</li>
+        <li class="order_status">已付款</li>
+        <li class="order_time">2018-1-22 12:23</li>
+        <li class="order_coin_type">VER</li>
+        <li class="order_type">出售</li>
+        <li class="order_target">WJL</li>
+        <li class="order_price">0.4CNY</li>
+        <li class="order_num">100</li>
+        <li class="order_money">1,000,000</li>
+        <li class="order_fee">0</li>
+        <li class="order_refer">0</li>
+      </ul>
+      <ul class="table_content clearfix">
+        <li class="order_id">#115462436384474</li>
+        <li class="order_status">已付款</li>
+        <li class="order_time">2018-1-22 12:23</li>
+        <li class="order_coin_type">VER</li>
+        <li class="order_type">出售</li>
+        <li class="order_target">WJL</li>
+        <li class="order_price">0.4CNY</li>
+        <li class="order_num">100</li>
+        <li class="order_money">1,000,000</li>
+        <li class="order_fee">0</li>
+        <li class="order_refer">0</li>
+      </ul>
+      <ul class="table_content clearfix">
+        <li class="order_id">#115462436384474</li>
+        <li class="order_status">已付款</li>
+        <li class="order_time">2018-1-22 12:23</li>
+        <li class="order_coin_type">VER</li>
+        <li class="order_type">出售</li>
+        <li class="order_target">WJL</li>
+        <li class="order_price">0.4CNY</li>
+        <li class="order_num">100</li>
+        <li class="order_money">1,000,000</li>
+        <li class="order_fee">0</li>
+        <li class="order_refer">0</li>
+      </ul>
+      <div class="page_count ">
+        <div class="page_counts clearfix">
+          <div class="prev">
+            <span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span>
+          </div>
+          <div class="pagen pagen_active">1</div>
+          <div class="pagen">2</div>
+          <div class="next">
+            <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 已完成-->
+    <div class="order_table order_over">
+      <ul class="table_header clearfix">
+        <li class="order_id">订单号</li>
+        <li class="order_status">状态</li>
+        <li class="order_time">创建时间</li>
+        <li class="order_coin_type">币种</li>
+        <li class="order_type">类型</li>
+        <li class="order_target">交易对象</li>
+        <li class="order_price">交易价格</li>
+        <li class="order_num">数量</li>
+        <li class="order_money">金额</li>
+        <li class="order_fee">手续费</li>
+        <li class="order_refer">参考号</li>
+      </ul>
+      <ul class="table_content clearfix">
+        <li class="order_id">#115462436384474</li>
+        <li class="order_status">已完成</li>
+        <li class="order_time">2018-1-22 12:23</li>
+        <li class="order_coin_type">VER</li>
+        <li class="order_type">出售</li>
+        <li class="order_target">WJL</li>
+        <li class="order_price">0.4CNY</li>
+        <li class="order_num">100</li>
+        <li class="order_money">1,000,000</li>
+        <li class="order_fee">0</li>
+        <li class="order_refer">0</li>
+      </ul>
+      <ul class="table_content clearfix">
+        <li class="order_id">#115462436384474</li>
+        <li class="order_status">已完成</li>
+        <li class="order_time">2018-1-22 12:23</li>
+        <li class="order_coin_type">VER</li>
+        <li class="order_type">出售</li>
+        <li class="order_target">WJL</li>
+        <li class="order_price">0.4CNY</li>
+        <li class="order_num">100</li>
+        <li class="order_money">1,000,000</li>
+        <li class="order_fee">0</li>
+        <li class="order_refer">0</li>
+      </ul>
+      <ul class="table_content clearfix">
+        <li class="order_id">#115462436384474</li>
+        <li class="order_status">已完成</li>
+        <li class="order_time">2018-1-22 12:23</li>
+        <li class="order_coin_type">VER</li>
+        <li class="order_type">出售</li>
+        <li class="order_target">WJL</li>
+        <li class="order_price">0.4CNY</li>
+        <li class="order_num">100</li>
+        <li class="order_money">1,000,000</li>
+        <li class="order_fee">0</li>
+        <li class="order_refer">0</li>
+      </ul>
+      <div class="page_count ">
+        <div class="page_counts clearfix">
+          <div class="prev">
+            <span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span>
+          </div>
+          <div class="pagen pagen_active">1</div>
+          <div class="pagen">2</div>
+          <div class="next">
+            <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 已取消-->
+    <div class="order_table order_canceled">
+      <ul class="table_header clearfix">
+        <li class="order_id">订单号</li>
+        <li class="order_status">状态</li>
+        <li class="order_time">创建时间</li>
+        <li class="order_coin_type">币种</li>
+        <li class="order_type">类型</li>
+        <li class="order_target">交易对象</li>
+        <li class="order_price">交易价格</li>
+        <li class="order_num">数量</li>
+        <li class="order_money">金额</li>
+        <li class="order_fee">手续费</li>
+        <li class="order_refer">参考号</li>
+      </ul>
+      <ul class="table_content clearfix">
+        <li class="order_id">#115462436384474</li>
+        <li class="order_status">已取消</li>
+        <li class="order_time">2018-1-22 12:23</li>
+        <li class="order_coin_type">VER</li>
+        <li class="order_type">出售</li>
+        <li class="order_target">WJL</li>
+        <li class="order_price">0.4CNY</li>
+        <li class="order_num">100</li>
+        <li class="order_money">1,000,000</li>
+        <li class="order_fee">0</li>
+        <li class="order_refer">0</li>
+      </ul>
+      <ul class="table_content clearfix">
+        <li class="order_id">#115462436384474</li>
+        <li class="order_status">已取消</li>
+        <li class="order_time">2018-1-22 12:23</li>
+        <li class="order_coin_type">VER</li>
+        <li class="order_type">出售</li>
+        <li class="order_target">WJL</li>
+        <li class="order_price">0.4CNY</li>
+        <li class="order_num">100</li>
+        <li class="order_money">1,000,000</li>
+        <li class="order_fee">0</li>
+        <li class="order_refer">0</li>
+      </ul>
+      <ul class="table_content clearfix">
+        <li class="order_id">#115462436384474</li>
+        <li class="order_status">已取消</li>
+        <li class="order_time">2018-1-22 12:23</li>
+        <li class="order_coin_type">VER</li>
+        <li class="order_type">出售</li>
+        <li class="order_target">WJL</li>
+        <li class="order_price">0.4CNY</li>
+        <li class="order_num">100</li>
+        <li class="order_money">1,000,000</li>
+        <li class="order_fee">0</li>
+        <li class="order_refer">0</li>
+      </ul>
+      <div class="page_count ">
+        <div class="page_counts clearfix">
+          <div class="prev">
+            <span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span>
+          </div>
+          <div class="pagen pagen_active">1</div>
+          <div class="pagen">2</div>
+          <div class="next">
+            <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 申诉中-->
+    <div class="order_table order_shensuzhong">
+      <ul class="table_header clearfix">
+        <li class="order_id">订单号</li>
+        <li class="order_status">状态</li>
+        <li class="order_time">创建时间</li>
+        <li class="order_coin_type">币种</li>
+        <li class="order_type">类型</li>
+        <li class="order_target">交易对象</li>
+        <li class="order_price">交易价格</li>
+        <li class="order_num">数量</li>
+        <li class="order_money">金额</li>
+        <li class="order_fee">手续费</li>
+        <li class="order_refer">参考号</li>
+      </ul>
+      <ul class="table_content clearfix">
+        <li class="order_id">#115462436384474</li>
+        <li class="order_status">申诉中</li>
+        <li class="order_time">2018-1-22 12:23</li>
+        <li class="order_coin_type">VER</li>
+        <li class="order_type">出售</li>
+        <li class="order_target">WJL</li>
+        <li class="order_price">0.4CNY</li>
+        <li class="order_num">100</li>
+        <li class="order_money">1,000,000</li>
+        <li class="order_fee">0</li>
+        <li class="order_refer">0</li>
+      </ul>
+      <ul class="table_content clearfix">
+        <li class="order_id">#115462436384474</li>
+        <li class="order_status">申诉中</li>
+        <li class="order_time">2018-1-22 12:23</li>
+        <li class="order_coin_type">VER</li>
+        <li class="order_type">出售</li>
+        <li class="order_target">WJL</li>
+        <li class="order_price">0.4CNY</li>
+        <li class="order_num">100</li>
+        <li class="order_money">1,000,000</li>
+        <li class="order_fee">0</li>
+        <li class="order_refer">0</li>
+      </ul>
+      <ul class="table_content clearfix">
+        <li class="order_id">#115462436384474</li>
+        <li class="order_status">申诉中</li>
+        <li class="order_time">2018-1-22 12:23</li>
+        <li class="order_coin_type">VER</li>
+        <li class="order_type">出售</li>
+        <li class="order_target">WJL</li>
+        <li class="order_price">0.4CNY</li>
+        <li class="order_num">100</li>
+        <li class="order_money">1,000,000</li>
+        <li class="order_fee">0</li>
+        <li class="order_refer">0</li>
+      </ul>
+      <div class="page_count ">
+        <div class="page_counts clearfix">
+          <div class="prev">
+            <span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span>
+          </div>
+          <div class="pagen pagen_active">1</div>
+          <div class="pagen">2</div>
+          <div class="next">
+            <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+          </div>
         </div>
       </div>
     </div>
@@ -96,5 +463,13 @@
 
 <script src="../lib/js/jquery.min.js"></script>
 <script src="../lib/js/bootstrap.min.js"></script>
+<script>
+  $(".order_status").on("click",function(){
+    $(".order_status").removeClass("order_status_active")
+    $(this).addClass("order_status_active");
+    $(".order_table").hide()
+    $("."+ $(this).attr("data-target")).show()
+  })
+</script>
 </body>
 </html>

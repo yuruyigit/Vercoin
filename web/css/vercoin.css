@@ -1,23 +1,14 @@
 @import "base.css";
-body{
-    background: #f0f0f0;
-}
-.clear {
-  clear: both;
-  height: 0;
-  overflow: hidden;
-}
-.clearfix:after{content:".";display:block;height:0;clear:both;visibility:hidden}
-.clearfix{*+height:1%}
-li {
-  list-style: none;
-}
-hr {
-  background: #e6e6e6;
-}
-body {
-  background: #f0f0f0;
-}
+
+body{background: #f0f0f0;}
+.clear {clear: both;height: 0;overflow: hidden;}
+.clearfix:before,.clearfix:after {content:"";display:table;}
+.clearfix:after { clear:both; }
+em {font-style: normal;}
+li {list-style: none;}
+hr {background: #e6e6e6;}
+body {background: #f0f0f0;}
+
 #zyhPageOrder .container {
   width: 1140px;
   padding: 0;
@@ -87,6 +78,12 @@ body {
 }
 #zyhPageOrder .table_header {
   background: #fff;
+}
+#zyhPageOrder .order_table {
+  display:none;
+}
+#zyhPageOrder .order_all {
+  display:block;
 }
 #zyhPageOrder .table_header li {
   background: #fff;
@@ -191,12 +188,11 @@ body {
   background: #d93740 !important;
 }
 #zyhPageAd .container {
-  padding: 0;
+  padding: 0 0 100px 0;
   width: 1140px;
   font-size: 14px;
   clear: both;
   margin-top: 20px;
-  padding-bottom: 100px;
 }
 #zyhPageAd .side {
   width: 140px;
@@ -344,6 +340,13 @@ body {
 #zyhDraw .container .coin_content {
   background: #fff;
   padding-left: 20px;
+  display:none;
+}
+#zyhDraw .container  .coin_content2 {
+  display:block;
+}
+#zyhDraw .container .ver_data {
+  display:block;
 }
 #zyhDraw .container .assets {
   background: #fff;
@@ -426,6 +429,7 @@ body {
 }
 #zyhDraw .container .record {
   margin-top: 20px;
+  padding-bottom:40px;
 }
 #zyhDraw .container .record .title {
   height: 20px;
@@ -434,13 +438,47 @@ body {
 }
 #zyhDraw .container .record_list {
   padding: 0;
+  background: #f6f6f6;
+  border-right:20px solid #fff;
 }
-#zyhDraw .container .record_list .record_active {
-  background: #fff;
-  color: #000;
-  border-top: 4px solid #d93740;
-  line-height: 36px;
+#zyhDraw .records_data {
+  display:none;
 }
+
+#zyhDraw .records_data1 {
+  display:block;
+}
+
+#zyhDraw .record_head {
+  height:50px;
+  line-height:50px;
+  border-bottom: 1px solid  #E6E6E6;
+}
+#zyhDraw .record_head li{
+  float:left;
+}
+#zyhDraw  .empty_data {
+  height:30px;
+  line-height:30px;
+  font-size: 14px;
+  color: #CCCCCC;
+}
+#zyhDraw .record_head .record_time,
+#zyhDraw .record_head .record_type,
+#zyhDraw .record_head .record_num,
+#zyhDraw .record_head .record_des
+{
+  width:68px;
+  text-align:center;
+  margin-right:260px;
+}
+#zyhDraw .record_head .record_type {
+  margin-right:104px;
+}
+#zyhDraw .record_head .record_num {
+  margin-right:128px;
+}
+
 #zyhDraw .container .record_list li {
   display: inline-block;
   width: 100px;
@@ -452,6 +490,15 @@ body {
   float: left;
   cursor: pointer;
 }
+
+#zyhDraw .container .record_list .record_active {
+  background: #fff;
+  color: #000;
+  border-top: 4px solid #d93740;
+  line-height: 36px;
+  border-bottom:none;
+}
+
 #zyhDraw .container #address {
   width: 300px;
   height: 40px;
@@ -460,6 +507,19 @@ body {
 #zyhDraw .container .charge .form-group {
   height: 40px;
 }
+
+#zyhDraw .record_table_tr {
+  height:30px;
+  line-height:30px;
+}
+#zyhDraw .record_table_tr span {
+  display:block;
+  float:left;
+  width:150px;
+}
+#zyhDraw .record_table_tr .record_table_type {margin-left:200px;}
+#zyhDraw .record_table_tr .record_table_count {margin-left:20px;}
+#zyhDraw .record_table_tr .record_table_des {margin-left:50px;}
 #zyhDraw .container .charge label {
   padding: 0;
   margin: 0;
@@ -924,7 +984,26 @@ body {
 }
 #zyhSellList .main_block_left .coin_type,
 #zyhBuyList .main_block_left .coin_type {
+  background: #fff;
+  color:#333;
+  width:90px;
+  height:50px;
+  line-height:50px;
+  text-indent:20px;
+  cursor:pointer;
+}
+#zyhSellList .main_block_left .coin_type_active ,
+#zyhBuyList .main_block_left .coin_type_active
+{
   background: #fff4f4;
+  color:#D93740;
+  border-right:4px solid #D93740;
+}
+#zyhBuyList .main_block_right {
+  display:none;
+}
+#zyhBuyList .ver_list {
+  display:block;
 }
 
 @media (max-width: 768px) {
@@ -1803,6 +1882,7 @@ body {
   height: 28px;
   line-height: 28px;
 }
+
 #zyhSell .seller_forms .sell_total span,
 #zyhBuy .seller_forms .sell_total span {
   display: inline-block;
@@ -1820,6 +1900,11 @@ body {
 #zyhBuy .seller_forms .sell_total .con2 {
   display: block; }
 
+#zyhSell .seller_forms .sell_total .left_asset,
+#zyhBuy  .seller_forms .sell_total .left_asset
+{
+  float:left;
+}
 /* 账户设置页面*/
 .content-account {
   width: 100%;

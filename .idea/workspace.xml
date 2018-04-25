@@ -15,13 +15,13 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.39609236">
+    <splitter split-orientation="horizontal" split-proportion="0.4724689">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/web/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="2079">
+                <state relative-caret-position="945">
                   <caret line="80" column="52" selection-start-line="80" selection-start-column="52" selection-end-line="80" selection-end-column="52" />
                   <folding>
                     <element signature="n#ul#1;n#div#1;n#div#0;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" />
@@ -57,8 +57,8 @@
           <file leaf-file-name="vercoin.css" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/web/css/vercoin.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="285">
-                  <caret line="1034" column="23" lean-forward="true" selection-start-line="1034" selection-start-column="23" selection-end-line="1034" selection-end-column="23" />
+                <state relative-caret-position="312">
+                  <caret line="1056" column="8" selection-start-line="1056" selection-start-column="6" selection-end-line="1056" selection-end-column="31" />
                 </state>
               </provider>
             </entry>
@@ -205,12 +205,12 @@
       <workItem from="1524463075142" duration="23652000" />
       <workItem from="1524534104606" duration="5888000" />
       <workItem from="1524540083093" duration="23581000" />
-      <workItem from="1524620736994" duration="20366000" />
+      <workItem from="1524620736994" duration="21695000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="73487000" />
+    <option name="totallyTimeSpent" value="74816000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
@@ -536,7 +536,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2079">
+        <state relative-caret-position="945">
           <caret line="80" column="52" selection-start-line="80" selection-start-column="52" selection-end-line="80" selection-end-column="52" />
           <folding>
             <element signature="n#ul#1;n#div#1;n#div#0;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" />
@@ -549,8 +549,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/css/vercoin.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="1034" column="23" lean-forward="true" selection-start-line="1034" selection-start-column="23" selection-end-line="1034" selection-end-column="23" />
+        <state relative-caret-position="312">
+          <caret line="1056" column="8" selection-start-line="1056" selection-start-column="6" selection-end-line="1056" selection-end-column="31" />
         </state>
       </provider>
     </entry>

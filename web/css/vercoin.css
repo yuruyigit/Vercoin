@@ -1492,7 +1492,6 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-=======
   left: -10px;
   bottom: 0;
   z-index: 5; }
@@ -1819,7 +1818,6 @@ body {
 }
 #zyhSell .seller_forms .sell_total .con2,
 #zyhBuy .seller_forms .sell_total .con2 {
-=======
   display: block; }
 
 /* 账户设置页面*/
@@ -2385,4 +2383,5 @@ body {
     color:#333;
   margin-right: 8px;
 }
+
 

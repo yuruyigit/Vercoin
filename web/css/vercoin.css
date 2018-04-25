@@ -1029,7 +1029,18 @@ body {background: #f0f0f0;}
 .banner .carousel-indicators{
     position: absolute;
     bottom: 66px;
-    left: 38%;
+    left: 50%;
+    width: 200px;
+    margin-left: -100px;
+    text-align: center;
+}
+.carousel-indicators li{
+   border:0;
+   background: #fff;
+   opacity: 0.3;
+}
+.carousel-indicators li.active{
+  opacity: 1;
 }
 .banner .carousel-indicators li{
     margin-right: 10px;

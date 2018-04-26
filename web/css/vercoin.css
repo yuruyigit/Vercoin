@@ -614,7 +614,7 @@ body {background: #f0f0f0;}
   font-size: 12px;
   left: 260px;
   color: #d93740;
-  display:none;
+  #display:none;
 }
 #zyhLogReg .log_reg_form .form-group {
   margin-bottom: 20px;

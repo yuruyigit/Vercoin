@@ -8,6 +8,19 @@ li {list-style: none;}
 hr {background: #e6e6e6;}
 body {background: #f0f0f0;}
 
+.form-control:focus{
+  border: 1px solid #ccc !important;
+  box-shadow:none !important;
+  -webkit-box-shadow:none !important;
+}
+.form-input-error.form-control:focus {
+  border: 1px solid #D93740 !important;
+  box-shadow:none !important;
+}
+.form-input-error {
+  border: 1px solid #D93740 !important;
+  box-shadow:none !important;
+}
 #zyhPageOrder .container {
   width: 1140px;
   padding: 0;
@@ -44,6 +57,7 @@ body {background: #f0f0f0;}
 #zyhPageOrder .order_status_header .order_status:hover {
   background: #f6f6f6;
 }
+
 #zyhPageOrder .order_search {
   float: right;
   width: 282px;

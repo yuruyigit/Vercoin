@@ -94,14 +94,11 @@
               90.00 CNY/VC
             </div>
           </div>
-          <div class="seller_price seller_price2">
-            <div class="labels label_price">
 
-            </div>
-            <div class="label_content_price">
-              80，4000CNY CNY/BTC
-            </div>
+          <div class="label_coin_price">
+            80，4000CNY CNY/<span id="coinPriceType">BTC</span>
           </div>
+
           <div class="seller_counts">
             <div class="labels label_counts">
               可交易数量
@@ -207,9 +204,15 @@ $(function(){
   })
 
   $("#walletTypeSelect").on("change",function(){
-    $("#walletType").text(
-      ['','ETH','USDT','BTC'][parseInt($(this).val())]
-    )
+
+    var type = ['','ETC','USDT','BTC'][parseInt($(this).val())];
+    $("#walletType").text(type)
+    if($(this).val() | 0 ){
+      $(".label_coin_price").show().find("#coinPriceType").text(type)
+    }else {
+      $(".label_coin_price").hide()
+    }
+
   })
 
 })

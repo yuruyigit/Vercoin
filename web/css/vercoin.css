@@ -161,6 +161,7 @@ body {background: #f0f0f0;}
   background-color: #fff4f4;
   background: #fff4f4;
 }
+#zyhPerson  .page_count,
 #zyhSellList  .page_count,
 #zyhBuyList .page_count,
 #zyhPageOrder .page_count,
@@ -168,6 +169,7 @@ body {background: #f0f0f0;}
   height: 80px;
   position: relative;
 }
+#zyhPerson .page_counts,
 #zyhSellList .page_counts,
 #zyhBuyList .page_counts,
 #zyhPageOrder .page_counts,
@@ -178,7 +180,9 @@ body {background: #f0f0f0;}
   right: 20px;
   top: 25px;
 }
+#zyhPerson .page_counts .prev,
 #zyhSellList .page_counts .prev,
+#zyhPerson .page_counts .next,
 #zyhSellList .page_counts .next,
 #zyhBuyList .page_counts .prev,
 #zyhBuyList .page_counts .next,
@@ -189,6 +193,7 @@ body {background: #f0f0f0;}
 {
   font-size: 10px;
 }
+#zyhPerson .page_counts div,
 #zyhSellList .page_counts div,
 #zyhPageOrder .page_counts div,
 #zyhPageAd .page_counts div,
@@ -206,6 +211,7 @@ body {background: #f0f0f0;}
   color: #333;
   margin-right: 10px;
 }
+#zyhPerson .pagen_active,
 #zyhSellList .pagen_active,
 #zyhBuyList .pagen_active,
 #zyhPageOrder .pagen_active,
@@ -1624,6 +1630,7 @@ body {background: #f0f0f0;}
   line-height: 28px;
   float: left;
 }
+#zyhPerson .sell_contents,
 #zyhSell .sell_contents,
 #zyhBuy .sell_contents {
   width: 800px;
@@ -1658,6 +1665,7 @@ body {background: #f0f0f0;}
   padding-right: 18px;
   padding-top: 14px;
 }
+#zyhPerson .sell_content_main,
 #zyhSell .sell_content_main,
 #zyhBuy .sell_content_main {
   width: 100%;
@@ -1665,6 +1673,7 @@ body {background: #f0f0f0;}
   border-bottom: 1px solid #e6e6e6;
   position: relative;
 }
+#zyhPerson .seller_avatar,
 #zyhSell .seller_avatar,
 #zyhBuy .seller_avatar {
   width: 75px;
@@ -1672,10 +1681,12 @@ body {background: #f0f0f0;}
   position: relative;
   top: 20px;
 }
+#zyhPerson .seller_avatar img,
 #zyhSell .seller_avatar img,
 #zyhBuy .seller_avatar img {
   width: 100%;
 }
+#zyhPerson .seller_name,
 #zyhSell .seller_name,
 #zyhBuy .seller_name {
   width: 100px;
@@ -1687,6 +1698,7 @@ body {background: #f0f0f0;}
   left: 95px;
   top: 33px;
 }
+#zyhPerson .seller_amount,
 #zyhSell .seller_amount,
 #zyhBuy .seller_amount {
   position: absolute;
@@ -1699,6 +1711,7 @@ body {background: #f0f0f0;}
   top: 20px;
   text-align: right;
 }
+#zyhPerson .seller_credit,
 #zyhSell .seller_credit,
 #zyhBuy .seller_credit {
   height: 44px;
@@ -1708,12 +1721,14 @@ body {background: #f0f0f0;}
   right: -5px;
   text-align: center;
 }
+#zyhPerson .seller_credit .seller_item,
 #zyhSell .seller_credit .seller_item,
 #zyhBuy .seller_credit .seller_item {
   width: 56px;
   float: right;
   margin-left: 20px;
 }
+#zyhPerson .seller_credit .item1,
 #zyhSell .seller_credit .item1,
 #zyhBuy .seller_credit .item1 {
   font-size: 16px;
@@ -1722,6 +1737,7 @@ body {background: #f0f0f0;}
   height: 22px;
   line-height: 22px;
 }
+#zyhPerson .seller_credit .item2,
 #zyhSell .seller_credit .item2,
 #zyhBuy .seller_credit .item2 {
   font-size: 14px;
@@ -1730,6 +1746,7 @@ body {background: #f0f0f0;}
   line-height: 20px;
   margin-top: 2px;
 }
+#zyhPerson .seller_status,
 #zyhSell .seller_status,
 #zyhBuy .seller_status {
   height: 24px;
@@ -1738,6 +1755,7 @@ body {background: #f0f0f0;}
   left: 95px;
   bottom: 20px;
 }
+#zyhPerson .seller_status #statusText,
 #zyhSell .seller_status #statusText,
 #zyhBuy .seller_status #statusText {
   display: block;
@@ -1749,6 +1767,7 @@ body {background: #f0f0f0;}
   text-align: center;
   font-size: 12px;
 }
+#zyhPerson .seller_status .tool_tip,
 #zyhSell .seller_status .tool_tip,
 #zyhBuy .seller_status .tool_tip {
   position: absolute;
@@ -1758,6 +1777,7 @@ body {background: #f0f0f0;}
   height: 29px;
   display: none;
 }
+#zyhPerson .seller_status .tool_tip img,
 #zyhSell .seller_status .tool_tip img,
 #zyhBuy .seller_status .tool_tip img {
   position: absolute;
@@ -1872,6 +1892,7 @@ body {background: #f0f0f0;}
 .content-authentication .col-md-10 .panel-body .col-md-6 select {
   width: 100%;
 }
+#zyhPerson .seller_status > div,
 #zyhSell .seller_status > div,
 #zyhBuy .seller_status > div {
   height: 24px;
@@ -1879,6 +1900,7 @@ body {background: #f0f0f0;}
   float: left;
   margin-right: 10px;
 }
+#zyhPerson .seller_status img,
 #zyhSell .seller_status img,
 #zyhBuy .seller_status img {
   width: 100%;
@@ -2725,8 +2747,133 @@ body {background: #f0f0f0;}
   border: 1px solid #E6E6E6;
 }
 
+#zyhPerson .container {
+  width:1140px;
+}
+#zyhPerson .sell_contents {
+  width:100%;
+  height:auto;
+}
+#zyhPerson .person_intro {
+  padding-top:20px;
+  padding-bottom:70px;
+  position:relative;
 
-
+}
+#zyhPerson .person_intro .btn {
+  position:absolute;
+  bottom:20px;
+  width:60px;
+  height:30px;
+  line-height:16px;
+  font-size: 14px;
+  color: #FFFFFF;
+}
+#zyhPerson .person_intro .btn-trust {
+  right:100px;
+}
+#zyhPerson .person_intro .btn-Shield {
+  right:20px;
+  background: #2099E9;
+  border-color: #2099E9;
+}
+#zyhPerson .person_intro .btn-Shield:hover {
+  background: #188AD5;
+}
+#zyhPerson  .person_table {
+  margin-top:20px;
+  width:100%;
+}
+#zyhPerson .person_table_header {
+  background:#e6e6e6;
+  height:40px;
+}
+#zyhPerson .person_table_header li {
+  float:left;
+  width:120px;
+  height:40px;
+  line-height:40px;
+  text-align:center;
+  color:#aaa;
+  cursor:pointer;
+}
+#zyhPerson .person_table_header .person_table_header_active {
+  border-top: 4px solid #D93740;
+  color:#333;
+  background:#fff;
+  line-height:36px;
+}
+#zyhPerson  .person_sell {
+  display:none;
+}
+#zyhPerson .data_header {
+  text-align:center;
+  height:50px;
+  background:#fff;
+  border-bottom:1px solid #e6e6e6;
+}
+#zyhPerson .data_header div{
+  float:left;
+  height:50px;
+  line-height:50px;
+}
+#zyhPerson .data_item div{
+  float:left;
+}
+#zyhPerson  .coin_type {width: 106px;}
+#zyhPerson  .pay_type {width: 314px }
+#zyhPerson  .much {width: 230px }
+#zyhPerson  .price {width: 269px }
+#zyhPerson  .operate {width: 180px }
+#zyhPerson .person_sell,
+#zyhPerson .person_buy {
+  background: #fff;
+}
+#zyhPerson .data_item {
+  color: #333;
+  height:70px;
+  line-height:70px;
+  text-align:center;
+}
+#zyhPerson .data_itemo {
+  background: #fff4f4;
+}
+#zyhPerson button {
+  border-radius: 2px;
+}
+#zyhPerson .person_sell,
+#zyhPerson .person_buy {
+  background: #fff;
+}
+#zyhPerson .person_buy .btn-primary {
+  background: #27c1c3;
+  border-color: #27c1c3;
+}
+#zyhPerson .person_sell .btn-primary {
+  background: #d93740;
+  border-color: #d93740;
+}
+#zyhPerson .data_item {
+  color: #333;
+}
+#zyhPerson .price1,
+#zyhPerson .price2 {
+  float: none !important;
+}
+#zyhPerson .price1 {
+  height: 25px;
+  line-height: 25px;
+  padding-top: 8px;
+  font-size: 18px;
+  color: #d93740;
+}
+#zyhPerson .price2 {
+  height: 20px;
+  line-height: 20px;
+  margin-top: 4px;
+  font-size: 14px;
+  color: #aaa;
+}
 .content-account  .col-md-10 .tip {
   padding: 0 0 0 20px; }
 .content-account  .col-md-10 .tip h3 {

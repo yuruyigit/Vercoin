@@ -5,6 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="renderer" content="webkit">
   <link rel="stylesheet" href="../lib/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../lib/css/jquery.mCustomScrollbar.min.css">
   <link rel="stylesheet" href="./css/vercoin.css">
   <title>vercoin</title>
 </head>
@@ -56,7 +57,9 @@
         消息对话
       </div>
       <div class="chat_content">
-        <div class="system_message_list">
+        <div class="chat_contents">
+
+
           <div class="system_message">
             <div class="title">
               拍下未付款
@@ -90,6 +93,72 @@
               2018-1-2 12:12:12
             </div>
           </div>
+          <div class="me clearfix">
+            <div class="user">
+              <div class="avatar">
+                <img src="./images/avatar_f_1.png">
+                <span class="user-status online"></span>
+              </div>
+              <div class="username">
+                <a href="#">nuoee</a>
+              </div>
+              <div class="content-info">
+                <time datetime="2018-04-26 11:37:04">2018-04-26 11:37:04</time>
+              </div>
+            </div>
+            <div class="content-box">
+
+              <div class="content-body">
+                <div class="content-text">对离别有体验的人都知道，行人将去的片刻固然令人黯然魂消</div>
+                <div class="content-read">已读</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="me clearfix">
+            <div class="user">
+              <div class="avatar">
+                <img src="./images/avatar_f_1.png">
+                <span class="user-status online"></span>
+              </div>
+              <div class="username">
+                <a href="#">nuoee</a>
+              </div>
+              <div class="content-info">
+                <time datetime="2018-04-26 11:37:04">2018-04-26 11:37:04</time>
+              </div>
+            </div>
+            <div class="content-box">
+
+              <div class="content-body">
+                <div class="content-text">对离别有体验的人都知道，行人将去的片刻固然令人黯然魂消</div>
+                <div class="content-read">已读</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="system clearfix">
+            <div class="user">
+              <div class="avatar">
+                <img src="./images/avatar_f_2.png">
+                <span class="user-status online"></span>
+              </div>
+              <div class="username">
+                <a href="#">admin</a>
+              </div>
+              <div class="content-info">
+                <time datetime="2018-04-26 11:37:04">2018-04-26 11:37:04</time>
+              </div>
+            </div>
+            <div class="content-box">
+
+              <div class="content-body">
+                <div class="content-text">this is text</div>
+              </div>
+            </div>
+          </div>
+
+
         </div>
       </div>
       <div class="chat_input">
@@ -168,5 +237,16 @@
 
 </div>
 </div>
+<script src="../lib/js/jquery.min.js"></script>
+<script src="../lib/js/bootstrap.min.js"></script>
+<script src="../lib/js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script>
+  $(function () {
+    $(".chat_contents").mCustomScrollbar({
+      setHeight: 498,
+      theme: "minimal-dark" // theme:"minimal-dark"  "inset-2-dark" dark-3
+    });
+  })
+</script>
 </body>
 </html>

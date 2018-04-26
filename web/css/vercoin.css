@@ -77,6 +77,7 @@ body {background: #f0f0f0;}
 }
 #zyhPageOrder .table_header {
   background: #fff;
+  border-bottom: 1px solid #e6e6e6;
 }
 #zyhPageOrder .order_table {
   display:none;
@@ -396,7 +397,9 @@ body {background: #f0f0f0;}
   margin-top: 20px;
   margin-bottom: 40px;
 }
-#zyhDraw .container .operate > div {
+#zyhDraw .container .operate .in,
+#zyhDraw .container .operate .out
+{
   text-align: center;
   display: inline-block;
   width: 100px;
@@ -1609,7 +1612,7 @@ body {background: #f0f0f0;}
 }
 #zyhSell .sell_contents,
 #zyhBuy .sell_contents {
-  width: 900px;
+  width: 800px;
   height: 803px;
   background: #fff;
   padding-left: 20px;
@@ -1617,7 +1620,7 @@ body {background: #f0f0f0;}
 }
 #zyhSell .sell_leave_messages,
 #zyhBuy .sell_leave_messages {
-  width: 220px;
+  width: 320px;
   height: 803px;
   position: absolute;
   right: 0;
@@ -2081,7 +2084,7 @@ body {background: #f0f0f0;}
 }
 #zyhSell .seller_forms .sell_transform input,
 #zyhBuy .seller_forms .sell_transform input {
-  width: 320px;
+  width: 260px;
   height: 40px;
 }
 #zyhSell .seller_forms .sell_transform span,
@@ -2173,7 +2176,7 @@ body {background: #f0f0f0;}
 }
 #zyhSell .seller_forms .btn-submit,
 #zyhBuy .seller_forms .btn-submit {
-  width: 860px;
+  width: 760px;
   height: 40px;
   background: #27c1c3;
   border-radius: 2px;
@@ -2359,6 +2362,11 @@ body {background: #f0f0f0;}
 }
 .order_in_progress .chat .chat_contents {
   width:100%;
+
+}
+.order_in_progress .mCSB_container {
+  padding-bottom:20px;
+  padding-top:20px;
 }
 .order_in_progress .chat .chat_content .system_message_list {
   width: 440px;
@@ -2379,8 +2387,109 @@ body {background: #f0f0f0;}
   position: relative;
   margin-left:155px;
 }
+.order_in_progress .chat  .me {
+  padding-right:20px;
+}
+.order_in_progress .chat  .system {
+  padding-left:15px;
+}
 .order_in_progress .chat  .me > div{
   float:right;
+}
+
+.order_in_progress .chat  .system > div{
+  float:left;
+}
+
+.order_in_progress  .content-box {
+  margin-right:11px;
+  padding-top:20px;
+}
+.order_in_progress .chat .avatar{
+  margin: 0 auto 5px;
+  width:50px;
+}
+.order_in_progress .chat  .user {
+  width:60px;
+  position:relative;
+}
+.order_in_progress .user img {
+  width:100%;
+}
+.order_in_progress .chat .username {
+  text-align:center;
+  color: #D93740;
+  height:14px;
+  line-height:14px;
+}
+.order_in_progress .chat .username a {
+  color: #D93740;
+}
+
+.order_in_progress .chat .content-info{
+  text-align: right;
+  padding-right: 5px;
+  color:#727272;
+  font-size:12px;
+  margin-bottom:2px;
+  display:inline-block;
+  position:absolute;
+  top: 0;
+  width: 160px;
+  right: 70px;
+}
+.order_in_progress .chat .system .content-info{
+  left: 28px;
+  right:inherit;
+}
+
+.order_in_progress .chat .me .content-read {
+  color:#727272;
+  position: relative;
+  top: -15px;
+  left: -36px;
+  font-size: 12px;
+}
+
+.order_in_progress .chat .content-text{
+  background-color: #dff0d8;
+  color:#727272;
+  padding: 10px 8px;
+  white-space: pre-wrap;
+  word-break: break-all;
+  box-shadow: 0 0 5px #ccc;
+  border-radius:4px;
+  max-width:300px;
+  position:relative;
+
+}
+
+.order_in_progress .me .content-text:before{
+  content: "";
+  width: 0;
+  height: 0;
+  border-top: 11px solid transparent;
+  border-left: 11px solid #dff0d8;
+  border-bottom: 11px solid transparent;
+  position: absolute;
+  right: -10px;
+  top: 10px;
+}
+
+.order_in_progress .system .content-text:before{
+  content: "";
+  width: 0;
+  height: 0;
+  border-top: 11px solid transparent;
+  border-right: 11px solid #dff0d8;
+  border-bottom: 11px solid transparent;
+  position: absolute;
+  left: -10px;
+  top: 10px;
+}
+
+.order_in_progress .system .content-box {
+  margin-left:10px;
 }
 
 .order_in_progress .chat .chat_content .system_message .title {

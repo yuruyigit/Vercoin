@@ -76,9 +76,13 @@
           <div class="labels label_price">
             价格
           </div>
-          <div class="label_content_price">
+          <div class="label_content_price ">
             90.00 CNY/VER
           </div>
+        </div>
+
+        <div class="label_coin_price">
+          80，4000CNY CNY/ <span id="coinPriceType">BTC</span>
         </div>
 
         <div class="seller_limit">
@@ -201,9 +205,14 @@
       $(".tool_tip").hide()
     })
     $("#walletTypeSelect").on("change",function(){
-      $("#walletType").text(
-        ['','ETH','USDT','BTC'][parseInt($(this).val())]
-      )
+      var type = ['','ETH','USDT','BTC'][parseInt($(this).val())];
+      $("#walletType").text(type)
+      if($(this).val() | 0 ){
+        $(".label_coin_price").show().find("#coinPriceType").text(type)
+      }else {
+        $(".label_coin_price").hide()
+      }
+
     })
   })
 </script>

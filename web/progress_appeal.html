@@ -5,6 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="renderer" content="webkit">
   <link rel="stylesheet" href="../lib/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../lib/css/jquery.mCustomScrollbar.min.css">
   <link rel="stylesheet" href="./css/vercoin.css">
   <title>申诉中</title>
 </head>
@@ -62,7 +63,9 @@
         消息对话
       </div>
       <div class="chat_content">
-        <div class="system_message_list">
+        <div class="chat_contents">
+
+
           <div class="system_message">
             <div class="title">
               拍下未付款
@@ -96,12 +99,32 @@
               2018-1-2 12:12:12
             </div>
           </div>
+          <div class="me clearfix">
+            <div class="user">
+              <div class="avatar">
+                <img src="./images/avatar_f_1.png">
+                <span class="user-status online"></span>
+              </div>
+              <div class="username">
+                <a href="#">nuoee</a>
+              </div>
+            </div>
+            <div class="content-box">
+              <div class="content-info">
+                <time datetime="2018-04-26 11:37:04">2018-04-26 11:37:04</time>
+              </div>
+              <div class="content-body">
+                <div class="content text">1111</div>
+              </div>
+            </div>
+          </div>
         </div>
+
       </div>
       <div class="chat_input">
         <div class="chat_input_panel">
           <div id="file">
-            <input type="file"  id="upload">
+            <input type="file" id="upload">
             <img src="./images/chat.png" alt="">
           </div>
           <textarea rows="3" cols="20" style="resize:none"
@@ -166,7 +189,8 @@
         <div class="trade_notice_text">
           <p>１、线下交易存在风险，请买方务必主动联系卖方进行收款地址的确认，卖方收款后请及时释放VC。</p>
           <p>２、如果有人请求您将VC直接转给另外一个VC地址，请考虑其中的风险！请不要把您的邮件或电话号码告诉您不熟悉的交易者！</p>
-          <p>３、若发生买家在点击已付款后卖家超过24小时未放行或买家恶意点击已付款等行为可通过申诉进行订单标记，并邮件提供订单号、手机号、您的姓名，申诉原因发送至平台邮箱support@vercoin.io邮箱，申诉受理小组会帮您核实处理。</p>
+          <p>
+            ３、若发生买家在点击已付款后卖家超过24小时未放行或买家恶意点击已付款等行为可通过申诉进行订单标记，并邮件提供订单号、手机号、您的姓名，申诉原因发送至平台邮箱support@vercoin.io邮箱，申诉受理小组会帮您核实处理。</p>
         </div>
       </div>
     </div>
@@ -174,5 +198,16 @@
 
 </div>
 </div>
+<script src="../lib/js/jquery.min.js"></script>
+<script src="../lib/js/bootstrap.min.js"></script>
+<script src="../lib/js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script>
+  $(function () {
+    $(".chat_contents").mCustomScrollbar({
+      setHeight: 498,
+      theme: "minimal-dark" // theme:"minimal-dark"  "inset-2-dark" dark-3
+    });
+  })
+</script>
 </body>
 </html>

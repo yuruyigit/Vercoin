@@ -1537,8 +1537,8 @@ body {background: #f0f0f0;}
 #zyhBuyList .merchant .merchant_ope {
   width: 60px;
 }
-#zyhSellList .merchant .merchant_ope button,
-#zyhBuyList .merchant .merchant_ope button {
+#zyhSellList .merchant .merchant_ope .btn-primary,
+#zyhBuyList .merchant .merchant_ope .btn-primary {
   width: 80px;
   height: 36px;
   position: relative;
@@ -1546,6 +1546,7 @@ body {background: #f0f0f0;}
   background: #27c1c3;
   border-color: #27c1c3;
   border-radius: 2px;
+  color:#fff;
 }
 
 #zyhSellList .merchant_o ,
@@ -1562,9 +1563,24 @@ body {background: #f0f0f0;}
   border-color: #d93740 !important;
   background: #d93740 !important;
 }
+
+#zyhBuyList .merchant_ope .btn-primary {
+  display: inline-block;
+  width: 80px;
+  height: 36px;
+  border-color: #d93740 !important;
+  background: #d93740 !important;
+  position: relative;
+  left: -15px;
+  border-radius: 2px;
+  color:#fff;
+}
+
+
 #zyhBuyList .merchant:hover .btn-primary {
   background: #b20610 !important;
 }
+
 #zyhSell hr,
 #zyhBuy hr {
   margin-top: 20px;
@@ -2341,14 +2357,16 @@ body {background: #f0f0f0;}
   border-bottom: 2px solid #e6e6e6;
   position: relative;
 }
+.order_in_progress .chat .chat_contents {
+  width:100%;
+}
 .order_in_progress .chat .chat_content .system_message_list {
   width: 440px;
-  position: absolute;
   left: 160px;
   top: 40px;
 }
 .order_in_progress .chat .chat_content .system_message {
-  width: 100%;
+  width: 440px;
   height: 125px;
   background: #f0f0f0;
   border: 1px solid #e6e6e6;
@@ -2359,7 +2377,12 @@ body {background: #f0f0f0;}
   border-radius: 2px;
   padding: 20px;
   position: relative;
+  margin-left:155px;
 }
+.order_in_progress .chat  .me > div{
+  float:right;
+}
+
 .order_in_progress .chat .chat_content .system_message .title {
   font-size: 16px;
   font-weight: 700;

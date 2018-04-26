@@ -614,7 +614,7 @@ body {background: #f0f0f0;}
   font-size: 12px;
   left: 260px;
   color: #d93740;
-  display:none;
+  /*display:none;*/
 }
 #zyhLogReg .log_reg_form .form-group {
   margin-bottom: 20px;
@@ -1142,22 +1142,22 @@ body {background: #f0f0f0;}
         right: 58%;
         top: 40%; }
 /*首页买卖安全内容*/
-.content {
+.content-index{
   width: 100%;
   background: #f0f0f0;
   padding: 0 130px;
   }
-.content .row .col-md-12 h3 {
+.content-index .row .col-md-12 h3 {
     text-align: center;
     margin: 45px 0 20px;
     color: #727272; }
-.content .row .col-md-12 p {
+.content-index .row .col-md-12 p {
     color: #727272;
     text-align: center;
     margin-bottom: 40px; }
-.content .row .col-md-12 p a {
+.content-index .row .col-md-12 p a {
       color: #D93740; }
-.content .row .col-md-12 p .glyphicon-volume-up{
+.content-index .row .col-md-12 p .glyphicon-volume-up{
     color:#D93740;
     width: 20px;
     height: 20px;
@@ -1166,28 +1166,28 @@ body {background: #f0f0f0;}
     top: 6px;
     left: -5px;
 }
-.content .row .col-md-3 .trade-list {
+.content-index .row .col-md-3 .trade-list {
     width: 100%;
     height: 310px;
     transition: all .3s ease-out;
     margin-bottom: 30px; }
-.content .row .col-md-3 .trade-list:hover {
+.content-index .row .col-md-3 .trade-list:hover {
        }
-.content .row .col-md-3 .trade-list .profile {
+.content-index .row .col-md-3 .trade-list .profile {
       width: 100%;
       height: 140px;
       background: #303030;
       padding: 15px 0 0; }
-.content .row .col-md-3 .trade-list .profile .user {
+.content-index .row .col-md-3 .trade-list .profile .user {
         width: 50px;
         height: 50px;
         position: relative;
         margin: 0px auto 20px; }
-.content .row .col-md-3 .trade-list .profile .user img {
+.content-index .row .col-md-3 .trade-list .profile .user img {
           width: 100%;
           height: 100%;
           border-radius: 50%; }
-.content .row .col-md-3 .trade-list .profile .user .user-state {
+.content-index .row .col-md-3 .trade-list .profile .user .user-state {
           display: block;
           height: 11px;
           width: 11px;
@@ -1197,45 +1197,45 @@ body {background: #f0f0f0;}
           position: absolute;
           right: 0;
           bottom: 0; }
-.content .row .col-md-3 .trade-list .profile table {
+.content-index .row .col-md-3 .trade-list .profile table {
         width: 100%;
         padding: 0 50px; }
-.content .row .col-md-3 .trade-list .profile table td {
+.content-index .row .col-md-3 .trade-list .profile table td {
           color: #fff;
           text-align: center; }
-.content .row .col-md-3 .trade-list .caption {
+.content-index .row .col-md-3 .trade-list .caption {
       padding: 9px;
       color: #727272;
       background: #fff;
       text-align: center; }
-.content .row .col-md-3 .trade-list .caption h3 {
+.content-index .row .col-md-3 .trade-list .caption h3 {
         margin: 0;
         font-size: 16px;
         padding: 12px 22px;
         border-bottom: solid 2px #ddd;
         display: inline-block;
         margin-bottom: 11px; }
-.content .row .col-md-3 .trade-list .caption p {
+.content-index .row .col-md-3 .trade-list .caption p {
         margin: 0;
         color: #777777;
         font-size: 12px; }
-.content .row .col-md-3 .trade-list .caption .btn {
+.content-index .row .col-md-3 .trade-list .caption .btn {
         margin-top: 11px; }
-.content .row .col-md-3 .trade-list .caption .btn {
+.content-index .row .col-md-3 .trade-list .caption .btn {
           padding: 5px 10px;
           font-size: 12px;
           line-height: 1.5;
           border-radius: 3px; }
-.content .row .col-md-3 .trade-list .caption .btn {
+.content-index .row .col-md-3 .trade-list .caption .btn {
           color: #fff;
           background-color: #D93740;}
-.content .row .col-md-3 .trade-list .caption .btn.buy:hover{
+.content-index .row .col-md-3 .trade-list .caption .btn.buy:hover{
     background-color: #B20610;
 }
-.content .row .col-md-3 .trade-list .caption .btn.sell{
+.content-index .row .col-md-3 .trade-list .caption .btn.sell{
           background-color: #27C1C3;
 }
-.content .row .col-md-3 .trade-list .caption .btn.sell:hover{
+.content-index .row .col-md-3 .trade-list .caption .btn.sell:hover{
          background-color: #039497;
 }
 /*首页规范信息*/

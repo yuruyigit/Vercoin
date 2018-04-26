@@ -1037,11 +1037,23 @@ body {background: #f0f0f0;}
 .banner {
   width: 100%;
   height: 420px;
+  background: #fff;
   position: relative; }
 .banner .carousel-indicators{
     position: absolute;
     bottom: 66px;
-    left: 38%;
+    left: 50%;
+    width: 200px;
+    margin-left: -100px;
+    text-align: center;
+}
+.carousel-indicators li{
+   border:0;
+   background: #fff;
+   opacity: 0.3;
+}
+.carousel-indicators li.active{
+  opacity: 1;
 }
 .banner .carousel-indicators li{
     margin-right: 10px;
@@ -1055,7 +1067,8 @@ body {background: #f0f0f0;}
 .banner .carousel .carousel-inner .item {
         width: 100%;
         height: 420px;
-        position: relative;}
+      /*  position: relative;*/
+        }
 .banner .carousel .carousel-inner .item .remark{
        position: absolute;
        top: 90px;
@@ -1106,15 +1119,16 @@ body {background: #f0f0f0;}
     height: 100%;
 }
 .banner .carousel .icon.left {
-        left: 68%;
+        left: 58%;
         top: 40%; }
 .banner .carousel .icon.right {
-        right: 68%;
+        right: 58%;
         top: 40%; }
 /*首页买卖安全内容*/
 .content {
   width: 100%;
   background: #f0f0f0;
+  padding: 0 130px;
   }
 .content .row .col-md-12 h3 {
     text-align: center;
@@ -1210,7 +1224,7 @@ body {background: #f0f0f0;}
 /*首页规范信息*/
 .site-info {
   background-color: #fff;
-  padding: 35px 55px;
+  padding: 35px 90px;
   margin: 10px 0;
   width: 100%;
   overflow: hidden; }
@@ -1229,7 +1243,7 @@ body {background: #f0f0f0;}
       color:#727272;}
 .site-info .site-item p {
       margin: 0 0 11px;
-      padding: 0 20px;
+      padding: 0 45px;
       font-size: 14px;
       color:#727272;}
 
@@ -1276,10 +1290,133 @@ body {background: #f0f0f0;}
 .content-usercenter .col-md-3 .avatar {
   width: 50px;
   height: 50px;
-  line-height: 50px;
-  text-indent: 20px;
   cursor: pointer;
+  position: relative;
 }
+.content-usercenter .col-md-3 .avatar img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%; }
+.content-usercenter .col-md-3 .avatar .avatar-edit {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 50px;
+  overflow: hidden; }
+.content-usercenter .col-md-3 .avatar .avatar-edit span {
+  font-size: 12px;
+  text-align: center;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  z-index: 3;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  opacity: 1; }
+.content-usercenter .col-md-3 .avatar .avatar-edit input {
+  cursor: pointer;
+  opacity: 0;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  left: -10px;
+  bottom: 0;
+  z-index: 5; }
+.user-modal{
+  width: 450px;
+  height: 316px;
+  position: fixed;
+  top:136px;
+  left: 42%;
+  border: 1px solid #f0f0f0;
+  box-shadow: 0 2px 2px #f0f0f0;
+  border-radius: 2px;
+  display: none;
+  background: #fff;
+}
+.user-modal .user-header{
+  width: 100%;
+  height: 52px;
+  background: #D93740;
+}
+.user-modal .user-header p{
+  font-size: 16px;
+  color:#FFF;
+  text-align: center;
+  line-height:52px;
+  position: relative;
+}
+.user-modal .user-header p .glyphicon-remove{
+   width: 20px;
+  height: 20px;
+  font-size: 18px;
+  position: absolute;
+  right:16px;
+  top:15px;
+  z-index: 5;
+  display: block;
+}
+.user-modal .user-body{
+  width: 100%;
+  height: 264px;
+  text-align: center;
+}
+.user-modal .user-body .user-list{
+   padding: 30px 0;
+   width: 100%;
+   display: flex;
+  justify-content: space-around;
+}
+.user-modal .user-body .user-list .user-picture{
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  position: relative;
+  border:2px solid #f0f0f0;
+}
+.user-modal .user-body .user-list .active{
+  border: 2px solid  #D93740;
+}
+.user-modal .user-body .user-list .user-picture img{
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+.user-modal .user-body .user-list .user-picture span{
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  position: absolute;
+  right:0;
+  bottom:0;
+  background: #D93740;
+  font-size: 14px;
+  color:#fff;
+  display: none;
+}
+.user-modal .user-body .user-list .user-picture .checked{
+  display: block;
+}
+.user-modal .user-body button{
+   width: 100px;
+   height: 40px;
+   border-radius: 2px;
+   font-size: 14px;
+   border:0;
+}
+.user-modal .user-body button.cancel{
+   color:#333;
+   margin:0 30px 0 0 ;
+}
+.user-modal .user-body button.confirm{
+  color:#fff;
+  background: #D93740;
+
+}
+/*.content-usercenter .col-md-3 .avatar .avatar-edit input:hover {
+  opacity: 1; }*/
 #zyhSellList .main_block_right,
 #zyhBuyList .main_block_right {
   width: 1000px;
@@ -1596,11 +1733,20 @@ body {background: #f0f0f0;}
   left: -10px;
   bottom: 0;
   z-index: 5; }
-.content-usercenter .col-md-3 .avatar .avatar-edit input:hover {
-  opacity: 1; }
+.content-usercenter .col-md-6 .invalid{
+  color:#D93740;
+}
 .content-usercenter .col-md-6 .username {
   position: relative;
-  top: 15px; }
+  }
+.content-usercenter .col-md-6 .username p{
+  font-size: 20px;
+  color:#333333;
+}
+.content-usercenter .col-md-6 .username a{
+  font-size: 12px;
+  color:#D93740;
+}
 .content-usercenter  button{
   background: #D93740;
   border:0;
@@ -1610,6 +1756,37 @@ body {background: #f0f0f0;}
   background: #D93740;
 }
 /*身份验证页面*/
+.content-authentication .col-md-10  input{
+  width: 100%;
+  text-indent: 10px;
+  font-size: 14px;
+  color:#CCC;
+}
+.content-authentication .col-md-10 .tip h3{
+  font-size: 14px;
+  color:#AAA;
+}
+.content-authentication .col-md-10 .tip p{
+  font-size: 14px;
+  color:#AAA;
+}
+.content-authentication .col-md-10 label{
+  font-size: 14px;
+  color:#AAA;
+}
+.content-authentication .col-md-10  select{
+  width: 100%;
+  text-indent: 10px;
+}
+.content-authentication  .col-md-10  button{
+  width: 100%;
+  height: 40px;
+  text-align: center;
+  line-height: 30px;
+  font-size: 14px;
+  color:#FFF;
+  background: #D93740;
+}
 .content-authentication{
   width: 100%;
   padding-top: 20px;}
@@ -2250,6 +2427,29 @@ body {background: #f0f0f0;}
   height: 80px;
   outline: none;
 }
+.content-account  .col-md-10  input{
+  width: 100%;
+  text-indent: 10px;
+  font-size: 14px;
+  color:#CCC;
+}
+.content-account  .col-md-10 label{
+  font-size: 14px;
+  color:#AAA;
+}
+.content-account  .col-md-10  select{
+  width: 100%;
+  text-indent: 10px;
+}
+.content-account  .col-md-10  button{
+  width: 100%;
+  height: 40px;
+  text-align: center;
+  line-height: 30px;
+  font-size: 14px;
+  color:#FFF;
+  background: #D93740;
+}
 .order_in_progress .order_detail_progress1,
 .order_in_progress .order_detail_progress2,
 .order_in_progress .order_detail_progress3
@@ -2378,6 +2578,7 @@ body {background: #f0f0f0;}
   color:#333;
   border: 1px solid #E6E6E6;
 }
+
 
 
 .content-account  .col-md-10 .tip {

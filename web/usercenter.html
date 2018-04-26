@@ -160,24 +160,30 @@
                         <form method="POST" action="https://www.vercoin.io/profile" class="form-horizontal">
                             <div class="form-group">
                                 <div class="col-md-3 col-md-offset-2">
-                                    <div class="user avatar-edit" edit-enable="true" link-enable="true">
+                                    <div class="user avatar-edit" edit-enable="true" link-enable="true" id="user-id">
                                         <div class="avatar"><!---->
                                             <img src="./images/user.png"> <!---->
                                             <div class="avatar-edit">
-                                                <span >编辑</span>
-                                                <input type="file" accept="image/png, image/gif, image/jpeg" id="avatar-file-60352">
+                                                <!--<span >编辑</span>-->
+                                               <!-- <input  accept="image/png, image/gif, image/jpeg" id="avatar-file-60352">-->
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-md-6 col-md-pull-2">
-                                    <div class="username"><a href="/user/507">nuoee</a></div>
+                                    <div class="username">
+                                        <p>nuoee</p>
+                                        <a href="javascript:;" id="user">设置头像</a>
+                                    </div>
                                 </div>
                             </div>
                             <div class="form-group"><label class="col-md-3 control-label">UID</label>
                                 <div class="col-md-6"><p class="form-control-static">507</p></div>
                             </div>
-                            <div class="form-group"><label class="col-md-3 control-label">身份验证与绑定</label>
+                            <div class="form-group"><label class="col-md-3 control-label">身份验证</label>
+                                <div class="col-md-6"><p class="form-control-static invalid">未验证</p></div>
+                            </div>
+                            <div class="form-group"><label class="col-md-3 control-label">电子邮箱</label>
                                 <div class="col-md-6"><p class="form-control-static">已验证</p></div>
                             </div>
                             <div class="form-group"><label class="col-md-3 control-label">手机</label>
@@ -186,8 +192,8 @@
                             <div class="form-group"><label class="col-md-3 control-label">注册时间</label>
                                 <div class="col-md-6"><p class="form-control-static">2018-03-25 16:58:29</p></div>
                             </div>
-                            <div class="form-group"><label class="col-md-3 control-label">信任人数</label>
-                                <div class="col-md-6"><p class="form-control-static">被 0 人信任</p></div>
+                            <div class="form-group"><label class="col-md-3 control-label">受信人数</label>
+                                <div class="col-md-6"><p class="form-control-static"> 0 人</p></div>
                             </div>
                             <div class="form-group"><label class="col-md-3 control-label">累计交易次数</label>
                                 <div class="col-md-6"><p class="form-control-static">1</p></div>
@@ -217,6 +223,34 @@
         </div>
     </div>
 </div>
+<div class="user-modal" id="user-modal">
+    <div class="user-header">
+        <p>设置头像 <i class="glyphicon glyphicon-remove"></i></p>
+    </div>
+    <div class="user-body">
+        <ul class="user-list">
+            <li class="user-picture active">
+                <img src="./images/2@2x.png" alt="">
+                <span class="circle checked">✔</span>
+
+            </li>
+            <li class="user-picture">
+                <img src="./images/2%20copy@2x.png" alt="">
+                <span class="circle">✔</span>
+            </li>
+            <li class="user-picture">
+                <img src="./images/2%20copy%202@2x.png" alt="">
+                <span class="circle">✔</span>
+            </li>
+            <li class="user-picture">
+                <img src="./images/Bitmap%20Copy%202@2x.png" alt="">
+                <span class="circle">✔</span>
+            </li>
+        </ul>
+        <button class="cancel">取消</button>
+        <button class="confirm">确定</button>
+    </div>
+</div>
 <div class="language-select">
     <ul>
         <li><a href="">English</a></li>
@@ -224,5 +258,33 @@
         <li><a href="">繁体中文</a></li>
     </ul>
 </div>
+<script type="text/javascript">
+    $('#user').click(function () {
+        $('#user-modal').css('display','block');
+        $('.content-usercenter').css({'background':'#f0f0f0','opacity':'0.3','overflow-y':'hidden'})
+    })
+    $('.user-picture').click(function () {
+        $(this).each(function () {
+          $(this).addClass('active');
+            $(this).children('span').addClass('checked');
+            $(this).siblings(".user-picture").removeClass('active');
+            $(this).siblings(".user-picture").children('span').removeClass('checked');
+            var imgsrc=$(this).children('img').attr('src');
+            $('#user-id').find('img').attr('src',imgsrc);
+        })
+     $('.glyphicon-remove').click(function () {
+         $('#user-modal').css('display','none');
+         $('.content-usercenter').css({'background':'#f0f0f0','opacity':'1','position':'relative'});
+     })
+    })
+    $('.confirm').click(function () {
+        $('#user-modal').css('display','none');
+        $('.content-usercenter').css({'background':'#f0f0f0','opacity':'1','position':'relative'});
+    })
+    $('.cancel').click(function () {
+        $('#user-modal').css('display','none');
+        $('.content-usercenter').css({'background':'#f0f0f0','opacity':'1','position':'relative'});
+    })
+</script>
 </body>
 </html>

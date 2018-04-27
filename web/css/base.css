@@ -43,13 +43,6 @@ a.blue{color:#3399e0}
     padding: 10px 0;
     color: #303030;
     text-align: center;}
-/*.header .navbar .navbar-nav .dropdown-menu a.default-color {
-    background: #303030;
-    padding: 10px 0;
-    color: #AAA;
-    text-align: center;}*/
-.header .navbar .navbar-nav .dropdown:hover a {
-    color: #303030; }
 .header .navbar-nav.navbar-right .dropdown-menu dt {
     display: inline-block;
     padding: 6px 0 0 0;
@@ -70,6 +63,11 @@ a.blue{color:#3399e0}
     border: 0;
     text-align: center;
     border-radius: 0;
+    background: #303030;
+    color:#fff;
+}
+.header .navbar-nav.navbar-right .dropdown-menu button:hover{
+    background: #444;
 }
 .header .navbar-default .navbar-nav>li>a:hover{
      background-color: #D93740;
@@ -82,7 +80,46 @@ a.blue{color:#3399e0}
 .header .navbar-default .navbar-nav>li>a{
     color: #AAA;
 }
-/*页面公共尾部样式*/
+.header .navbar .nav-index .default-color a{
+    color:#fff;
+}
+.header .navbar .nav-index .dropdown-menu{
+    background: #303030;
+}
+.header .navbar .nav-index .dropdown-menu>li>a:hover{
+    background: #444;
+    color:#fff;
+}
+.header .navbar .nav-index .dropdown-menu>li>a:hover{
+    background: #444;
+    color:#fff;
+}
+.header .navbar .nav-index .dropdown-menu>li>a.default:hover{
+    background: #303030;
+    color:#fff;
+}
+.header .navbar .right .dropdown-menu{
+    background: #303030;
+    border:0;
+}
+.header .navbar .right .dropdown-menu a{
+    color:#fff;
+}
+.header .navbar .right .dropdown-menu.reset li.first{
+    background: #fff;
+}
+.header .navbar .right .dropdown-menu.reset li a:hover{
+    background: #444;
+    color:#fff;
+}
+.header .glyphicon{
+    top:3px;
+}
+.header .glyphicon-th-list{
+    left:-5px;
+    top:2px;
+}
+    /*页面公共尾部样式*/
 .language-select {
     padding: 18px 0;
     background: #f0f0f0; }

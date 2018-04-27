@@ -1044,6 +1044,9 @@ body {background: #f0f0f0;}
 @media (max-width: 768px) {
   .navbar-nav {
     display: none; } }
+@media (max-width: 978px) {
+  .navbar-right {
+    display: none; } }
 @media (max-width: 768px) {
     .navbar-header .header-logo{
         position: relative;

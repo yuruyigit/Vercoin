@@ -204,7 +204,6 @@ $(function(){
   })
 
   $("#walletTypeSelect").on("change",function(){
-
     var type = ['','ETC','USDT','BTC'][parseInt($(this).val())];
     $("#walletType").text(type)
     if($(this).val() | 0 ){
@@ -212,7 +211,6 @@ $(function(){
     }else {
       $(".label_coin_price").hide()
     }
-
   })
 
 })

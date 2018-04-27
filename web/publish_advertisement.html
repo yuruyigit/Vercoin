@@ -333,7 +333,6 @@
 <script src="../lib/js/jquery.min.js"></script>
 <script>
   $(function(){
-
     $("#input-type-OnlineSell").on("click",function(){
       $("#form-group-amount").hide()
       $("#form-group-amount-sell").show()
@@ -342,11 +341,13 @@
       $("#form-group-amount-sell").hide()
       $("#form-group-amount").show()
     })
-
     $(".check-input").on("click",function(){
       $("#"+$(this).attr("data-target"))[$(this).is(":checked")?'show':'hide']();
+    }).each(function(item,dom){
+      if($(dom).is(":checked")){
+        $("#"+$(this).attr("data-target")).show()
+      }
     })
-
   })
 </script>
 </body>

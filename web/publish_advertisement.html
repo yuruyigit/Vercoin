@@ -98,29 +98,32 @@
                     现金支付
                   </label>
                   <label for="input-settlement-BTC" class="checkbox-inline">
-                    <input
+                    <input class="check-input"
                         type="checkbox"
                         id="input-settlement-BTC"
                         name="settlement[]"
                         value="BTC"
+                        data-target="form-group-transaction_price_btc"
                     >
                     BTC
                   </label>
                   <label for="input-settlement-BTC" class="checkbox-inline">
-                    <input
+                    <input class="check-input"
                         type="checkbox"
                         id="input-settlement-USDT"
                         name="settlement[]"
                         value="BTC"
+                        data-target="form-group-transaction_price_usdt"
                     >
                     USDT
                   </label>
                   <label for="input-settlement-ETH" class="checkbox-inline">
-                    <input
+                    <input class="check-input"
                         type="checkbox"
                         id="input-settlement-ETH"
-                        name="settlement[]"
+                         name="settlement[]"
                         value="ETH"
+                        data-target="form-group-transaction_price_eth"
                     >
                     ETH
                   </label>
@@ -339,6 +342,11 @@
       $("#form-group-amount-sell").hide()
       $("#form-group-amount").show()
     })
+
+    $(".check-input").on("click",function(){
+      $("#"+$(this).attr("data-target"))[$(this).is(":checked")?'show':'hide']();
+    })
+
   })
 </script>
 </body>

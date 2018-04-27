@@ -756,6 +756,11 @@ body {background: #f0f0f0;}
 #zyhPubAd #form-group-amount-sell{
   display:none;
 }
+#zyhPubAd #form-group-transaction_price_btc,
+#zyhPubAd #form-group-transaction_price_eth,
+#zyhPubAd #form-group-transaction_price_usdt {
+  display:none;
+}
 #zyhPubAd #imgshow {
   color: #000;
   margin-left: 10px;
@@ -1783,9 +1788,9 @@ body {background: #f0f0f0;}
   position: absolute;
   top: 0;
   left: 0;
-  left: -10px;
   bottom: 0;
-  z-index: 5; }
+  z-index: 5;
+}
 .content-usercenter .col-md-6 .invalid{
   color:#D93740;
 }
@@ -2874,7 +2879,10 @@ body {background: #f0f0f0;}
   font-size: 14px;
   color: #aaa;
 }
-.content-account  .col-md-10 .tip {
+#zyhPerson .page_count {
+  border-top:1px solid #e6e6e6;
+ }
+ .content-account  .col-md-10 .tip {
   padding: 0 0 0 20px; }
 .content-account  .col-md-10 .tip h3 {
   font-size: 14px;

@@ -3,16 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="8958a1de-ddbc-4b6c-ab50-87c84e06485f" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/account.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/account.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/authentication.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/authentication.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/css/base.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/css/base.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/css/vercoin.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/css/vercoin.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/security.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/security.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/trust-you.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/trust-you.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/usercenter.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/usercenter.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/you-block.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/you-block.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/you-trust.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/you-trust.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -28,20 +18,20 @@
     <splitter split-orientation="horizontal" split-proportion="0.8146588">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="vercoin.css" pinned="false" current-in-tab="true">
+          <file leaf-file-name="vercoin.css" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/web/css/vercoin.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="267">
-                  <caret line="1047" column="17" lean-forward="true" selection-start-line="1047" selection-start-column="17" selection-end-line="1047" selection-end-column="17" />
+                <state relative-caret-position="28404">
+                  <caret line="1052" column="27" lean-forward="true" selection-start-line="1052" selection-start-column="27" selection-end-line="1052" selection-end-column="27" />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="usercenter.html" pinned="false" current-in-tab="false">
+          <file leaf-file-name="usercenter.html" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/web/usercenter.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-491">
-                  <caret line="13" column="18" lean-forward="true" selection-start-line="13" selection-end-line="113" selection-end-column="6" />
+                <state relative-caret-position="-32">
+                  <caret line="39" column="11" lean-forward="true" selection-start-line="39" selection-start-column="11" selection-end-line="39" selection-end-column="11" />
                   <folding>
                     <element signature="n#li#0;n#ul#0;n#li#1;n#ul#1;n#div#1;n#div#0;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" />
                     <element signature="n#li#1;n#ul#0;n#li#1;n#ul#1;n#div#1;n#div#0;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" />
@@ -58,8 +48,8 @@
           <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/web/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="59">
-                  <caret line="38" column="54" lean-forward="true" selection-start-line="38" selection-start-column="36" selection-end-line="38" selection-end-column="57" />
+                <state relative-caret-position="-239">
+                  <caret line="27" column="78" selection-start-line="27" selection-start-column="76" selection-end-line="27" selection-end-column="103" />
                   <folding>
                     <element signature="n#ul#1;n#div#1;n#div#0;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" />
                     <element signature="n#div#1;n#body#0;n#html#0;n#!!top" />
@@ -78,7 +68,7 @@
           <file leaf-file-name="base.css" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/web/css/base.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="454">
+                <state relative-caret-position="697">
                   <caret line="119" column="12" selection-start-line="119" selection-start-column="12" selection-end-line="119" selection-end-column="12" />
                 </state>
               </provider>
@@ -127,7 +117,6 @@
         <option value="$PROJECT_DIR$/web/css/acount.css" />
         <option value="$PROJECT_DIR$/web/css/index.css" />
         <option value="$PROJECT_DIR$/../project/chatroom/js/socket.io.js" />
-        <option value="$PROJECT_DIR$/web/index.html" />
         <option value="$PROJECT_DIR$/web/usercenter.html" />
         <option value="$PROJECT_DIR$/web/css/base.css" />
         <option value="$PROJECT_DIR$/web/account.html" />
@@ -137,6 +126,7 @@
         <option value="$PROJECT_DIR$/web/you-block.html" />
         <option value="$PROJECT_DIR$/web/you-trust.html" />
         <option value="$PROJECT_DIR$/web/css/vercoin.css" />
+        <option value="$PROJECT_DIR$/web/index.html" />
       </list>
     </option>
   </component>
@@ -149,7 +139,7 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="15" />
     <option name="y" value="30" />
     <option name="width" value="1890" />
@@ -173,12 +163,6 @@
               <item name="vercoin-resources" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="vercoin-resources" type="b2602c69:ProjectViewProjectNode" />
-              <item name="vercoin-resources" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -189,7 +173,7 @@
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../project/vue2-elm" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.prettier" value="true" />
     <property name="node.js.path.for.package.prettier" value="project" />
@@ -232,15 +216,15 @@
       <workItem from="1524620736994" duration="26199000" />
       <workItem from="1524706793602" duration="4054000" />
       <workItem from="1524720463851" duration="6983000" />
-      <workItem from="1524793210341" duration="4268000" />
+      <workItem from="1524793210341" duration="7682000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="94625000" />
+    <option name="totallyTimeSpent" value="98039000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1295" height="695" extended-state="7" />
+    <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1683876" />
@@ -562,23 +546,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="59">
-          <caret line="38" column="54" lean-forward="true" selection-start-line="38" selection-start-column="36" selection-end-line="38" selection-end-column="57" />
-          <folding>
-            <element signature="n#ul#1;n#div#1;n#div#0;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#1;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#2;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#3;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#4;n#body#0;n#html#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/css/base.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="454">
+        <state relative-caret-position="697">
           <caret line="119" column="12" selection-start-line="119" selection-start-column="12" selection-end-line="119" selection-end-column="12" />
         </state>
       </provider>
@@ -664,10 +634,31 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/web/css/vercoin.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="28404">
+          <caret line="1052" column="27" lean-forward="true" selection-start-line="1052" selection-start-column="27" selection-end-line="1052" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-239">
+          <caret line="27" column="78" selection-start-line="27" selection-start-column="76" selection-end-line="27" selection-end-column="103" />
+          <folding>
+            <element signature="n#ul#1;n#div#1;n#div#0;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#2;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#3;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#4;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/web/usercenter.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-491">
-          <caret line="13" column="18" lean-forward="true" selection-start-line="13" selection-end-line="113" selection-end-column="6" />
+        <state relative-caret-position="-32">
+          <caret line="39" column="11" lean-forward="true" selection-start-line="39" selection-start-column="11" selection-end-line="39" selection-end-column="11" />
           <folding>
             <element signature="n#li#0;n#ul#0;n#li#1;n#ul#1;n#div#1;n#div#0;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#li#1;n#ul#0;n#li#1;n#ul#1;n#div#1;n#div#0;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" />
@@ -677,13 +668,6 @@
             <element signature="n#div#2;n#body#0;n#html#0;n#!!top" />
             <element signature="n#div#3;n#body#0;n#html#0;n#!!top" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/css/vercoin.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="267">
-          <caret line="1047" column="17" lean-forward="true" selection-start-line="1047" selection-start-column="17" selection-end-line="1047" selection-end-column="17" />
         </state>
       </provider>
     </entry>

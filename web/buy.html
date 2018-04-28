@@ -128,11 +128,19 @@
         </div>
 
         <div class="sell_transform clearfix">
-          <div class="input-group">
+
+          <div class="input-group input-group-money">
+            <input type="text" class="form-control" name="count1"
+                   value="" placeholder="请输入您想购买的金额"/>
+            <span class="input-group-addon">CNY</span>
+          </div>
+
+          <div class="input-group input-group-coin">
             <input type="text" class="form-control" name="count1"
                    value="" placeholder="请输入您想出售的数量"/>
             <span class="input-group-addon">VER</span>
           </div>
+
           <div class="convert">
             <img src="./images/convert.png" alt="">
           </div>
@@ -204,16 +212,25 @@
     }).on("mouseout",'div',function(){
       $(".tool_tip").hide()
     })
+
     $("#walletTypeSelect").on("change",function(){
+
+
       var type = ['','ETH','USDT','BTC'][parseInt($(this).val())];
       $("#walletType").text(type)
       if($(this).val() | 0 ){
+        $(".input-group-money,.input-group-coin").hide();
+        $(".input-group-coin").show();
         $(".label_coin_price").show().find("#coinPriceType").text(type)
       }else {
+        $(".input-group-money,.input-group-coin").hide();
+        $(".input-group-money").show();
         $(".label_coin_price").hide()
       }
 
     })
+
+
   })
 </script>
 </body>

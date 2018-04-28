@@ -3012,5 +3012,37 @@ body {background: #f0f0f0;}
     color:#333;
   margin-right: 8px;
 }
-
+/**
+*@修改我的广告的动态生成的分页的样式
+ */
+ #pageInfo li {
+   display: inline-block;
+   width: 30px;
+   height: 30px;
+   margin-right: 10px;
+ }
+#pageInfo.pagination {
+  width:auto;
+  padding: 0;
+  position: relative;
+  right: 30px;
+  float:right;
+}
+#pageInfo a {
+  color: #333;
+  margin-right: 8px;
+  width: 30px;
+  height: 30px;
+  display: block;
+  text-align: center;
+  border-radius: 2px;
+  line-height: 30px;
+  padding: 0;
+}
+.pagination>.active>a {
+  background: #d93740 !important;
+  background-color: #d93740 !important;
+  border-color: #d93740 !important;
+  color: #fff!important;
+}
 

@@ -1622,6 +1622,9 @@ body {background: #f0f0f0;}
   height: 1px;
   border: none;
 }
+#zyhBuy .input-group-coin{
+  display:none;
+}
 #zyhSell .container,
 #zyhBuy .container {
   width: 1140px;

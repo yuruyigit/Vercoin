@@ -218,7 +218,7 @@
 </div>
 <div class="user-modal" id="user-modal">
     <div class="user-header">
-        <p>设置头像 <i class="glyphicon glyphicon-remove"></i></p>
+        <p>设置头像<em>×</em></p>
     </div>
     <div class="user-body">
         <ul class="user-list">
@@ -265,7 +265,7 @@
             var imgsrc=$(this).children('img').attr('src');
             $('#user-id').find('img').attr('src',imgsrc);
         })
-     $('.glyphicon-remove').click(function () {
+     $('em').click(function () {
          $('#user-modal').css('display','none');
          $('.content-usercenter').css({'background':'#f0f0f0','opacity':'1','position':'relative'});
      })

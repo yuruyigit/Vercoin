@@ -238,10 +238,13 @@ body {background: #f0f0f0;}
   color: #333;
   font-weight: 700;
 }
-#zyhPageAd .item > div {
+#zyhPageAd .item .item_list,
+#zyhPageAd .item .item_title
+{
   height: 40px;
   line-height: 40px;
   text-indent: 20px;
+  display:block;
 }
 #zyhPageAd table {
   margin-bottom:0;

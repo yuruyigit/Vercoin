@@ -2108,6 +2108,7 @@ body {background: #f0f0f0;}
   font-size: 14px;
   color:#FFF;
   border-radius: 0;
+  display: inline-block;
 }
 .content-security .line{
     width: 120px;

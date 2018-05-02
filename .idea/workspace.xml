@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8958a1de-ddbc-4b6c-ab50-87c84e06485f" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/account.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/account.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/css/vercoin.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/css/vercoin.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/modifymoneypassword.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/modifymoneypassword.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/createemail.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/createemail.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/security.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/security.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -20,11 +17,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="security.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="security.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/security.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="186">
-              <caret line="185" column="47" selection-start-line="185" selection-start-column="47" selection-end-line="185" selection-end-column="47" />
+            <state relative-caret-position="105">
+              <caret line="200" column="30" selection-start-line="200" selection-start-column="26" selection-end-line="200" selection-end-column="78" />
               <folding>
                 <element signature="n#div#0;n#body#0;n#html#0;n#!!top" />
                 <element signature="n#style#0;n#div#0;n#div#2;n#li#0;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -38,11 +35,16 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="modifymoneypassword.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/web/modifymoneypassword.html">
+      <file leaf-file-name="createemail.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/createemail.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="155" column="49" selection-start-line="155" selection-start-column="49" selection-end-line="155" selection-end-column="49" />
+            <state relative-caret-position="289">
+              <caret line="159" column="96" selection-start-line="159" selection-start-column="96" selection-end-line="159" selection-end-column="96" />
+              <folding>
+                <element signature="n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#2;n#body#0;n#html#0;n#!!top" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -123,13 +125,13 @@
         <option value="$PROJECT_DIR$/web/modifypassword.html" />
         <option value="$PROJECT_DIR$/web/modifyloginpassword.html" />
         <option value="$PROJECT_DIR$/web/modifyphone.html" />
-        <option value="$PROJECT_DIR$/web/createemail.html" />
         <option value="$PROJECT_DIR$/web/css/erp.css" />
         <option value="$PROJECT_DIR$/web/erpindex.html" />
         <option value="$PROJECT_DIR$/web/css/vercoin.css" />
-        <option value="$PROJECT_DIR$/web/security.html" />
         <option value="$PROJECT_DIR$/web/account.html" />
         <option value="$PROJECT_DIR$/web/modifymoneypassword.html" />
+        <option value="$PROJECT_DIR$/web/createemail.html" />
+        <option value="$PROJECT_DIR$/web/security.html" />
       </list>
     </option>
   </component>
@@ -142,7 +144,7 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="15" />
     <option name="y" value="30" />
     <option name="width" value="1890" />
@@ -230,12 +232,12 @@
       <workItem from="1524891156205" duration="5629000" />
       <workItem from="1524998701794" duration="6553000" />
       <workItem from="1525075209592" duration="3244000" />
-      <workItem from="1525226358909" duration="4457000" />
+      <workItem from="1525226358909" duration="6178000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="119351000" />
+    <option name="totallyTimeSpent" value="121072000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
@@ -510,13 +512,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/createemail.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="972">
-          <caret line="166" column="20" selection-start-line="166" selection-start-column="20" selection-end-line="166" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/usercenter.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="81">
@@ -569,10 +564,29 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/web/modifymoneypassword.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="166" column="20" selection-start-line="166" selection-start-column="20" selection-end-line="166" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/createemail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="159" column="96" selection-start-line="159" selection-start-column="96" selection-end-line="159" selection-end-column="96" />
+          <folding>
+            <element signature="n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#2;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/web/security.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
-          <caret line="185" column="47" selection-start-line="185" selection-start-column="47" selection-end-line="185" selection-end-column="47" />
+        <state relative-caret-position="105">
+          <caret line="200" column="30" selection-start-line="200" selection-start-column="26" selection-end-line="200" selection-end-column="78" />
           <folding>
             <element signature="n#div#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#style#0;n#div#0;n#div#2;n#li#0;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -582,13 +596,6 @@
             <element signature="n#div#2;n#body#0;n#html#0;n#!!top" />
             <element signature="n#div#3;n#body#0;n#html#0;n#!!top" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/modifymoneypassword.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="155" column="49" selection-start-line="155" selection-start-column="49" selection-end-line="155" selection-end-column="49" />
         </state>
       </provider>
     </entry>

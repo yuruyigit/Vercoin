@@ -2108,6 +2108,7 @@ body {background: #f0f0f0;}
   font-size: 14px;
   color:#FFF;
   border-radius: 0;
+  display: inline-block;
 }
 .content-security .line{
     width: 120px;
@@ -3087,4 +3088,44 @@ body {background: #f0f0f0;}
   border-color: #d93740 !important;
   color: #fff!important;
 }
-
+/*修改密码页面样式*/
+.content-security  .col-md-10 .col-md-6{
+  position: relative;
+  padding-right: 0;
+  padding-left: 0;
+}
+.content-security  .col-md-10 input{
+  width: 100%;
+  height: 36px;
+  border: 1px solid #d8d8d8;
+  border-radius: 4px;
+  padding: 6px 12px;
+}
+.content-security  .col-md-10 input.phone{
+  padding-left: 62px;
+}
+.content-security  .col-md-10 button{
+  width: 100%;
+  height: 36px;
+  color: #fff;
+  background-color: #D93740;
+  border-color: #cf2731;
+}
+.content-security  .col-md-10 em{
+  width: 116px;
+  height: 36px;
+  position: absolute;
+  right:0;
+  text-align: center;
+  line-height: 36px;
+  border: 1px solid #d8d8d8;
+  cursor: pointer;
+}
+.content-security  .col-md-10 em.phone{
+  position: absolute;
+  left:0;
+  width: 50px;
+}
+.content-security  .col-md-10 em:hover{
+  background: #f0f0f0;
+}

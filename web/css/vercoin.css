@@ -1840,10 +1840,13 @@ body {background: #f0f0f0;}
   font-size: 12px;
   color:#D93740;
 }
+.user-modal .user-body button.cancel{
+	background:#f0f0f0;
+}
 .content-usercenter  button{
   background: #D93740;
   border:0;
-  border-radius: 0;
+  border-radius: 4px;
 }
 .content-usercenter  button:hover{
   background: #D93740;

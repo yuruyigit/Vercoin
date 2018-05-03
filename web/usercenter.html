@@ -215,33 +215,33 @@
             </div>
         </div>
     </div>
-</div>
-<div class="user-modal" id="user-modal">
-    <div class="user-header">
-        <p>设置头像<em>×</em></p>
-    </div>
-    <div class="user-body">
-        <ul class="user-list">
-            <li class="user-picture active">
-                <img src="./images/2@2x.png" alt="">
-                <span class="circle checked">✔</span>
+    <div class="user-modal" id="user-modal">
+        <div class="user-header">
+            <p>设置头像<em>×</em></p>
+        </div>
+        <div class="user-body">
+            <ul class="user-list">
+                <li class="user-picture active">
+                    <img src="./images/2@2x.png" alt="">
+                    <span class="circle checked">✔</span>
 
-            </li>
-            <li class="user-picture">
-                <img src="./images/2%20copy@2x.png" alt="">
-                <span class="circle">✔</span>
-            </li>
-            <li class="user-picture">
-                <img src="./images/2%20copy%202@2x.png" alt="">
-                <span class="circle">✔</span>
-            </li>
-            <li class="user-picture">
-                <img src="./images/Bitmap%20Copy%202@2x.png" alt="">
-                <span class="circle">✔</span>
-            </li>
-        </ul>
-        <button class="cancel">取消</button>
-        <button class="confirm">确定</button>
+                </li>
+                <li class="user-picture">
+                    <img src="./images/2%20copy@2x.png" alt="">
+                    <span class="circle">✔</span>
+                </li>
+                <li class="user-picture">
+                    <img src="./images/2%20copy%202@2x.png" alt="">
+                    <span class="circle">✔</span>
+                </li>
+                <li class="user-picture">
+                    <img src="./images/Bitmap%20Copy%202@2x.png" alt="">
+                    <span class="circle">✔</span>
+                </li>
+            </ul>
+            <button class="cancel">取消</button>
+            <button class="confirm">确定</button>
+        </div>
     </div>
 </div>
 <div class="language-select">
@@ -254,7 +254,10 @@
 <script type="text/javascript">
     $('#user').click(function () {
         $('#user-modal').css('display','block');
-        $('.content-usercenter').css({'background':'#f0f0f0','opacity':'0.3','overflow-y':'hidden'})
+        $('.panel').css('opacity','0.3');
+       /* $('.language-select').css('background','rgba(0,0,0,0.3)');*/
+        $('.col-md-2').css({'background':'#f0f0f0','opacity':'0.3'});
+        $('.content-usercenter').css({'background':'rgba(0,0,0,0.3)','overflow-y':'hidden'})
     })
     $('.user-picture').click(function () {
         $(this).each(function () {
@@ -265,17 +268,23 @@
             var imgsrc=$(this).children('img').attr('src');
             $('#user-id').find('img').attr('src',imgsrc);
         })
-     $('em').click(function () {
-         $('#user-modal').css('display','none');
-         $('.content-usercenter').css({'background':'#f0f0f0','opacity':'1','position':'relative'});
-     })
+    })
+    $('em').click(function () {
+        $('#user-modal').css('display','none');
+        $('.panel').css('opacity','1');
+        $('.col-md-2').css({'background':'#fff','opacity':'1'});
+        $('.content-usercenter').css({'background':'#f0f0f0','opacity':'1','position':'relative'});
     })
     $('.confirm').click(function () {
         $('#user-modal').css('display','none');
+        $('.panel').css('opacity','1');
+        $('.col-md-2').css({'background':'#fff','opacity':'1'});
         $('.content-usercenter').css({'background':'#f0f0f0','opacity':'1','position':'relative'});
     })
     $('.cancel').click(function () {
         $('#user-modal').css('display','none');
+        $('.panel').css('opacity','1');
+        $('.col-md-2').css({'background':'#fff','opacity':'1'});
         $('.content-usercenter').css({'background':'#f0f0f0','opacity':'1','position':'relative'});
     })
 </script>

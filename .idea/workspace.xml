@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8958a1de-ddbc-4b6c-ab50-87c84e06485f" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/modifymoneypassword.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/forgetmoneypassword.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/security.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/security.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/modifymoneypassword.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/modifymoneypassword.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -21,8 +19,8 @@
       <file leaf-file-name="security.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/security.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="134">
-              <caret line="186" column="94" lean-forward="true" selection-start-line="186" selection-start-column="94" selection-end-line="186" selection-end-column="94" />
+            <state relative-caret-position="782">
+              <caret line="198" column="70" lean-forward="true" selection-start-line="198" selection-start-column="70" selection-end-line="198" selection-end-column="70" />
               <folding>
                 <element signature="n#div#0;n#body#0;n#html#0;n#!!top" />
                 <element signature="n#style#0;n#div#0;n#div#2;n#li#0;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -39,8 +37,8 @@
       <file leaf-file-name="modifymoneypassword.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/modifymoneypassword.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="150" column="41" lean-forward="true" selection-start-line="150" selection-start-column="41" selection-end-line="150" selection-end-column="41" />
+            <state relative-caret-position="359">
+              <caret line="165" column="73" selection-start-line="165" selection-start-column="73" selection-end-line="165" selection-end-column="73" />
             </state>
           </provider>
         </entry>
@@ -72,7 +70,7 @@
         <entry file="file://$PROJECT_DIR$/web/css/vercoin.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="267">
-              <caret line="1370" lean-forward="true" selection-start-line="1370" selection-end-line="1370" selection-end-column="19" />
+              <caret line="1370" column="19" lean-forward="true" selection-start-line="1370" selection-start-column="19" selection-end-line="1370" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -151,8 +149,8 @@
         <option value="$PROJECT_DIR$/web/createemail.html" />
         <option value="$PROJECT_DIR$/web/css/vercoin.css" />
         <option value="$PROJECT_DIR$/web/forgetmoneypassword.html" />
-        <option value="$PROJECT_DIR$/web/modifymoneypassword.html" />
         <option value="$PROJECT_DIR$/web/security.html" />
+        <option value="$PROJECT_DIR$/web/modifymoneypassword.html" />
       </list>
     </option>
   </component>
@@ -165,7 +163,7 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="15" />
     <option name="y" value="30" />
     <option name="width" value="1890" />
@@ -248,12 +246,12 @@
       <workItem from="1524998701794" duration="6553000" />
       <workItem from="1525075209592" duration="3244000" />
       <workItem from="1525226358909" duration="9017000" />
-      <workItem from="1525268087322" duration="1548000" />
+      <workItem from="1525268087322" duration="1982000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="125459000" />
+    <option name="totallyTimeSpent" value="125893000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
@@ -561,13 +559,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/css/vercoin.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="267">
-          <caret line="1370" lean-forward="true" selection-start-line="1370" selection-end-line="1370" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/forgetmoneypassword.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
@@ -575,17 +566,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/web/css/vercoin.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="267">
+          <caret line="1370" column="19" lean-forward="true" selection-start-line="1370" selection-start-column="19" selection-end-line="1370" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/web/modifymoneypassword.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="150" column="41" lean-forward="true" selection-start-line="150" selection-start-column="41" selection-end-line="150" selection-end-column="41" />
+        <state relative-caret-position="359">
+          <caret line="165" column="73" selection-start-line="165" selection-start-column="73" selection-end-line="165" selection-end-column="73" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/security.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="134">
-          <caret line="186" column="94" lean-forward="true" selection-start-line="186" selection-start-column="94" selection-end-line="186" selection-end-column="94" />
+        <state relative-caret-position="782">
+          <caret line="198" column="70" lean-forward="true" selection-start-line="198" selection-start-column="70" selection-end-line="198" selection-end-column="70" />
           <folding>
             <element signature="n#div#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#style#0;n#div#0;n#div#2;n#li#0;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />

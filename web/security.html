@@ -158,13 +158,58 @@
                 <div class="col-md-9">
                   <div class="form-control-static">
                     <div class="pull-left security-level">
+                      危险
+                    </div>
+                    <div class="level">
+                      <div class="line first"></div>
+                      <div class="line low"></div>
+                      <div class="line low"></div>
+                      <div class="line low"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group"><label class="col-md-2 control-label">安全等级</label>
+                <div class="col-md-9">
+                  <div class="form-control-static">
+                    <div class="pull-left security-level">
                       低
                     </div>
                     <div class="level">
-                      <div class="line"></div>
+                      <div class="line second"></div>
+                      <div class="line second"></div>
                       <div class="line low"></div>
                       <div class="line low"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group"><label class="col-md-2 control-label">安全等级</label>
+                <div class="col-md-9">
+                  <div class="form-control-static">
+                    <div class="pull-left security-level">
+                      中等
+                    </div>
+                    <div class="level">
+                      <div class="line three"></div>
+                      <div class="line three"></div>
+                      <div class="line three"></div>
                       <div class="line low"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group"><label class="col-md-2 control-label">安全等级</label>
+                <div class="col-md-9">
+                  <div class="form-control-static">
+                    <div class="pull-left security-level">
+                      高
+                    </div>
+                    <div class="level">
+                      <div class="line four"></div>
+                      <div class="line four"></div>
+                      <div class="line four"></div>
+                      <div class="line four"></div>
                     </div>
                   </div>
                 </div>
@@ -225,38 +270,6 @@
                         <a href="./modifyloginpassword.html" role="button"  class="btn modify">修改</a>
                       </div>
                     </li>
-                    <li class="media">
-                      <div class="media-left">
-                        <span ><img src="./images/credit_card%20-%20material%20copy@2x.png" alt=""></span>
-                      </div>
-                      <div class="media-right pull-right">
-                          <div class="line"></div>
-                      </div>
-                    </li>
-                    <li class="media">
-                      <div class="media-left">
-                        <span><img src="./images/email%20-%20material%20copy@2x.png" alt=""></span>
-                      </div>
-                      <div class="media-right pull-right">
-                        <div class="line note"></div>
-                      </div>
-                    </li>
-                    <li class="media">
-                      <div class="media-left">
-                        <span class="phone"><img src="./images/phone_iphone%20-%20material%20copy@2x.png" alt=""></span>
-                      </div>
-                      <div class="media-right pull-right">
-                        <div class="line phone"></div>
-                      </div>
-                    </li>
-                    <li class="media">
-                      <div class="media-left">
-                        <span class="phone"><img src="./images/https%20-%20material%20copy@2x.png" alt=""></span>
-                      </div>
-                      <div class="media-right pull-right">
-                        <div class="line lock"></div>
-                      </div>
-                    </li>
                   </ul>
                 </div>
               </div>
@@ -294,21 +307,29 @@
     $('#submit').click(function () {
         $('#user-modal').css({'display':'block','position':'fixed'});
         $('.panel').css('opacity','0.3');
+        $('.col-md-2').css({'background':'#f0f0f0','opacity':'0.3'});
+        $('.col-md-10').css({'background':'#f0f0f0','opacity':'0.3'});
         $('.content-security').css({'background':'rgba(0,0,0,0.3)','overflow-y':'hidden','position':'relative','z-index':'1'})
     })
     $('.confirm').click(function () {
         $('#user-modal').css('display','none');
         $('.panel').css('opacity','1');
+        $('.col-md-2').css({'background':'#fff','opacity':'1'});
+        $('.col-md-10').css({'background':'#fff','opacity':'1'});
         $('.content-security').css({'background':'#f0f0f0','opacity':'1','position':'relative'});
     })
     $('.cancel').click(function () {
         $('#user-modal').css('display','none');
         $('.panel').css('opacity','1');
+        $('.col-md-2').css({'background':'#fff','opacity':'1'});
+        $('.col-md-10').css({'background':'#fff','opacity':'1'});
         $('.content-security').css({'background':'#f0f0f0','opacity':'1','position':'relative'});
     })
     $('em').click(function () {
         $('#user-modal').css('display','none');
         $('.panel').css('opacity','1');
+        $('.col-md-2').css({'background':'#fff','opacity':'1'});
+        $('.col-md-10').css({'background':'#fff','opacity':'1'});
         $('.content-security').css({'background':'#f0f0f0','opacity':'1','position':'relative'});
     })
 </script>

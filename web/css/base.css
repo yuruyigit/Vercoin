@@ -121,7 +121,7 @@ a.blue{color:#3399e0}
 }
     /*页面公共尾部样式*/
 .language-select {
-    padding: 18px 0;
+    padding: 26px 0 98px;
     background: #f0f0f0; }
 .language-select ul {
     width: 280px;

@@ -266,6 +266,21 @@
       </div>
     </div>
   </div>
+  <div class="user-modal" id="user-modal">
+    <div class="user-header">
+      <p>设置资金密码<em>×</em></p>
+    </div>
+    <div class="user-body">
+      <div class="password">
+        <span>资金密码</span><input type="text" placeholder="请设置资金密码">
+      </div>
+      <div class="password ok">
+        <span>确认密码</span><input type="text" placeholder="请再次输入密码">
+      </div>
+      <button class="cancel">取消</button>
+      <button class="confirm">确定</button>
+    </div>
+  </div>
 </div>
 <div class="language-select">
   <ul>
@@ -274,37 +289,26 @@
     <li><a href="">繁体中文</a></li>
   </ul>
 </div>
-<div class="user-modal" id="user-modal" style="background: #fff;">
-  <div class="user-header">
-    <p>设置资金密码<em>×</em></p>
-  </div>
-  <div class="user-body">
-    <div class="password">
-      <span>资金密码</span><input type="text" placeholder="请设置资金密码">
-    </div>
-    <div class="password ok">
-      <span>确认密码</span><input type="text" placeholder="请再次输入密码">
-    </div>
-    <button class="cancel">取消</button>
-    <button class="confirm">确定</button>
-  </div>
-</div>
 </body>
 <script type="text/javascript">
     $('#submit').click(function () {
-        $('#user-modal').css('display','block');
-        $('.content-security').css({'background':'#f0f0f0','opacity':'0.3','overflow-y':'hidden'})
+        $('#user-modal').css({'display':'block','position':'fixed'});
+        $('.panel').css('opacity','0.3');
+        $('.content-security').css({'background':'rgba(0,0,0,0.3)','overflow-y':'hidden','position':'relative','z-index':'1'})
     })
     $('.confirm').click(function () {
         $('#user-modal').css('display','none');
+        $('.panel').css('opacity','1');
         $('.content-security').css({'background':'#f0f0f0','opacity':'1','position':'relative'});
     })
     $('.cancel').click(function () {
         $('#user-modal').css('display','none');
+        $('.panel').css('opacity','1');
         $('.content-security').css({'background':'#f0f0f0','opacity':'1','position':'relative'});
     })
     $('em').click(function () {
         $('#user-modal').css('display','none');
+        $('.panel').css('opacity','1');
         $('.content-security').css({'background':'#f0f0f0','opacity':'1','position':'relative'});
     })
 </script>

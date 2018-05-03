@@ -1364,11 +1364,12 @@ body {background: #f0f0f0;}
   position: fixed;
   top:136px;
   left: 42%;
-  border: 1px solid #f0f0f0;
+/*  border: 1px solid #f0f0f0;*/
   box-shadow: 0 2px 2px #f0f0f0;
   border-radius: 2px;
   display: none;
   background: #fff;
+  z-index: 10000;
 }
 .user-modal .user-header{
   width: 100%;
@@ -2109,6 +2110,8 @@ body {background: #f0f0f0;}
   color:#FFF;
   border-radius: 0;
   display: inline-block;
+  z-index: 1000;
+  position: relative;
 }
 .content-security .line{
     width: 120px;

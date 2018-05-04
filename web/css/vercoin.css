@@ -1867,10 +1867,13 @@ body {background: #f0f0f0;}
   font-size: 12px;
   color:#D93740;
 }
+.user-modal .user-body button.cancel{
+	background:#f0f0f0;
+}
 .content-usercenter  button{
   background: #D93740;
   border:0;
-  border-radius: 0;
+  border-radius: 4px;
 }
 .content-usercenter  button:hover{
   background: #D93740;
@@ -2652,6 +2655,7 @@ body {background: #f0f0f0;}
 }
 
 .order_in_progress .chat .content-text{
+  min-height: 36px;
   background-color: #dff0d8;
   color:#727272;
   padding: 10px 8px;
@@ -2663,7 +2667,9 @@ body {background: #f0f0f0;}
   position:relative;
 
 }
-
+.order_in_progress .chat .content-text img{
+  width:100px;
+}
 .order_in_progress .me .content-text:before{
   content: "";
   width: 0;

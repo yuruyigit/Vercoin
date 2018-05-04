@@ -1282,6 +1282,31 @@ body {background: #f0f0f0;}
       color:#727272;}
 
 /*用户基本信息页面样式*/
+.content-usercenter .panel{
+  border:0;
+  border-radius: 0;
+}
+.content-usercenter .col-md-2{
+  background: #fff;
+  padding-left: 0;
+}
+.content-usercenter .col-md-2 .panel{
+  box-shadow: 0 0 0 #fff;
+}
+.content-usercenter .col-md-10 .panel{
+  margin-bottom: 0;
+}
+.content-usercenter .container .raw{
+  display: flex;
+}
+.content-usercenter .tip{
+  background: #fff;
+  padding: 20px 0 20px 20px;
+  border-top: 1px solid #E6E6E6;
+}
+.content-usercenter .tip h3{
+  margin: 0;
+}
 .content-usercenter {
   width: 100%;
   padding-top: 20px;}
@@ -1364,11 +1389,12 @@ body {background: #f0f0f0;}
   position: fixed;
   top:136px;
   left: 42%;
-  border: 1px solid #f0f0f0;
+/*  border: 1px solid #f0f0f0;*/
   box-shadow: 0 2px 2px #f0f0f0;
   border-radius: 2px;
   display: none;
   background: #fff;
+  z-index: 10000;
 }
 .user-modal .user-header{
   width: 100%;
@@ -1391,6 +1417,7 @@ body {background: #f0f0f0;}
   top:3px;
   z-index: 5;
   display: block;
+  cursor: pointer;
 }
 .user-modal .user-body{
   width: 100%;
@@ -1468,6 +1495,7 @@ body {background: #f0f0f0;}
 .user-modal .user-body button.cancel{
    color:#333;
    margin:0 30px 0 0 ;
+   background: #f0f0f0;
 }
 .user-modal .user-body button.confirm{
   color:#fff;
@@ -1839,15 +1867,43 @@ body {background: #f0f0f0;}
   font-size: 12px;
   color:#D93740;
 }
+.user-modal .user-body button.cancel{
+	background:#f0f0f0;
+}
 .content-usercenter  button{
   background: #D93740;
   border:0;
-  border-radius: 0;
+  border-radius: 4px;
 }
 .content-usercenter  button:hover{
   background: #D93740;
 }
 /*身份验证页面*/
+.content-authentication .panel{
+  border:0;
+  border-radius: 0;
+}
+.content-authentication .col-md-2{
+  background: #fff;
+  padding-left: 0;
+}
+.content-authentication .col-md-2 .panel{
+  box-shadow: 0 0 0 #fff;
+}
+.content-authentication .col-md-10 .panel{
+  margin-bottom: 0;
+}
+.content-authentication .container .raw{
+ display: flex;
+}
+.content-authentication .tip{
+  background: #fff;
+  padding: 20px 0 20px 20px;
+  border-top: 1px solid #E6E6E6;
+}
+.content-authentication .tip h3{
+  margin: 0;
+}
 .content-authentication .col-md-10  input{
   width: 100%;
   text-indent: 10px;
@@ -2043,6 +2099,36 @@ body {background: #f0f0f0;}
 }
 
 /*安全设置页面*/
+.content-security .panel{
+  border:0;
+  border-radius: 0;
+  box-shadow: 0 0 0 #fff;
+}
+.content-security .col-md-2{
+  background: #fff;
+  padding-left: 0;
+}
+.content-security .col-md-10{
+  background: #fff;
+  margin-left: 20px;
+}
+.content-security .col-md-2 .panel{
+  box-shadow: 0 0 0 #fff;
+}
+.content-security .col-md-10 .panel{
+  margin-bottom: 0;
+}
+.content-security .container .raw{
+  display: flex;
+}
+.content-security .tip{
+  background: #fff;
+  padding: 20px 0 20px 20px;
+  border-top: 1px solid #E6E6E6;
+}
+.content-security .tip h3{
+  margin: 0;
+}
 .content-security {
   width: 100%;
   padding-top: 20px;}
@@ -2109,6 +2195,8 @@ body {background: #f0f0f0;}
   color:#FFF;
   border-radius: 0;
   display: inline-block;
+  z-index: 1000;
+  position: relative;
 }
 .content-security .line{
     width: 120px;
@@ -2119,6 +2207,18 @@ body {background: #f0f0f0;}
     margin:0 0 0 8px;
     position: relative;
     top:-2px;
+}
+.content-security .line.first{
+  background: #D93740;
+}
+.content-security .line.second{
+  background:#FA9B2D;
+}
+.content-security .line.three{
+  background:#F8E71C;
+}
+.content-security .line.four{
+  background:#7ED321;
 }
 .content-security .line.low{
     background: #E6E6E6;
@@ -2216,6 +2316,20 @@ body {background: #f0f0f0;}
 .content-account {
   width: 100%;
   padding-top: 20px;}
+.content-account  .col-md-2{
+  background: #fff;
+  padding-left: 0;
+}
+.content-account .panel{
+  margin-bottom: 0;
+  border:0;
+}
+.content-account  .col-md-2 .panel{
+  box-shadow: 0 0 0 #fff;
+}
+.content-account .container .raw{
+ display: flex;
+}
 .content-account  .col-md-2 .panel-body {
   padding: 0; }
 .content-account .col-md-2 .panel .title {
@@ -2938,10 +3052,14 @@ body {background: #f0f0f0;}
   border-top:1px solid #e6e6e6;
  }
  .content-account  .col-md-10 .tip {
-  padding: 0 0 0 20px; }
+  padding: 20px 0 20px 20px;
+   background: #fff;
+   border-top: 1px solid #E6E6E6;
+ }
 .content-account  .col-md-10 .tip h3 {
   font-size: 14px;
-  color: #AAAAAA; }
+  color: #AAAAAA;
+margin: 0;}
 .content-account  .col-md-10 .tip p {
   font-size: 14px;
   color: #AAAAAA; }
@@ -2956,6 +3074,36 @@ body {background: #f0f0f0;}
   border-right: 2px solid #D93740;
 }
 /*信任您的人页面样式*/
+.content-trust-you .panel{
+  border:0;
+  border-radius: 0;
+  box-shadow: 0 0 0 #fff;
+}
+.content-trust-you .col-md-2{
+  background: #fff;
+  padding-left: 0;
+}
+.content-trust-you .col-md-10{
+  background: #fff;
+  margin-left: 20px;
+}
+.content-trust-you .col-md-2 .panel{
+  box-shadow: 0 0 0 #fff;
+}
+.content-trust-you .col-md-10 .panel{
+  margin-bottom: 0;
+}
+.content-trust-you .container .raw{
+  display: flex;
+}
+.content-trust-you .tip{
+  background: #fff;
+  padding: 20px 0 20px 20px;
+  border-top: 1px solid #E6E6E6;
+}
+.content-trust-you .tip h3{
+  margin: 0;
+}
 .content-trust-you {
     width: 100%;
     padding-top: 20px}
@@ -3052,7 +3200,7 @@ body {background: #f0f0f0;}
     width: 100%;
     background: #fff;
     margin: 0;
-    padding: 20px 0 20px 60%;
+    padding: 20px 0 20px 67%;
 }
 .pagination>li>a, .pagination>li>span{
     color:#333;
@@ -3115,7 +3263,7 @@ body {background: #f0f0f0;}
   border-color: #cf2731;
 }
 .content-security  .col-md-10 em{
-  width: 96px;
+  width: 116px;
   height: 36px;
   position: absolute;
   right:0;

@@ -255,7 +255,8 @@
     $('#user').click(function () {
         $('#user-modal').css('display','block');
         $('.panel').css('opacity','0.3');
-       /* $('.language-select').css('background','rgba(0,0,0,0.3)');*/
+        $('.language-select').css('background','rgba(0,0,0,0.3)');
+        $('.language-select li a').css('color','#f0f0f0');
         $('.col-md-2').css({'background':'#f0f0f0','opacity':'0.3'});
         $('.content-usercenter').css({'background':'rgba(0,0,0,0.3)','overflow-y':'hidden'})
     })
@@ -273,18 +274,24 @@
         $('#user-modal').css('display','none');
         $('.panel').css('opacity','1');
         $('.col-md-2').css({'background':'#fff','opacity':'1'});
+        $('.language-select').css('background','rgba(240,240,240,1)');
+        $('.language-select li a').css('color','#AAAAAA');
         $('.content-usercenter').css({'background':'#f0f0f0','opacity':'1','position':'relative'});
     })
     $('.confirm').click(function () {
         $('#user-modal').css('display','none');
         $('.panel').css('opacity','1');
         $('.col-md-2').css({'background':'#fff','opacity':'1'});
+        $('.language-select').css('background','rgba(240,240,240,1)');
+        $('.language-select li a').css('color','#AAAAAA');
         $('.content-usercenter').css({'background':'#f0f0f0','opacity':'1','position':'relative'});
     })
     $('.cancel').click(function () {
         $('#user-modal').css('display','none');
         $('.panel').css('opacity','1');
         $('.col-md-2').css({'background':'#fff','opacity':'1'});
+        $('.language-select').css('background','rgba(240,240,240,1)');
+        $('.language-select li a').css('color','#AAAAAA');
         $('.content-usercenter').css({'background':'#f0f0f0','opacity':'1','position':'relative'});
     })
 </script>

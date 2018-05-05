@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>编辑账户</title>
+  <title>VERCOIN</title>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../lib/css/bootstrap.min.css">
@@ -126,7 +126,7 @@
         <div class="panel panel-default">
           <div class="title">账户安全</div>
           <div class="panel-body">
-            <a href="./account.html" class="active">账户设置</a>
+            <a href="./accountlist.html" class="active">账户设置</a>
             <a href="./security.html">安全设置</a>
           </div>
         </div>
@@ -148,33 +148,31 @@
       </div>
       <div class="col-md-10">
         <div class="panel panel-default">
-          <div class="title">账户设置</div>
+          <div class="title">账户设置 <em> > 支付宝绑定</em></div>
           <div class="panel-body">
-            <div class="id-card"><i class="glyphicon glyphicon-credit-card"></i>银行卡绑定</div>
-            <form method="POST" action="" class="form-horizontal">
+            <div method="POST" action="" class="form-horizontal">
               <div class="form-group"><label class="col-md-3 control-label">姓名</label>
-                <div class="col-md-6"><p class="form-control-static" >李大钊</div>
+                <div class="col-md-6"><input class="form-control-static" placeholder="请输入真实姓名"></div>
               </div>
-              <div class="form-group"><label class="col-md-3 control-label">国家</label>
+              <div class="form-group"><label class="col-md-3 control-label">支付宝账户</label>
+                <div class="col-md-6"><input class="form-control-static" placeholder="请输入您的账户"></div>
+              </div>
+              <div class="form-group"><label class="col-md-3 control-label">收款二维码</label>
                 <div class="col-md-6">
-                  <p class="form-control-static"> 中国</p>
+                  <div class="file-upload"><p><em>+</em>请上传您的支付宝收款二维码图片（*.jpg/*.png/*.jpeg）</p>
+                  <input class="form-control-static upload"  type="file">
+                  </div>
                 </div>
               </div>
-              <div class="form-group"><label class="col-md-3 control-label">开户银行</label>
-                <div class="col-md-6"><p class="form-control-static" >中国建设银行</p></div>
-              </div>
-              <div class="form-group"><label class="col-md-3 control-label">开户支行</label>
-                <div class="col-md-6"><p class="form-control-static" >北京市东城区小胡同中国建设银行支行</p></div>
-              </div>
-              <div class="form-group"><label class="col-md-3 control-label">银行卡号</label>
-                <div class="col-md-6"><p class="form-control-static" >888888888888</p></div>
+              <div class="form-group"><label class="col-md-3 control-label">资金密码</label>
+                <div class="col-md-6"><input class="form-control-static" placeholder="请输入您的资金密码"></div>
               </div>
               <div class="form-group"><label class="col-md-3 control-label"></label>
-                <div class="col-md-6"><button type="submit" class="btn " >
-                  修改
+                <div class="col-md-6"><button type="submit" class="btn " id="submit" >
+                  确定
                 </button></div>
               </div>
-            </form>
+            </div>
           </div>
         </div>
         <div class="tip">
@@ -194,5 +192,38 @@
     <li><a href="">繁体中文</a></li>
   </ul>
 </div>
+<!--<div class="user-modal" id="user-modal">
+  <div class="user-header">
+    <p>设置资金密码<em>×</em></p>
+  </div>
+  <div class="user-body">
+    <div class="password">
+      <span>资金密码</span><input type="text" placeholder="请设置资金密码">
+    </div>
+    <div class="password ok">
+      <span>确认密码</span><input type="text" placeholder="请再次输入密码">
+    </div>
+    <button class="cancel">取消</button>
+    <button class="confirm">确定</button>
+  </div>
+</div>-->
 </body>
+<!--<script type="text/javascript">
+    $('#submit').click(function () {
+        $('#user-modal').css('display','block');
+        $('.content-usercenter').css({'background':'#f0f0f0','opacity':'0.3','overflow-y':'hidden'})
+    })
+    $('.confirm').click(function () {
+        $('#user-modal').css('display','none');
+        $('.content-usercenter').css({'background':'#f0f0f0','opacity':'1','position':'relative'});
+    })
+    $('.cancel').click(function () {
+        $('#user-modal').css('display','none');
+        $('.content-usercenter').css({'background':'#f0f0f0','opacity':'1','position':'relative'});
+    })
+    $('em').click(function () {
+        $('#user-modal').css('display','none');
+        $('.content-usercenter').css({'background':'#f0f0f0','opacity':'1','position':'relative'});
+    })
+</script>-->
 </html>

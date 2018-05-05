@@ -1236,6 +1236,9 @@ body {background: #f0f0f0;}
         margin: 0;
         color: #777777;
         font-size: 12px; }
+.content-index .row .col-md-3 .trade-list .caption p:nth-of-type(3){
+        margin-top: 4px;
+}
 .content-index .row .col-md-3 .trade-list .caption .btn {
         margin-top: 11px; }
 .content-index .row .col-md-3 .trade-list .caption .btn {
@@ -1479,6 +1482,20 @@ body {background: #f0f0f0;}
 .user-modal .user-body .user-list .user-picture .checked{
   display: block;
 }
+.user-modal .user-body a{
+  width: 100px;
+  height: 40px;
+  border-radius: 2px;
+  font-size: 14px;
+  border:0;
+  color:#fff;
+  background: #D93740;
+  text-decoration: none;
+  display: block;
+  line-height: 40px;
+  text-align: center;
+  margin: 40px auto 0;
+}
 .user-modal .user-body button{
    width: 100px;
    height: 40px;
@@ -1593,7 +1610,7 @@ body {background: #f0f0f0;}
 #zyhSellList .merchant .merchant_balance img,
 #zyhBuyList .merchant .merchant_balance img {
   width: 20px;
-  margin-right: 6px;
+  margin-right: 3px;
   margin-left: 0;
 }
 #zyhSellList .merchant .merchant_counts,
@@ -2358,6 +2375,11 @@ body {background: #f0f0f0;}
   padding: 15px 0 15px 20px;
   border-bottom: 1px solid #E6E6E6;
 }
+.content-account .col-md-10 .title em{
+  font-size: 14px;
+  color: #333333;
+  margin-left: 4px;
+}
 .content-account  .col-md-10 .panel-body .id-card .glyphicon-credit-card {
   position: relative;
   top: 2px;
@@ -2490,7 +2512,7 @@ body {background: #f0f0f0;}
   margin-top: -10px;
 }
 .order_in_progress .information .trade_hr {
-  margin-top: 80px;
+  margin-top: 40px;
 }
 .order_in_progress .information .trade_notice_head {
   height: 30px;
@@ -2505,11 +2527,43 @@ body {background: #f0f0f0;}
 }
 .order_in_progress .information .information_head {
   height: 32px;
-  border-bottom: 2px solid #e6e6e6;
+/*  border-bottom: 2px solid #e6e6e6;*/
+}
+.order_in_progress .information .accountlist{
+  height: 40px;
+}
+.order_in_progress .information .accountlist ul{
+  height: 40px;
+  overflow: hidden;
+}
+.order_in_progress .information .accountlist ul li{
+  float: left;
+  font-size: 14px;
+  color: #AAAAAA;
+  width: 80px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  background: #F6F6F6;
+}
+.order_in_progress .information .accountlist ul li.active{
+  background: #fff;
+  border-top: 2px solid #d93740;
+}
+.order_in_progress .information .accountlist ul li:last-child{
+  width: 180px;
+  text-align: left;
+  padding-left: 40px;
 }
 .order_in_progress .information .information_head img {
   width: 18px;
   margin-right: 10px;
+}
+.order_in_progress .information .tab{
+  display: none;
+}
+.order_in_progress .information .show{
+  display: block;
 }
 .order_in_progress .information .bank {
   padding: 0;
@@ -2519,6 +2573,40 @@ body {background: #f0f0f0;}
   height: 20px;
   line-height: 20px;
   margin-bottom: 10px;
+  position: relative;
+}
+.order_in_progress .information .bank li .Qr-code{
+  width: 130px;
+  height: 20px;
+  display: inline-block;
+  position: relative;
+}
+.order_in_progress .information .bank li  .Qr-code:hover  .show-pay-image{
+ opacity: 1;
+}
+.order_in_progress .information .bank li  .Qr-code:hover .Qr-code:after{
+
+}
+.order_in_progress .information .bank li .show-pay-image{
+  width: 280px;
+  height: 380px;
+  box-shadow: 0px 3px 3px #e3e3e3;
+  position: relative;
+  z-index: 4;
+  opacity: 0;
+  left: 20px;
+  top: 10px;
+}
+/*.order_in_progress .information .bank li .show-pay-image span.arrow{
+  width: 0;
+  height: 0;
+  border-left: 12px solid transparent;
+  border-right: 12px solid transparent;
+  border-bottom: 24px solid red;
+}*/
+.order_in_progress .information .bank li .show-pay-image img{
+   width: 100%;
+   height: 100%;
 }
 .order_in_progress .information .bank_label {
   width: 90px;
@@ -3279,4 +3367,192 @@ margin: 0;}
 }
 .content-security  .col-md-10 em:hover{
   background: #f0f0f0;
+}
+/*
+发送邮箱页面样式*/
+.content-email{
+  width:100%;
+  background: #fff;
+  padding-top: 80px;
+}
+.content-email .col-md-12 .title{
+  font-size: 14px;
+  color:#333;
+  position: relative;
+  margin: 60px 0;
+  padding-left: 80px;
+}
+.content-email .col-md-12 .title span{
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border:1px solid #FFF4F4;
+  font-size: 36px;
+  position: absolute;
+  left: 0;
+  top:0;
+  text-align: center;
+  line-height: 60px;
+  color:#c26c38;
+}
+.content-email .col-md-12 .title p{
+  font-size: 20px;
+  margin-bottom: 6px;
+}
+.content-email .col-md-12 .title p strong{
+  color:#6a9dde;
+  margin-left: 12px;
+}
+.content-email .col-md-12 .title em{
+  font-style: italic;
+  margin-left: 12px;
+}
+.content-email .email-text{
+   width: 100%;
+}
+.content-email .email-text h4{
+   text-align: center;
+   background: #f0f0f0;
+   padding: 120px 0 60px;
+   font-size: 30px;
+   font-weight: bold;
+   margin: 0;
+}
+.content-email .email-text p{
+   background: #17a93a;
+   padding: 25px 0;
+   color:#fff;
+   font-size: 24px;
+   padding-left: 4%;
+   border-top-left-radius: 4px;
+   border-top-right-radius: 4px;
+}
+.content-email .email-text .information{
+  padding: 30px 5%;
+  font-size: 20px;
+  line-height: 2;
+  border:1px solid #f0f0f0;
+}
+.content-email .email-text .information span{
+  font-size: 20px;
+  color:#666;
+  display: block;
+  margin: 20px 0 50px;
+}
+.content-email .email-text .email-footer{
+   width: 100%;
+   background: #fff;
+   border:1px solid #f0f0f0;
+   padding-bottom: 50px;
+}
+.content-email .email-text .email-footer h5{
+   text-align: center;
+   margin: 30px 0 40px;
+   font-size: 20px;
+}
+.content-email .email-text .email-footer p{
+   background: #fff;
+   color:#333;
+   padding: 10px 0 10px 5%;
+}
+/*
+账户设置页面样式*/
+.content-account .raw{
+  display: flex;
+}
+.content-account .raw .form-group{
+  margin-bottom: 18px;
+}
+.content-account .raw .col-md-10{
+  background: #fff;
+  margin-left: 15px;
+}
+.content-account .raw  .panel{
+  box-shadow: 0 0 0 #fff;
+}
+.content-account .raw .col-md-10 .panel-body.bank{
+  padding: 50px 0;
+}
+.content-account .raw .col-md-10 .panel-body .col-md-3 em{
+  font-family: PingFangSC-Regular;
+  font-size: 14px;
+  color: #333333;
+  letter-spacing: 0;
+  margin: 0 24px 0 12px;
+}
+.content-account .raw .col-md-10 .panel-body  a{
+  background: #D93740;
+  border-radius: 2px;
+  width:80px;
+  height: 30px;
+  font-family: PingFangSC-Medium;
+  font-size: 14px;
+  color: #FFFFFF;
+  letter-spacing: 0;
+  border:0;
+  display: inline-block;
+  text-align: center;
+  line-height: 30px;
+  text-decoration: none;
+  cursor: pointer;
+}
+.content-account .raw .col-md-10 .panel-body  a.modify{
+  background: #fff;
+  color: #D93740;
+}
+.content-account .raw .col-md-10 .panel-body .col-md-4 p{
+  font-family: PingFangSC-Regular;
+  font-size: 14px;
+  color: #CCCCCC;
+  letter-spacing: 0;
+  padding-top: 0;
+}
+/*
+支付宝账户设置页面样式*/
+.content-account .raw .panel-body .file-upload{
+  height: 70px;
+  border:1px solid #ccc;
+  position: relative;
+  padding: 12px 0 0 24px;
+}
+.content-account .raw .panel-body .file-upload p{
+  position: absolute;
+  left:24px;
+  top:0;
+  font-size: 14px;
+  color: #666666;
+}
+.content-account .raw .panel-body .file-upload p em{
+  font-size: 40px;
+  margin-right: 8px;
+  position: relative;
+  top: 10px;
+  cursor: pointer;
+}
+.content-account .raw .upload{
+  opacity: 0;
+}
+.content-account .raw .panel-body .file-show{
+   width: 440px;
+   height: 180px;
+   border: 1px solid #ccc;
+   text-align: center;
+   padding-top: 40px;
+}
+.content-account .raw .panel-body .file-show .upload-img{
+   width: 88px;
+   height: 120px;
+}
+/*
+银行账户设置页面样式*/
+.mask{
+  position: absolute;
+  left:0;
+  top:0;
+  right:0;
+  bottom:0;
+  background: rgba(240,240,240,0.3);
+}
+.user-modal.modal-bank{
+  display: block;
 }

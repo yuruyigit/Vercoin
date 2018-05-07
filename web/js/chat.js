@@ -1,3 +1,7 @@
+var me_id = $("#me_id").val();
+var target_id = $("#target_id").val();
+var order_id = $("#order_id").val();
+
 /**
  * @格式化时间
  */
@@ -35,19 +39,16 @@ var query = {},
   ISIE = navigator.userAgent.indexOf("compatible") > -1 &&
     navigator.userAgent.indexOf("MSIE") > -1;
 /**
- * @通过query获取聊天双方的id
+ * @获取聊天双方的id
  */
-if (window.location.href.indexOf("?") > -1) {
-  window.location.href.split("?")[1].split("&").forEach(function (item) {
-    query[item.split("=")[0]] = item.split("=")[1];
-  });
-}
+query['me']=me_id+"_"+order_id;
+query['target']=target_id+"_"+order_id;
+
 userName = query['me'], target = query['target'];
 /**
  * @init socket服务器
  */
 $$ = io.connect('http://localhost:9092');
-
 /**
  * @连接上socket服务器
  */

@@ -1106,8 +1106,9 @@ body {background: #f0f0f0;}
 .banner .carousel .carousel-inner .item {
         width: 100%;
         height: 420px;
-      /*  position: relative;*/
-        }
+       background: url("../images/Group 8@2x.png") no-repeat center;
+       background-size: cover;
+}
 .banner .carousel .carousel-inner .item .remark{
        position: absolute;
        top: 90px;
@@ -1124,11 +1125,16 @@ body {background: #f0f0f0;}
 .banner .carousel .carousel-inner .item .remark p{
     font-size: 30px;
     color:#FFF;
+    text-shadow: 0 2px 4px #AAAAAA;
 }
 .banner .carousel .carousel-inner .item .remark span{
     font-size: 20px;
     color:#FFF;
     font-weight: 100;
+    text-shadow: 0 2px 4px #AAAAAA;
+    opacity: 0.8;
+    margin-top: 8px;
+    display: block;
 }
 .banner .carousel .carousel-inner .item img {
           width: 100%;
@@ -1172,7 +1178,8 @@ body {background: #f0f0f0;}
 .content-index .row .col-md-12 h3 {
     text-align: center;
     margin: 45px 0 20px;
-    color: #727272; }
+    color: #727272;
+    font-weight: 500;}
 .content-index .row .col-md-12 p {
     color: #727272;
     text-align: center;
@@ -1282,6 +1289,7 @@ body {background: #f0f0f0;}
       font-size: 24px;
       margin-top: 22px;
       margin-bottom: 11px;
+      font-weight: 500;
       color:#727272;}
 .site-info .site-item p {
       margin: 0 0 11px;

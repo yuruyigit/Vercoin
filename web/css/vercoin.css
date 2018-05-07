@@ -3593,3 +3593,7 @@ margin: 0;}
   display: block;
   z-index:6666;
 }
+
+#zyhDraw .form-horizontal {
+  display:none;
+}

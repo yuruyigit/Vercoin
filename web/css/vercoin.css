@@ -2402,6 +2402,8 @@ body {background: #f0f0f0;}
   font-size: 14px;
   color: #333;
   margin-right: 10px;
+  position: relative;
+  top: -10px;
 }
 #zyhSell .seller_forms .sell_total .con3,
 #zyhBuy .seller_forms .sell_total .con3 {
@@ -3491,7 +3493,9 @@ margin: 0;}
   font-size: 14px;
   color: #333333;
   letter-spacing: 0;
-  margin: 0 24px 0 12px;
+  margin: 0 46px 0 12px;
+  position: relative;
+  display: inline-block;
 }
 .content-account .raw .col-md-10 .panel-body  a{
   background: #D93740;
@@ -3530,7 +3534,7 @@ margin: 0;}
     right: 0;
     text-align: center;
     line-height: 36px;
-    border: 1px solid #d8d8d8;
+  /*  border: 1px solid #d8d8d8;*/
     cursor: pointer;
 }
 .content-account .raw .col-md-10 .panel-body em:hover{

@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="../lib/css/bootstrap.min.css">
   <link rel="stylesheet" href="../lib/css/jquery.mCustomScrollbar.min.css">
   <link rel="stylesheet" href="./css/vercoin.css">
-  <title>vercoin</title>
+  <title>VERCOIN</title>
 </head>
 <body>
 <div class="container order_in_progress">
@@ -184,48 +184,157 @@
       <div class="information_head">
         <img src="./images/trade.png" alt="">结算信息
       </div>
-      <ul class="bank">
-        <li>银行卡信息</li>
-        <li>
-          <span class="bank_label">姓名</span>
-          Tomas Jackse
-        </li>
-        <li>
-          <span class="bank_label">银行卡卡号</span>
-          6225 8802 4142 7831
-        </li>
-        <li>
-          <span class="bank_label">开户行</span>
-          浙江省杭州市江干区学院路支行
-        </li>
-      </ul>
-      <hr>
-      <ul class="bank address">
-        <li>充值地址</li>
-        <li>
-          <span class="bank_label">BTC</span>
-          <span class="code">1KTuf2KHRH7PkZQayorJS8cJsyBvJcvfCA</span>
-          <span class="copy"><img src="./images/copy.png" alt=""></span>
-        </li>
-        <li>
-          <span class="bank_label">BTC</span>
-          <span class="code">1KTuf2KHRH7PkZQayorJS8cJsyBvJcvfCA</span>
-          <span class="copy"><img src="./images/copy.png" alt=""></span>
-        </li>
-        <li>
-          <span class="bank_label">BTC</span>
-          <span class="code">1KTuf2KHRH7PkZQayorJS8cJsyBvJcvfCA</span>
-          <span class="copy"><img src="./images/copy.png" alt=""></span>
-        </li>
-      </ul>
-      <hr>
-      <ul class="bank address">
-        <li>广告留言</li>
-        <li>
-          本人经常不在线，交易前请联系本人 13588851222
-        </li>
-      </ul>
-      <hr class="trade_hr">
+      <div class="accountlist">
+        <ul id="tabs">
+          <li title="tab1" class="active">银行卡</li>
+          <li title="tab2">支付宝</li>
+          <li title="tab3">微信</li>
+        </ul>
+      </div>
+      <div class="tabs-content" id="content">
+        <div class="tab show" id="tab1">
+          <ul class="bank">
+            <li>银行卡信息</li>
+            <li>
+              <span class="bank_label">姓名</span>
+              Tomas Jackse
+            </li>
+            <li>
+              <span class="bank_label">银行卡卡号</span>
+              6225 8802 4142 7831
+            </li>
+            <li>
+              <span class="bank_label">开户行</span>
+              浙江省杭州市江干区学院路支行
+            </li>
+          </ul>
+          <hr>
+          <ul class="bank address">
+            <li>充值地址</li>
+            <li>
+              <span class="bank_label">BTC</span>
+              <span class="code">1KTuf2KHRH7PkZQayorJS8cJsyBvJcvfCA</span>
+              <span class="copy"><img src="./images/copy.png" alt=""></span>
+            </li>
+            <li>
+              <span class="bank_label">BTC</span>
+              <span class="code">1KTuf2KHRH7PkZQayorJS8cJsyBvJcvfCA</span>
+              <span class="copy"><img src="./images/copy.png" alt=""></span>
+            </li>
+            <li>
+              <span class="bank_label">BTC</span>
+              <span class="code">1KTuf2KHRH7PkZQayorJS8cJsyBvJcvfCA</span>
+              <span class="copy"><img src="./images/copy.png" alt=""></span>
+            </li>
+          </ul>
+          <hr>
+          <ul class="bank address">
+            <li>广告留言</li>
+            <li>
+              本人经常不在线，交易前请联系本人 13588851222
+            </li>
+          </ul>
+          <hr class="trade_hr">
+        </div>
+        <div class="tab" id="tab2">
+          <ul class="bank">
+            <li>银行卡信息</li>
+            <li>
+              <span class="bank_label">姓名</span>
+              Tomas Jackse
+            </li>
+            <li>
+              <span class="bank_label">支付宝账户</span>
+              LIDAZHAO
+            </li>
+            <li>
+              <div class="Qr-code">
+                <span class="bank_label">二维码</span>
+                <img src="./images/6_03.png" alt="" >
+                <div class="show-pay-image">
+                  <img src="./images/7_03.png" alt="">
+                </div>
+              </div>
+            </li>
+          </ul>
+          <hr>
+          <ul class="bank address">
+            <li>充值地址</li>
+            <li>
+              <span class="bank_label">BTC</span>
+              <span class="code">1KTuf2KHRH7PkZQayorJS8cJsyBvJcvfCA</span>
+              <span class="copy"><img src="./images/copy.png" alt=""></span>
+            </li>
+            <li>
+              <span class="bank_label">BTC</span>
+              <span class="code">1KTuf2KHRH7PkZQayorJS8cJsyBvJcvfCA</span>
+              <span class="copy"><img src="./images/copy.png" alt=""></span>
+            </li>
+            <li>
+              <span class="bank_label">BTC</span>
+              <span class="code">1KTuf2KHRH7PkZQayorJS8cJsyBvJcvfCA</span>
+              <span class="copy"><img src="./images/copy.png" alt=""></span>
+            </li>
+          </ul>
+          <hr>
+          <ul class="bank address">
+            <li>广告留言</li>
+            <li>
+              本人经常不在线，交易前请联系本人 13588851222
+            </li>
+          </ul>
+          <hr class="trade_hr">
+        </div>
+        <div class="tab" id="tab3">
+          <ul class="bank">
+            <li>银行卡信息</li>
+            <li>
+              <span class="bank_label">姓名</span>
+              Tomas Jackse
+            </li>
+            <li>
+              <span class="bank_label">微信账户</span>
+              18217101653
+            </li>
+            <li>
+              <div class="Qr-code">
+                <span class="bank_label">二维码</span>
+                <img src="./images/6_03.png" alt="" >
+                <div class="show-pay-image">
+                  <img src="./images/7_03.png" alt="">
+                </div>
+              </div>
+            </li>
+          </ul>
+          <hr>
+          <ul class="bank address">
+            <li>充值地址</li>
+            <li>
+              <span class="bank_label">BTC</span>
+              <span class="code">1KTuf2KHRH7PkZQayorJS8cJsyBvJcvfCA</span>
+              <span class="copy"><img src="./images/copy.png" alt=""></span>
+            </li>
+            <li>
+              <span class="bank_label">BTC</span>
+              <span class="code">1KTuf2KHRH7PkZQayorJS8cJsyBvJcvfCA</span>
+              <span class="copy"><img src="./images/copy.png" alt=""></span>
+            </li>
+            <li>
+              <span class="bank_label">BTC</span>
+              <span class="code">1KTuf2KHRH7PkZQayorJS8cJsyBvJcvfCA</span>
+              <span class="copy"><img src="./images/copy.png" alt=""></span>
+            </li>
+          </ul>
+          <hr>
+          <ul class="bank address">
+            <li>广告留言</li>
+            <li>
+              本人经常不在线，交易前请联系本人 13588851222
+            </li>
+          </ul>
+          <hr class="trade_hr">
+        </div>
+      </div>
       <div class="trade_notice">
         <div class="trade_notice_head">
           <img src="./images/trade.png" alt="">交易提示
@@ -250,6 +359,12 @@
       setHeight: 498,
       theme: "minimal-dark" // theme:"minimal-dark"  "inset-2-dark" dark-3
     });
+  })
+  $('#tabs li').click(function () {
+      $(this).addClass('active');
+      $(this).siblings("li").removeClass('active');
+      $("#content div").removeClass("show");
+      $('#' + $(this).attr('title')).addClass('show');
   })
 </script>
 </body>

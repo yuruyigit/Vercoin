@@ -3507,6 +3507,22 @@ margin: 0;}
   letter-spacing: 0;
   padding-top: 0;
 }
+.content-account .raw .col-md-6{
+	padding-right:0;
+}
+.content-account .raw .col-md-10 .panel-body em{
+	width: 116px;
+    height: 34px;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    line-height: 36px;
+    border: 1px solid #d8d8d8;
+    cursor: pointer;
+}
+.content-account .raw .col-md-10 .panel-body em:hover{
+	background:#f0f0f0;
+}
 /*
 支付宝账户设置页面样式*/
 .content-account .raw .panel-body .file-upload{

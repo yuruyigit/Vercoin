@@ -2403,7 +2403,7 @@ body {background: #f0f0f0;}
   color: #333;
   margin-right: 10px;
   position: relative;
-  top: -10px;
+  /*top: -10px;*/
 }
 #zyhSell .seller_forms .sell_total .con3,
 #zyhBuy .seller_forms .sell_total .con3 {
@@ -3487,6 +3487,9 @@ margin: 0;}
 }
 .content-account .raw .col-md-10 .panel-body.bank{
   padding: 50px 0;
+}
+.content-account .raw .col-md-10 .panel-body .col-md-3.col-md{
+
 }
 .content-account .raw .col-md-10 .panel-body .col-md-3 em{
   font-family: PingFangSC-Regular;

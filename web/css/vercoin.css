@@ -21,6 +21,9 @@ body {background: #f0f0f0;}
   border: 1px solid #D93740 !important;
   box-shadow:none !important;
 }
+#zyhPageOrder {
+  margin-top:20px;
+}
 #zyhPageOrder .container {
   width: 1140px;
   padding: 0;
@@ -755,7 +758,9 @@ body {background: #f0f0f0;}
 #zyhLogReg .code_sending {
   color: #ccc !important;
 }
-
+#zyhPubAd {
+  margin-top:20px;
+}
 #zyhPubAd #form-group-amount-sell{
   display:none;
 }
@@ -968,7 +973,7 @@ body {background: #f0f0f0;}
 #zyhSellList,
 #zyhBuyList {
   width: 100%;
-  margin-top: 30px;
+  margin-top: 20px;
 }
 #zyhSellList ul,
 #zyhBuyList ul {
@@ -3514,6 +3519,22 @@ margin: 0;}
   color: #CCCCCC;
   letter-spacing: 0;
   padding-top: 0;
+}
+.content-account .raw .col-md-6{
+	padding-right:0;
+}
+.content-account .raw .col-md-10 .panel-body em{
+	width: 116px;
+    height: 34px;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    line-height: 36px;
+    border: 1px solid #d8d8d8;
+    cursor: pointer;
+}
+.content-account .raw .col-md-10 .panel-body em:hover{
+	background:#f0f0f0;
 }
 /*
 支付宝账户设置页面样式*/

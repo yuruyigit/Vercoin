@@ -3571,4 +3571,5 @@ margin: 0;}
 }
 .user-modal.modal-bank{
   display: block;
+  z-index:6666;
 }

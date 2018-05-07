@@ -2,6 +2,11 @@ var me_id = $("#me_id").val();
 var target_id = $("#target_id").val();
 var order_id = $("#order_id").val();
 
+var me_photo="abc.jpg";
+var target_photo="abc.jpg";
+var me_name="张三";
+var target_name="李四";
+
 /**
  * @格式化时间
  */
@@ -169,6 +174,10 @@ function renderLine(data) {
       '                    </div>';
     var n = $(template);
     n.addClass(isMe?'me':'system');
+    // 设置用户名和头像
+    n.find(".avatar img").attr("src", isMe ? me_photo : target_photo);
+    n.find(".username a").text(isMe ? me_name : target_name);
+
     if (data.message) {//消息实体
       n.find(".content-text").text(data.message)
     } else {

@@ -52,38 +52,36 @@
                             <li class="dropdown-header first">
                                 <dl>
                                     <dt>可用资产:</dt>
-                                    <dd>
-                                        0.00000000
+                                    <dd id="availableBalance">
+                                        <span >0.00000000</span>
                                         <span class="coin">BTC</span><br>
-
-                                        0.00000000
+                                        <span >0.00000000</span>
                                         <span class="coin">ETH</span><br>
-
-                                        19,900.00
+                                        <span >19,900.00</span>
                                         <span class="coin">VER</span><br></dd>
                                 </dl>
                             </li>
                             <li class="dropdown-header first">
                                 <dl>
                                     <dt>冻结资产:</dt>
-                                    <dd>
-                                        0.00000000
+                                    <dd  id="lockedBalance">
+                                        <span>0.00000000</span>
                                         <span class="coin">BTC</span><br>
-                                        0.00000000
+                                        <span>0.00000000</span>
                                         <span class="coin">ETH</span><br>
-                                        0.00
+                                        <span>0.00</span>
                                         <span class="coin">VER</span><br></dd>
                                 </dl>
                             </li>
                             <li class="dropdown-header first">
                                 <dl>
                                     <dt>总资产:</dt>
-                                    <dd>
-                                        0.00000000
+                                    <dd id="totalBalance">
+                                        <span>0.00000000</span>
                                         <span class="coin">BTC</span><br>
-                                        0.00000000
+                                        <span>0.00000000</span>
                                         <span class="coin">ETH</span><br>
-                                        19,900.00
+                                        <span>19,900.00</span>
                                         <span class="coin">VER</span><br></dd>
                                 </dl>
                             </li>
@@ -287,6 +285,30 @@
         $('.language-select li a').css('color','#AAAAAA');
         $('.content-usercenter').css({'background':'#f0f0f0','opacity':'1','position':'relative'});
     })
+
+    var data=[
+        {balanceAvailableReal: 28, balanceAvailable: 30, balanceLocked: 2, type: "BTC"},
+    {balanceAvailableReal: 200000, balanceAvailable: 200030, balanceLocked: 30, type: "VER"},
+    {balanceAvailableReal: 200000, balanceAvailable: 200030, balanceLocked: 30, type: "ETH"}];
+
+    data.forEach(function(item,index){
+        if(item.type == 'BTC'){
+            $("#availableBalance").find("span").eq(0).text(item.balanceAvailableReal)
+            $("#lockedBalance").find("span").eq(0).text(item.balanceLocked)
+            $("#totalBalance").find("span").eq(0).text(item.balanceAvailable)
+        }
+        if(item.type == 'VER'){
+            $("#availableBalance").find("span").eq(2).text(item.balanceAvailableReal)
+            $("#lockedBalance").find("span").eq(2).text(item.balanceLocked)
+            $("#totalBalance").find("span").eq(2).text(item.balanceAvailable)
+        }
+        if(item.type == 'ETH'){
+            $("#availableBalance").find("span").eq(4).text(item.balanceAvailableReal)
+            $("#lockedBalance").find("span").eq(4).text(item.balanceLocked)
+            $("#totalBalance").find("span").eq(4).text(item.balanceAvailable)
+        }
+    })
+
 </script>
 </body>
 </html>

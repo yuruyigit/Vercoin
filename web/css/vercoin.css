@@ -1234,6 +1234,8 @@ body {background: #f0f0f0;}
 .content-index .row .col-md-3 .trade-list .profile table td {
           color: #fff;
           text-align: center; }
+.content-index .row .col-md-3 .trade-list .profile table td.center {
+  padding-right: 16px; }
 .content-index .row .col-md-3 .trade-list .caption {
       padding: 9px;
       color: #727272;
@@ -1532,7 +1534,7 @@ body {background: #f0f0f0;}
 .user-modal .user-body button.confirm{
   color:#fff;
   background: #D93740;
-
+  margin-right: 18px;
 }
 /*.content-usercenter .col-md-3 .avatar .avatar-edit input:hover {
   opacity: 1; }*/
@@ -1940,7 +1942,7 @@ body {background: #f0f0f0;}
   width: 100%;
   text-indent: 10px;
   font-size: 14px;
-  color:#CCC;
+  /*color:#CCC;*/
 }
 .content-authentication .col-md-10 .tip h3{
   font-size: 14px;
@@ -2405,7 +2407,7 @@ body {background: #f0f0f0;}
   color: #333;
   margin-right: 10px;
   position: relative;
-  top: -10px;
+  /*top: -10px;*/
 }
 #zyhSell .seller_forms .sell_total .con3,
 #zyhBuy .seller_forms .sell_total .con3 {
@@ -3386,6 +3388,12 @@ margin: 0;}
 .content-security  .col-md-10 em:hover{
   background: #f0f0f0;
 }
+.content-security .container .col-md-10 .panel-body .form-horizontal{
+  padding-bottom: 15px;
+}
+.content-security .container .col-md-10 .panel-body .form-group{
+  margin-bottom: 0;
+}
 /*
 发送邮箱页面样式*/
 .content-email{
@@ -3491,14 +3499,15 @@ margin: 0;}
 .content-account .raw .col-md-10 .panel-body.bank{
   padding: 50px 0;
 }
+.content-account .raw .col-md-10 .panel-body .col-md-3.col-md-offset-1{
+  top:-10px;
+}
 .content-account .raw .col-md-10 .panel-body .col-md-3 em{
   font-family: PingFangSC-Regular;
   font-size: 14px;
   color: #333333;
   letter-spacing: 0;
-  margin: 0 46px 0 12px;
-  position: relative;
-  display: inline-block;
+  margin: 0 50px 0 12px;
 }
 .content-account .raw .col-md-10 .panel-body  a{
   background: #D93740;
@@ -3536,8 +3545,7 @@ margin: 0;}
     position: absolute;
     right: 0;
     text-align: center;
-    line-height: 36px;
-  /*  border: 1px solid #d8d8d8;*/
+    line-height: 20px;
     cursor: pointer;
 }
 .content-account .raw .col-md-10 .panel-body em:hover{

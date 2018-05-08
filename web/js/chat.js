@@ -2,10 +2,10 @@ var me_id = $("#me_id").val();
 var target_id = $("#target_id").val();
 var order_id = $("#order_id").val();
 
-var me_photo="abc.jpg";
-var target_photo="abc.jpg";
-var me_name="张三";
-var target_name="李四";
+var me_photo=$("#me_photo").val();
+var target_photo=$("#target_photo").val();
+var me_name=$("#me_name").val();
+var target_name=$("#target_name").val();
 
 /**
  * @格式化时间

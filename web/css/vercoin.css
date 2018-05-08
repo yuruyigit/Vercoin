@@ -2286,7 +2286,8 @@ body {background: #f0f0f0;}
   padding: 40px 0 0;
   border-top: 1px solid #f0f0f0; }
 .content-security .col-md-10 .row .media {
-  margin-bottom: 30px; }
+  margin-bottom: 30px;
+overflow: inherit;}
 .content-security .col-md-10 .row .media .media-object {
   width: 40px;
   height: 40px;

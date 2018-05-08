@@ -2887,7 +2887,7 @@ overflow: inherit;}
   width: 100%;
   text-indent: 10px;
   font-size: 14px;
-  color:#CCC;
+ /* color:#CCC;*/
 }
 .content-account  .col-md-10 label{
   font-size: 14px;
@@ -3416,9 +3416,9 @@ margin: 0;}
 .content-security .container .col-md-10 .panel-body .form-horizontal{
   padding-bottom: 15px;
 }
-.content-security .container .col-md-10 .panel-body .form-group{
+/*.content-security .container .col-md-10 .panel-body .form-group{
   margin-bottom: 0;
-}
+}*/
 /*
 发送邮箱页面样式*/
 .content-email{
@@ -3524,9 +3524,9 @@ margin: 0;}
 .content-account .raw .col-md-10 .panel-body.bank{
   padding: 50px 0;
 }
-.content-account .raw .col-md-10 .panel-body .col-md-3.col-md-offset-1{
+/*.content-account .raw .col-md-10 .panel-body .col-md-3.col-md-offset-1{
   top:-10px;
-}
+}*/
 .content-account .raw .col-md-10 .panel-body .col-md-3 em{
   font-family: PingFangSC-Regular;
   font-size: 14px;

@@ -1532,7 +1532,7 @@ body {background: #f0f0f0;}
 .user-modal .user-body button.confirm{
   color:#fff;
   background: #D93740;
-
+  margin-right: 18px;
 }
 /*.content-usercenter .col-md-3 .avatar .avatar-edit input:hover {
   opacity: 1; }*/
@@ -1940,7 +1940,7 @@ body {background: #f0f0f0;}
   width: 100%;
   text-indent: 10px;
   font-size: 14px;
-  color:#CCC;
+  /*color:#CCC;*/
 }
 .content-authentication .col-md-10 .tip h3{
   font-size: 14px;
@@ -3384,6 +3384,12 @@ margin: 0;}
 }
 .content-security  .col-md-10 em:hover{
   background: #f0f0f0;
+}
+.content-security .container .col-md-10 .panel-body .form-horizontal{
+  padding-bottom: 15px;
+}
+.content-security .container .col-md-10 .panel-body .form-group{
+  margin-bottom: 0;
 }
 /*
 发送邮箱页面样式*/

@@ -151,7 +151,7 @@
           <div class="title">身份验证</div>
           <div class="panel-body">
             <div class="id-card"><i class="glyphicon glyphicon-user"></i>身份证验证</div>
-            <div method="POST" action="" class="form-horizontal">
+            <from method="POST" action="" class="form-horizontal">
               <div class="form-group"><label class="col-md-3 control-label">国家</label>
                 <div class="col-md-6">
                   <select class="form-control-static">
@@ -166,11 +166,11 @@
                 <div class="col-md-6"><input class="form-control-static" placeholder="请输入身份证号码"></div>
               </div>
               <div class="form-group"><label class="col-md-3 control-label"></label>
-                <div class="col-md-6"><button type="submit" class="btn " id="submit">
+                <div class="col-md-6"><button  class="btn " id="submit">
                   保存
                 </button></div>
               </div>
-            </div>
+            </from>
           </div>
         </div>
         <div class="tip">
@@ -183,6 +183,16 @@
       </div>
     </div>
   </div>
+  <div class="user-modal" id="user-modal">
+    <div class="user-header">
+      <p>身份验证 <em>×</em></p>
+    </div>
+    <div class="user-body">
+      <p>请务必确认身份信息填写无误，一旦绑定，不予修改。</p>
+      <button class="confirm" type="submit">确定</button>
+      <button class="cancel">取消</button>
+    </div>
+  </div>
 </div>
 <div class="language-select">
   <ul>
@@ -191,32 +201,43 @@
     <li><a href="">繁体中文</a></li>
   </ul>
 </div>
-<div class="user-modal" id="user-modal">
-  <div class="user-header">
-    <p>身份验证 <em>×</em></p>
-  </div>
-  <div class="user-body">
-    <p>请务必确认身份信息填写无误，一旦绑定，不予修改。</p>
-    <button class="confirm">确定</button>
-    <button class="cancel">取消</button>
-  </div>
-</div>
+
 </body>
 <script type="text/javascript">
     $('#submit').click(function () {
         $('#user-modal').css('display','block');
-        $('.content-authentication').css({'background':'#f0f0f0','opacity':'0.3','overflow-y':'hidden'})
+        $('.panel').css('opacity','0.3');
+        $('.tip').css('opacity','0.3');
+        $('.language-select').css('background','rgba(0,0,0,0.3)');
+        $('.language-select li a').css('color','#f0f0f0');
+        $('.col-md-2').css({'background':'#f0f0f0','opacity':'0.3'});
+        $('.content-authentication').css({'background':'rgba(0,0,0,0.3)','overflow-y':'hidden'})
     })
     $('.confirm').click(function () {
         $('#user-modal').css('display','none');
+        $('.panel').css('opacity','1');
+        $('.tip').css('opacity','1');
+        $('.col-md-2').css({'background':'#fff','opacity':'1'});
+        $('.language-select').css('background','rgba(240,240,240,1)');
+        $('.language-select li a').css('color','#AAAAAA');
         $('.content-authentication').css({'background':'#f0f0f0','opacity':'1','position':'relative'});
     })
     $('.cancel').click(function () {
         $('#user-modal').css('display','none');
+        $('.panel').css('opacity','1');
+        $('.tip').css('opacity','1');
+        $('.col-md-2').css({'background':'#fff','opacity':'1'});
+        $('.language-select').css('background','rgba(240,240,240,1)');
+        $('.language-select li a').css('color','#AAAAAA');
         $('.content-authentication').css({'background':'#f0f0f0','opacity':'1','position':'relative'});
     })
     $('em').click(function () {
         $('#user-modal').css('display','none');
+        $('.panel').css('opacity','1');
+        $('.tip').css('opacity','1');
+        $('.col-md-2').css({'background':'#fff','opacity':'1'});
+        $('.language-select').css('background','rgba(240,240,240,1)');
+        $('.language-select li a').css('color','#AAAAAA');
         $('.content-authentication').css({'background':'#f0f0f0','opacity':'1','position':'relative'});
     })
 </script>

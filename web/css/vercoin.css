@@ -3478,7 +3478,7 @@ margin: 0;}
   font-size: 14px;
   color: #333333;
   letter-spacing: 0;
-  margin: 0 24px 0 12px;
+  margin: 0 50px 0 12px;
 }
 .content-account .raw .col-md-10 .panel-body  a{
   background: #D93740;
@@ -3516,8 +3516,7 @@ margin: 0;}
     position: absolute;
     right: 0;
     text-align: center;
-    line-height: 36px;
-    border: 1px solid #d8d8d8;
+    line-height: 20px;
     cursor: pointer;
 }
 .content-account .raw .col-md-10 .panel-body em:hover{

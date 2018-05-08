@@ -2457,6 +2457,7 @@ overflow: inherit;}
   margin-right: auto;
   color: #333;
   font-size: 14px;
+  margin-top:20px;
 }
 .order_in_progress .progress_header {
   width: 1140px;
@@ -3693,4 +3694,16 @@ margin: 0;}
 
 #zyhPageAd .content_list #pageInfo li{
   cursor:pointer;
+}
+
+#zyhBuy span.error-text {
+  position: absolute;
+  color: #d93740;
+  width: 340px !important;
+  height: 20px !important;
+  display: block;
+  left: 0;
+  top: -28px;
+  font-size: 12px;
+  text-indent: 2px;
 }

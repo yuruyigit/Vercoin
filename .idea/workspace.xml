@@ -2,14 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="93e9fb6f-155f-477a-9be0-c731c27d882f" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/authentication.html" afterPath="$PROJECT_DIR$/web/authentication.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/css/base.css" afterPath="$PROJECT_DIR$/web/css/base.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/css/vercoin.css" afterPath="$PROJECT_DIR$/web/css/vercoin.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/index.html" afterPath="$PROJECT_DIR$/web/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/chat.js" afterPath="$PROJECT_DIR$/web/js/chat.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/usercenter.html" afterPath="$PROJECT_DIR$/web/usercenter.html" />
     </list>
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -22,8 +17,30 @@
       <file leaf-file-name="vercoin.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/css/vercoin.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="339">
-              <caret line="3518" column="17" lean-forward="true" selection-start-line="3518" selection-start-column="17" selection-end-line="3518" selection-end-column="17" />
+            <state relative-caret-position="300">
+              <caret line="3700" column="17" lean-forward="true" selection-start-line="3700" selection-start-column="17" selection-end-line="3700" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="234">
+              <caret line="65" column="68" lean-forward="false" selection-start-line="65" selection-start-column="68" selection-end-line="65" selection-end-column="68" />
+              <folding>
+                <element signature="n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="132">
+              <caret line="6" column="9" lean-forward="false" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -42,6 +59,7 @@
       <find>#zyhPubAd .panel-heading</find>
       <find>#pageInfo a</find>
       <find>#zyhPageAd .content_list .row</find>
+      <find>.order_in_progress</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -50,9 +68,10 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/web/css/vercoin.css" />
         <option value="$PROJECT_DIR$/.idea/workspace.xml" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/web/index.html" />
+        <option value="$PROJECT_DIR$/web/css/vercoin.css" />
       </list>
     </option>
   </component>
@@ -62,11 +81,11 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
-    <option name="x" value="115" />
-    <option name="y" value="118" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="307" />
+    <option name="y" value="87" />
     <option name="width" value="1376" />
-    <option name="height" value="773" />
+    <option name="height" value="692" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -91,17 +110,6 @@
             <path>
               <item name="vercoin-resources" type="b2602c69:ProjectViewProjectNode" />
               <item name="vercoin-resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="vercoin-resources" type="b2602c69:ProjectViewProjectNode" />
-              <item name="vercoin-resources" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="vercoin-resources" type="b2602c69:ProjectViewProjectNode" />
-              <item name="vercoin-resources" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -141,16 +149,15 @@
       <workItem from="1525684116025" duration="6407000" />
       <workItem from="1525744250237" duration="690000" />
       <workItem from="1525747221274" duration="682000" />
-      <workItem from="1525761384706" duration="4362000" />
+      <workItem from="1525761384706" duration="7994000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16434000" />
+    <option name="totallyTimeSpent" value="20066000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="115" y="118" width="1376" height="773" extended-state="1" />
-    <editor active="true" />
+    <frame x="307" y="87" width="1376" height="692" extended-state="0" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2494465" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -158,7 +165,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26253688" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.8475712" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -537,15 +544,25 @@
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
-          <caret line="6" column="10" lean-forward="false" selection-start-line="6" selection-start-column="10" selection-end-line="6" selection-end-column="10" />
+          <caret line="6" column="9" lean-forward="false" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="9" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="65" column="68" lean-forward="false" selection-start-line="65" selection-start-column="68" selection-end-line="65" selection-end-column="68" />
+          <folding>
+            <element signature="n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/css/vercoin.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="339">
-          <caret line="3518" column="17" lean-forward="true" selection-start-line="3518" selection-start-column="17" selection-end-line="3518" selection-end-column="17" />
+        <state relative-caret-position="300">
+          <caret line="3700" column="17" lean-forward="true" selection-start-line="3700" selection-start-column="17" selection-end-line="3700" selection-end-column="17" />
           <folding />
         </state>
       </provider>

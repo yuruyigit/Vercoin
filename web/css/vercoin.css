@@ -1232,6 +1232,8 @@ body {background: #f0f0f0;}
 .content-index .row .col-md-3 .trade-list .profile table td {
           color: #fff;
           text-align: center; }
+.content-index .row .col-md-3 .trade-list .profile table td.center {
+  padding-right: 16px; }
 .content-index .row .col-md-3 .trade-list .caption {
       padding: 9px;
       color: #727272;
@@ -3488,8 +3490,8 @@ margin: 0;}
 .content-account .raw .col-md-10 .panel-body.bank{
   padding: 50px 0;
 }
-.content-account .raw .col-md-10 .panel-body .col-md-3.col-md{
-
+.content-account .raw .col-md-10 .panel-body .col-md-3.col-md-offset-1{
+  top:-10px;
 }
 .content-account .raw .col-md-10 .panel-body .col-md-3 em{
   font-family: PingFangSC-Regular;

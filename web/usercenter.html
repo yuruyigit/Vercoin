@@ -292,17 +292,17 @@
     {balanceAvailableReal: 200000, balanceAvailable: 200030, balanceLocked: 30, type: "ETH"}];
 
     data.forEach(function(item,index){
-        if(item.type === 'BTC'){
+        if(item.type == 'BTC'){
             $("#availableBalance").find("span").eq(0).text(item.balanceAvailableReal)
             $("#lockedBalance").find("span").eq(0).text(item.balanceLocked)
             $("#totalBalance").find("span").eq(0).text(item.balanceAvailable)
         }
-        if(item.type === 'VER'){
+        if(item.type == 'VER'){
             $("#availableBalance").find("span").eq(2).text(item.balanceAvailableReal)
             $("#lockedBalance").find("span").eq(2).text(item.balanceLocked)
             $("#totalBalance").find("span").eq(2).text(item.balanceAvailable)
         }
-        if(item.type === 'ETH'){
+        if(item.type == 'ETH'){
             $("#availableBalance").find("span").eq(4).text(item.balanceAvailableReal)
             $("#lockedBalance").find("span").eq(4).text(item.balanceLocked)
             $("#totalBalance").find("span").eq(4).text(item.balanceAvailable)

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>VERCOIN</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../lib/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/vercoin.css">
+  <script src="../lib/js/jquery-3.3.1.min.js"></script>
+  <script src="../lib/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="header">
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand header-logo" href="#">
+          <img src="./images/logo.jpg" alt="">
+        </a>
+      </div>
+      <div>
+        <ul class="nav navbar-nav nav-index">
+          <li ><a href="./index.html">首页</a></li>
+          <li >
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+               aria-haspopup="true" aria-expanded="false">购买<span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu">
+              <li class="default-color"><a href="./buy.html">VER</a></li>
+              <li class="default-color "><a href="#" class="default">默认</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+               aria-haspopup="true" aria-expanded="false">出售<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li class="default-color"><a href="./sell.html">VER</a></li>
+              <li class="default-color "><a href="#" class="default">默认</a></li>
+            </ul>
+          </li>
+          <li><a href="./publish_advertisement.html">发布广告</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right right">
+          <li> <a href="./order.html" > <span class="glyphicon glyphicon-th-list"></span>订单</a> </li>
+          <li>
+            <a href="" data-toggle="dropdown" role="button" aria-expanded="true"
+               class="dropdown-toggle"><span aria-hidden="true" class="glyphicon glyphicon-book"></span>
+              钱包<span class="caret"></span>
+            </a>
+            <ul role="menu" class="dropdown-menu reset">
+              <li class="dropdown-header first">
+                <dl>
+                  <dt>可用资产:</dt>
+                  <dd>
+                    0.00000000
+                    <span class="coin">BTC</span><br>
+
+                    0.00000000
+                    <span class="coin">ETH</span><br>
+
+                    19,900.00
+                    <span class="coin">VER</span><br></dd>
+                </dl>
+              </li>
+              <li class="dropdown-header first">
+                <dl>
+                  <dt>冻结资产:</dt>
+                  <dd>
+                    0.00000000
+                    <span class="coin">BTC</span><br>
+                    0.00000000
+                    <span class="coin">ETH</span><br>
+                    0.00
+                    <span class="coin">VER</span><br></dd>
+                </dl>
+              </li>
+              <li class="dropdown-header first">
+                <dl>
+                  <dt>总资产:</dt>
+                  <dd>
+                    0.00000000
+                    <span class="coin">BTC</span><br>
+                    0.00000000
+                    <span class="coin">ETH</span><br>
+                    19,900.00
+                    <span class="coin">VER</span><br></dd>
+                </dl>
+              </li>
+              <li><a href="draw.html">充值</a></li>
+              <li><a href="./draw.html">提现</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="" data-toggle="dropdown" role="button" aria-expanded="true"
+               class="dropdown-toggle"><span aria-hidden="true" class="glyphicon glyphicon-user"></span>
+              nuoee <span class="caret"></span>
+            </a>
+            <ul role="menu" class="dropdown-menu reset">
+              <li><a href="./usercenter.html">用户中心</a></li>
+              <li><a href="./advertisement.html">我的广告</a></li>
+              <li>
+                <form action="" method="post"><input type="hidden" name="_token"
+                                                     value="12ZSOsEG3hGb67zOtaX3uIdEBZuWdwt4o1eBkHMF">
+                  <button type="submit" class="btn btn-default">退出</button>
+                </form>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</div>
+<div class="content-authentication">
+  <div class="container">
+    <div class="raw">
+      <div class="col-md-2">
+        <div class="panel panel-default">
+          <div class="title">用户资料</div>
+          <div class="panel-body">
+            <a href="./usercenter.html">基本信息</a>
+            <a href="./authentication.html" class="active">身份验证</a>
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div class="title">账户安全</div>
+          <div class="panel-body">
+            <a href="./accountlist.html">账户设置</a>
+            <a href="./security.html">安全设置</a>
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div class="title">信任人数</div>
+          <div class="panel-body">
+            <a href="./trust-you.html">信任您的人</a>
+            <a href="./you-trust.html">您信任的人</a>
+            <a href="./you-block.html">您屏蔽的人</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-10">
+        <div class="panel panel-default">
+          <div class="title">身份验证</div>
+          <div class="panel-body">
+            <div class="id-card"><i class="glyphicon glyphicon-user"></i>身份证验证</div>
+            <from method="POST" action="" class="form-horizontal">
+              <div class="form-group"><label class="col-md-3 control-label">国家</label>
+                <div class="col-md-6">
+                  <p  class="form-control-static">中国</p>
+                </div>
+              </div>
+              <div class="form-group"><label class="col-md-3 control-label">真实姓名</label>
+                <div class="col-md-6"><p class="form-control-static">李大钊</p></div>
+              </div>
+              <div class="form-group"><label class="col-md-3 control-label">身份证号码</label>
+                <div class="col-md-6"><p class="form-control-static">123456677788</p></div>
+              </div>
+            <!--  <div class="form-group"><label class="col-md-3 control-label"></label>
+                <div class="col-md-6"><button  class="btn " id="submit" type="submit">
+                  保存
+                </button></div>
+              </div>-->
+            </from>
+          </div>
+        </div>
+        <div class="tip">
+          <h3>温馨提示</h3>
+          <p>
+            １、为确保交易安全，保障您的合法权益，请您完成身份验证！我们提供安全高效实时联网的官方身份认证服务，具有更高级别的安全保护。身份验证一
+            旦成功，不予修改和解除认证。建议您谨慎选择，真实填写。<br/>
+            ２、对以上信息如有任何疑问，请咨询VC平台服务热线：0571-85106557</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="user-modal" id="user-modal">
+    <div class="user-header">
+      <p>身份验证 <em>×</em></p>
+    </div>
+    <div class="user-body">
+      <p>请务必确认身份信息填写无误，一旦绑定，不予修改。</p>
+      <button class="confirm" type="submit">确定</button>
+      <button class="cancel">取消</button>
+    </div>
+  </div>
+</div>
+<div class="language-select">
+  <ul>
+    <li><a href="">English</a></li>
+    <li><a href="">简体中文</a></li>
+    <li><a href="">繁体中文</a></li>
+  </ul>
+</div>
+</body>
+</html>

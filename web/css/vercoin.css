@@ -869,6 +869,7 @@ body {background: #f0f0f0;}
   background-color: #fff !important;
   font-weight: 700;
   padding-left: 0;
+  height:50px;
 }
 #zyhPubAd .panel-heading img {
   width: 16px;
@@ -968,6 +969,7 @@ body {background: #f0f0f0;}
 }
 #zyhPubAd .form-group-publish {
   margin-top:40px;
+  margin-bottom:80px;
 }
 
 #zyhSellList,
@@ -3297,7 +3299,7 @@ margin: 0;}
     color: #333; }
 .pagination>li:hover a{
     background: #D93740 ;
-    color:#FFF;
+    color:#fff !important;
 }
 .pagination{
     width: 100%;
@@ -3335,6 +3337,7 @@ margin: 0;}
   border-radius: 2px;
   line-height: 30px;
   padding: 0;
+  cursor:pointer;
 }
 .pagination>.active>a {
   background: #d93740 !important;
@@ -3593,4 +3596,92 @@ margin: 0;}
 
 #zyhDraw .form-horizontal {
   display:none;
+}
+/**
+ *@修改订单页 分页
+ */
+#zyhPageOrder .container {
+  height:970px;
+  position: relative;
+}
+#zyhPageOrder .page_count {
+  height: 70px;
+  padding-top: 20px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+#zyhPageOrder .table_header {
+  height:60px;
+}
+
+#zyhPageOrder .pagination>li>a {
+  margin-left: 0;
+  border: 1px solid #E6E6E6;
+  cursor: pointer;
+}
+/**
+ *@修改购买和出售
+ */
+#zyhSellList .table_header,
+#zyhBuyList .table_header
+{
+  height:50px;
+}
+
+#zyhSellList .main_block_right >  .row ,
+#zyhBuyList .main_block_right >  .row
+{
+  height: 80px;
+  margin: 0;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}
+
+#zyhSellList .main_block_right,
+#zyhBuyList .main_block_right
+{
+  position:relative;
+}
+
+#zyhSellList .main_block_right .row .col-xs-10 ,
+#zyhBuyList .main_block_right .row .col-xs-10
+{
+  height: 100%;
+  padding-top: 20px;
+}
+
+#zyhPubAd .panel.panel-default{
+  border: none;
+  border-radius: 0 !important;
+}
+
+#zyhPubAd input[type="text"], #zyhPubAd input[type="tel"] {
+  border: 1px solid #e6e6e6;
+}
+#zyhPubAd .input-group-addon {
+  border: 1px solid #e6e6e6 !important;
+}
+#zyhPubAd  #input-message {
+  border: 1px solid #e6e6e6 !important;
+}
+
+#zyhPageAd .content_list {
+  height:830px;
+  position:relative;
+}
+#zyhPageAd .content_list .row {
+  height:80px;
+  margin: 0;
+  position: absolute;
+  width: 100%;
+  padding-top: 20px;
+  bottom: 0;
+}
+
+#zyhPageAd .content_list #pageInfo li{
+  cursor:pointer;
 }

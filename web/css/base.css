@@ -115,6 +115,10 @@ a.blue{color:#3399e0}
 .header .glyphicon{
     top:3px;
 }
+.header .glyphicon-list-alt::first-letter {
+    position: relative;
+    margin-right: 8px;
+}
 .header .glyphicon-th-list{
     left:-5px;
     top:2px;

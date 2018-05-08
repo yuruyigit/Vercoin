@@ -21,6 +21,9 @@ body {background: #f0f0f0;}
   border: 1px solid #D93740 !important;
   box-shadow:none !important;
 }
+#zyhPageOrder {
+  margin-top:20px;
+}
 #zyhPageOrder .container {
   width: 1140px;
   padding: 0;
@@ -755,7 +758,9 @@ body {background: #f0f0f0;}
 #zyhLogReg .code_sending {
   color: #ccc !important;
 }
-
+#zyhPubAd {
+  margin-top:20px;
+}
 #zyhPubAd #form-group-amount-sell{
   display:none;
 }
@@ -968,7 +973,7 @@ body {background: #f0f0f0;}
 #zyhSellList,
 #zyhBuyList {
   width: 100%;
-  margin-top: 30px;
+  margin-top: 20px;
 }
 #zyhSellList ul,
 #zyhBuyList ul {
@@ -1101,8 +1106,9 @@ body {background: #f0f0f0;}
 .banner .carousel .carousel-inner .item {
         width: 100%;
         height: 420px;
-      /*  position: relative;*/
-        }
+       background: url("../images/Group 8@2x.png") no-repeat center;
+       background-size: cover;
+}
 .banner .carousel .carousel-inner .item .remark{
        position: absolute;
        top: 90px;
@@ -1119,11 +1125,16 @@ body {background: #f0f0f0;}
 .banner .carousel .carousel-inner .item .remark p{
     font-size: 30px;
     color:#FFF;
+    text-shadow: 0 2px 4px #AAAAAA;
 }
 .banner .carousel .carousel-inner .item .remark span{
     font-size: 20px;
     color:#FFF;
     font-weight: 100;
+    text-shadow: 0 2px 4px #AAAAAA;
+    opacity: 0.8;
+    margin-top: 8px;
+    display: block;
 }
 .banner .carousel .carousel-inner .item img {
           width: 100%;
@@ -1167,7 +1178,8 @@ body {background: #f0f0f0;}
 .content-index .row .col-md-12 h3 {
     text-align: center;
     margin: 45px 0 20px;
-    color: #727272; }
+    color: #727272;
+    font-weight: 500;}
 .content-index .row .col-md-12 p {
     color: #727272;
     text-align: center;
@@ -1220,6 +1232,8 @@ body {background: #f0f0f0;}
 .content-index .row .col-md-3 .trade-list .profile table td {
           color: #fff;
           text-align: center; }
+.content-index .row .col-md-3 .trade-list .profile table td.center {
+  padding-right: 16px; }
 .content-index .row .col-md-3 .trade-list .caption {
       padding: 9px;
       color: #727272;
@@ -1277,6 +1291,7 @@ body {background: #f0f0f0;}
       font-size: 24px;
       margin-top: 22px;
       margin-bottom: 11px;
+      font-weight: 500;
       color:#727272;}
 .site-info .site-item p {
       margin: 0 0 11px;
@@ -1517,7 +1532,7 @@ body {background: #f0f0f0;}
 .user-modal .user-body button.confirm{
   color:#fff;
   background: #D93740;
-
+  margin-right: 18px;
 }
 /*.content-usercenter .col-md-3 .avatar .avatar-edit input:hover {
   opacity: 1; }*/
@@ -1925,7 +1940,7 @@ body {background: #f0f0f0;}
   width: 100%;
   text-indent: 10px;
   font-size: 14px;
-  color:#CCC;
+  /*color:#CCC;*/
 }
 .content-authentication .col-md-10 .tip h3{
   font-size: 14px;
@@ -2389,6 +2404,8 @@ body {background: #f0f0f0;}
   font-size: 14px;
   color: #333;
   margin-right: 10px;
+  position: relative;
+  /*top: -10px;*/
 }
 #zyhSell .seller_forms .sell_total .con3,
 #zyhBuy .seller_forms .sell_total .con3 {
@@ -3368,6 +3385,12 @@ margin: 0;}
 .content-security  .col-md-10 em:hover{
   background: #f0f0f0;
 }
+.content-security .container .col-md-10 .panel-body .form-horizontal{
+  padding-bottom: 15px;
+}
+.content-security .container .col-md-10 .panel-body .form-group{
+  margin-bottom: 0;
+}
 /*
 发送邮箱页面样式*/
 .content-email{
@@ -3473,12 +3496,21 @@ margin: 0;}
 .content-account .raw .col-md-10 .panel-body.bank{
   padding: 50px 0;
 }
+.content-account .raw .col-md-10 .panel-body .col-md-3.col-md-offset-1{
+  top:-10px;
+}
 .content-account .raw .col-md-10 .panel-body .col-md-3 em{
   font-family: PingFangSC-Regular;
   font-size: 14px;
   color: #333333;
   letter-spacing: 0;
+<<<<<<< HEAD
   margin: 0 50px 0 12px;
+=======
+  margin: 0 46px 0 12px;
+  position: relative;
+  display: inline-block;
+>>>>>>> be947d6a1fea3763e9c37c0dd30c521f543a500e
 }
 .content-account .raw .col-md-10 .panel-body  a{
   background: #D93740;
@@ -3516,7 +3548,12 @@ margin: 0;}
     position: absolute;
     right: 0;
     text-align: center;
+<<<<<<< HEAD
     line-height: 20px;
+=======
+    line-height: 36px;
+  /*  border: 1px solid #d8d8d8;*/
+>>>>>>> be947d6a1fea3763e9c37c0dd30c521f543a500e
     cursor: pointer;
 }
 .content-account .raw .col-md-10 .panel-body em:hover{
@@ -3571,4 +3608,8 @@ margin: 0;}
 .user-modal.modal-bank{
   display: block;
   z-index:6666;
+}
+
+#zyhDraw .form-horizontal {
+  display:none;
 }

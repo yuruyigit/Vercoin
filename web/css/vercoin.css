@@ -3380,7 +3380,21 @@ margin: 0;}
   line-height: 36px;
   border: 1px solid #d8d8d8;
   cursor: pointer;
+  z-index: 6666;
 }
+.content-security  .col-md-10 button.code{
+  width: 116px;
+  height: 36px;
+  position: absolute;
+  right:0;
+  text-align: center;
+  line-height: 36px;
+  border: 1px solid #d8d8d8;
+  z-index: 6666;
+  background: #fff;
+  color:#333;
+}
+
 .content-security  .col-md-10 em.phone{
   position: absolute;
   left:0;

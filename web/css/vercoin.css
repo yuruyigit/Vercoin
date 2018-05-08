@@ -7,6 +7,12 @@ em {font-style: normal;}
 li {list-style: none;}
 hr {background: #e6e6e6;}
 body {background: #f0f0f0;}
+.error_text,
+.error-text,
+.error_text_left{
+  color: #D93740;
+  font-size: 12px;
+}
 
 .form-control:focus{
   border: 1px solid #ccc !important;
@@ -1676,10 +1682,11 @@ body {background: #f0f0f0;}
   background: #fff4f4;
 }
 
-#zyhSellList .merchant:hover .btn-primary,
-#zyhBuyList .merchant:hover .btn-primary {
+#zyhSellList .merchant .btn-primary:hover,
+#zyhBuyList .merchant .btn-primary:hover {
   background: #039497;
 }
+
 #zyhBuyList .merchant_ope button {
   border-color: #d93740 !important;
   background: #d93740 !important;
@@ -2340,7 +2347,9 @@ overflow: inherit;}
 }
 #zyhSell .seller_forms .sell_total .con2,
 #zyhBuy .seller_forms .sell_total .con2 {
-  display: block; }
+  display: block;
+  padding-right:10px;
+}
 
 #zyhSell .seller_forms .sell_total .left_asset,
 #zyhBuy  .seller_forms .sell_total .left_asset
@@ -2457,6 +2466,7 @@ overflow: inherit;}
   margin-right: auto;
   color: #333;
   font-size: 14px;
+  margin-top:20px;
 }
 .order_in_progress .progress_header {
   width: 1140px;
@@ -3707,4 +3717,27 @@ margin: 0;}
 
 #zyhPageAd .content_list #pageInfo li{
   cursor:pointer;
+}
+
+#zyhBuy span.error-text {
+  position: absolute;
+  color: #d93740;
+  width: 340px !important;
+  height: 20px !important;
+  display: block;
+  left: 0;
+  top: 30px;
+  font-size: 12px;
+  text-indent: 2px;
+}
+
+.form-group .error_text_left {
+  position: absolute;
+  width: 400px;
+  font-size: 12px;
+  color: #d93740;
+  height: 40px;
+  top: 0;
+  left: 520px;
+  line-height: 40px;
 }

@@ -3505,9 +3505,13 @@ margin: 0;}
   font-size: 14px;
   color: #333333;
   letter-spacing: 0;
+<<<<<<< HEAD
+  margin: 0 50px 0 12px;
+=======
   margin: 0 46px 0 12px;
   position: relative;
   display: inline-block;
+>>>>>>> be947d6a1fea3763e9c37c0dd30c521f543a500e
 }
 .content-account .raw .col-md-10 .panel-body  a{
   background: #D93740;
@@ -3545,8 +3549,12 @@ margin: 0;}
     position: absolute;
     right: 0;
     text-align: center;
+<<<<<<< HEAD
+    line-height: 20px;
+=======
     line-height: 36px;
   /*  border: 1px solid #d8d8d8;*/
+>>>>>>> be947d6a1fea3763e9c37c0dd30c521f543a500e
     cursor: pointer;
 }
 .content-account .raw .col-md-10 .panel-body em:hover{

@@ -1,5 +1,5 @@
 $.fn.sendCode = function (option) {
-  var t =$(this);
+  var t = $(this);
   var defaults = {
     time: 120,
     api: '/sendSms',
@@ -23,8 +23,7 @@ $.fn.sendCode = function (option) {
         "countriesId": options.countriesId
       }
     }
-    $.ajax(config).then(
-      function () {
+    $.ajax(config).then(function (res) {
         t.attr("data-sending", '1').addClass(options.sendingClass);
         var time = options.time;
         var renderText = setInterval(function(){

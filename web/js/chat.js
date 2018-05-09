@@ -220,6 +220,6 @@ function renderSys(data){
       content = data.system.split("-")[1];
   n.find(".title").text(title).end().
     find(".detail").text(content).end().
-    find("date").text(crtTimeFtt(data.stamp)).end();
+    find(".date").text(crtTimeFtt(data.stamp)).end();
   $(".mCSB_container").append(n)
 }

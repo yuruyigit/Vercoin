@@ -1,7 +1,6 @@
-;$(function(){
-
+$(function(){
   var SUBMIT = $("#registerSubmit"),
-      CODEBTN = $("#getCode");
+    CODEBTN = $("#getCode");
   /**
    * @check if the user agree
    */
@@ -19,4 +18,8 @@
   CODEBTN.sendCode({
     cell: $("#cell").val(),
     countriesId: $("#countriesId").val()
-  }
+  })
+
+
+})
+

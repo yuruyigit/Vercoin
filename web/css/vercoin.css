@@ -2783,6 +2783,10 @@ overflow: inherit;}
 }
 .order_in_progress .chat .username a {
   color: #D93740;
+  overflow: hidden;
+  display: block;
+  width: 60px;
+  text-overflow: ellipsis;
 }
 
 .order_in_progress .chat .content-info{

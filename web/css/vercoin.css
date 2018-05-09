@@ -2781,8 +2781,16 @@ overflow: inherit;}
   height:14px;
   line-height:14px;
 }
+.order_in_progress .chat .username a:hover {
+  text-decoration: none;
+}
 .order_in_progress .chat .username a {
   color: #D93740;
+  overflow: hidden;
+  display: block;
+  width: 60px;
+  text-overflow: ellipsis;
+  cursor:auto;
 }
 
 .order_in_progress .chat .content-info{

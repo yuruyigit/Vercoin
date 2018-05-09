@@ -1,5 +1,5 @@
 $.fn.sendCode = function (option) {
-  var t =$(this);
+  var t = $(this);
   var defaults = {
     time: 120,
     api: '/sendSms',
@@ -22,21 +22,27 @@ $.fn.sendCode = function (option) {
         "cell": options.cell,
         "countriesId": options.countriesId
       },
-	  success: function(data,status,xhr){
-		  console.log(data)
-		  console.log(status)
-		  console.log(xhr)
-	  },
-	  error: function(data,status,xhr){
-		  console.log(data)
-		  console.log(status)
-		  console.log(xhr)
-	  }
-	  
+      success: function(data, status, xhr){
+        console.log(data)
+        console.log(status)
+        console.log(xhr)
+        t.attr("data-sending", '1').addClass(options.sendingClass);
+        var time = options.time;
+        var renderText = setInterval(function(){
+          if(time){
+            t.text(--time+ "s后再次获取" )
+          }else {
+            window.clearInterval(renderText);
+            t.attr("data-sending", '0').text("发送验证码").removeClass("code_sending")
+          }
+        },1000)
+      },
+      error: function(data, status, xhr){
+        console.log(data)
+        console.log(status)
+        console.log(xhr)
+      }
     }
-    $.ajax(config)
-
-	
-	
+    $.ajax(config);
   })
 }

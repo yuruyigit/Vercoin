@@ -12,10 +12,12 @@ $(function () {
     }
   });
 
-  CODEBTN.sendCode({
-    cell: $("#cell").val(),
-    countriesId: $("#countriesId").val()
-  });
+  window.GETCODE({
+    btn: $("#getCode"),
+    input: $("#cell"),
+    api:'/sendSms',
+    country: $("#countryList")
+  })
 
 });
 

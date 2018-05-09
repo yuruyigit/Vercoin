@@ -153,3 +153,12 @@ a.blue{color:#3399e0}
     color:#333333;
     text-decoration: underline;
 }
+/* 处理webkit浏览器输入框黄色背景问题 */
+input:-webkit-autofill,
+textarea:-webkit-autofill,
+select:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 1000px white inset;
+}
+input[type=text]:focus, input[type=password]:focus, textarea:focus {
+    -webkit-box-shadow: 0 0 0 1000px white inset;
+}

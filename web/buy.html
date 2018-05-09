@@ -201,6 +201,8 @@
 <script src="../lib/js/bootstrap.min.js"></script>
 <script>
   $(function(){
+
+
     $(".seller_status").on("mouseover","div",function(){
       var data = [
           ['已实名验证','未实名验证','4px'],
@@ -214,9 +216,9 @@
       $(".tool_tip").hide()
     })
 
+
+
     $("#walletTypeSelect").on("change",function(){
-
-
       var type = ['','ETH','USDT','BTC'][parseInt($(this).val())];
       $("#walletType").text(type)
       if($(this).val() | 0 ){

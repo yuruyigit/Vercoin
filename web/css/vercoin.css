@@ -3741,3 +3741,23 @@ margin: 0;}
   left: 520px;
   line-height: 40px;
 }
+.content-account .col-md-2 .panel-body a.active {
+  background: #FFF4F4;
+  color: #D93740;
+  border-right: 2px solid #D93740;
+}
+.content-security .col-md-2 .panel-body a.active {
+  background: #FFF4F4;
+  color: #D93740;
+  border-right: 2px solid #D93740;
+}
+.content-trust-you .col-md-2 .panel-body a.active {
+  background: #FFF4F4;
+  color: #D93740;
+  border-right: 2px solid #D93740;
+}
+.content-authentication .col-md-2 .panel-body a.active {
+  background: #FFF4F4;
+  color: #D93740;
+  border-right: 2px solid #D93740;
+}

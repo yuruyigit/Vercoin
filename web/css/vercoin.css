@@ -930,7 +930,10 @@ body {background: #f0f0f0;}
   width:16px;
   height:16px;
 }
-#zyhPubAd input[type="text"], #zyhPubAd input[type="tel"]  {
+#zyhPubAd input[type="text"],
+#zyhPubAd input[type="tel"],
+#zyhPubAd input[type="number"]
+{
   width:300px !important;
   height:40px;
 }
@@ -3666,7 +3669,10 @@ margin: 0;}
   border-radius: 0 !important;
 }
 
-#zyhPubAd input[type="text"], #zyhPubAd input[type="tel"] {
+#zyhPubAd input[type="text"],
+#zyhPubAd input[type="tel"],
+#zyhPubAd input[type="number"]
+{
   border: 1px solid #e6e6e6;
 }
 #zyhPubAd .input-group-addon {
@@ -3724,6 +3730,21 @@ margin: 0;}
 
 .merchant_ope a.btn.btn-primary:hover {
   background: #B20610;
+}
+
+.merchant_ope a.btn.btn-primary.btn-sell {
+  background: #27C1C3;
+  border-color: #27C1C3;
+}
+
+.merchant_ope a.btn.btn-primary.btn-sell:hover {
+  background: #039497;
+  border-color: #039497;
+}
+
+#zyhBuy button#submit.btn-submit.btn-sell {
+  background: #27c1c3 !important;
+  background-color: #27c1c3 !important;
 }
 
 #zyhPubAd span.error_text, #zyhPubAd span.error-text {

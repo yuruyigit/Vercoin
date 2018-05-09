@@ -6,6 +6,7 @@ var me_photo=$("#me_photo").val();
 var target_photo=$("#target_photo").val();
 var me_name=$("#me_name").val();
 var target_name=$("#target_name").val();
+var ipAddress=$("#ipAddress").val();
 
 /**
  * @格式化时间
@@ -53,12 +54,13 @@ userName = query['me'], target = query['target'];
 /**
  * @init socket服务器
  */
-$$ = io.connect('http://localhost:9092');
+$$ = io.connect('http://'+ipAddress+':9092');
 /**
  * @连接上socket服务器
  */
 $$.on('connect', function () {
-  console.log("connect")
+  console.log("connect");
+
 });
 /**
  * @正常的聊天
@@ -148,6 +150,10 @@ SENDBTN.on("click", function () {
  * @渲染单条信息
  */
 function renderLine(data) {
+  if(data.system){
+    renderSys(data);
+    return false;
+  }
   //只会渲染自己和对方的聊天
   var isMe = data.userName === userName,isHe = data.userName === target;
   console.log(isMe)
@@ -190,4 +196,22 @@ function renderLine(data) {
     n.find("time").text(crtTimeFtt(data.stamp));
     $(".mCSB_container").append(n)
   }
+}
+
+/**
+ * @渲染系统消息
+ */
+function renderSys(data){
+  var template = '<div class="system_message">' +
+    '                        <div class="title"></div>' +
+    '                        <div class="detail"></div>' +
+    '                        <div class="date"></div>' +
+    '                    </div>';
+  var n = $(template),
+      title = data.system.split("-")[0],
+      content = data.system.split("-")[1];
+  n.find(".title").text(title).end().
+    find(".detail").text(content).end().
+    find("date").text(crtTimeFtt(data.stamp)).end();
+  $(".mCSB_container").append(n)
 }

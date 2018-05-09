@@ -21,8 +21,8 @@ ol,ul,dl{list-style:none}
 body,p,ol,ul,dl{padding:0;margin:0}
 a{outline: none;}
 li{outline: none;}
-a:link,a:visited{text-decoration:none;color:#555}
-a:hover{color:#c31}
+a:link,a:visited{color:#333;}
+a:hover{color:#000;}
 a.white{color:#fff}
 a.blue{color:#3399e0}
 /* 去除Firefox,Chrome,IE浏览器，input标签type＝"number"，出现的箭头 */
@@ -33,6 +33,14 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 input[type="number"] {
     -moz-appearance: textfield;
+}
+/*清除text文本输入框的清除图标*/
+input::-ms-clear{
+    display: none;
+}
+/*清除password密码输入框的明文图标*/
+input::-ms-reveal{
+    display: none;
 }
 /* 页面公共头部样式*/
 .header {

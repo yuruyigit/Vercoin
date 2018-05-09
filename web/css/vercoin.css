@@ -7,9 +7,17 @@ em {font-style: normal;}
 li {list-style: none;}
 hr {background: #e6e6e6;}
 body {background: #f0f0f0;}
+select {
+  appearance:none;
+  -moz-appearance:none;
+  -webkit-appearance:none;
+}
 .form-group {
   position: relative;
   margin-bottom:25px;
+}
+.form-control{
+  border-radius: 0;
 }
 .btn:active{
   box-shadow: 0 0 0 #fff;
@@ -26,9 +34,11 @@ body {background: #f0f0f0;}
 .error-text {
   height: 20px;
   position: absolute;
-  width: 400px;
-  top: 38px;
-  left: 260px;
+  width: 220px;
+  top:10px;
+  right:0;
+  /*top: 38px;
+  left: 260px;*/
   /*display:none;*/
 }
 .form-control:focus{
@@ -2736,9 +2746,11 @@ overflow: inherit;}
 }
 .order_in_progress .chat  .me {
   padding-right:20px;
+  margin-top:30px;
 }
 .order_in_progress .chat  .system {
   padding-left:15px;
+  margin-top:30px;
 }
 .order_in_progress .chat  .me > div{
   float:right;
@@ -3394,7 +3406,7 @@ margin: 0;}
   width: 100%;
   height: 36px;
   border: 1px solid #d8d8d8;
-  border-radius: 4px;
+ /* border-radius: 4px;*/
   padding: 6px 12px;
 }
 .content-security  .col-md-10 input.phone{
@@ -3423,6 +3435,7 @@ margin: 0;}
   height: 36px;
   position: absolute;
   right:0;
+  top:0;
   text-align: center;
   line-height: 36px;
   border: 1px solid #d8d8d8;
@@ -3671,6 +3684,7 @@ margin: 0;}
   bottom: 0;
   left: 0;
   width: 100%;
+  border-top: 1px solid #e6e6e6;
 }
 
 #zyhPageOrder .table_header {
@@ -3699,6 +3713,7 @@ margin: 0;}
   position: absolute;
   width: 100%;
   bottom: 0;
+  border-bottom: 1px solid #e6e6e6;
 }
 
 #zyhSellList .main_block_right,
@@ -3819,4 +3834,20 @@ margin: 0;}
   background: #FFF4F4;
   color: #D93740;
   border-right: 2px solid #D93740;
+}
+
+#zyhLogReg .log_reg_form > br {
+  display:none;
+}
+
+#zyhPageAd table .operate a:hover {
+  text-decoration: underline;
+}
+
+#zyhPageAd .content tbody .number:hover {
+  color:#000;
+}
+
+.chat_content .content-read {
+  display:none;
 }

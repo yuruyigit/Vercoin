@@ -89,10 +89,19 @@ input::-ms-reveal{
 .header .navbar-nav.navbar-right .dropdown-menu button:hover{
     background: #444;
 }
-.header .navbar-default .navbar-nav>li>a:hover{
-     background-color: #D93740;
+.header .navbar-default .navbar-nav>li>a:hover,.header .navbar-default .navbar-nav>.open>a{
+     /*background-color: #D93740;*/
      color:#FFF;
  }
+.nav-index li:hover ul{
+    display: block;
+    min-width: 68px;
+    padding: 0;
+}
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:hover, .navbar-default .navbar-nav>.open>a:focus{
+    background-color: #D93740;
+    color:#FFF;
+}
 .header .navbar-default .navbar-nav.index>li>a:hover{
     background-color: #303030;
     color:#FFF;

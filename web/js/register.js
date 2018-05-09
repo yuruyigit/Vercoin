@@ -11,7 +11,7 @@ $(function () {
       SUBMIT.attr("disabled", "disabled")
     }
   });
-
+	
   CODEBTN.sendCode({
     cell: $("#cell").val(),
     countriesId: $("#countriesId").val()

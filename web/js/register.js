@@ -1,7 +1,8 @@
-;$(function(){
+$(function(){
 
   var SUBMIT = $("#registerSubmit"),
       CODEBTN = $("#getCode");
+      NEWCODEBTN=$('#getNewCode');
   /**
    * @check if the user agree
    */
@@ -12,14 +13,16 @@
       SUBMIT.attr("disabled","disabled")
     }
   });
-  /***
-   * @send the code
-   */
-
-
+    CODEBTN.sendCode({
+        cell: $("#cell").val(),
+        countriesId: $("#countriesId").val()
+    });
+    if($(this).attr('data-sendin')==0){
+        NEWCODEBTN.sendCode({
+            cell: $("#cell").val(),
+            countriesId: $("#countriesId").val()
+        });
+    }
 });
-  CODEBTN.sendCode({
-    cell: $("#cell").val(),
-    countriesId: $("#countriesId").val()
-  }
+
 

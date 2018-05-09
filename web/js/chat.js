@@ -6,6 +6,7 @@ var me_photo=$("#me_photo").val();
 var target_photo=$("#target_photo").val();
 var me_name=$("#me_name").val();
 var target_name=$("#target_name").val();
+var ipAddress=$("#ipAddress").val();
 
 /**
  * @格式化时间
@@ -53,12 +54,13 @@ userName = query['me'], target = query['target'];
 /**
  * @init socket服务器
  */
-$$ = io.connect('http://localhost:9092');
+$$ = io.connect('http://'+ipAddress+':9092');
 /**
  * @连接上socket服务器
  */
 $$.on('connect', function () {
-  console.log("connect")
+  console.log("connect");
+
 });
 /**
  * @正常的聊天

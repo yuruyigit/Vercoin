@@ -7,6 +7,15 @@ em {font-style: normal;}
 li {list-style: none;}
 hr {background: #e6e6e6;}
 body {background: #f0f0f0;}
+.btn:active{
+  box-shadow: 0 0 0 #fff;
+}
+.error_text,
+.error-text,
+.error_text_left{
+  color: #D93740;
+  font-size: 12px;
+}
 
 .form-control:focus{
   border: 1px solid #ccc !important;
@@ -1676,10 +1685,11 @@ body {background: #f0f0f0;}
   background: #fff4f4;
 }
 
-#zyhSellList .merchant:hover .btn-primary,
-#zyhBuyList .merchant:hover .btn-primary {
+#zyhSellList .merchant .btn-primary:hover,
+#zyhBuyList .merchant .btn-primary:hover {
   background: #039497;
 }
+
 #zyhBuyList .merchant_ope button {
   border-color: #d93740 !important;
   background: #d93740 !important;
@@ -2340,7 +2350,9 @@ overflow: inherit;}
 }
 #zyhSell .seller_forms .sell_total .con2,
 #zyhBuy .seller_forms .sell_total .con2 {
-  display: block; }
+  display: block;
+  padding-right:10px;
+}
 
 #zyhSell .seller_forms .sell_total .left_asset,
 #zyhBuy  .seller_forms .sell_total .left_asset
@@ -2457,6 +2469,7 @@ overflow: inherit;}
   margin-right: auto;
   color: #333;
   font-size: 14px;
+  margin-top:20px;
 }
 .order_in_progress .progress_header {
   width: 1140px;
@@ -2877,7 +2890,7 @@ overflow: inherit;}
   width: 100%;
   text-indent: 10px;
   font-size: 14px;
-  color:#CCC;
+ /* color:#CCC;*/
 }
 .content-account  .col-md-10 label{
   font-size: 14px;
@@ -3380,7 +3393,21 @@ margin: 0;}
   line-height: 36px;
   border: 1px solid #d8d8d8;
   cursor: pointer;
+  z-index: 6666;
 }
+.content-security  .col-md-10 button.code{
+  width: 116px;
+  height: 36px;
+  position: absolute;
+  right:0;
+  text-align: center;
+  line-height: 36px;
+  border: 1px solid #d8d8d8;
+  z-index: 6666;
+  background: #fff;
+  color:#333;
+}
+
 .content-security  .col-md-10 em.phone{
   position: absolute;
   left:0;
@@ -3392,9 +3419,9 @@ margin: 0;}
 .content-security .container .col-md-10 .panel-body .form-horizontal{
   padding-bottom: 15px;
 }
-.content-security .container .col-md-10 .panel-body .form-group{
+/*.content-security .container .col-md-10 .panel-body .form-group{
   margin-bottom: 0;
-}
+}*/
 /*
 发送邮箱页面样式*/
 .content-email{
@@ -3500,9 +3527,9 @@ margin: 0;}
 .content-account .raw .col-md-10 .panel-body.bank{
   padding: 50px 0;
 }
-.content-account .raw .col-md-10 .panel-body .col-md-3.col-md-offset-1{
+/*.content-account .raw .col-md-10 .panel-body .col-md-3.col-md-offset-1{
   top:-10px;
-}
+}*/
 .content-account .raw .col-md-10 .panel-body .col-md-3 em{
   font-family: PingFangSC-Regular;
   font-size: 14px;
@@ -3693,4 +3720,47 @@ margin: 0;}
 
 #zyhPageAd .content_list #pageInfo li{
   cursor:pointer;
+}
+
+#zyhBuy span.error-text {
+  position: absolute;
+  color: #d93740;
+  width: 340px !important;
+  height: 20px !important;
+  display: block;
+  left: 0;
+  top: 30px;
+  font-size: 12px;
+  text-indent: 2px;
+}
+
+.form-group .error_text_left {
+  position: absolute;
+  width: 400px;
+  font-size: 12px;
+  color: #d93740;
+  height: 40px;
+  top: 0;
+  left: 520px;
+  line-height: 40px;
+}
+.content-account .col-md-2 .panel-body a.active {
+  background: #FFF4F4;
+  color: #D93740;
+  border-right: 2px solid #D93740;
+}
+.content-security .col-md-2 .panel-body a.active {
+  background: #FFF4F4;
+  color: #D93740;
+  border-right: 2px solid #D93740;
+}
+.content-trust-you .col-md-2 .panel-body a.active {
+  background: #FFF4F4;
+  color: #D93740;
+  border-right: 2px solid #D93740;
+}
+.content-authentication .col-md-2 .panel-body a.active {
+  background: #FFF4F4;
+  color: #D93740;
+  border-right: 2px solid #D93740;
 }

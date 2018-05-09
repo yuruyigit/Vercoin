@@ -7,6 +7,12 @@ em {font-style: normal;}
 li {list-style: none;}
 hr {background: #e6e6e6;}
 body {background: #f0f0f0;}
+button {
+  outline:none;
+}
+button:focus, button:active {
+  outline:none;
+}
 select {
   appearance:none;
   -moz-appearance:none;
@@ -18,6 +24,12 @@ select {
 }
 .form-control{
   border-radius: 0;
+}
+.form-control-static:hover {
+  outline:none;
+}
+.form-control-static:focus {
+  outline:none;
 }
 .btn:active{
   box-shadow: 0 0 0 #fff;
@@ -576,7 +588,7 @@ select {
   border-bottom:none;
 }
 
-#zyhDraw .container #address {
+#zyhDraw .container #walletsAddress {
   width: 300px;
   height: 40px;
   float: left;
@@ -3684,6 +3696,7 @@ margin: 0;}
 #zyhDraw .form-horizontal {
   display:none;
 }
+
 /**
  *@修改订单页 分页
  */
@@ -3786,9 +3799,16 @@ margin: 0;}
   text-indent: 2px;
 }
 
+
+#zyhDraw .form-horizontal .form-group{
+  position:relative;
+}
+
 .form-group .error_text_left {
   position: absolute;
   width: 400px;
+  font-size: 12px;
+  color: #d93740;
   height: 40px;
   top: 0;
   left: 520px;

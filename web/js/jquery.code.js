@@ -11,6 +11,12 @@ $.fn.sendCode = function (option) {
   t.attr("data-sending", '0');
   t.on("click", function (e) {
     e.preventDefault();
+    if(!options.cell){
+      return false;
+    }
+    if(!( /^\d+$/.test( options.cell )) ) {
+      return false;
+    }
     // sending return
     if (t.attr("data-sending") === '1') {
       return false;

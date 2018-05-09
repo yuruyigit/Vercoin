@@ -17,12 +17,7 @@ $(function(){
         cell: $("#cell").val(),
         countriesId: $("#countriesId").val()
     });
-    if($(this).attr('data-sendin')==0){
-        NEWCODEBTN.sendCode({
-            cell: $("#cell").val(),
-            countriesId: $("#countriesId").val()
-        });
-    }
+   
 });
 
 

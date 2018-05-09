@@ -7,6 +7,12 @@ em {font-style: normal;}
 li {list-style: none;}
 hr {background: #e6e6e6;}
 body {background: #f0f0f0;}
+button {
+  outline:none;
+}
+button:focus, button:active {
+  outline:none;
+}
 select {
   appearance:none;
   -moz-appearance:none;
@@ -18,6 +24,9 @@ select {
 }
 .form-control{
   border-radius: 0;
+}
+.form-control-static:hover {
+  border:1px solid #ccc;
 }
 .btn:active{
   box-shadow: 0 0 0 #fff;

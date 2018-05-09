@@ -11,11 +11,14 @@ $(function () {
       SUBMIT.attr("disabled", "disabled")
     }
   });
-	
-  CODEBTN.sendCode({
-    cell: $("#cell").val(),
-    countriesId: $("#countriesId").val()
-  });
+
+  window.GETCODE({
+    btn: CODEBTN,
+    input: $("#cell"),
+    api:'/sendSms',
+    country: $("#countriesId")
+  })
+
 
 });
 

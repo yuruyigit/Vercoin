@@ -9,6 +9,7 @@ hr {background: #e6e6e6;}
 body {background: #f0f0f0;}
 .form-group {
   position: relative;
+  margin-bottom:25px;
 }
 .btn:active{
   box-shadow: 0 0 0 #fff;
@@ -3428,6 +3429,7 @@ margin: 0;}
   z-index: 6666;
   background: #fff;
   color:#333;
+  top:0;
 }
 
 .content-security  .col-md-10 em.phone{

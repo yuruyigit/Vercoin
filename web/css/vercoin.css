@@ -26,7 +26,10 @@ select {
   border-radius: 0;
 }
 .form-control-static:hover {
-  border:1px solid #ccc;
+  outline:none;
+}
+.form-control-static:focus {
+  outline:none;
 }
 .btn:active{
   box-shadow: 0 0 0 #fff;

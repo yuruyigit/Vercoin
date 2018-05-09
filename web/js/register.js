@@ -13,11 +13,12 @@ $(function () {
   });
 
   window.GETCODE({
-    btn: $("#getCode"),
+    btn: CODEBTN,
     input: $("#cell"),
     api:'/sendSms',
-    country: $("#countryList")
+    country: $("#countriesId")
   })
+
 
 });
 

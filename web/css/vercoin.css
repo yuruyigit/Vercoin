@@ -585,7 +585,7 @@ select {
   border-bottom:none;
 }
 
-#zyhDraw .container #address {
+#zyhDraw .container #walletsAddress {
   width: 300px;
   height: 40px;
   float: left;
@@ -3692,6 +3692,7 @@ margin: 0;}
 #zyhDraw .form-horizontal {
   display:none;
 }
+
 /**
  *@修改订单页 分页
  */
@@ -3794,9 +3795,16 @@ margin: 0;}
   text-indent: 2px;
 }
 
+
+#zyhDraw .form-horizontal .form-group{
+  position:relative;
+}
+
 .form-group .error_text_left {
   position: absolute;
   width: 400px;
+  font-size: 12px;
+  color: #d93740;
   height: 40px;
   top: 0;
   left: 520px;

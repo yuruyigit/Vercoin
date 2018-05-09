@@ -7,6 +7,9 @@ em {font-style: normal;}
 li {list-style: none;}
 hr {background: #e6e6e6;}
 body {background: #f0f0f0;}
+.btn:active{
+  box-shadow: 0 0 0 #fff;
+}
 .error_text,
 .error-text,
 .error_text_left{

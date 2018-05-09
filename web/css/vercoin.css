@@ -8,7 +8,10 @@ li {list-style: none;}
 hr {background: #e6e6e6;}
 body {background: #f0f0f0;}
 .form-group {
-    position:relative;
+  position: relative;
+}
+.btn:active{
+  box-shadow: 0 0 0 #fff;
 }
 .error_text,
 .error-text,
@@ -1938,7 +1941,7 @@ body {background: #f0f0f0;}
   width: 100%;
   text-indent: 10px;
 }
-.content-authentication  .col-md-10  button{
+.content-authentication  .col-md-10  a{
   width: 100%;
   height: 40px;
   text-align: center;
@@ -2858,7 +2861,7 @@ overflow: inherit;}
   width: 100%;
   text-indent: 10px;
   font-size: 14px;
-  color:#CCC;
+ /* color:#CCC;*/
 }
 .content-account  .col-md-10 label{
   font-size: 14px;
@@ -3361,7 +3364,21 @@ margin: 0;}
   line-height: 36px;
   border: 1px solid #d8d8d8;
   cursor: pointer;
+  z-index: 6666;
 }
+.content-security  .col-md-10 button.code{
+  width: 116px;
+  height: 36px;
+  position: absolute;
+  right:0;
+  text-align: center;
+  line-height: 36px;
+  border: 1px solid #d8d8d8;
+  z-index: 6666;
+  background: #fff;
+  color:#333;
+}
+
 .content-security  .col-md-10 em.phone{
   position: absolute;
   left:0;
@@ -3373,9 +3390,9 @@ margin: 0;}
 .content-security .container .col-md-10 .panel-body .form-horizontal{
   padding-bottom: 15px;
 }
-.content-security .container .col-md-10 .panel-body .form-group{
+/*.content-security .container .col-md-10 .panel-body .form-group{
   margin-bottom: 0;
-}
+}*/
 /*
 发送邮箱页面样式*/
 .content-email{
@@ -3481,9 +3498,9 @@ margin: 0;}
 .content-account .raw .col-md-10 .panel-body.bank{
   padding: 50px 0;
 }
-.content-account .raw .col-md-10 .panel-body .col-md-3.col-md-offset-1{
+/*.content-account .raw .col-md-10 .panel-body .col-md-3.col-md-offset-1{
   top:-10px;
-}
+}*/
 .content-account .raw .col-md-10 .panel-body .col-md-3 em{
   font-family: PingFangSC-Regular;
   font-size: 14px;
@@ -3711,4 +3728,24 @@ margin: 0;}
 
 #zyhPubAd span.error_text, #zyhPubAd span.error-text {
   position: static;
+}
+.content-account .col-md-2 .panel-body a.active {
+  background: #FFF4F4;
+  color: #D93740;
+  border-right: 2px solid #D93740;
+}
+.content-security .col-md-2 .panel-body a.active {
+  background: #FFF4F4;
+  color: #D93740;
+  border-right: 2px solid #D93740;
+}
+.content-trust-you .col-md-2 .panel-body a.active {
+  background: #FFF4F4;
+  color: #D93740;
+  border-right: 2px solid #D93740;
+}
+.content-authentication .col-md-2 .panel-body a.active {
+  background: #FFF4F4;
+  color: #D93740;
+  border-right: 2px solid #D93740;
 }

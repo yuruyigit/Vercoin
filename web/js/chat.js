@@ -51,6 +51,14 @@ query['me']=me_id+"_"+order_id;
 query['target']=target_id+"_"+order_id;
 
 userName = query['me'], target = query['target'];
+
+if("undefined" == typeof io){
+  io = {}
+  io.connect = function(){}
+  io.on = function(){}
+  io.emit = function(){}
+}
+
 /**
  * @init socket服务器
  */
@@ -74,7 +82,7 @@ $$.on(chat, function (data) {
  * @断开连接
  */
 $$.on('disconnect', function () {
-  output('<span class="disconnect-msg">The client has disconnected!</span>');
+  console.log("disconnect")
 });
 
 /**
@@ -82,11 +90,11 @@ $$.on('disconnect', function () {
  */
 // $$.disconnect(); 主动断开连接
 
-
 /**
  * @点击发送按钮
  */
 SENDBTN.on("click", function () {
+  console.log(1111)
   var file = FILE[0].files[0],
     pattern = /(\.*.jpg$)|(\.*.png$)|(\.*.jpeg$)|(\.*.gif$)|(\.*.bmp$)/;
   // 有图片先发送图片

@@ -7,6 +7,11 @@ em {font-style: normal;}
 li {list-style: none;}
 hr {background: #e6e6e6;}
 body {background: #f0f0f0;}
+select {
+  appearance:none;
+  -moz-appearance:none;
+  -webkit-appearance:none;
+}
 .form-group {
   position: relative;
 }
@@ -2735,9 +2740,11 @@ overflow: inherit;}
 }
 .order_in_progress .chat  .me {
   padding-right:20px;
+  margin-top:30px;
 }
 .order_in_progress .chat  .system {
   padding-left:15px;
+  margin-top:30px;
 }
 .order_in_progress .chat  .me > div{
   float:right;

@@ -72,6 +72,9 @@ window.GETCODE = function(config){
   var regEmail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/ ;
   // check the input
   config.btn.on("click",function(e){
+    if( $(this).attr("data-sending") === '1'){
+      return;
+    }
     e.preventDefault()
     if(!config.input.val()){
       return false;
@@ -102,14 +105,15 @@ window.GETCODE = function(config){
         console.log(data)
         console.log(status)
         console.log(xhr)
-        t.attr("data-sending", '1').addClass(options.sendingClass);
+        config.btn.attr("data-sending", '1');
         var time = options.time;
         var renderText = setInterval(function () {
           if (time) {
-            t.text(--time + "s后再次获取")
+            config.btn.text(--time + "s后再次获取")
           } else {
             window.clearInterval(renderText);
-            t.attr("data-sending", '0').text("发送验证码").removeClass("code_sending")
+            config.btn.attr("data-sending", '0').
+            text("发送验证码").removeClass("code_sending")
           }
         }, 1000)
       },

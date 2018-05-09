@@ -25,6 +25,15 @@ a:link,a:visited{text-decoration:none;color:#555}
 a:hover{color:#c31}
 a.white{color:#fff}
 a.blue{color:#3399e0}
+/* 去除Firefox,Chrome,IE浏览器，input标签type＝"number"，出现的箭头 */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+input[type="number"] {
+    -moz-appearance: textfield;
+}
 /* 页面公共头部样式*/
 .header {
     width: 100%;

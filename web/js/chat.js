@@ -1,3 +1,7 @@
+$(".chat_contents").mCustomScrollbar({
+    setHeight: 498,
+    theme: "minimal-dark" // theme:"minimal-dark"  "inset-2-dark" dark-3
+});
 var me_id = $("#me_id").val();
 var target_id = $("#target_id").val();
 var order_id = $("#order_id").val();
@@ -7,6 +11,7 @@ var target_photo=$("#target_photo").val();
 var me_name=$("#me_name").val();
 var target_name=$("#target_name").val();
 var ipAddress=$("#ipAddress").val();
+var chatJsonStr=$("#chatJsonStr").val();
 
 /**
  * @格式化时间
@@ -39,6 +44,7 @@ var query = {},
   target,    //对方的id
   $$,    // socket
   chat = 'chatevent',
+  chat_contents = $(".chat_contents"), //内容区
   SENDBTN = $(".chat_send"), //发送按钮
   FILE = $("#upload"), // 上传图片的
   USERTEXT = $("#userMessage"), //文本框
@@ -70,6 +76,15 @@ $$.on('connect', function () {
   console.log("connect");
 
 });
+
+/**
+ * @init 聊天记录
+ */
+var historys = JSON.parse(chatJsonStr);
+historys.forEach(function(item,index){
+    renderLine(item);
+});
+
 /**
  * @正常的聊天
  */
@@ -86,7 +101,7 @@ $$.on('disconnect', function () {
 });
 
 /**
- * @TODO
+ *
  */
 // $$.disconnect(); 主动断开连接
 
@@ -94,7 +109,8 @@ $$.on('disconnect', function () {
  * @点击发送按钮
  */
 SENDBTN.on("click", function () {
-  console.log(1111)
+  console.log(1111);
+  mCSB_container = $(".mCSB_container");
   var file = FILE[0].files[0],
     pattern = /(\.*.jpg$)|(\.*.png$)|(\.*.jpeg$)|(\.*.gif$)|(\.*.bmp$)/;
   // 有图片先发送图片
@@ -123,7 +139,8 @@ SENDBTN.on("click", function () {
         image: imgBase64Data // base64字符串
       };
       $$.emit('chat', data);
-      FILE[0].value = ''
+      FILE[0].value = '';
+      mCSB_container.css("top","-"+(mCSB_container.height()-chat_contents.height()+40)+"px");
     } else {
       var reader = new FileReader();
       reader.readAsDataURL(file);
@@ -135,7 +152,8 @@ SENDBTN.on("click", function () {
           image: this.result // base64字符串
         };
         $$.emit(chat, data);
-        FILE[0].value = ''
+        FILE[0].value = '';
+        mCSB_container.css("top","-"+(mCSB_container.height()-chat_contents.height()+40)+"px");
       }
     }
   }
@@ -150,6 +168,7 @@ SENDBTN.on("click", function () {
       }
     );
     USERTEXT.val('');
+    mCSB_container.css("top","-"+(mCSB_container.height()-chat_contents.height()+40)+"px");
   }
 })
 
@@ -223,7 +242,3 @@ function renderSys(data){
     find(".date").text(crtTimeFtt(data.stamp)).end();
   $(".mCSB_container").append(n)
 }
-$(".chat_contents").mCustomScrollbar({
-    setHeight: 498,
-    theme: "minimal-dark" // theme:"minimal-dark"  "inset-2-dark" dark-3
-});

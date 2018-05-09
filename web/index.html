@@ -40,7 +40,7 @@
               <li class="default-color "><a href="#" class="default">默认</a></li>
             </ul>
           </li>
-          <li><a href="./publish_advertisement.html">发布广告</a></li>
+          <li><a href="./publish_advertisement.html" data-target="#myModal" data-toggle="modal">发布广告</a></li>
         </ul>
         <ul class="nav navbar-nav navbar-right index">
           <li><a href="./login.html">登录</a></li>
@@ -132,7 +132,7 @@
             <div class="profile">
               <div class="user">
                 <img src="./images/Bitmap%20Copy%202@2x.png" alt="">
-                <span class="user-state"></span>
+                <span class="user-state online"></span>
               </div>
               <table>
                 <tr>
@@ -169,7 +169,7 @@
             <div class="profile">
               <div class="user">
                 <img src="./images/2%20copy%202@2x.png" alt="">
-                <span class="user-state"></span>
+                <span class="user-state online"></span>
               </div>
               <table>
                 <tr>
@@ -269,6 +269,22 @@
     <li><a href="">繁体中文</a></li>
   </ul>
 </div>
+<div class="modal fade " id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        <h4 class="modal-title" id="myModalLabel">信息验证绑定</h4>
+      </div>
+      <div class="modal-body">发布广告、进行交易、充值、提现均需进行身份验证及
+        支付信息的绑定。请在 <a href="./accountlist.html">用户中心-用户资料</a> 处进行绑定。</div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-ok" class="close" id="submit">确定</button>
+        <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+      </div>
+    </div>
+  </div>
+</div>
 </body>
 <script type="text/javascript">
   $(function () {
@@ -276,6 +292,10 @@
       //设置自动播放/3 秒
       interval: 3000,
     });
+    $('#submit').click(function () {
+        $('#myModal').modal('hide');
+    })
+      $('#myModal').modal('hide');
   });
 </script>
 </html>

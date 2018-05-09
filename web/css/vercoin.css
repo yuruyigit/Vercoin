@@ -1960,7 +1960,7 @@ body {background: #f0f0f0;}
   width: 100%;
   text-indent: 10px;
 }
-.content-authentication  .col-md-10  button{
+.content-authentication  .col-md-10  a{
   width: 100%;
   height: 40px;
   text-align: center;

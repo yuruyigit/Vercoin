@@ -1245,6 +1245,9 @@ body {background: #f0f0f0;}
           position: absolute;
           right: 0;
           bottom: 0; }
+.content-index .row .col-md-3 .trade-list .profile .user .user-state.online{
+          background: #82e70e;
+}
 .content-index .row .col-md-3 .trade-list .profile table {
         width: 100%;
         padding: 0 50px; }
@@ -1290,6 +1293,49 @@ body {background: #f0f0f0;}
 }
 .content-index .row .col-md-3 .trade-list .caption .btn.sell:hover{
          background-color: #039497;
+}
+ .modal-dialog{
+   width:450px;
+   height: 300px;
+   margin: 160px auto 0;
+}
+ .modal-dialog .modal-header{
+  text-align: center;
+  background: #D93740;
+  height: 52px;
+  color:#fff;
+  font-size: 16px;
+}
+.modal-header .close {
+  margin-top: 3px;
+  opacity: 1;
+  color:#fff;
+}
+ .modal-dialog .modal-body{
+  width: 100%;
+  padding: 50px 43px 60px;
+}
+.modal-dialog .modal-body a{
+  font-size: 14px;
+  color: #D93740;
+  text-decoration: none;
+}
+ .modal-dialog .modal-footer{
+  border-top:0;
+  text-align: center;
+  padding-bottom: 40px;
+}
+ .modal-dialog .modal-footer .btn{
+  width: 100px;
+  height: 40px;
+  border-radius: 0;
+}
+ .modal-dialog .modal-footer .btn-ok{
+  background: #D93740;
+  color:#fff;
+}
+ .modal-dialog .modal-footer .btn-default:hover{
+  background: #fff;
 }
 /*首页规范信息*/
 .site-info {

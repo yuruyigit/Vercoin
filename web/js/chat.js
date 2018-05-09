@@ -148,6 +148,10 @@ SENDBTN.on("click", function () {
  * @渲染单条信息
  */
 function renderLine(data) {
+  if(data.system){
+    renderSys(data);
+    return false;
+  }
   //只会渲染自己和对方的聊天
   var isMe = data.userName === userName,isHe = data.userName === target;
   console.log(isMe)
@@ -190,4 +194,22 @@ function renderLine(data) {
     n.find("time").text(crtTimeFtt(data.stamp));
     $(".mCSB_container").append(n)
   }
+}
+
+/**
+ * @渲染系统消息
+ */
+function renderSys(data){
+  var template = '<div class="system_message">' +
+    '                        <div class="title"></div>' +
+    '                        <div class="detail"></div>' +
+    '                        <div class="date"></div>' +
+    '                    </div>';
+  var n = $(template),
+      title = data.system.split("-")[0],
+      content = data.system.split("-")[1];
+  n.find(".title").text(title).end().
+    find(".detail").text(content).end().
+    find("date").text(crtTimeFtt(data.stamp)).end();
+  $(".mCSB_container").append(n)
 }

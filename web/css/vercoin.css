@@ -3623,6 +3623,7 @@ margin: 0;}
   bottom: 0;
   left: 0;
   width: 100%;
+  border-top: 1px solid #e6e6e6;
 }
 
 #zyhPageOrder .table_header {
@@ -3651,6 +3652,7 @@ margin: 0;}
   position: absolute;
   width: 100%;
   bottom: 0;
+  border-bottom: 1px solid #e6e6e6;
 }
 
 #zyhSellList .main_block_right,
@@ -3771,4 +3773,20 @@ margin: 0;}
   background: #FFF4F4;
   color: #D93740;
   border-right: 2px solid #D93740;
+}
+
+#zyhLogReg .log_reg_form > br {
+  display:none;
+}
+
+#zyhPageAd table .operate a:hover {
+  text-decoration: underline;
+}
+
+#zyhPageAd .content tbody .number:hover {
+  color:#000;
+}
+
+.chat_content .content-read {
+  display:none;
 }

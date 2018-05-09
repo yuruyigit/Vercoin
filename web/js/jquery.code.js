@@ -106,7 +106,7 @@ window.GETCODE = function(config){
         console.log(status)
         console.log(xhr)
         config.btn.attr("data-sending", '1');
-        var time = options.time;
+        var time = 120;
         var renderText = setInterval(function () {
           if (time) {
             config.btn.text(--time + "s后再次获取")

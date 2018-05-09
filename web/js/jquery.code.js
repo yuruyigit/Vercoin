@@ -21,9 +21,11 @@ $.fn.sendCode = function (option) {
       data: {
         "cell": options.cell,
         "countriesId": options.countriesId
-      }
-    }
-    $.ajax(config).then(function (res) {
+      },
+      success: function(data, status, xhr){
+        console.log(data)
+        console.log(status)
+        console.log(xhr)
         t.attr("data-sending", '1').addClass(options.sendingClass);
         var time = options.time;
         var renderText = setInterval(function(){
@@ -35,9 +37,12 @@ $.fn.sendCode = function (option) {
           }
         },1000)
       },
-      function (res) {
-        alert('发送失败')
+      error: function(data, status, xhr){
+        console.log(data)
+        console.log(status)
+        console.log(xhr)
       }
-    )
+    }
+    $.ajax(config);
   })
 }

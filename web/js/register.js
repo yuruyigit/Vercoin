@@ -2,7 +2,6 @@
 
   var SUBMIT = $("#registerSubmit"),
       CODEBTN = $("#getCode");
-
   /**
    * @check if the user agree
    */
@@ -13,16 +12,11 @@
       SUBMIT.attr("disabled","disabled")
     }
   });
-  
   /***
    * @send the code
    */
+
   CODEBTN.sendCode({
     cell: $("#cell").val(),
-    countriesId: $("#countriesId").val(),
-  });
-
-  
-  
-  
-});
+    countriesId: $("#countriesId").val()
+  }

@@ -5,7 +5,8 @@ $.fn.sendCode = function (option) {
     api: '/sendSms',
     cell: '',
     countriesId: '',
-    sendingClass: 'code_sending'
+    sendingClass: 'code_sending',
+	email:''
   };
   var options = $.extend(defaults, option);
   t.attr("data-sending", '0');
@@ -14,22 +15,15 @@ $.fn.sendCode = function (option) {
     // sending return
     if (t.attr("data-sending") === '1') {
       return false;
-    }
-    var sdata = {}
-    if (option.email) {
-      sdata = {
-        email: option.email
-      }
-    } else {
-      sdata = {
-        "cell": options.cell,
-        "countriesId": options.countriesId
-      }
-    }
+    } 
     var config = {
       method: "post",
       url: options.api,
-      data: sdata,
+      data: {
+    "cell": options.cell,
+    "countriesId": options.countriesId,
+	"email":options.email
+  },
       success: function (data, status, xhr) {
         console.log(data)
         console.log(status)

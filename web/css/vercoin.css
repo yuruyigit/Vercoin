@@ -3957,3 +3957,10 @@ select#countriesId{
   background: url("../images/arrow-drop-down-icon.png") no-repeat 410px center;
   background-size: 9px 5px;
 }
+
+/* 在线购买出售页面翻页 */
+#zyhPerson .row{
+	margin: 0;
+	padding: 20px 0 20px;
+	background-color: #fff;
+}

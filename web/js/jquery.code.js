@@ -53,20 +53,26 @@ $.fn.sendCode = function (option) {
 
 /**
  * @更好的解决方案
- * @param config
- * @constructor
+ * @param config a object
+ * @param config.btn
+ * @param config.input
+ * @param config.email
+ * @param config.api
+ * @param config.country
  */
 window.GETCODE = function(config){
-  var defaults = {
-    btn: '',
-    input: '',
-    email: false,
-    api: '',
-    country: ''
-  };
-  var regCell = /^\d{8,}$/;
-  var regEmail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/ ;
-  // check the input
+  function getTail(){
+    var href = window.location.href;
+    href = href.substr(10);
+    if(href.indexOf("?") > -1){
+      href = href.split("?")[0]
+    }
+    var arr = href.split("/");
+    return arr[arr.length-1];
+  }
+
+  var regCell = /^\d{8,}$/,
+      regEmail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/ ;
   config.btn.on("click",function(e){
     e.preventDefault();
     if( $(this).attr("data-sending") === '1'){
@@ -95,7 +101,7 @@ window.GETCODE = function(config){
     }
     $.ajax({
       method: "post",
-      url: config.api,
+      url: config.api + '/' + getTail(),
       data: datas,
       success: function (data, status, xhr) {
         if(data.code === "10000"){

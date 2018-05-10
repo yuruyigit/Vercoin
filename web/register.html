@@ -39,7 +39,8 @@
       <div class="form-group">
         <label for="phone" class="col-sm-2 control-label">手机</label>
         <div class="col-sm-10 input_div">
-          <input type="text" class="form-control" id="phone" placeholder="情输入手机号">
+          <input type="text" class="form-control" autocomplete="off"
+                 id="phone" placeholder="情输入手机号">
         </div>
         <span class="error_text">您输入的手机号码有误</span>
       </div>
@@ -47,7 +48,9 @@
       <div class="form-group">
         <label for="code" class="col-sm-2 control-label">短信验证码</label>
         <div class="col-sm-10 input_div code_div">
-          <input type="text" class="form-control" id="code" placeholder="情输入验证码">
+          <input type="text" class="form-control"
+                 autocomplete="off"
+                 id="code" placeholder="情输入验证码">
         </div>
         <button class="get_code" id="getCode">获取验证码</button>
         <span class="error_text">您输入的验证码有误</span>
@@ -56,7 +59,9 @@
       <div class="form-group">
         <label for="pass" class="col-sm-2 control-label">登录密码</label>
         <div class="col-sm-10 input_div">
-          <input type="password" class="form-control" id="pass" placeholder="请输入登录密码">
+          <input type="password"
+                 autocomplete="off"
+                 class="form-control" id="pass" placeholder="请输入登录密码">
         </div>
       </div>
 
@@ -65,6 +70,7 @@
         <div class="col-sm-10 input_div">
           <input type="password" class="form-control"
                  id="repass"
+                 autocomplete="off"
                  placeholder="请再次输入密码">
         </div>
       </div>

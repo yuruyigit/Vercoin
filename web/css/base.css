@@ -155,14 +155,16 @@ input::-ms-reveal{
 }
     /*页面公共尾部样式*/
 .language-select {
-    padding: 26px 0 98px;
-    background: #f0f0f0; }
+    padding: 20px 0 98px;
+    background: #f0f0f0;
+}
 .language-select ul {
     width: 280px;
     overflow: hidden;
     list-style-type: none;
-   /* padding: 0 0 0 70px;*/
     text-align: center;
+    height:20px;
+    line-height:20px;
     margin: 0 auto;}
 .language-select ul li {
     margin-left: 8px;

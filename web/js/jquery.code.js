@@ -67,7 +67,8 @@ window.GETCODE = function(config){
       // 邮箱正则
       regEmail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/ ,
       // 页面地址
-      address = $("form").attr("action"),
+      addr = $("form").attr("action"),
+      address = (addr.indexOf("reg") > -1) ? addr :'/forgot';
       // 点击的按钮
       button = config.btn,
       // 数据来源

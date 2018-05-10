@@ -1065,14 +1065,19 @@ select {
   -ms-user-select: none;
   user-select: none;
   border: 1px solid #e6e6e6;
+  margin-right:6px;
 }
 #zyhSellList .filter_select .form-control,
 #zyhBuyList .filter_select .form-control {
   border: none;
-  -webkit-border-radius: 0;
-  -moz-border-radius: 0;
-  -ms-border-radius: 0;
-  border-radius: 0;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  border-radius: 2px;
+  height: 36px;
+  position: relative;
+  top: -1px;
+  color: #333;
 }
 #zyhSellList .main_block_left,
 #zyhBuyList .main_block_left {

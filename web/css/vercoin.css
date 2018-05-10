@@ -753,9 +753,9 @@ select {
   line-height: 34px;
   display: inline-block;
   position: absolute;
-  top: 1px;
+  top: 0px;
   right: -14px;
-  border: 1px solid #e6e6e6;
+  border-left: 1px solid #e6e6e6;
   font-size: 8px;
 }
 #zyhLogReg .log_reg_form .policy {

@@ -348,6 +348,226 @@
         $("#"+$(this).attr("data-target")).show()
       }
     })
+
+
+
+    $(".input-group input").on("click",function(){
+      $(this).removeClass("form-input-error")
+      var err = $(this).parent().next("span.error-text");
+      if(err){
+        err.remove()
+      }
+    })
+
+
+
+    $(".form-group-publish .btn-block").on("click",function(e){
+      e.preventDefault();
+      var pat = /^\d+(\.\d+)?$/;
+      var pass = true;
+      var error_text = '<span class="error-text">该字段不能为空</span>';
+      // 需求数量
+      var amount = $("#input-amount");
+      if(amount.val()){
+        if(!pat.test(amount.val())){
+          pass = 0;
+          if(amount.parent().next("span.error-text").length){
+            amount.parent().next("span.error-text").text("请输入有效的数字")
+          }else {
+            var dom = $(error_text)
+            dom.text("请输入有效的数字")
+            amount.addClass("form-input-error");
+            amount.parent().after(dom);
+          }
+        }
+      }else {
+        pass = 0;
+        if(amount.parent().next("span.error-text").length){
+          amount.parent().next("span.error-text").text("该字段不能为空")
+        }else {
+          var dom = $(error_text)
+          dom.text("该字段不能为空")
+          amount.addClass("form-input-error");
+          amount.parent().after(dom);
+        }
+      }
+      // 时间 10-30
+      var timei = $("#input-payment_window_minutes");
+      if(timei.val()){
+        if(!pat.test(timei)){
+          pass = 0;
+          if(timei.parent().next("span.error-text").length){
+            timei.parent().next("span.error-text").text("请输入有效的数字")
+          }else {
+            var dom = $(error_text)
+            dom.text("请输入有效的数字")
+            timei.addClass("form-input-error");
+            timei.parent().after(dom);
+          }
+        }else {
+          var num = parseInt(timei);
+          if(num > 30 || num <10){
+            pass = 0;
+            if(timei.parent().next("span.error-text").length){
+              timei.parent().next("span.error-text").text("请输入有效的数字")
+            }else {
+              var dom = $(error_text)
+              dom.text("请输入有效的数字")
+              timei.addClass("form-input-error");
+              timei.parent().after(dom);
+            }
+          }
+        }
+      }else {
+        pass = 0;
+        if(timei.parent().next("span.error-text").length){
+          timei.parent().next("span.error-text").text("该字段不能为空")
+        }else {
+          var dom = $(error_text)
+          dom.text("该字段不能为空")
+          timei.addClass("form-input-error");
+          timei.parent().after(dom);
+        }
+      }
+      // 最小限额
+      var small = $("#input-min_amount");
+      if(small.val()){
+        if(!pat.test(small.val())){
+          pass = 0;
+          if(small.parent().next("span.error-text").length){
+            small.parent().next("span.error-text").text("请输入有效的数字")
+          }else {
+            var dom = $(error_text)
+            dom.text("请输入有效的数字")
+            small.addClass("form-input-error");
+            small.parent().after(dom);
+          }
+        }
+      }else {
+        pass = 0;
+        if(small.parent().next("span.error-text").length){
+          small.parent().next("span.error-text").text("该字段不能为空")
+        }else {
+          var dom = $(error_text)
+          small.addClass("form-input-error");
+          small.parent().after(dom);
+        }
+      }
+
+
+      // 最大限额
+      var big = $("#input-max_amount")
+      if(big.val()){
+        if(!pat.test(big.val())){
+          pass = 0;
+          if(big.parent().next("span.error-text").length){
+            big.parent().next("span.error-text").text("请输入有效的数字")
+          }else {
+            var dom = $(error_text)
+            dom.text("请输入有效的数字")
+            big.addClass("form-input-error");
+            big.parent().after(dom);
+          }
+        }
+      }else {
+        pass = 0;
+        if(big.parent().next("span.error-text").length){
+          big.parent().next("span.error-text").text("该字段不能为空")
+        }else {
+          var dom = $(error_text)
+          big.addClass("form-input-error");
+          big.parent().after(dom);
+        }
+      }
+
+      // ver
+      var ver = $("#input-price");
+      if(ver.val()){
+        if(!pat.test(ver.val())){
+          pass = 0;
+          if(ver.parent().next("span.error-text").length){
+            ver.parent().next("span.error-text").text("请输入有效的数字")
+          }else {
+            var dom = $(error_text)
+            dom.text("请输入有效的数字")
+            ver.addClass("form-input-error");
+            ver.parent().after(dom);
+          }
+        }
+      }else {
+        pass = 0;
+        if(ver.parent().next("span.error-text").length){
+          ver.parent().next("span.error-text").text("该字段不能为空")
+        }else {
+          var dom = $(error_text)
+          ver.addClass("form-input-error");
+          ver.parent().after(dom);
+        }
+      }
+
+      // 如果可以btc
+      var btc = $("#input-settlement-BTC");
+      var btcData = $("#input-transaction_price_btc");
+      if(btc.is(':checked')){
+        if(btcData.val()){
+          if(!pat.test(ver.val())){
+            pass = 0;
+            if(btcData.parent().next("span.error-text").length){
+              btcData.parent().next("span.error-text").text("请输入有效的数字")
+            }else {
+              var dom = $(error_text)
+              dom.text("请输入有效的数字")
+              btcData.addClass("form-input-error");
+              btcData.parent().after(dom);
+            }
+          }
+        }else {
+          pass = 0;
+          if(btcData.parent().next("span.error-text").length){
+            btcData.parent().next("span.error-text").text("该字段不能为空")
+          }else {
+            var dom = $(error_text)
+            btcData.addClass("form-input-error");
+            btcData.parent().after(dom);
+          }
+        }
+      }
+
+      var eth =$("#input-settlement-ETH");
+      var ethData = $("#input-transaction_price_eth");
+      if(eth.is(':checked')){
+        if(ethData.val()){
+          if(!pat.test(ver.val())){
+            pass = 0;
+            if(ethData.parent().next("span.error-text").length){
+              ethData.parent().next("span.error-text").text("请输入有效的数字")
+            }else {
+              var dom = $(error_text)
+              dom.text("请输入有效的数字")
+              ethData.addClass("form-input-error");
+              ethData.parent().after(dom);
+            }
+          }
+        }else {
+          pass = 0;
+          if(ethData.parent().next("span.error-text").length){
+            ethData.parent().next("span.error-text").text("该字段不能为空")
+          }else {
+            var dom = $(error_text)
+            ethData.addClass("form-input-error");
+            ethData.parent().after(dom);
+          }
+        }
+      }
+
+      if(pass){
+        $("#CreateCounterForm").submit()
+      }
+
+    })
+
+
+
   })
 </script>
 </body>

@@ -61,62 +61,70 @@ $.fn.sendCode = function (option) {
  * @param config.country
  */
 window.GETCODE = function(config){
-  function getTail(){
-    var href = window.location.href;
-    href = href.substr(10);
-    if(href.indexOf("?") > -1){
-      href = href.split("?")[0]
-    }
-    var arr = href.split("/");
-    return arr[arr.length-1];
-  }
 
+      // 手机正则
   var regCell = /^\d{8,}$/,
-      regEmail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/ ;
-  config.btn.on("click",function(e){
+      // 邮箱正则
+      regEmail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/ ,
+      // 页面地址
+      address = $("form").attr("action"),
+      // 点击的按钮
+      button = config.btn,
+      // 数据来源
+      input = config.input;
+  input.on("focus", function(){
+    $(this).parent().next("span.error_text").remove()
+  });
+  button.on("click",function(e){
     e.preventDefault();
     if( $(this).attr("data-sending") === '1'){
       return false;
     }
-    if(!config.input.val()){
+    if(!input.val()){
       return false;
     }
     if(config.email){
-      if(!regEmail.test( config.input.val())){
+      if(!regEmail.test(input.val())){
         console.log("email error")
         return false;
       }
     }else {
-      if(!regCell.test( config.input.val())){
+      if(!regCell.test(input.val())){
         console.log("cell error")
         return false;
       }
     }
     var datas = {}
     if(config.email){
-      datas.email = config.input.val();
+      datas.email = input.val();
     }else {
-      datas.cell = config.input.val();
+      datas.cell = input.val();
       datas.countriesId = config.country.val();
     }
     $.ajax({
       method: "post",
-      url: config.api + '/' + getTail(),
+      url: config.api + address,
       data: datas,
       success: function (data, status, xhr) {
         if(data.code === "10000"){
-          config.btn.attr("data-sending", '1').
+          button.attr("data-sending", '1').
           addClass("code_sending");
           var time = 120;
           var renderText = setInterval(function () {
             if (time) {
-              config.btn.text(--time + "s后再次获取")
+              button.text(--time + "s后再次获取")
             } else {
               window.clearInterval(renderText);
-              config.btn.attr("data-sending", '0').
+              button.attr("data-sending", '0').
               text("发送验证码").removeClass("code_sending")
             }
           }, 1000)
+        }
+        if(data.code === "99998"){
+          var notice, isReg = (address  === "/register");
+          notice = '<span class="error_text"></span>';
+          $(notice).text('手机号'+ (isReg ? '已': '未') + '注册');
+          input.parent().after($(notice));
         }
       },
       error: function (data, status, xhr) {

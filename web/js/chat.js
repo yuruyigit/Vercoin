@@ -80,10 +80,13 @@ $$.on('connect', function () {
 /**
  * @init 聊天记录
  */
-var historys = JSON.parse(chatJsonStr);
-historys.forEach(function(item,index){
-    renderLine(item);
-});
+if(chatJsonStr!=""){
+    var historys = JSON.parse(chatJsonStr);
+    historys.forEach(function(item,index){
+        renderLine(item);
+    });
+}
+
 
 /**
  * @正常的聊天

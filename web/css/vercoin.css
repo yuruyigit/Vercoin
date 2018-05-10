@@ -661,6 +661,8 @@ select {
   height: 50px;
   line-height: 50px;
   font-weight: 700;
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
 }
 #zyhLogReg .log_reg_form .divide {
   width: 100%;
@@ -708,9 +710,9 @@ select {
   border-radius: 2px;
 }
 #zyhLogReg .log_reg_form .forget {
-  color: #f00;
+  color: #D93740;
   font-size: 14px;
-  /*width: 60px;*/
+  width: 80px;
   margin-left: 26%;
   display: block;
   cursor: pointer;
@@ -761,6 +763,10 @@ select {
 #zyhLogReg .log_reg_form .policy {
   color: #d93740;
   padding-left: 26%;
+  position:relative;
+  height:20px;
+  line-height:20px;
+  margin-top:-10px;
 }
 #zyhLogReg .log_reg_form .policy a {
   color: #d93740;
@@ -3892,4 +3898,45 @@ select {
 
 .chat_content .content-read {
   display:none;
+}
+
+#zyhLogReg form[action="/register"] {
+  padding-bottom: 139px !important;
+}
+
+/**
+ *@new user agreement
+ */
+.user-agreement {
+  width:970px;
+  margin-top:20px;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #727272;
+}
+.user-agreement ul {
+  padding-left:40px;
+  margin-top: 0;
+  margin-bottom: 11px;
+}
+.user-agreement p {
+  margin: 0 0 11px;
+}
+.user-agreement .panel.panel-default {
+  padding: 0 20px 60px 20px;
+}
+.user-agreement .panel-heading {
+  background:#fff;
+  height:52px;
+  line-height: 35px;
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+  font-size: 140%;
+  font-weight: bold;
+  margin-bottom:10px;
+}
+.user-agreement em.paragraph {
+  font-style: normal;
+  font-size: 110%;
+  font-weight: bold;
 }

@@ -1435,6 +1435,7 @@ select {
   display: block;
   padding: 10px 0 10px 35px;
   color: #333;
+  text-decoration: none;
 }
 .col-md-2,.col-md-10{
   padding-right: 0;
@@ -2044,6 +2045,7 @@ select {
   display: block;
   padding: 10px 0 10px 35px;
   color: #333;
+  text-decoration: none;
 }
 .col-md-2,.col-md-10{
   padding-right: 0;
@@ -2238,6 +2240,7 @@ select {
   display: block;
   padding: 10px 0 10px 35px;
   color: #333;
+  text-decoration: none;
 }
 .col-md-2,.col-md-10{
   padding-right: 0;
@@ -2289,6 +2292,9 @@ select {
   display: inline-block;
   z-index: 1000;
   position: relative;
+}
+.content-security .col-md-10 .media-right .btn:hover{
+  text-decoration: underline;
 }
 .content-security .line{
   width: 120px;
@@ -2443,7 +2449,8 @@ select {
   width: 100%;
   display: block;
   padding: 10px 0 10px 35px;
-  color: #333; }
+  color: #333;
+  text-decoration: none;}
 .content-account  .col-md-2 .panel-body a:hover {
   background: #ddd; }
 .content-account  .col-md-10 .panel-body .id-card {
@@ -3292,7 +3299,8 @@ select {
   width: 100%;
   display: block;
   padding: 10px 0 10px 35px;
-  color: #333; }
+  color: #333;
+  text-decoration: none;}
 .content-trust-you .col-md-2 .panel{
   margin: 0;
   border-bottom: 0;
@@ -3603,6 +3611,9 @@ select {
   letter-spacing: 0;
   margin: 0 50px 0 12px;
 }
+.content-account .raw .col-md-10 .panel-body  a:hover{
+   text-decoration: underline;
+}
 .content-account .raw .col-md-10 .panel-body  a{
   background: #D93740;
   border-radius: 2px;
@@ -3651,12 +3662,12 @@ select {
   height: 70px;
   border:1px solid #ccc;
   position: relative;
-  padding: 12px 0 0 24px;
+  padding: 20px 0 0 24px;
 }
 .content-account .raw .panel-body .file-upload p{
   position: absolute;
   left:24px;
-  top:0;
+  top:16px;
   font-size: 14px;
   color: #666666;
 }

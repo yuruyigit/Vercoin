@@ -152,6 +152,7 @@ input::-ms-reveal{
 .header{
     width: 100%;
     height: 50px;
+    background: #303030;
 }
 .header .navbar-default {
     background: #303030;

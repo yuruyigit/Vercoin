@@ -13,42 +13,78 @@
 </head>
 <body>
 <div class="header">
-  <nav class="navbar navbar-default">
-    <div class="container-fluid">
-      <div class="navbar-header">
-        <a class="navbar-brand header-logo" href="#">
-          <img src="./images/logo.jpg" alt="">
-        </a>
-      </div>
-      <div>
-        <ul class="nav navbar-nav nav-index">
-          <li><a href="./index.html">首页</a></li>
+  <div class="nav-box">
+    <a class="header-logo" href="#">
+      <img src="./images/logo.jpg" alt="" />
+    </a>
+    <ul class="menu-box">
+      <li><a href="./index.html">首页</a></li>
+      <li class="open">
+        <a href="./buy.html" class="dropdown-toggle">购买</a>
+        <ul class="menu-item">
+          <li class="default-color"><a href="./buy.html">VER</a></li>
+          <li class="default-color"><a href="#" class="default">默认</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="./sell.html" class="dropdown-toggle" >出售</a>
+        <ul class="menu-item">
+          <li class="default-color"><a href="./sell.html">VER</a></li>
+          <li class="default-color"><a href="#" class="default">默认</a></li>
+        </ul>
+      </li>
+      <li><a href="./publish_advertisement.html">发布广告</a></li>
+    </ul>
+
+    <ul class="menu-box fl-r">
+      <li class="order-center"><a href="./index.html">订单</a></li>
+      <li class="mine-wallet">
+        <a href="./buy.html" class="dropdown-toggle">我的钱包</a>
+        <ul class="menu-item">
+          <li><a href="/my/wallets/DEPOSIT/VER/ALL">充值</a></li>
+          <li><a href="/my/wallets/WITHDRAW/VER/ALL">提现</a></li>
           <li>
-            <a href="./buy.html" class="dropdown-toggle" data-toggle="dropdown" role="button"
-               aria-haspopup="true" aria-expanded="false">购买<span class="caret"></span>
-            </a>
-            <ul class="dropdown-menu">
-              <li class="default-color"><a href="./buy.html">VER</a></li>
-              <li class="default-color "><a href="#" class="default">默认</a></li>
-            </ul>
+            <dl>
+              <dt>可用资产</dt>
+              <dd><span class="wallets-number">3.84024483</span><span class="coin">BTC</span></dd>
+              <dd><span class="wallets-number">500030</span><span class="coin">ETH</span></dd>
+              <dd><span class="wallets-number">500030</span><span class="coin">VER</span></dd>
+            </dl>
           </li>
           <li>
-            <a href="./sell.html" class="dropdown-toggle" data-toggle="dropdown" role="button"
-               aria-haspopup="true" aria-expanded="false">出售<span class="caret"></span></a>
-            <ul class="dropdown-menu">
-              <li class="default-color"><a href="./sell.html">VER</a></li>
-              <li class="default-color "><a href="#" class="default">默认</a></li>
-            </ul>
+            <dl>
+              <dt>冻结资产</dt>
+              <dd><span class="wallets-number">70000</span><span class="coin">BTC</span></dd>
+              <dd><span class="wallets-number">300000</span><span class="coin">ETH</span></dd>
+              <dd><span class="wallets-number">300000</span><span class="coin">VER</span></dd>
+            </dl>
           </li>
-          <li><a href="./publish_advertisement.html" data-target="#myModal" data-toggle="modal">发布广告</a></li>
+          <li>
+            <dl>
+              <dt>总资产</dt>
+              <dd><span class="wallets-number">70003.84024483</span><span class="coin">BTC</span><dd>
+              <dd><span class="wallets-number">200030</span><span class="coin">ETH</span></dd>
+              <dd><span class="wallets-number">200030</span><span class="coin">VER</span></dd>
+            </dl>
+          </li>
         </ul>
-        <ul class="nav navbar-nav navbar-right index">
-          <li><a href="./login.html">登录</a></li>
-          <li><a href="./register.html">注册</a></li>
+      </li>
+      <li class="user-center">
+        <a href="./sell.html" class="dropdown-toggle" >nuoee</a>
+        <ul class="menu-item">
+          <li><a href="/my/account/queryBaseInfo">用户中心</a></li>
+          <li><a href="/my/advertisement/list?type=ONLINEBUY">我的广告</a></li>
+          <li>
+            <a href="/logout/success">退出</a>
+          </li>
         </ul>
-      </div>
-    </div>
-  </nav>
+      </li>
+    </ul>
+    <ul class="menu-box not－line fl-r">
+      <li><a href="./login.html">登录</a></li>
+      <li><a href="./register.html">注册</a></li>
+    </ul>
+  </div>
 </div>
 <div class="banner">
   <div id="myCarousel" class="carousel slide">

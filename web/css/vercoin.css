@@ -3706,12 +3706,12 @@ select {
 /*
 银行账户设置页面样式*/
 .mask{
-  position: absolute;
+  position:fixed;
   left:0;
   top:0;
   right:0;
   bottom:0;
-  background: rgba(240,240,240,0.3);
+  background: rgba(0,0,0,0.3);
 }
 .user-modal.modal-bank{
   display: block;

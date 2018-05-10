@@ -214,7 +214,7 @@ ul.menu-item a:hover{
 .menu-box .user-center > a:before{
     position: absolute;
     top: 20px;
-    left: 25px;
+    left: 20px;
     display: block;
     content: '';
     width: 14px;

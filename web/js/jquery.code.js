@@ -123,8 +123,9 @@ window.GETCODE = function(config){
         if(data.code === "99998"){
           var notice, isReg = (address  === "/register");
           notice = '<span class="error_text"></span>';
-          $(notice).text('手机号'+ (isReg ? '已': '未') + '注册');
-          input.parent().after($(notice));
+          var dom = $(notice);
+          dom.text('手机号'+ (isReg ? '已': '未') + '注册');
+          input.parent().after(dom);
         }
       },
       error: function (data, status, xhr) {

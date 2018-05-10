@@ -46,10 +46,17 @@ input::-ms-reveal{
 .fl-r{
     float: right;
 }
-
-/* 页面公共头部样式*/
-.header {
+/*首页样式*/
+.header{
     width: 100%;
+    height: 50px;
+    background: #303030;
+}
+.header .navbar-default {
+    background: #303030;
+    border-radius: 0; }
+.header .navbar-default .header-logo {
+    width: 130px;
     height: 50px;
     background-color: #303030;
 }
@@ -113,7 +120,7 @@ input::-ms-reveal{
     display: none;
     position: absolute;
     top: 50px;
-    z-index: 10;
+    z-index: 9999999;
     font-size: 14px;
     background-color: #303030;
     border-radius: 0 0 4px 4px;
@@ -192,15 +199,22 @@ ul.menu-item a:hover{
 .menu-box .mine-wallet > .menu-item .wallets-number{
     color: #D93740;
 }
+.header .nav-box ul[class="menu-box fl-r"]{
+    display: flex;
+}
 .menu-box .user-center > a{
-    width: 140px;
-    padding: 15px 0;
+    width: 60px;
+    padding: 15px 40px;
     text-align: center;
+    box-sizing: unset;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 .menu-box .user-center > a:before{
     position: absolute;
     top: 20px;
-    left: 25px;
+    left: 20px;
     display: block;
     content: '';
     width: 14px;

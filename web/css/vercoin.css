@@ -661,6 +661,8 @@ select {
   height: 50px;
   line-height: 50px;
   font-weight: 700;
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
 }
 #zyhLogReg .log_reg_form .divide {
   width: 100%;
@@ -708,9 +710,9 @@ select {
   border-radius: 2px;
 }
 #zyhLogReg .log_reg_form .forget {
-  color: #f00;
+  color: #D93740;
   font-size: 14px;
-  /*width: 60px;*/
+  width: 80px;
   margin-left: 26%;
   display: block;
   cursor: pointer;
@@ -761,6 +763,10 @@ select {
 #zyhLogReg .log_reg_form .policy {
   color: #d93740;
   padding-left: 26%;
+  position:relative;
+  height:20px;
+  line-height:20px;
+  margin-top:-10px;
 }
 #zyhLogReg .log_reg_form .policy a {
   color: #d93740;
@@ -1065,14 +1071,19 @@ select {
   -ms-user-select: none;
   user-select: none;
   border: 1px solid #e6e6e6;
+  margin-right:6px;
 }
 #zyhSellList .filter_select .form-control,
 #zyhBuyList .filter_select .form-control {
   border: none;
-  -webkit-border-radius: 0;
-  -moz-border-radius: 0;
-  -ms-border-radius: 0;
-  border-radius: 0;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  border-radius: 2px;
+  height: 36px;
+  position: relative;
+  top: -1px;
+  color: #333;
 }
 #zyhSellList .main_block_left,
 #zyhBuyList .main_block_left {
@@ -1435,6 +1446,7 @@ select {
   display: block;
   padding: 10px 0 10px 35px;
   color: #333;
+  text-decoration: none;
 }
 .col-md-2,.col-md-10{
   padding-right: 0;
@@ -2044,6 +2056,7 @@ select {
   display: block;
   padding: 10px 0 10px 35px;
   color: #333;
+  text-decoration: none;
 }
 .col-md-2,.col-md-10{
   padding-right: 0;
@@ -2238,6 +2251,7 @@ select {
   display: block;
   padding: 10px 0 10px 35px;
   color: #333;
+  text-decoration: none;
 }
 .col-md-2,.col-md-10{
   padding-right: 0;
@@ -2289,6 +2303,9 @@ select {
   display: inline-block;
   z-index: 1000;
   position: relative;
+}
+.content-security .col-md-10 .media-right .btn:hover{
+  text-decoration: underline;
 }
 .content-security .line{
   width: 120px;
@@ -2443,7 +2460,8 @@ select {
   width: 100%;
   display: block;
   padding: 10px 0 10px 35px;
-  color: #333; }
+  color: #333;
+  text-decoration: none;}
 .content-account  .col-md-2 .panel-body a:hover {
   background: #ddd; }
 .content-account  .col-md-10 .panel-body .id-card {
@@ -3292,7 +3310,8 @@ select {
   width: 100%;
   display: block;
   padding: 10px 0 10px 35px;
-  color: #333; }
+  color: #333;
+  text-decoration: none;}
 .content-trust-you .col-md-2 .panel{
   margin: 0;
   border-bottom: 0;
@@ -3603,6 +3622,9 @@ select {
   letter-spacing: 0;
   margin: 0 50px 0 12px;
 }
+.content-account .raw .col-md-10 .panel-body  a:hover{
+   text-decoration: underline;
+}
 .content-account .raw .col-md-10 .panel-body  a{
   background: #D93740;
   border-radius: 2px;
@@ -3651,12 +3673,12 @@ select {
   height: 70px;
   border:1px solid #ccc;
   position: relative;
-  padding: 12px 0 0 24px;
+  padding: 20px 0 0 24px;
 }
 .content-account .raw .panel-body .file-upload p{
   position: absolute;
   left:24px;
-  top:0;
+  top:16px;
   font-size: 14px;
   color: #666666;
 }
@@ -3684,12 +3706,12 @@ select {
 /*
 银行账户设置页面样式*/
 .mask{
-  position: absolute;
+  position:fixed;
   left:0;
   top:0;
   right:0;
   bottom:0;
-  background: rgba(240,240,240,0.3);
+  background: rgba(0,0,0,0.3);
 }
 .user-modal.modal-bank{
   display: block;
@@ -3887,4 +3909,51 @@ select {
 
 .chat_content .content-read {
   display:none;
+}
+
+#zyhLogReg form[action="/register"] {
+  padding-bottom: 60px !important;
+}
+
+/**
+ *@new user agreement
+ */
+.user-agreement {
+  width:970px;
+  margin-top:20px;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #727272;
+}
+.user-agreement ul {
+  padding-left:40px;
+  margin-top: 0;
+  margin-bottom: 11px;
+}
+.user-agreement p {
+  margin: 0 0 11px;
+}
+.user-agreement .panel.panel-default {
+  padding: 0 20px 60px 20px;
+}
+.user-agreement .panel-heading {
+  background:#fff;
+  height:52px;
+  line-height: 35px;
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+  font-size: 140%;
+  font-weight: bold;
+  margin-bottom:10px;
+}
+.user-agreement em.paragraph {
+  font-style: normal;
+  font-size: 110%;
+  font-weight: bold;
+}
+
+/* 注册国籍右侧小图标 */
+select#countriesId{
+  background: url("../images/arrow-drop-down-icon.png") no-repeat 410px center;
+  background-size: 9px 5px;
 }

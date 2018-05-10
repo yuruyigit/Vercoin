@@ -3951,3 +3951,9 @@ select {
   font-size: 110%;
   font-weight: bold;
 }
+
+/* 注册国际下来右侧小图标 */
+select#countriesId{
+  background: url("../images/arrow-drop-down-icon.png") no-repeat 410px center;
+  background-size: 9px 5px;
+}

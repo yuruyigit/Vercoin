@@ -6,7 +6,7 @@ $.fn.sendCode = function (option) {
     cell: '',
     countriesId: '',
     sendingClass: 'code_sending',
-	email:''
+    email: ''
   };
   var options = $.extend(defaults, option);
   t.attr("data-sending", '0');
@@ -15,15 +15,15 @@ $.fn.sendCode = function (option) {
     // sending return
     if (t.attr("data-sending") === '1') {
       return false;
-    } 
+    }
     var config = {
       method: "post",
       url: options.api,
       data: {
-    "cell": options.cell,
-    "countriesId": options.countriesId,
-	"email":options.email
-  },
+        "cell": options.cell,
+        "countriesId": options.countriesId,
+        "email": options.email
+      },
       success: function (data, status, xhr) {
         console.log(data)
         console.log(status)
@@ -35,8 +35,7 @@ $.fn.sendCode = function (option) {
             t.text(--time + "s后再次获取")
           } else {
             window.clearInterval(renderText);
-            t.attr("data-sending", '0').
-            text("发送验证码").removeClass("code_sending")
+            t.attr("data-sending", '0').text("发送验证码").removeClass("code_sending")
           }
         }, 1000)
 
@@ -60,45 +59,45 @@ $.fn.sendCode = function (option) {
  * @param config.api
  * @param config.country
  */
-window.GETCODE = function(config){
+window.GETCODE = function (config) {
 
-      // 手机正则
+  // 手机正则
   var regCell = /^\d{8,}$/,
-      // 邮箱正则
-      regEmail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/ ,
-      // 页面地址
-      addr = $("form").attr("action"),
-      address = (addr.indexOf("reg") > -1) ? addr :'/forgot';
-      // 点击的按钮
-      button = config.btn,
-      // 数据来源
-      input = config.input;
-  input.on("focus", function(){
+    // 邮箱正则
+    regEmail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/,
+    // 页面地址
+    addr = $("form").attr("action"),
+    address = (addr.indexOf("reg") > -1) ? addr : '/forgot',
+    // 点击的按钮
+    button = config.btn,
+    // 数据来源
+    input = config.input;
+  input.on("focus", function () {
     $(this).parent().next("span.error_text").remove()
   });
-  button.on("click",function(e){
+  button.on("click", function (e) {
     e.preventDefault();
-    if( $(this).attr("data-sending") === '1'){
+    if ($(this).attr("data-sending") === '1') {
       return false;
     }
-    if(!input.val()){
+    if (!input.val()) {
       return false;
     }
-    if(config.email){
-      if(!regEmail.test(input.val())){
+    if (config.email) {
+      if (!regEmail.test(input.val())) {
         console.log("email error")
         return false;
       }
-    }else {
-      if(!regCell.test(input.val())){
+    } else {
+      if (!regCell.test(input.val())) {
         console.log("cell error")
         return false;
       }
     }
     var datas = {}
-    if(config.email){
+    if (config.email) {
       datas.email = input.val();
-    }else {
+    } else {
       datas.cell = input.val();
       datas.countriesId = config.country.val();
     }
@@ -107,25 +106,23 @@ window.GETCODE = function(config){
       url: config.api + address,
       data: datas,
       success: function (data, status, xhr) {
-        if(data.code === "10000"){
-          button.attr("data-sending", '1').
-          addClass("code_sending");
+        if (data.code === "10000") {
+          button.attr("data-sending", '1').addClass("code_sending");
           var time = 120;
           var renderText = setInterval(function () {
             if (time) {
               button.text(--time + "s后再次获取")
             } else {
               window.clearInterval(renderText);
-              button.attr("data-sending", '0').
-              text("发送验证码").removeClass("code_sending")
+              button.attr("data-sending", '0').text("发送验证码").removeClass("code_sending")
             }
           }, 1000)
         }
-        if(data.code === "99998"){
-          var notice, isReg = (address  === "/register");
+        if (data.code === "99998") {
+          var notice, isReg = (address === "/register");
           notice = '<span class="error_text"></span>';
           var dom = $(notice);
-          dom.text('手机号'+ (isReg ? '已': '未') + '注册');
+          dom.text('手机号' + (isReg ? '已' : '未') + '注册');
           input.parent().after(dom);
         }
       },

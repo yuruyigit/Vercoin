@@ -199,6 +199,9 @@ ul.menu-item a:hover{
 .menu-box .mine-wallet > .menu-item .wallets-number{
     color: #D93740;
 }
+.header .nav-box ul[class="menu-box fl-r"]{
+    display: flex;
+}
 .menu-box .user-center > a{
     width: 60px;
     padding: 15px 40px;

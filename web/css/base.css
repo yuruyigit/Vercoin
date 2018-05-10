@@ -46,108 +46,6 @@ input::-ms-reveal{
 .fl-r{
     float: right;
 }
-
-/* 页面公共头部样式*/
-/*.index-header {
-    width: 100%;
-    height: 50px;
-    background: #303030;}*/
-/*.index-header .nav-content{
-    width: 1200px;
-    height: 50px;
-    margin: 0 auto;
-    display: flex;
-}
-.index-header .caret{
-    margin-left: 8px;
-}
-.index-header .nav-content .logo{
-  !*  display: inline-block;*!
-    width: 100px;
-    height: 50px;
-    margin-right: 16px;
-}
-.index-header .nav-content .logo img{
-    width: 100%;
-    height: 20px;
-    position: relative;
-    top: 12px;
-}
-.index-header .nav-content .navList{
-    !*display: inline-block;*!
-    height: 50px;
-}
-.index-header .nav-content .navList ul{
-   height: 50px;
-}
-.index-header .nav-content .navList ul li{
-    float: left;
-    font-size: 14px;
-    color:#AAA;
-    line-height: 50px;
-    text-align: center;
-    min-width: 75px;
-    position: relative;
-    z-index: 100;
-}
-.index-header .nav-content .navList ul li a{
-    text-decoration: none;
-    color:#AAA;
-    width: 100%;
-    height: 100%;
-    display: block;
-}
-.index-header .nav-content .navList ul li a:hover{
-    background: #D93740;
-    color:#fff;
-}
-.index-header .nav-content .navList ul li a:hover .caret{
-    transform: rotateX(180deg);
-}
-.index-header .nav-content .navList ul li .showList{
-    -webkit-transition: all .5s ease;
-    transition: all .5s ease;
-    height: 0;
-    background: #303030;
-    overflow: hidden;
-    opacity: 0;
-}
-.index-header .nav-content .navList ul li .showList a{
-    display: block;
-    min-width: 78px;
-    height: 40px;
-    color:#fff;
-    font-size: 14px;
-    text-decoration: none;
-    line-height: 40px;
-}
-.index-header .nav-content .navList ul li .showList a:hover{
-    background: #444444;
-}
-.index-header .nav-content .navList ul li .showList a:hover .caret{
-    transform: rotateX(180deg);
-}
-.index-header .nav-content .navList ul li:hover .showList{
-    height: auto;
-    opacity: 1;
-}
-.index-header .nav-content .userInfo{
-    height: 50px;
-    position: absolute;
-    right: 50px;
-}
-.index-header .nav-content .userInfo a{
-    min-width: 50px;
-    line-height: 50px;
-    height: 50px;
-    text-decoration: none;
-    color:#AAA;
-    display: inline-block;
-    text-align: center;
-}
-.index-header .nav-content .userInfo a:hover{
-    color:#fff;
-}*/
 /*首页样式*/
 .header{
     width: 100%;
@@ -222,7 +120,7 @@ input::-ms-reveal{
     display: none;
     position: absolute;
     top: 50px;
-    z-index: 10;
+    z-index: 9999999;
     font-size: 14px;
     background-color: #303030;
     border-radius: 0 0 4px 4px;
@@ -301,15 +199,22 @@ ul.menu-item a:hover{
 .menu-box .mine-wallet > .menu-item .wallets-number{
     color: #D93740;
 }
+.header .nav-box ul[class="menu-box fl-r"]{
+    display: flex;
+}
 .menu-box .user-center > a{
-    width: 140px;
-    padding: 15px 0;
+    width: 60px;
+    padding: 15px 40px;
     text-align: center;
+    box-sizing: unset;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 .menu-box .user-center > a:before{
     position: absolute;
     top: 20px;
-    left: 25px;
+    left: 20px;
     display: block;
     content: '';
     width: 14px;

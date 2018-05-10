@@ -3912,7 +3912,7 @@ select {
 }
 
 #zyhLogReg form[action="/register"] {
-  padding-bottom: 139px !important;
+  padding-bottom: 60px !important;
 }
 
 /**
@@ -3952,7 +3952,7 @@ select {
   font-weight: bold;
 }
 
-/* 注册国际下来右侧小图标 */
+/* 注册国籍右侧小图标 */
 select#countriesId{
   background: url("../images/arrow-drop-down-icon.png") no-repeat 410px center;
   background-size: 9px 5px;

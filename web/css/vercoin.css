@@ -1508,9 +1508,10 @@ select {
   width: 450px;
   height: 316px;
   position: fixed;
-  top:136px;
-  left: 42%;
-  /*  border: 1px solid #f0f0f0;*/
+  top: 50%;
+  margin-top:-158px;
+  left: 50%;
+  margin-left:-225px;
   box-shadow: 0 2px 2px #f0f0f0;
   border-radius: 2px;
   display: none;

@@ -714,7 +714,6 @@ select {
   font-size: 14px;
   width: 80px;
   margin-left: 26%;
-  display: block;
   cursor: pointer;
   margin-top: -15px;
   height: 20px;
@@ -1751,6 +1750,7 @@ select {
 #zyhSellList .merchant .merchant_balance,
 #zyhBuyList .merchant .merchant_balance {
   width: 146px;
+  position:relative;
 }
 #zyhSellList .merchant .merchant_balance img,
 #zyhBuyList .merchant .merchant_balance img {
@@ -4004,4 +4004,33 @@ select#countriesId{
 	margin: 0;
 	padding: 20px 0 20px;
 	background-color: #fff;
+}
+.pay-type-tip {
+  position: absolute;
+  top: -28px;
+  left: 8px;
+  border-radius: 2px;
+  width: 80px;
+  background: #fff;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  border: 1px solid #ddd;
+  color:#888;
+  font-size:12px;
+  display:none;
+}
+
+.pay-type {
+  width:20px;
+  height:20px;
+  line-height:20px;
+  position:relative;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+
+.pay-type img:hover~div {
+  display:block;
 }

@@ -73,9 +73,27 @@
             <div class="merchat_data">交易次数35 信任人数6 好评度88%</div>
           </li>
           <li class="merchant_balance">
-            <img src="./images/pay_type_1.png" alt="">
-            <img src="./images/pay_type_2.png" alt="">
-            <img src="./images/pay_type_3.png" alt="">
+            <div class="pay-type" >
+              <img src="./images/pay_type_1.png" alt="银行卡支付">
+              <div class="pay-type-tip">银行卡支付</div>
+            </div>
+            <div class="pay-type">
+              <img src="./images/2_02.png" alt="微信支付">
+              <div class="pay-type-tip">微信支付</div>
+            </div>
+            <div class="pay-type" >
+              <img src="./images/3_03.png" alt="支付宝支付">
+              <div class="pay-type-tip">支付宝支付</div>
+            </div>
+            <div class="pay-type" >
+              <img src="./images/pay_type_2.png" alt="BTC支付">
+              <div class="pay-type-tip">BTC支付</div>
+            </div>
+            <div class="pay-type">
+              <img src="./images/pay_type_3.png" alt="ETH支付">
+              <div class="pay-type-tip">ETH支付</div>
+            </div>
+
           </li>
           <li class="merchant_counts">
             1,000,000.00VER
@@ -191,9 +209,27 @@
             <div class="merchat_data">交易次数35 信任人数6 好评度88%</div>
           </li>
           <li class="merchant_balance">
-            <img src="./images/pay_type_1.png" alt="">
-            <img src="./images/pay_type_2.png" alt="">
-            <img src="./images/pay_type_3.png" alt="">
+            <div class="pay-type" >
+              <img src="./images/pay_type_1.png" alt="银行卡支付">
+              <div class="pay-type-tip">银行卡支付</div>
+            </div>
+            <div class="pay-type">
+              <img src="./images/2_02.png" alt="微信支付">
+              <div class="pay-type-tip">微信支付</div>
+            </div>
+            <div class="pay-type" >
+              <img src="./images/3_03.png" alt="支付宝支付">
+              <div class="pay-type-tip">支付宝支付</div>
+            </div>
+            <div class="pay-type" >
+              <img src="./images/pay_type_2.png" alt="BTC支付">
+              <div class="pay-type-tip">BTC支付</div>
+            </div>
+            <div class="pay-type">
+              <img src="./images/pay_type_3.png" alt="ETH支付">
+              <div class="pay-type-tip">ETH支付</div>
+            </div>
+
           </li>
           <li class="merchant_counts">
             1,000,000.00BTC
@@ -234,25 +270,6 @@
       $("."+ $(this).attr("data-target") ).show()
     })
 
-
-    $(".merchant_balance img").on("mouseover",function(){
-      var index;
-      if($(this).attr("src").indexOf("type_1") > -1)  index = 0;
-      if($(this).attr("src").indexOf("type_2") > -1)  index = 1;
-      if($(this).attr("src").indexOf("type_3") > -1)  index = 2;
-      console.log(index)
-      var data = [
-        {left: 9, text: '现金支付'},
-        {left: 35, text: 'BTC支付'},
-        {left: 64, text: 'ETH支付'}
-        ];
-      var dom = $('<div class="pay-type-tip"></div>');
-      dom.text(data[index].text).
-      attr("style","left:" + data[index].left+"px");
-      $(this).after(dom);
-    }).on("mouseout",function(){
-      $(this).next("div").remove()
-    })
   })
 </script>
 </body>

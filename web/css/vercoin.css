@@ -4006,8 +4006,8 @@ select#countriesId{
 #zyhBuyList .merchant_balance .pay-type-tip
 {
   position: absolute;
-  top: 10px;
-  left: 9px;
+  top: 9px;
+  left: 8px;
   border-radius: 2px;
   width: 80px;
   background: #fff;
@@ -4017,4 +4017,19 @@ select#countriesId{
   border: 1px solid #ddd;
   color:#888;
   font-size:12px;
+  display:none;
+}
+#zyhBuyList .merchant_balance .pay-type,
+#zyhSellList .merchant_balance .pay-type
+{
+  width:20px;
+  height:20px;
+  position:relative;
+  display: inline-block;
+}
+
+#zyhBuyList .merchant_balance .pay-type img:hover~div,
+#zyhSellList .merchant_balance .pay-type img:hover~div
+{
+  display:block;
 }

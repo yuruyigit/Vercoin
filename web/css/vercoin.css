@@ -3754,7 +3754,9 @@ select {
   display: block;
   z-index:6666;
 }
-
+.user-modal.modal-bank #setting{
+	margin-top:60px;
+}
 #zyhDraw .form-horizontal {
   display:none;
 }

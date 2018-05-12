@@ -204,10 +204,9 @@ ul.menu-item a:hover{
     display: flex;
 }
 .menu-box .user-center > a{
-    width: 60px;
+    max-width: 140px;
     padding: 15px 40px;
     text-align: center;
-    box-sizing: unset;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;

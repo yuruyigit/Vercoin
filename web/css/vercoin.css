@@ -1508,9 +1508,10 @@ select {
   width: 450px;
   height: 316px;
   position: fixed;
-  top:136px;
-  left: 42%;
-  /*  border: 1px solid #f0f0f0;*/
+  top: 50%;
+  margin-top:-158px;
+  left: 50%;
+  margin-left:-225px;
   box-shadow: 0 2px 2px #f0f0f0;
   border-radius: 2px;
   display: none;
@@ -2644,16 +2645,20 @@ select {
   line-height: 40px;
   text-align: center;
   background: #F6F6F6;
+  cursor:pointer;
+}
+.order_in_progress .information .accountlist ul li:hover {
+  background: #eee;
 }
 .order_in_progress .information .accountlist ul li.active{
   background: #fff;
   border-top: 2px solid #d93740;
+  line-height:38px;
 }
-.order_in_progress .information .accountlist ul li:last-child{
-  width: 180px;
-  text-align: left;
-  padding-left: 40px;
+.order_in_progress .information .accountlist ul li.active:hover {
+  background: #fff;
 }
+
 .order_in_progress .information .information_head img {
   width: 18px;
   margin-right: 10px;
@@ -2716,10 +2721,15 @@ select {
   line-height:20px;
 }
 .order_in_progress .information .code {
-  font-size:12px;
-  height:20px;
-  line-height:20px;
+  overflow:hidden;
   display: inline-block;
+  font-size: 12px;
+  height: 20px;
+  line-height: 30px;
+  width: 234px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color:#333;
 }
 .order_in_progress .information .copy {
   margin-left:20px;

@@ -234,6 +234,25 @@
       $("."+ $(this).attr("data-target") ).show()
     })
 
+
+    $(".merchant_balance img").on("mouseover",function(){
+      var index;
+      if($(this).attr("src").indexOf("type_1") > -1)  index = 0;
+      if($(this).attr("src").indexOf("type_2") > -1)  index = 1;
+      if($(this).attr("src").indexOf("type_3") > -1)  index = 2;
+      console.log(index)
+      var data = [
+        {left: 9, text: '现金支付'},
+        {left: 35, text: 'BTC支付'},
+        {left: 64, text: 'ETH支付'}
+        ];
+      var dom = $('<div class="pay-type-tip"></div>');
+      dom.text(data[index].text).
+      attr("style","left:" + data[index].left+"px");
+      $(this).after(dom);
+    }).on("mouseout",function(){
+      $(this).next("div").remove()
+    })
   })
 </script>
 </body>

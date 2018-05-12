@@ -201,17 +201,19 @@
                 <li>充值地址</li>
                 <li>
                     <span class="bank_label">BTC</span>
-                    <span class="code">1KTuf2KHRH7PkZQayorJS8cJsyBvJcvfCA</span>
+                    <input class="code"
+                           value="iiiii1111"
+                           type="text"/>
                     <span class="copy"><img src="./images/copy.png" alt=""></span>
                 </li>
                 <li>
                     <span class="bank_label">ETH</span>
-                    <span class="code">1KTuf2KHRH7PkZQayorJS8cJsyBvJcvfCA</span>
+                    <span class="code">1111</span>
                     <span class="copy"><img src="./images/copy.png" alt=""></span>
                 </li>
                 <li>
                     <span class="bank_label">USDT</span>
-                    <span class="code">1KTuf2KHRH7PkZQayorJS8cJsyBvJcvfCA</span>
+                    <span class="code">2222</span>
                     <span class="copy"><img src="./images/copy.png" alt=""></span>
                 </li>
             </ul>
@@ -248,8 +250,12 @@
             setHeight: 498,
             theme: "minimal-dark" // theme:"minimal-dark"  "inset-2-dark" dark-3
         });
+    });
+    $(".copy").on("click",function(){
+      $(this).prev(".code").select();
+      document.execCommand("Copy")
     })
 </script>
-<script src="./js/chat.js"></script>
+<!--<script src="./js/chat.js"></script>-->
 </body>
 </html>

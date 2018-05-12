@@ -3393,6 +3393,10 @@ select {
   background: #FFF4F4; }
 .content-trust-you .col-md-10 .panel-body table tbody tr {
   height: 80px; }
+  .content-trust-you .col-md-10 .panel-body table tbody tr td:first-child{
+	  text-align:left;
+	  padding-left:14px;
+  }
 .content-trust-you .col-md-10 .panel-body table tbody tr td{
   text-align: center;
 }

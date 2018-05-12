@@ -3218,11 +3218,13 @@ select {
 }
 #zyhPerson .person_buy .btn-primary {
   background: #27c1c3;
-  border-color: #27c1c3;
+  border-color: #fff;
+   color:#fff;
 }
 #zyhPerson .person_sell .btn-primary {
   background: #d93740;
   border-color: #d93740;
+  color:#fff;
 }
 #zyhPerson .data_item {
   color: #333;
@@ -3471,7 +3473,7 @@ select {
   line-height: 36px;
   border: 1px solid #d8d8d8;
   cursor: pointer;
-  z-index: 6666;
+  z-index: 1;
 }
 .content-security  .col-md-10 em.error{
   border:1px solid #D93740 !important;

@@ -1342,6 +1342,19 @@ select {
   height: 52px;
   color:#fff;
   font-size: 16px;
+  position:relative;
+}
+.modal-dialog .modal-header em{
+	width: 20px;
+    height: 20px;
+    font-size: 20px;
+    position: absolute;
+    right: 16px;
+    top: 12px;
+    z-index: 5;
+    display: block;
+    cursor: pointer;
+    color: #fff;
 }
 .modal-header .close {
   margin-top: 3px;
@@ -1530,16 +1543,29 @@ select {
   line-height:52px;
   position: relative;
 }
-.user-modal .user-header p em{
+.user-modal .user-header  em{
   width: 20px;
   height: 20px;
   font-size: 20px;
   position: absolute;
   right:16px;
-  top:3px;
+  top:12px;
   z-index: 5;
   display: block;
   cursor: pointer;
+  color:#fff;
+}
+.user-modal .user-header  em.closeicon{
+  width: 20px;
+  height: 20px;
+  font-size: 20px;
+  position: absolute;
+  right:16px;
+  top:12px;
+  z-index: 5;
+  display: block;
+  cursor: pointer;
+  color:#fff;
 }
 .user-modal .user-body{
   width: 100%;
@@ -3675,9 +3701,6 @@ select {
   text-align: center;
   line-height: 20px;
   cursor: pointer;
-}
-.content-account .raw .col-md-10 .panel-body em:hover{
-  background:#f0f0f0;
 }
 /*
 支付宝账户设置页面样式*/

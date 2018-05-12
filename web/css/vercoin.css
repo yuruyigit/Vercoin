@@ -2753,8 +2753,6 @@ select {
   height: 20px;
   line-height: 30px;
   width: 234px;
-  overflow: hidden;
-  text-overflow: ellipsis;
   color:#333;
   border:none;
   outline:none;

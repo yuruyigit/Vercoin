@@ -3204,6 +3204,12 @@ select {
   color:#aaa;
   cursor:pointer;
 }
+#zyhPerson .person_table_header a{
+  display: block;
+}
+#zyhPerson .person_table_header a:hover{
+  text-decoration: none;
+}
 #zyhPerson .person_table_header .person_table_header_active {
   border-top: 4px solid #D93740;
   color:#333;
@@ -3257,10 +3263,16 @@ select {
   border-color: #fff;
    color:#fff;
 }
+#zyhPerson .person_buy .btn-primary:hover {
+  background-color: #039497;
+}
 #zyhPerson .person_sell .btn-primary {
   background: #d93740;
   border-color: #d93740;
   color:#fff;
+}
+#zyhPerson .person_sell .btn-primary:hover {
+  background-color: #b20610;
 }
 #zyhPerson .data_item {
   color: #333;
@@ -3393,24 +3405,27 @@ select {
   background: #FFF4F4; }
 .content-trust-you .col-md-10 .panel-body table tbody tr {
   height: 80px; }
-  .content-trust-you .col-md-10 .panel-body table tbody tr td:first-child{
+  .content-trust-you .col-md-10 .panel-body tbody td:first-child{
 	  text-align:left;
 	  padding-left:14px;
   }
-.content-trust-you .col-md-10 .panel-body table tbody tr td{
+.content-trust-you .col-md-10 .panel-body td{
   text-align: center;
 }
-.content-trust-you .col-md-10 .panel-body table tbody tr td .user {
+.content-trust-you .col-md-10 .panel-body td a{
+  color: #fff;
+}
+.content-trust-you .col-md-10 .panel-body td .user {
   width: 50px;
   height: 50px;
   position: relative;
   border-radius: 50%;
   display: inline-block;}
-.content-trust-you .col-md-10 .panel-body table tbody tr td .user img {
+.content-trust-you .col-md-10 .panel-body td .user img {
   width: 100%;
   height: 100%;
   border-radius: 50%; }
-.content-trust-you .col-md-10 .panel-body table tbody tr td .user span {
+.content-trust-you .col-md-10 .panel-body td .user span {
   width: 10px;
   height: 10px;
   position: absolute;

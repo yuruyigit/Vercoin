@@ -3447,6 +3447,9 @@ select {
 .content-trust-you .col-md-10 .panel-body table tbody tr td p {
   font-size: 16px;
   color: #333; }
+.content-trust-you .col-md-10 .panel-body table tbody tr td a.btn-primary{
+  color: #fff;
+}
 .pagination>li:hover a{
   background: #D93740 ;
   color:#fff !important;

@@ -465,7 +465,6 @@ select {
 #zyhDraw .container .operate .out
 {
   text-align: center;
-  display: inline-block;
   width: 100px;
   color: #aaa;
   height: 36px;
@@ -480,9 +479,7 @@ select {
   color: #fff;
 }
 #zyhDraw .container .form-horizontal .form-group {
-  margin-bottom: 10px;
-  margin-left: 0;
-  margin-right: 0;
+  margin: 0 0 10px 0;
 }
 #zyhDraw .container .form-horizontal .form_submit {
   margin-top: 30px;
@@ -543,7 +540,7 @@ select {
   height:30px;
   line-height:30px;
   font-size: 14px;
-  color: #CCCCCC;
+  color: #ccc;
 }
 #zyhDraw .record_head > li {
   width:68px;
@@ -1476,12 +1473,14 @@ select {
   border-bottom: 1px solid #E6E6E6;
 }
 .content-usercenter .col-md-2 .panel-body a:hover {
-  background: #ddd; }
+  background: #ddd;
+}
 .content-usercenter .col-md-3 .avatar {
-  width: 50px;
-  height: 50px;
+  width: 80px;
+  height: 80px;
   cursor: pointer;
   position: relative;
+  left: 2px;
 }
 .content-usercenter .col-md-3 .avatar img {
   width: 100%;
@@ -2721,7 +2720,7 @@ select {
 .order_in_progress .information .bank li .show-pay-image{
   width: 280px;
   height: 380px;
-  box-shadow: 0px 3px 3px #e3e3e3;
+  box-shadow: 0 3px 3px #e3e3e3;
   position: relative;
   z-index: 4;
   opacity: 0;
@@ -4049,7 +4048,59 @@ select#countriesId{
   vertical-align: middle;
 }
 
-
 .pay-type img:hover~div {
   display:block;
+}
+
+.content-usercenter #help-block-introduction {
+  color:#ccc;
+}
+
+.content-usercenter label.col-md-3.control-label {
+  color: #ccc;
+  font-weight: normal;
+  padding: 0;
+  height: 20px;
+  font-size: 14px;
+  margin-right: 5px;
+}
+
+.content-usercenter .form-horizontal .form-group {
+  margin-bottom:20px;
+}
+
+.content-usercenter  p.form-control-static {
+  padding-top: 7px;
+  padding-bottom: 7px;
+  margin-bottom: 0;
+  padding: 0;
+  height: 20px;
+  min-height: 20px;
+}
+
+
+.content-usercenter  button[type="submit"].btn.btn-primary {
+  position: relative;
+  left: 5px;
+  margin-top:20px;
+  margin-bottom:45px;
+}
+
+
+.content-usercenter  .form-group > .col-md-offset-2 {
+  position: relative;
+  left: -18px;
+}
+
+.content-usercenter  .form-group > .col-md-pull-2 {
+  margin-top:20px;
+  margin-left: 5px;
+}
+
+.content-usercenter .panel.panel-default .panel-body {
+  padding-top:40px;
+}
+
+.content-usercenter  #input-introduction {
+  height:200px;
 }

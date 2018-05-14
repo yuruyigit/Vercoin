@@ -266,3 +266,8 @@ select:-webkit-autofill {
 input[type=text]:focus, input[type=password]:focus, textarea:focus {
     -webkit-box-shadow: 0 0 0 1000px white inset;
 }
+
+.content-usercenter label.col-md-3.control-label {
+    color: #aaa;
+    font-weight: normal;
+}

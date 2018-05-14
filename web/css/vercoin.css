@@ -716,10 +716,7 @@ select {
   border: 1px solid #e6e6e6;
   background: #fff;
   color: #333;
-  border-bottom-left-radius: 0;
-  border-top-left-radius: 0;
-  border-top-right-radius: 2px;
-  border-bottom-right-radius: 2px;
+  border-raidus: 0 2px 2px 0;
 }
 #zyhLogReg .log_reg_form .country_label {
   margin-right: 15px;
@@ -785,6 +782,7 @@ select {
 }
 #zyhLogReg .code_sending {
   color: #ccc !important;
+  cursor:not-allowed;
 }
 #zyhPubAd {
   margin-top:20px;

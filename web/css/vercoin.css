@@ -1896,6 +1896,9 @@ select {
   left: 95px;
   top: 33px;
 }
+#zyhPerson .seller_name{
+	width: auto;
+}
 #zyhPerson .seller_amount,
 #zyhSell .seller_amount,
 #zyhBuy .seller_amount {

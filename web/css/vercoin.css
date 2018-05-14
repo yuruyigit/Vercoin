@@ -4084,7 +4084,6 @@ select#countriesId{
   margin-bottom:45px;
 }
 
-
 .content-usercenter  .form-group > .col-md-offset-2 {
   position: relative;
   left: -18px;
@@ -4095,7 +4094,7 @@ select#countriesId{
   margin-left: 5px;
 }
 
-.content-usercenter .panel.panel-default .panel-body {
+.content-usercenter .col-md-10 .panel.panel-default .panel-body {
   padding-top:40px;
 }
 

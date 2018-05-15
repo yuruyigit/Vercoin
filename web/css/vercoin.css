@@ -2391,6 +2391,7 @@ select {
   border-top: 1px solid #f0f0f0; }
 .content-security .col-md-10 .row .media {
   margin-bottom: 30px;
+  padding-left: 65px;
   overflow: inherit;}
 .content-security .col-md-10 .row .media .media-object {
   width: 40px;
@@ -3211,7 +3212,7 @@ select {
   line-height:36px;
 }
 #zyhPerson  .person_sell {
-  display:none;
+  display:block;
 }
 #zyhPerson .data_header {
   text-align:center;

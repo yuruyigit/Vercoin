@@ -101,7 +101,6 @@ input::-ms-reveal{
     position: absolute;
     top: 24px;
     right: 16px;
-    display: block;
     content: '';
     border-top: 4px solid #aaa;
     border-left: 4px solid transparent;
@@ -113,7 +112,8 @@ input::-ms-reveal{
 .menu-box > li > a:hover{
     color: #fff;
 }
-.menu-box > li > a.dropdown-toggle:hover:after,.menu-box > li.open > a.dropdown-toggle:hover:after{
+.menu-box > li > a.dropdown-toggle:hover:after,
+.menu-box > li.open > a.dropdown-toggle:hover:after{
     border-top: 0;
     border-bottom: 4px solid #fff;
 }
@@ -148,7 +148,6 @@ ul.menu-item a:hover{
     position: absolute;
     top: 20px;
     left: 15px;
-    display: block;
     content: '';
     width: 14px;
     height: 10px;
@@ -167,7 +166,6 @@ ul.menu-item a:hover{
     position: absolute;
     top: 20px;
     left: 25px;
-    display: block;
     content: '';
     width: 15px;
     height: 10px;
@@ -204,7 +202,7 @@ ul.menu-item a:hover{
     display: flex;
 }
 .menu-box .user-center > a{
-    max-width: 140px;
+    width: 140px;
     padding: 15px 40px;
     text-align: center;
     overflow: hidden;
@@ -215,7 +213,6 @@ ul.menu-item a:hover{
     position: absolute;
     top: 18px;
     left: 20px;
-    display: block;
     content: '';
     width: 14px;
     height: 14px;
@@ -250,11 +247,11 @@ ul.menu-item a:hover{
     padding-right: 8px;
     border-right: solid 1px #d7d6d6;
     line-height: 100%;
-   /* float: left;*/
     display: inline-block;
-    font-size: 14px;}
+    font-size: 14px;
+}
 .language-select ul li a{
-    color:#AAAAAA;
+    color:#aaa;
 }
 .language-select ul li a:hover{
     color:#333333;
@@ -268,4 +265,9 @@ select:-webkit-autofill {
 }
 input[type=text]:focus, input[type=password]:focus, textarea:focus {
     -webkit-box-shadow: 0 0 0 1000px white inset;
+}
+
+.content-usercenter label.col-md-3.control-label {
+    color: #aaa;
+    font-weight: normal;
 }

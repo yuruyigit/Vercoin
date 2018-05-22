@@ -220,6 +220,35 @@ select {
   height: 80px;
   position: relative;
 }
+.adminAdtise{
+width:1170px;
+margin:0 auto;
+}
+#zyhPageAd .shop_list_search{
+text-align:right;
+}
+#zyhPageAd .shop_list_search input{
+  padding:6px 12px;
+}
+#zyhPageAd .shop_list_search .filter_select{
+  display:inline-block;
+  position:relative;
+  width:200px;
+  padding-right:56px;
+}
+#zyhPageAd .shop_list_search .filter_select .search_btn{
+position:absolute;
+top:0;
+right:0;
+}
+#zyhPageAd .table tr{
+text-align:center;
+}
+#zyhPageAd .table .number{
+width:100px;
+text-align:center;
+line-height:54px;
+} 
 #zyhPerson .page_counts,
 #zyhSellList .page_counts,
 #zyhBuyList .page_counts,

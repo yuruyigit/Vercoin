@@ -68,7 +68,9 @@ if("undefined" == typeof io){
 /**
  * @init socket服务器
  */
-$$ = io.connect('http://'+ipAddress+':9092');
+//$$ = io.connect('http://13.209.66.231:9092');
+ $$ = io.connect('https://10.106.0.4:10043');
+//$$ = io.connect('https://192.168.0.101:10043');
 /**
  * @连接上socket服务器
  */
@@ -118,47 +120,55 @@ SENDBTN.on("click", function () {
     pattern = /(\.*.jpg$)|(\.*.png$)|(\.*.jpeg$)|(\.*.gif$)|(\.*.bmp$)/;
   // 有图片先发送图片
   if (file) {
-    // 不是图片不行
-    if (!pattern.test(FILE[0].value)) {
-      alert("请上传jpg/jpeg/png/gif/bmp格式的照片！");
-      FILE[0].value = '';
-      return false;
-    }
-    if (ISIE) {
-      var realPath, xmlHttp, xml_dom, tmpNode, imgBase64Data;
-      realPath = FILE[0].value;
-      xmlHttp = new ActiveXObject("MSXML2.XMLHTTP");
-      xmlHttp.open("POST", realPath, false);
-      xmlHttp.send("");
-      xml_dom = new ActiveXObject("MSXML2.DOMDocument");
-      tmpNode = xml_dom.createElement("tmpNode");
-      tmpNode.dataType = "bin.base64";
-      tmpNode.nodeTypedValue = xmlHttp.responseBody;
-      imgBase64Data = "data:image/bmp;base64," + tmpNode.text.replace(/\n/g, "");
-      var data = {
-        userName: userName,
-        message: '',
-        stamp: new Date().getTime(),
-        image: imgBase64Data // base64字符串
-      };
-      $$.emit('chat', data);
-      FILE[0].value = '';
-      mCSB_container.css("top","-"+(mCSB_container.height()-chat_contents.height()+40)+"px");
-    } else {
-      var reader = new FileReader();
-      reader.readAsDataURL(file);
-      reader.onload = function () {
-        var data = {
-          userName: userName,
-          message: '',
-          stamp: new Date().getTime(),
-          image: this.result // base64字符串
-        };
-        $$.emit(chat, data);
-        FILE[0].value = '';
-        mCSB_container.css("top","-"+(mCSB_container.height()-chat_contents.height()+40)+"px");
+      // 不是图片不行
+      if (!pattern.test(file.name)) {
+          alert("请上传jpg/jpeg/png/gif/bmp格式的照片！");
+          FILE[0].value = '';
+          return false;
       }
-    }
+
+      // 判断图片大小
+      var size = (file.size / 1024 / 1024).toFixed(2);
+      if (size > 1) {
+          alert('图片大小不得超过1M');
+          FILE[0].value = '';
+          return false;
+      };
+
+      console.log("uploadImg")
+      var iPicFile = $("input#upload")[0].files[0];
+      if(iPicFile){
+          var fd = new FormData();
+          fd.append("file", iPicFile);
+          $.ajax({
+              url: "/my/upload/file/",
+              type: "POST",
+              data: fd,
+              processData: false,
+              contentType: false,
+              success: function(data) {
+                  if(data != null && data.code == "10000"){
+                      var img = $("#i_img_container_Id").val() + data.uploadImg;
+                      // $("#uploadImg").val(img);
+                      // $("#upload").val("");
+                      var data = {
+                          userName: userName,
+                          message: '',
+                          stamp: new Date().getTime(),
+                          image: img
+                      };
+                      $$.emit(chat, data);
+                      FILE[0].value = '';
+                      mCSB_container.css("top","-"+(mCSB_container.height()-chat_contents.height()+40)+"px");
+                  }
+              },
+              error: function(jqXHR, textStatus, errorMessage) {
+                  alert("图片上传失败！错误：" + textStatus + ", " + errorMessage);
+              }
+          });
+      }
+
+
   }
   // 发送文本
   if (USERTEXT.val()) {

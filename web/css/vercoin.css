@@ -120,7 +120,10 @@ select {
   position: absolute;
   left: 0;
   top: 6px;
-  border-radius: 2px 0 0 2px;
+  border-bottom-left-radius: 2px;
+  border-top-left-radius: 2px;
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
 }
 #zyhPageOrder .order_search_btn {
   width: 60px;
@@ -132,7 +135,10 @@ select {
   border: none;
   top: 6px;
   color: #fff;
-  border-radius: 0 2px 2px 0;
+  border-bottom-right-radius: 2px;
+  border-top-right-radius: 2px;
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
 }
 #zyhPageOrder .table_header {
   background: #fff;
@@ -254,7 +260,6 @@ line-height:54px;
   right: 20px;
   top: 25px;
 }
-
 #zyhPerson .page_counts .prev,
 #zyhSellList .page_counts .prev,
 #zyhPerson .page_counts .next,
@@ -297,7 +302,7 @@ line-height:54px;
 }
 
 #zyhPageAd .container {
-  padding: 0;
+  padding: 0 0 100px 0;
   width: 1140px;
   font-size: 14px;
   clear: both;
@@ -341,7 +346,6 @@ line-height:54px;
   height: 870px;
   text-align: center;
 }
-
 #zyhPageAd .content .number {
   width: 120px;
   text-align: center;
@@ -378,7 +382,6 @@ line-height:54px;
 }
 #zyhPageAd .thead_tr th {
   vertical-align: middle !important;
-  text-align:center;
 }
 #zyhPageAd .tbody_tr td {
   padding-top: 25px !important;
@@ -394,24 +397,31 @@ line-height:54px;
 }
 #zyhPageAd table .type {
   width: 50px;
+  text-align: center;
 }
 #zyhPageAd table .ad_type {
   width: 120px;
+  text-align: center;
 }
 #zyhPageAd table .price {
   width: 120px;
+  text-align: center;
 }
 #zyhPageAd table .sum_type {
   width: 180px;
+  text-align: center;
 }
 #zyhPageAd table .date {
   width: 150px;
+  text-align: center;
 }
 #zyhPageAd table .status {
   width: 100px;
+  text-align: center;
 }
 #zyhPageAd table .operate {
   width: 100px;
+  text-align: center;
 }
 #zyhPageAd table .operate a {
   color: #d93740;
@@ -473,7 +483,7 @@ line-height:54px;
   color: #d93740;
 }
 #zyhDraw .container .assets_list {
-  padding-left: 0;
+  padding-left: 0px;
   margin-top: 29px;
   padding-bottom: 20px;
 }
@@ -494,6 +504,7 @@ line-height:54px;
 #zyhDraw .container .operate .out
 {
   text-align: center;
+  display: inline-block;
   width: 100px;
   color: #aaa;
   height: 36px;
@@ -508,7 +519,9 @@ line-height:54px;
   color: #fff;
 }
 #zyhDraw .container .form-horizontal .form-group {
-  margin: 0 0 10px 0;
+  margin-bottom: 10px;
+  margin-left: 0px;
+  margin-right: 0px;
 }
 #zyhDraw .container .form-horizontal .form_submit {
   margin-top: 30px;
@@ -569,14 +582,17 @@ line-height:54px;
   height:30px;
   line-height:30px;
   font-size: 14px;
-  color: #ccc;
+  color: #CCCCCC;
 }
-#zyhDraw .record_head > li {
+#zyhDraw .record_head .record_time,
+#zyhDraw .record_head .record_type,
+#zyhDraw .record_head .record_num,
+#zyhDraw .record_head .record_des
+{
   width:68px;
   text-align:center;
   margin-right:260px;
 }
-
 #zyhDraw .record_head .record_type {
   margin-right:104px;
 }
@@ -585,6 +601,7 @@ line-height:54px;
 }
 
 #zyhDraw .container .record_list li {
+  display: inline-block;
   width: 100px;
   height: 40px;
   line-height: 40px;
@@ -617,18 +634,13 @@ line-height:54px;
   line-height:30px;
 }
 #zyhDraw .record_table_tr span {
+  display:block;
   float:left;
   width:150px;
 }
-#zyhDraw .record_table_tr .record_table_type {
-  margin-left:200px;
-}
-#zyhDraw .record_table_tr .record_table_count {
-  margin-left:20px;
-}
-#zyhDraw .record_table_tr .record_table_des {
-  margin-left:50px;
-}
+#zyhDraw .record_table_tr .record_table_type {margin-left:200px;}
+#zyhDraw .record_table_tr .record_table_count {margin-left:20px;}
+#zyhDraw .record_table_tr .record_table_des {margin-left:50px;}
 #zyhDraw .container .charge label {
   padding: 0;
   margin: 0;
@@ -645,7 +657,9 @@ line-height:54px;
   width: 100px;
 }
 #zyhDraw .container .qrcode {
-  padding: 5px 0 20px 160px;
+  padding-top: 5px;
+  padding-left: 160px;
+  padding-bottom: 20px;
 }
 #zyhDraw .container .qrcode img {
   width: 143px;
@@ -655,8 +669,10 @@ line-height:54px;
   padding: 0;
 }
 #zyhLogReg .log_reg_form {
-  margin: 20px auto 0 auto;
   width: 930px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
   background: #fff;
   padding-bottom: 60px;
   border-radius: 2px;
@@ -674,7 +690,8 @@ line-height:54px;
   height: 50px;
   line-height: 50px;
   font-weight: 700;
-  border-radius: 2px 2px 0 0 ;
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
 }
 #zyhLogReg .log_reg_form .divide {
   width: 100%;
@@ -745,7 +762,10 @@ line-height:54px;
   border: 1px solid #e6e6e6;
   background: #fff;
   color: #333;
-  border-raidus: 0 2px 2px 0;
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
 }
 #zyhLogReg .log_reg_form .country_label {
   margin-right: 15px;
@@ -811,7 +831,6 @@ line-height:54px;
 }
 #zyhLogReg .code_sending {
   color: #ccc !important;
-  cursor:not-allowed;
 }
 #zyhPubAd {
   margin-top:20px;
@@ -1034,6 +1053,65 @@ line-height:54px;
 #zyhBuyList {
   width: 100%;
   margin-top: 20px;
+}
+#zyhBuyList .person_sell{
+	background: #fff;
+}
+#zyhBuyList .person_sell .data_header{
+	text-align: center;
+    height: 50px;
+    background: #fff;
+    border-bottom: 1px solid #e6e6e6;
+}
+#zyhBuyList .person_sell .data_header div{
+	float: left;
+    height: 50px;
+    line-height: 50px;
+}
+#zyhBuyList .person_sell .data_header div.merchant_avatar{
+	width:90px;
+}
+#zyhBuyList .person_sell .data_header div.coin_type{
+	width:100px;
+}
+#zyhBuyList .person_sell .data_header div.coin_address{
+	width:200px;
+}
+#zyhBuyList .person_sell .data_header div.much{
+	width:300px;
+}
+#zyhBuyList .person_sell .data_header div.price{
+	width:220px;
+}
+#zyhBuyList .person_sell .data_header div.operate{
+	width:70px;
+}
+#zyhBuyList .person_sell .data_item{
+	color: #333; 
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+}
+#zyhBuyList .person_sell .data_item div{
+	float:left;
+}
+#zyhBuyList .person_sell .data_item div.merchant_avatar{
+	width:90px;
+}
+#zyhBuyList .person_sell .data_item div.coin_type{
+	width:100px;
+}
+#zyhBuyList .person_sell .data_item div.coin_address{
+	width:200px;
+}
+#zyhBuyList .person_sell .data_item div.much{
+	width:300px;
+}
+#zyhBuyList .person_sell .data_item div.price{
+	width:220px;
+}
+#zyhBuyList .person_sell .data_item div.operate{
+	width:70px;
 }
 #zyhSellList ul,
 #zyhBuyList ul {
@@ -1317,15 +1395,9 @@ line-height:54px;
 .content-index .row .col-md-3 .trade-list .caption p {
   margin: 0;
   color: #777777;
-  font-size: 12px;
-}
+  font-size: 12px; }
 .content-index .row .col-md-3 .trade-list .caption p:nth-of-type(3){
   margin-top: 4px;
-  padding-bottom:10px;
-}
-.content-index .trade-list .caption > div >span {
-  position: relative;
-  top: 2px;
 }
 .content-index .row .col-md-3 .trade-list .caption .btn {
   margin-top: 11px; }
@@ -1333,12 +1405,10 @@ line-height:54px;
   padding: 5px 10px;
   font-size: 12px;
   line-height: 1.5;
-  border-radius: 3px;
-}
+  border-radius: 3px; }
 .content-index .row .col-md-3 .trade-list .caption .btn {
   color: #fff;
-  background-color: #D93740;
-}
+  background-color: #D93740;}
 .content-index .row .col-md-3 .trade-list .caption .btn.buy:hover{
   background-color: #B20610;
 }
@@ -1369,6 +1439,7 @@ line-height:54px;
     right: 16px;
     top: 12px;
     z-index: 5;
+    display: block;
     cursor: pointer;
     color: #fff;
 }
@@ -1409,31 +1480,26 @@ line-height:54px;
   padding: 35px 90px;
   margin: 10px 0;
   width: 100%;
-  overflow: hidden;
-}
+  overflow: hidden; }
 .site-info .site-item {
   width: 25%;
   float: left;
   text-align: center;
-  padding: 0 2px;
-}
+  padding: 0 2px; }
 .site-info .site-item img {
   width: 27px;
-  height: 28px;
-}
+  height: 28px; }
 .site-info .site-item h3 {
   font-size: 24px;
   margin-top: 22px;
   margin-bottom: 11px;
   font-weight: 500;
-  color:#727272;
-}
+  color:#727272;}
 .site-info .site-item p {
   margin: 0 0 11px;
   padding: 0 45px;
   font-size: 14px;
-  color:#727272;
-}
+  color:#727272;}
 
 /*用户基本信息页面样式*/
 .content-usercenter .panel{
@@ -1500,14 +1566,12 @@ line-height:54px;
   border-bottom: 1px solid #E6E6E6;
 }
 .content-usercenter .col-md-2 .panel-body a:hover {
-  background: #ddd;
-}
+  background: #ddd; }
 .content-usercenter .col-md-3 .avatar {
-  width: 80px;
-  height: 80px;
+  width: 50px;
+  height: 50px;
   cursor: pointer;
   position: relative;
-  left: 2px;
 }
 .content-usercenter .col-md-3 .avatar img {
   width: 100%;
@@ -1911,7 +1975,7 @@ line-height:54px;
 #zyhPerson .seller_name,
 #zyhSell .seller_name,
 #zyhBuy .seller_name {
-  width: 100px;
+  /*width: 100px;*/
   position: absolute;
   height: 28px;
   color: #d93740;
@@ -1919,9 +1983,6 @@ line-height:54px;
   line-height: 28px;
   left: 95px;
   top: 33px;
-}
-#zyhPerson .seller_name{
-	width: auto;
 }
 #zyhPerson .seller_amount,
 #zyhSell .seller_amount,
@@ -2068,6 +2129,10 @@ line-height:54px;
   font-size: 14px;
   /*color:#CCC;*/
 }
+.content-authentication .col-md-10  input.advtype{
+	width:auto;
+	height:auto;
+}
 .content-authentication .col-md-10 .tip h3{
   font-size: 14px;
   color:#AAA;
@@ -2092,6 +2157,17 @@ line-height:54px;
   font-size: 14px;
   color:#FFF;
   background: #D93740;
+}
+.content-authentication.admin  .col-md-10  a{
+  width: 215px;
+  height: 40px;
+  text-align: center;
+  line-height: 30px;
+  font-size: 14px;
+  color:#FFF;
+  background: #D93740;
+  position:absolute;
+  right:0;
 }
 .content-authentication{
   width: 100%;
@@ -2748,7 +2824,7 @@ line-height:54px;
 .order_in_progress .information .bank li .show-pay-image{
   width: 280px;
   height: 380px;
-  box-shadow: 0 3px 3px #e3e3e3;
+  box-shadow: 0px 3px 3px #e3e3e3;
   position: relative;
   z-index: 4;
   opacity: 0;
@@ -3232,12 +3308,6 @@ line-height:54px;
   color:#aaa;
   cursor:pointer;
 }
-#zyhPerson .person_table_header a{
-  display: block;
-}
-#zyhPerson .person_table_header a:hover{
-  text-decoration: none;
-}
 #zyhPerson .person_table_header .person_table_header_active {
   border-top: 4px solid #D93740;
   color:#333;
@@ -3291,16 +3361,10 @@ line-height:54px;
   border-color: #fff;
    color:#fff;
 }
-#zyhPerson .person_buy .btn-primary:hover {
-  background-color: #039497;
-}
 #zyhPerson .person_sell .btn-primary {
   background: #d93740;
   border-color: #d93740;
   color:#fff;
-}
-#zyhPerson .person_sell .btn-primary:hover {
-  background-color: #b20610;
 }
 #zyhPerson .data_item {
   color: #333;
@@ -3433,27 +3497,24 @@ line-height:54px;
   background: #FFF4F4; }
 .content-trust-you .col-md-10 .panel-body table tbody tr {
   height: 80px; }
-  .content-trust-you .col-md-10 .panel-body tbody td:first-child{
+  .content-trust-you .col-md-10 .panel-body table tbody tr td:first-child{
 	  text-align:left;
 	  padding-left:14px;
   }
-.content-trust-you .col-md-10 .panel-body td{
+.content-trust-you .col-md-10 .panel-body table tbody tr td{
   text-align: center;
 }
-.content-trust-you .col-md-10 .panel-body td a{
-  color: #fff;
-}
-.content-trust-you .col-md-10 .panel-body td .user {
+.content-trust-you .col-md-10 .panel-body table tbody tr td .user {
   width: 50px;
   height: 50px;
   position: relative;
   border-radius: 50%;
   display: inline-block;}
-.content-trust-you .col-md-10 .panel-body td .user img {
+.content-trust-you .col-md-10 .panel-body table tbody tr td .user img {
   width: 100%;
   height: 100%;
   border-radius: 50%; }
-.content-trust-you .col-md-10 .panel-body td .user span {
+.content-trust-you .col-md-10 .panel-body table tbody tr td .user span {
   width: 10px;
   height: 10px;
   position: absolute;
@@ -3475,9 +3536,6 @@ line-height:54px;
 .content-trust-you .col-md-10 .panel-body table tbody tr td p {
   font-size: 16px;
   color: #333; }
-.content-trust-you .col-md-10 .panel-body table tbody tr td a.btn-primary{
-  color: #fff;
-}
 .pagination>li:hover a{
   background: #D93740 ;
   color:#fff !important;
@@ -4076,58 +4134,7 @@ select#countriesId{
   vertical-align: middle;
 }
 
+
 .pay-type img:hover~div {
   display:block;
-}
-
-.content-usercenter #help-block-introduction {
-  color:#ccc;
-}
-
-.content-usercenter label.col-md-3.control-label {
-  color: #ccc;
-  font-weight: normal;
-  padding: 0;
-  height: 20px;
-  font-size: 14px;
-  margin-right: 5px;
-}
-
-.content-usercenter .form-horizontal .form-group {
-  margin-bottom:20px;
-}
-
-.content-usercenter  p.form-control-static {
-  padding-top: 7px;
-  padding-bottom: 7px;
-  margin-bottom: 0;
-  padding: 0;
-  height: 20px;
-  min-height: 20px;
-}
-
-
-.content-usercenter  button[type="submit"].btn.btn-primary {
-  position: relative;
-  left: 5px;
-  margin-top:20px;
-  margin-bottom:45px;
-}
-
-.content-usercenter  .form-group > .col-md-offset-2 {
-  position: relative;
-  left: -18px;
-}
-
-.content-usercenter  .form-group > .col-md-pull-2 {
-  margin-top:20px;
-  margin-left: 5px;
-}
-
-.content-usercenter .col-md-10 .panel.panel-default .panel-body {
-  padding-top:40px;
-}
-
-.content-usercenter  #input-introduction {
-  height:200px;
 }

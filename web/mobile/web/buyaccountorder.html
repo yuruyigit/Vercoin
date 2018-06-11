@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>VERCOIN</title>
+    <script src="../js/zepto.js"></script>
+    <script src="../js/rem.js"></script>
+    <link rel="stylesheet" href="../css/normalize.css"/>
+    <link rel="stylesheet" href="../css/main.css"/>
+</head>
+<body>
+    <header class="common-header">
+        <div class="common-header-left">
+            <img src="../images/back@3x.png" alt="">
+        </div>
+        <div class="common-header-center">
+            <span class="f36 c-fff">购买VER</span>
+        </div>
+        <div class="common-header-right">
+            <img src="../images/logo@3x.png" alt="">
+        </div>
+    </header>
+    <div class="buy-account-order-content">
+        <div class="common-order-header2 mb20">
+            <div class="line1">
+                <img class="common-order-header-img" src="../images/orders/icon_wait_3x.png" alt="">
+                <span class="status">等待支付</span>
+            </div>
+            <div class="line2">
+                剩<span class="order-status-time">14分31秒</span>自动关闭
+            </div>
+        </div>
+        <ul class="common-order-detail">
+            <li class="money"><span class="title">金额</span><span>1231.21 CNY</span></li>
+            <li><span class="title">订单编号</span><span>120312948212931023012</span></li>
+            <li><span class="title">价格</span><span>1.00 VER/CNY</span></li>
+            <li><span class="title">限额</span><span>100-1000</span></li>
+            <li><span class="title">数量</span><span>11000</span></li>
+            <li><span class="title">支付方式</span><span>现金支付</span></li>
+        </ul>
+       <div class="common-account-pay-list">
+            <div class="common-pay-list-left">
+                <img src="../images/wechat1@2x.png" alt="">
+            </div>
+            <div class="common-pay-list-center">
+                <h4 class="f30 c-333">微信</h4>
+                <span class="f22 c-999">中本聪聪局长<em>787s8agjdj8@hotmail.com</em></span>
+            </div>
+            <div class="common-pay-list-right">
+                <img src="../images/code@2x.png" alt="">
+            </div>
+        </div>
+        <div class="common-account-pay-list">
+            <div class="common-pay-list-left">
+                <img src="../images/alipay1@2x.png" alt="">
+            </div>
+            <div class="common-pay-list-center">
+                <h4 class="f30 c-333">支付宝</h4>
+                <span class="f22 c-999">中本聪聪局长<em>13763275651</em></span>
+            </div>
+            <div class="common-pay-list-right">
+                <img src="../images/code@2x.png" alt="" id="showimg">
+            </div>
+        </div>
+        <div class="common-account-pay-list">
+            <div class="common-pay-list-left">
+                <img src="../images/card1@2x.png" alt="">
+            </div>
+            <div class="common-pay-list-center">
+                <h4 class="f30 c-333">招商银行</h4>
+                <span class="f22 c-999">中本聪聪局长<em>13763275651</em></span>
+                <p class="f22 c-999">招商银行<em>徐家汇支行</em></p>
+            </div>
+        </div>
+
+        <!--购买VER页面标记已付款按钮提示如下-->
+        <!--<div class="btn-tip f26 c-999">请点击“标记已付款”按钮支付BTC</div>-->
+
+        <div class="order-tip">
+            <p class="f26">*若已完成付款，请务必点击“已付款”按钮，否则可能造成资金损失，由此造成的损失将由您个人承担。</p>
+            <button class="common-btn-bgc-white w300 h80  cancle" id="cancle">取消交易</button>
+            <button class="common-btn-bgc-d93740 w300 h80">标记已付款</button>
+        </div>
+    </div>
+    <div class="codeModal" id="orderModal">
+        <div class="close">
+            <img src="../images/headchosen@2x.png" alt="">
+        </div>
+        <img src="../images/code@2x.png" alt="" class="show">
+    </div >
+    <div class="common-modal h332" id="modal">
+        <div class="common-modal-header f28 c-333 ">确认取消订单？</div>
+        <div class="common-modal-content f24 c-999">
+             如果您已经向卖家付款，请千万不要取消交易。
+        </div>
+        <div class="common-modal-btn">
+            <button class="common-btn-bgc-d93740 w250 h80 " id="confirm">确认取消</button>
+            <button class="common-btn-bgc-white w250 h80" id="thinkMore">我再想想</button>
+        </div>
+    </div >
+    <div class="common-mask"></div>
+    <script >
+        $("#showimg").tap(function () {
+            $('#orderModal').css({"display":"block"});
+            $('.common-mask').css({position:'fixed',background:'rgba(48,48,48,0.30)'})
+        })
+        $("#cancle").tap(function () {
+            $('#modal').css({"display":"block"});
+            $('.common-mask').css({position:'fixed',background:'rgba(48,48,48,0.30)'})
+        })
+        /*订单状态模态框*/
+        $("#confirm").click(function () {
+            $('#modal').css({"display":"none"});
+            $('.common-mask').css({position:'relative',background:'rgba(48,48,48,1)'})
+        })
+        $("#thinkMore").click(function () {
+            $('#modal').css({"display":"none"});
+            $('.common-mask').css({position:'relative',background:'rgba(48,48,48,1)'})
+        })
+    </script>
+</body>
+</html>

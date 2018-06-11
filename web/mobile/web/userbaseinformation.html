@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>VERCOIN</title>
+    <script src="../js/zepto.js"></script>
+    <script src="../js/rem.js"></script>
+    <link rel="stylesheet" href="../css/normalize.css"/>
+    <link rel="stylesheet" href="../css/main.css"/>
+</head>
+<body>
+    <header class="common-header">
+      <div class="common-header-left">
+         <img src="../images/back@3x.png" alt="">
+      </div>
+      <div class="common-header-center">
+         <span class="f36 c-fff">基础信息</span>
+      </div>
+      <div class="common-header-right">
+         <img src="../images/logo@3x.png" alt="">
+      </div>
+    </header>
+    <div class="user-base-info-content">
+        <div class="common-trade-header">
+            <img class="avatar" src="../images/icon-person/headgirl2@2x.png"
+                 alt="">
+            <div class="common-trade-header-info">
+                <div class="name">
+                    农夫山泉s
+                </div>
+                <div class="user-info">
+                    <span class="count">UID <span>2131535</span></span>
+                </div>
+            </div>
+        </div>
+        <div class="user-base-info-list mb60 mt30">
+            <div class="user-base-info-left f28 c-333">身份认证</div>
+            <div class="user-base-info-right f28 c-333">已认证</div>
+        </div>
+        <div class="user-base-info-list mb60">
+            <div class="user-base-info-left f28 c-333">电子邮箱</div>
+            <div class="user-base-info-right f28 c-333 unauthorized">未认证</div>
+        </div>
+        <div class="user-base-info-list mb60">
+            <div class="user-base-info-left f28 c-333">手机号</div>
+            <div class="user-base-info-right f28 c-333">已认证</div>
+        </div>
+        <div class="user-base-info-list mb60">
+            <div class="user-base-info-left f28 c-333">注册时间</div>
+            <div class="user-base-info-right f28 c-333">2018-05-14 15:15:13</div>
+        </div>
+        <div class="user-base-info-list mb60">
+            <div class="user-base-info-left f28 c-333">受信人数</div>
+            <div class="user-base-info-right f28 c-333">28</div>
+        </div>
+        <div class="user-base-info-list mb60">
+            <div class="user-base-info-left f28 c-333">交易次数</div>
+            <div class="user-base-info-right f28 c-333">8</div>
+        </div>
+        <div class="user-base-info-list mb60">
+            <div class="user-base-info-left f28 c-333">交易量</div>
+            <div class="user-base-info-right f28 c-333">22</div>
+        </div>
+        <div class="user-base-info-list mb60">
+            <div class="user-base-info-left f28 c-333">简介</div>
+            <div class="user-base-info-right f28 c-333 summary">
+                中本聪聪局长的小号，简介是什么，能吃吗？
+                <span id="editSummary"><img src="../images/edit@2x.png" alt=""></span>
+            </div>
+        </div>
+    </div>
+    <div class="common-modal " id="summary-modal">
+        <div class="common-modal-header f28 c-333 summary">
+            <div class="summary-left f28 c-333 mr30">简介</div>
+            <div class="summary-right">
+                <textarea></textarea>
+            </div>
+        </div>
+        <div class="common-modal-btn">
+            <button class="common-btn-bgc-d93740 w250 h80 " id="save">保存</button>
+            <button class="common-btn-bgc-white w250 h80" id="cancel">取消</button>
+        </div>
+    </div >
+    <div class="common-mask"></div>
+    <script >
+         $("#editSummary").tap(function () {
+             $('#summary-modal').css("display","block");
+             $('.common-mask').css({position:'fixed',background:'rgba(48,48,48,0.30)'})
+         })
+        $("#save").tap(function () {
+            $('#summary-modal').css("display","none");
+            $('.common-mask').css({position:'relative',background:'rgba(48,48,48,0.30)'})
+        })
+         $("#cancel").tap(function () {
+             $('#summary-modal').css("display","none");
+             $('.common-mask').css({position:'relative',background:'rgba(48,48,48,0.30)'})
+         })
+    </script>
+</body>
+</html>

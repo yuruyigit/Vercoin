@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>VERCOIN</title>
+    <script src="../js/zepto.js"></script>
+    <script src="../js/rem.js"></script>
+    <link rel="stylesheet" href="../css/normalize.css"/>
+    <link rel="stylesheet" href="../css/main.css"/>
+</head>
+<body>
+    <header class="common-header">
+      <div class="common-header-center">
+        <img src="../images/logo0@3x.png" alt="">
+        <!--<span class="f36 c-fff">购买VER</span>-->
+    </div>
+    </header>
+   <!-- 用户未登录时显示如下页面-->
+  <!--  <div class="Zyn-homepage-personal">
+        <div class="Zyn-homepage-user">
+            <div class="left"><img src="../images/head@2x.png" alt=""></div>
+            <div class="right">
+                <h2 class="c-333">请登录</h2>
+                <p class="f20 c-999">欢迎使用VERCOIN</p>
+            </div>
+        </div>
+    </div>-->
+    <!--用户登录时显示如下页面-->
+    <div class="Zyn-homepage-personal">
+        <div class="Zyn-homepage-user">
+            <div class="left" id="userId"><img src="../images/icon-person/headgirl1@2x.png" alt=""></div>
+            <div class="right">
+                <h2 class="c-333">HI,农夫山泉s</h2>
+                <p class="f20 c-999">UID:42312469</p>
+            </div>
+        </div>
+    </div>
+    <div class="homepage-list" >
+        <div class="common-line"></div>
+        <div class="common-homepage-list">
+            <div class="common-homepage-list-detail">
+                <img src="../images/adver@2x.png" alt="" class="lefticon">
+                <em class="c-333 f32">我的广告</em>
+                <a href="myadvertisement.html" class="righticon"><img src="../images/Group%202@3x.png" alt="" ></a>
+            </div>
+        </div>
+        <div class="common-homepage-list border">
+            <div class="common-homepage-list-detail">
+                <img src="../images/Shape@2x.png" alt="" class="lefticon">
+                <em class="c-333 f32">我的订单</em>
+                <a href="myorder.html" class="righticon"><img src="../images/Group%202@3x.png" alt="" ></a>
+            </div>
+        </div>
+        <div class="common-line"></div>
+        <div class="common-homepage-list border">
+            <div class="common-homepage-list-detail">
+                <img src="../images/accasset@2x.png" alt="" class="lefticon">
+                <em class="c-333 f32">我的资产</em>
+                <a href="myasset.html" class="righticon"><img src="../images/Group%202@3x.png" alt="" ></a>
+            </div>
+        </div>
+        <div class="common-line"></div>
+        <div class="common-homepage-list">
+            <div class="common-homepage-list-detail">
+                <img src="../images/info@2x.png" alt="" class="lefticon">
+                <em class="c-333 f32">基础信息</em>
+                <a href="userbaseinformation.html" class="righticon"><img src="../images/Group%202@3x.png" alt="" ></a>
+            </div>
+        </div>
+        <div class="common-homepage-list border">
+            <div class="common-homepage-list-detail">
+                <img src="../images/identi@2x.png" alt="" class="lefticon">
+                <em class="c-333 f32">身份认证</em>
+                <a href="identity.html" class="righticon"><img src="../images/Group%202@3x.png" alt="" ></a>
+            </div>
+        </div>
+        <div class="common-line"></div>
+        <div class="common-homepage-list">
+            <div class="common-homepage-list-detail">
+                <img src="../images/accmanage@2x.png" alt="" class="lefticon">
+                <em class="c-333 f32">账户设置</em>
+                <a href="accountsetting.html" class="righticon"><img src="../images/Group%202@3x.png" alt="" ></a>
+            </div>
+        </div>
+        <div class="common-homepage-list border">
+            <div class="common-homepage-list-detail">
+                <img src="../images/safe@2x.png" alt="" class="lefticon">
+                <em class="c-333 f32">安全设置</em>
+                <a href="securitysetting.html" class="righticon"><img src="../images/Group%202@3x.png" alt="" ></a>
+            </div>
+        </div>
+        <div class="common-line"></div>
+        <div class="common-homepage-list border login">
+            <div class="common-homepage-list-detail">
+                <img src="../images/signout@2x.png" alt="" class="lefticon">
+                <em class="c-333 f32" >退出登录</em>
+                <a href="javascript:;" class="righticon" id="back"><img src="../images/Group%202@3x.png" alt="" ></a>
+            </div>
+        </div>
+        <div class="common-line"></div>
+    </div>
+
+    <footer class="common-footer">
+        <div class="common-footer-nav">
+            <div class="common-footer-nav-list">
+                <div class="common-footer-list">
+                    <img src="../images/home0@2x.png" alt="">
+                </div>
+                <p class="f20">主页</p>
+            </div>
+            <div class="common-footer-nav-list">
+
+                <div class="common-footer-list">
+                    <img src="../images/trade0@3x.png" alt="">
+                </div>
+                <p class="f20 c-c2c2c2">交易</p>
+            </div>
+            <div class="common-footer-nav-list">
+
+                <div class="common-footer-list">
+                    <img src="../images/my1@2x.png" alt="">
+                </div>
+                <p class="f20 c-c2c2c2 active">我的</p>
+            </div>
+        </div>
+
+
+    </footer>
+    <div class="common-modal h332" id="modal">
+        <div class="common-modal-header f28 c-333 next-line">退出当前登录用户？</div>
+       <!-- <div class="common-modal-content f24 c-999">
+            如果您已经向卖家付款，请千万不要取消交易。
+        </div>-->
+        <div class="common-modal-btn">
+            <button class="common-btn-bgc-d93740 w250 h80 " id="modalConfirm">确认</button>
+            <button class="common-btn-bgc-white w250 h80" id="modalCancel">取消</button>
+        </div>
+    </div>
+    <div class="common-modal h427" id="userModal">
+        <div class="common-modal-header f28 c-333 ">更换头像</div>
+         <div class="common-modal-content-user mb60" >
+             <div class="user-list active">
+                 <img src="../images/icon-person/headgirl1@2x.png" alt="">
+                 <span class="active"></span>
+             </div>
+             <div class="user-list">
+                 <img src="../images/icon-person/headgirl1@2x.png" alt="">
+                 <span></span>
+             </div>
+             <div class="user-list">
+                 <img src="../images/icon-person/headboy1@2x.png" alt="">
+                 <span></span>
+             </div>
+             <div class="user-list">
+                 <img src="../images/icon-person/headgirl2@2x.png" alt="">
+                 <span></span>
+             </div>
+         </div>
+        <div class="common-modal-btn">
+            <button class="common-btn-bgc-d93740 w250 h80 " id="userModalConfirm">确认</button>
+            <button class="common-btn-bgc-white w250 h80" id="userModalCancel">取消</button>
+        </div>
+    </div >
+    <div class="common-mask"></div>
+</body>
+<script >
+    $("#back").tap(function () {
+       $('#modal').css({"display":"block"});
+       $('.common-mask').css({position:'fixed',background:'rgba(48,48,48,0.30)'})
+    })
+    $("#userId").tap(function () {
+        $('#userModal').css({"display":"block"});
+        $('.common-mask').css({position:'fixed',background:'rgba(48,48,48,0.30)'})
+    })
+   /* 退出登录时模态框*/
+    $("#modalConfirm").tap(function () {
+        $('#modal').css({"display":"none"});
+        $('.common-mask').css({position:'relative',background:'rgba(48,48,48,1)'})
+    })
+    $("#modalCancel").tap(function () {
+        $('#modal').css({"display":"none"});
+        $('.common-mask').css({position:'relative',background:'rgba(48,48,48,1)'})
+    })
+    /*用户头像模态框*/
+    $(".user-list").tap(function () {
+        $(this).toggleClass('active');
+        $(this).siblings().removeClass('active');
+        $(this).find("span").toggleClass("active");
+        $(this).siblings().find("span").removeClass('active');
+    })
+    $("#userModalConfirm").tap(function () {
+        $('#userModal').css({"display":"none"});
+        $('.common-mask').css({position:'relative',background:'rgba(48,48,48,1)'})
+    })
+    $("#userModalCancel").tap(function () {
+        $('#userModal').css({"display":"none"});
+        $('.common-mask').css({position:'relative',background:'rgba(48,48,48,1)'})
+    })
+</script>
+</html>

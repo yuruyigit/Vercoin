@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>忘记登录密码</title>
+  <script src="../js/rem.js"></script>
+  <script src="../js/zepto.js"></script>
+  <link rel="stylesheet" href="../css/normalize.css"/>
+  <link rel="stylesheet" href="../css/main.css"/>
+</head>
+<body>
+<div class="wrap forget">
+  <header class="common-header">
+    <div class="common-header-left">
+      <img src="../images/back@3x.png" alt="">
+    </div>
+    <div class="common-header-center">
+      忘记登录密码
+    </div>
+    <div class="common-header-right">
+      <img src="../images/logo@3x.png" alt="">
+    </div>
+  </header>
+    <form action="" class="common-form mt80">
+      <div class="common-input-item common-input-item-label-2 w620">
+        <label class="label-b">国籍</label>
+        <div class="common-input-wrap">
+          <div class="triangle-down"></div>
+          <select class="common-input country-select" id="countriesId">
+            <option value="">请选择国籍</option>
+            <option value="1">中国( +86 )</option>
+            <option value="2">安道尔共和国( +376 )</option>
+          </select>
+        </div>
+      </div>
+      <div class="common-error-text"></div>
+      <div class="common-input-item common-input-item-label-2 w620">
+        <label class="label-b">手机号</label>
+        <input type="text" class="common-input h80 " id="cell" placeholder="请输入手机号">
+      </div>
+      <div class="common-error-text"></div>
+      <div class="common-input-item common-input-item-label-2 w620">
+        <label class="label-b">验证码</label>
+        <input type="text" id="code" class="common-input h80 w220" placeholder="请输入验证码">
+        <button class="common-btn-bgc-d93740 h80 w220" id="sendCode" type="button">发送验证码</button>
+      </div>
+      <div class="common-error-text"></div>
+      <div class="common-input-item common-input-item-label-2 w620">
+        <label class="label-b">新密码</label>
+        <input type="text" id="npass" class="common-input h80 " placeholder="请在此输入新密码">
+      </div>
+      <div class="common-error-text"></div>
+      <button class="common-btn-bgc-d93740 h80 w620 submit" type="button">提交</button>
+    </form>
+</div>
+<script src="../js/common.js"></script>
+<script>
+  var doms = [
+    $("#countriesId"),$("#cell"),$("#code"),$("#npass")
+  ];
+  doms[0].on("tap",function(){
+    $(".common-error-text").eq(0).hide()
+  });
+  window.GETCODE({
+    btn: $("#sendCode"),
+    input:doms[1],
+    api:'/sendSms',
+    country: doms[0]
+  });
+
+  $(".submit").on("click",function(){
+    var pass = 1;
+
+    var tips = [
+      "国籍","手机号","验证码","密码"
+    ];
+    var regxCode = /^\d{6}$/;
+
+    var regxCell = /^\d{8,}$/; // todo
+
+    doms.forEach(function(dom,index){
+      console.log(dom.val())
+      if(!dom.val()){
+        $(".common-error-text").eq(index).text(tips[index]+"不可为空").show()
+        pass = 0;
+      }else {
+        if(index === 1){
+          if(!regxCell.test(dom.val())){
+            $(".common-error-text").eq(1).text("请输入正确的手机号").show()
+            pass = 0;
+          }
+        }
+        if(index === 2){
+          if(!regxCode.test(dom.val())){
+            $(".common-error-text").eq(2).text("验证码长度为6位").show();
+            pass = 0;
+          }
+        }
+      }
+    })
+
+    if(pass) $("form").submit();
+
+  })
+</script>
+</body>
+</html>

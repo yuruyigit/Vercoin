@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>vercoin</title>
+  <script src="../js/rem.js"></script>
+  <script src="../js/zepto.js"></script>
+  <link rel="stylesheet" href="../css/normalize.css"/>
+  <link rel="stylesheet" href="../css/main.css"/>
+</head>
+<body>
+<div class="wrap trade_ad">
+  <header class="common-header">
+    <div class="common-header-center">
+      <img src="../images/logo0@3x.png" alt="">
+    </div>
+  </header>
+  <ul class="common-tab common-tab-3 mb20">
+    <li>我要购买</li>
+    <li>我要出售</li>
+    <li class="active">发布广告</li>
+  </ul>
+  <!--没登录的时候显示 -->
+  <div class="ad_content" style="display: none">
+      <div class="f26">
+        请登录后进行发布广告
+      </div>
+    <button class="common-btn-bgc-d93740 h80 w300" type="button">登录</button>
+  </div>
+  <!--登录之后显示 -->
+  <form class="ad_contents w620" action="">
+
+    <div class="common-input-item common-input-item-label-2 w620 coin-type">
+      <label class="label-b">交易币种</label>
+      <div class="common-input h80 ">
+        VER
+      </div>
+    </div>
+
+    <div class="common-input-item common-input-item-label-2 w620 ad-type">
+      <label class="label-b">广告类型</label>
+      <div class="common-input-wrap common-no-input-wrap">
+        <div class="common-radio selected"></div> <span>在线购买</span>
+        <div class="common-radio"></div> <span>在线出售</span>
+      </div>
+    </div>
+
+    <div class="common-input-item common-input-item-label-2 w620 ">
+      <label class="label-b">结算方式</label>
+      <div class="common-input-wrap common-no-input-wrap sum-types">
+        <div>
+          <div class="common-checkbox checked">
+            <img src="../images/checkbox1@3x.png" alt="">
+          </div>
+          <span>现金支付</span>
+        </div>
+        <div>
+          <div class="common-checkbox check-coin" target-name="trade-btc-wrap">
+            <img src="../images/checkbox@3x.png" alt="">
+          </div>
+          <span>BTC</span>
+        </div>
+        <div>
+          <div class="common-checkbox check-coin" target-name="trade-eth-wrap" >
+            <img src="../images/checkbox@3x.png" alt="">
+          </div>
+          <span>ETH</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="common-input-item common-input-item-label-2 w620">
+      <label class="label-b">VER价格</label>
+      <div class="common-input-wrap">
+        <input type="text" id="price1" class="common-input " placeholder="请输入定价">
+        <span class="common-input-price-label">CNY/VER</span>
+      </div>
+    </div>
+
+    <div class="common-input-item common-input-item-label-2 w620 trade-btc-wrap">
+      <label class="label-b">BTC价格</label>
+      <div class="common-input-wrap">
+        <input type="text" id="price2" class="common-input " placeholder="请输入定价">
+        <span class="common-input-price-label">CNY/BTC</span>
+      </div>
+    </div>
+
+    <div class="common-input-item common-input-item-label-2 w620 trade-eth-wrap">
+      <label class="label-b">ETH价格</label>
+      <div class="common-input-wrap">
+        <input type="text" id="price3" class="common-input " placeholder="请输入定价">
+        <span class="common-input-price-label">CNY/ETH</span>
+      </div>
+    </div>
+
+    <div class="common-input-item common-input-item-label-2 w620">
+      <label class="label-b">需求数量</label>
+      <div class="common-input-wrap">
+
+        <input type="text" id="amount" class="common-input " placeholder="请输入购买数量">
+        <span class="common-input-price-label">CNY/VER</span>
+      </div>
+    </div>
+    <div class="common-input-item common-input-item-label-2 w620">
+      <label class="label-b">付款期限</label>
+      <div class="common-input-wrap">
+        <input type="text" id="time" class="common-input " placeholder="10-30分钟">
+        <span class="common-input-price-label">分钟</span>
+      </div>
+    </div>
+    <div class="common-input-item common-input-item-label-2 w620">
+      <label class="label-b">最小限额</label>
+      <div class="common-input-wrap">
+        <input type="text" id="min" class="common-input " placeholder="请输入最小限额">
+        <span class="common-input-price-label">CNY</span>
+      </div>
+    </div>
+    <div class="common-input-item common-input-item-label-2 w620">
+      <label class="label-b">最大限额</label>
+      <div class="common-input-wrap">
+        <input type="text" id="max" class="common-input " placeholder="请输入最大限额">
+        <span class="common-input-price-label">CNY</span>
+      </div>
+    </div>
+    <div class="common-input-item common-input-item-label-2 w620">
+      <label class="label-b">广告留言</label>
+      <div class="common-input-wrap">
+        <input type="text" class="common-input " placeholder="请输入广告留言">
+        <!--<span class="common-input-price-label">CNY</span>-->
+      </div>
+    </div>
+    <button class="common-btn-bgc-d93740 h80 w620 submit" type="button">立即发布</button>
+  </form>
+  <footer class="common-footer">
+    <div class="common-footer-nav">
+      <div class="common-footer-nav-list">
+        <div class="common-footer-list">
+          <img src="../images/home0@3x.png" alt="">
+        </div>
+        <p class="f20 c-c2c2c2">主页</p>
+      </div>
+      <div class="common-footer-nav-list">
+
+        <div class="common-footer-list">
+          <img src="../images/trade1@3x.png" alt="">
+        </div>
+        <p class="f20 active">交易</p>
+      </div>
+      <div class="common-footer-nav-list">
+
+        <div class="common-footer-list">
+          <img src="../images/my0@3x.png" alt="">
+        </div>
+        <p class="f20 c-c2c2c2">我的</p>
+      </div>
+    </div>
+  </footer>
+</div>
+
+<script src="../js/common.js"></script>
+<script>
+
+  /**
+   *@desc show the input line for eth & btc
+   */
+  $(".check-coin").on("tap",function(){
+    var checked = $(this).hasClass("checked");
+    $( "."+ $(this).attr("target-name") ).css("display",checked ? "flex": 'none');
+  });
+  $(".common-input").on("focus",function(){
+    console.log(111)
+    $(this).parent().removeClass("common-input-error")
+  })
+
+
+  $(".submit").on("tap", function () {
+
+    var pass = 1;
+    // get the dom array
+    var doms = [$("#price1")], coins = $(".check-coin");
+    if(coins.eq(0).hasClass("checked")) doms.push($("#price2"))
+    if(coins.eq(1).hasClass("checked")) doms.push($("#price3"))
+    doms = doms.concat([$("#amount"),$("#time"),$("#min"),$("#max")]);
+
+    //
+    doms.forEach(function(item,index){
+      var dom = $(item);
+      if(dom.val()){
+        // not empty
+
+      }else {
+        // if empty
+        dom.parent().addClass("common-input-error");
+        pass = 0;
+      }
+    })
+    if(pass) $(".form").submit();
+  })
+</script>
+</body>
+</html>

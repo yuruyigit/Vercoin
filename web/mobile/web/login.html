@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>登录</title>
+  <script src="../js/rem.js"></script>
+  <script src="../js/zepto.js"></script>
+  <link rel="stylesheet" href="../css/normalize.css"/>
+  <link rel="stylesheet" href="../css/main.css"/>
+</head>
+<body>
+<div class="wrap login">
+  <header class="common-header">
+    <div class="common-header-left">
+      <img src="../images/back@3x.png" alt="">
+    </div>
+    <div class="common-header-center">
+      <img src="../images/logo0@3x.png" alt="">
+    </div>
+    <div class="common-header-right">
+      <a class="f28 c-fff" href="">注册</a>
+    </div>
+  </header>
+  <h1 class="common-h1">用户登录</h1>
+  <form action="" class="common-form mt80">
+    <div class="common-input-item">
+      <input type="text" id="user" class="common-input-bottom h68 w620" placeholder="用户名">
+      <div class="common-error-text"></div>
+    </div>
+    <div class="common-input-item">
+      <input type="password" class="common-input-bottom h68 w620" id="pass"
+             placeholder="密码">
+      <div class="common-error-text"></div>
+    </div>
+    <div class="common-input-item">
+      <div class="common-input-item-label">
+        <input type="text" id="code" class="common-input-bottom h80 w380 mr6" placeholder="验证码">
+        <img class="vcode" src="../images/code-demo.jpg" alt="">
+      </div>
+      <div class="common-error-text"></div>
+    </div>
+
+    <button class="common-btn-bgc-d93740 h80 w620 submit" type="button">登录</button>
+
+    <a href="#" class="forget mt40">忘记登录密码？</a>
+  </form>
+</div>
+<script src="../js/common.js"></script>
+
+<script>
+
+  $(".submit").on("click", function () {
+    var pass = 1;
+    var doms = [$("#user"),$("#pass"),$("#code")];
+    // show error inner func
+    function err(dom, text, isParent) {
+      var ele = isParent ? dom.parent() : dom;
+      ele.addClass("common-input-bottom-error").next(".common-error-text").text(text).show();
+    }
+    if (!doms[0].val()) {
+      err(doms[0],"用户名不可为空");
+      pass = 0;
+    }
+    if (!doms[1].val()) {
+      err(doms[1],"密码不可为空");
+      pass = 0;
+    }else {
+      if(doms[1].val().length < 6 || doms[1].val().length > 20){
+        err(doms[1],"密码长度为6-20之间");
+        pass = 0;
+      }
+    }
+    if (!doms[2].val()) {
+      err(doms[2],"验证码不可为空",1);
+      pass = 0;
+    }
+    // submit the form
+    if(pass) $(".form").submit();
+  })
+
+</script>
+</body>
+</html>

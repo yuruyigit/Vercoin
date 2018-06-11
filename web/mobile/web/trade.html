@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>出售 VER</title>
+  <script src="../js/rem.js"></script>
+  <script src="../js/zepto.js"></script>
+  <link rel="stylesheet" href="../css/normalize.css"/>
+  <link rel="stylesheet" href="../css/main.css"/>
+</head>
+<body>
+<div class="wrap trade" style="display:none">
+  <header class="common-header">
+    <div class="common-header-center">
+      <img src="../images/logo0@3x.png" alt="">
+    </div>
+  </header>
+  <div class="common-trade-header">
+    <img class="avatar" src="../images/icon-person/headgirl360_60@3x.png" alt="">
+    <div class="common-trade-header-info">
+      <div class="name">
+        农夫山泉s
+      </div>
+      <div class="user-info">
+        <span class="count">次数： <span>999+</span></span>
+        <span>  好评：<span>100%</span></span>
+      </div>
+    </div>
+  </div>
+  <ul class="trade-content">
+    <li class="price">
+      <span>
+        1.00 CNY/VER
+      </span>
+      <span class="pay-types">
+          <img src="../images/card1@3x.png" alt="">
+          <img src="../images/alipay0@2x.png" alt="">
+      </span>
+    </li>
+    <li>
+      <span class="label">数量</span>
+      <span>1000000</span>
+    </li>
+    <li>
+      <span class="label">限额</span>
+      <span>1000000</span>
+    </li>
+    <li>
+      <span class="label">付款期限</span>
+      <span>15分钟</span>
+    </li>
+  </ul>
+  <form action="" class="w620 center">
+    <div class="common-input-item common-input-item-label-2 w620 pay-type">
+      <label class="label-b">结算方式</label>
+      <div class="common-input-wrap common-no-input-wrap">
+        <div>
+          <div class="common-radio"></div>
+          <span>现金支付</span>
+        </div>
+        <div>
+          <div class="common-radio"></div>
+          <span>BTC</span>
+        </div>
+        <div>
+          <div class="common-radio"></div>
+          <span>ETH</span>
+        </div>
+      </div>
+    </div>
+    <div class="common-input-item normal-line w620">
+      <label class="label-b">BTC价格</label>
+      <div class="common-input-wrap common-no-input-wrap">
+        50000.91 CNY/BTC
+      </div>
+    </div>
+    <div class="common-input-item common-input-item-label-2 w620">
+      <label class="label-b">购买金额</label>
+      <div class="common-input-wrap">
+        <input type="text" class="common-input " placeholder="请输入购买金额">
+        <span class="common-input-price-label">CNY</span>
+      </div>
+    </div>
+    <div class="common-input-item common-input-item-label-2 w620">
+      <label class="label-b">需求数量</label>
+      <div class="common-input-wrap">
+        <input type="text" class="common-input " placeholder="请输入购买数量">
+        <span class="common-input-price-label">VER</span>
+      </div>
+    </div>
+    <button class="common-btn-bgc-27c1c3 h80 w620" type="button">出售</button>
+  </form>
+  <div class="common-user-license mb20 w620 center">
+    <div class="common-checkbox">
+      <img src="../images/checkbox@3x.png" alt="">
+    </div>
+    我已阅读并同意交易须知
+  </div>
+  <ul class="trade-notice">
+    <li class="f26">交易须知</li>
+    <li>1、交易前请详细了解对方的交易信息。</li>
+    <li>2、请通过平台进行沟通约定，并保存好相关聊天记录。</li>
+    <li>3、如遇到交易纠纷，可通过申诉来解决问题。</li>
+    <li>4、在您发起交易请求后，VERCOIN被锁定在托管中，受到平台保护。如果您是买家，发起交易请求后，请在付款周期内付款并把交易标记为付款已完成。卖家在收到付款后将会放行处于托管中的VERCOIN。交易前请阅读《用户协议》以及常见问题、交易指南等帮助文档。</li>
+  </ul>
+</div>
+<script src="../js/common.js"></script>
+<script>
+  $(".wrap").show();
+  $(".common-radio").on("tap",function(){
+    $(".common-radio").removeClass("selected")
+    $(this).addClass("selected")
+  })
+</script>
+</body>
+</html>

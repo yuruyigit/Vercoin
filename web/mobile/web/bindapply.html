@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>VERCOIN</title>
+    <script src="../js/zepto.js"></script>
+    <script src="../js/rem.js"></script>
+    <link rel="stylesheet" href="../css/normalize.css"/>
+    <link rel="stylesheet" href="../css/main.css"/>
+</head>
+<body>
+<header class="common-header">
+    <div class="common-header-left">
+        <img src="../images/back@3x.png" alt="">
+    </div>
+    <div class="common-header-center">
+        <span class="f36 c-fff">支付宝绑定</span>
+    </div>
+    <div class="common-header-right">
+        <img src="../images/logo@3x.png" alt="">
+    </div>
+</header>
+<div class="bind-weichat-content">
+    <div class="common-input-item common-input-item-label-2 w620">
+        <label class="label-b">姓名</label>
+        <input type="text" class="common-input h80 " placeholder="请输入真实姓名">
+    </div>
+    <div class="common-input-item common-input-item-label-2 w620">
+        <label class="label-b">支付宝帐号</label>
+        <input type="text" class="common-input h80 " placeholder="请输入支付宝帐号">
+    </div>
+    <div class="common-input-item common-input-item-label-2 w620">
+        <label class="label-b">交易密码</label>
+        <input type="text" class="common-input h80 " placeholder="请输入交易密码">
+    </div>
+    <!--上传二维码显示如下页面-->
+    <!-- <div class="common-input-item common-input-item-label-2 w620">
+         <label class="label-b">收款二维码</label>
+         <button class="w150 h60 common-btn-bgc-d93740 upload">上传二维码</button>
+     </div>
+     <div class="common-input-item common-input-item-label-2 w620 upload">
+         <label class="label-b"></label>
+         <div class="common-input ">上传支付宝二维码<br/>支持jpg,jepg,png</div>
+     </div>-->
+    <!-- 上传成功时显示如下页面-->
+    <div class="common-input-item common-input-item-label-2 w620">
+        <label class="label-b">收款二维码</label>
+        <button class="w150 h60 common-btn-bgc-d93740 upload">更换二维码</button>
+    </div>
+    <div class="common-input-item common-input-item-label-2 w620 show">
+        <label class="label-b"></label>
+        <div class="common-input ">
+            <img src="../images/code@3x.png" alt="">
+        </div>
+    </div>
+    <button class="common-btn-disabled w620 h80 submit" id="submit">确定</button>
+</div>
+</body>
+</html>

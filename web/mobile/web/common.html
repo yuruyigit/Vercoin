@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>公用组件 demo</title>
+  <script src="../js/zepto.js"></script>
+  <script src="../js/rem.js"></script>
+  <link rel="stylesheet" href="../css/normalize.css"/>
+  <link rel="stylesheet" href="../css/main.css"/>
+</head>
+
+<body>
+<div class="wrap">
+
+  <header class="common-header">
+    <div class="common-header-left">
+      <img src="../images/back@3x.png" alt="">
+    </div>
+    <div class="common-header-center">
+      <img src="../images/logo0@3x.png" alt="">
+      <!--<span class="f36 c-fff">购买VER</span>-->
+    </div>
+    <div class="common-header-right">
+      <!--<img src="../images/logo@3x.png" alt="">-->
+      <a class="f28 c-fff" href="">注册</a>
+    </div>
+  </header>
+
+  <div style="display:flex;align-items: center;height:50px;">
+    <div class="common-radio" style="margin-right:30px;">
+
+    </div>
+    <div class="common-radio selected">
+
+    </div>
+  </div>
+
+  <!-- button -->
+  <div class="mb20">
+    <button class="common-btn-bgc-27c1c3 h80 w620" type="button">出售</button>
+  </div>
+  <div class="mb20">
+    <button class="common-btn-bgc-d93740 h80 w620" type="button">立即注册</button>
+  </div>
+  <div class="mb20">
+    <button class="common-btn-bgc-d93740 h80 w300" type="button">确定</button>
+  </div>
+  <div class="mb20">
+    <button class="common-btn-bgc-d93740 h80 w220" type="button">发送验证码</button>
+  </div>
+  <div class="mb20">
+    <button class="common-btn-disabled h80 w220 " type="button">发送验证码</button>
+  </div>
+
+  <div class="mb20">
+    <button class="common-btn-simple h80 w220 " type="button">申诉</button>
+  </div>
+
+
+  <div class="mb20">
+    <button class="common-btn-bgc-white h80 w300" type="button">取消交易</button>
+  </div>
+
+  <div class="common-user-license mb20">
+    <div class="common-checkbox">
+      <img src="../images/checkbox@3x.png" alt="">
+    </div>
+    我已阅读并同意
+    <a href="">《用户协议》</a>
+  </div>
+
+  <!-- tab -->
+  <ul class="common-tab common-tab-4 mb20">
+    <li>全部订单</li>
+    <li>未完成</li>
+    <li>已完成</li>
+    <li class="active">已取消</li>
+  </ul>
+  <ul class="common-tab common-tab-3 mb20">
+    <li>我要购买</li>
+    <li>我要出售</li>
+    <li class="active">我要购买</li>
+  </ul>
+  <ul class="common-tab common-tab-2 mb20">
+    <li>购买广告</li>
+    <li class="active">出售广告</li>
+  </ul>
+  <!-- reg  -->
+  <div class="register-demo">
+    <div class="common-input-item">
+      <div class="common-input-wrap-bottom">
+        <div class="triangle-down"></div>
+        <input type="text"
+               class="common-input-bottom h68 w620" placeholder="中国">
+      </div>
+
+    </div>
+    <div class="common-input-item">
+      <input type="text" class="common-input-bottom h68 w620" placeholder="用户名">
+    </div>
+    <div class="common-input-item common-input-item-label w620">
+      <label class="label-s">+86</label>
+      <input type="text" class="common-input-bottom h68" placeholder="">
+    </div>
+
+    <div class="common-input-item">
+      <input type="text" class="common-input-bottom h80 w380 mr20"
+             placeholder="短信验证码">
+      <button class="common-btn-bgc-d93740 h80 w220"
+              type="button">发送验证码
+      </button>
+    </div>
+
+    <div class="common-input-item">
+      <input type="text" class="common-input-bottom h80 w380 mr6"
+             placeholder="验证码">
+      <img class="vcode" src="../images/code-demo.jpg" alt="">
+    </div>
+
+    <div class="common-input-item">
+      <input type="password" class="common-input-bottom h68 w620"
+             placeholder="登录密码">
+    </div>
+    <div class="common-input-item">
+      <input type="password" class="common-input-bottom h68 w620"
+             placeholder="确认密码">
+    </div>
+  </div>
+
+  <!--忘记登录密码 -->
+  <div class="forget-demo">
+    <div class="common-input-item common-input-item-label-2 w620">
+      <label class="label-b">国籍</label>
+      <div class="common-input-wrap">
+        <div class="triangle-down"></div>
+        <input type="text" class="common-input" placeholder="请选择国籍">
+      </div>
+    </div>
+    <div class="common-input-item common-input-item-label-2 w620">
+      <label class="label-b">手机号</label>
+      <input type="text" class="common-input h80 " placeholder="请输入手机号">
+    </div>
+    <div class="common-input-item common-input-item-label-2 w620">
+      <label class="label-b">验证码</label>
+      <input type="text" class="common-input h80 w220" placeholder="请输入验证码">
+      <button class="common-btn-bgc-d93740 h80 w220" type="button">发送验证码</button>
+    </div>
+    <div class="common-input-item common-input-item-label-2 w620">
+      <label class="label-b">新密码</label>
+      <input type="text" class="common-input h80 " placeholder="请输入新密码">
+    </div>
+
+    <div class="common-input-item common-input-item-label-2 w620">
+      <label class="label-b">购买金额</label>
+      <div class="common-input-wrap">
+        <input type="text" class="common-input " placeholder="请输入购买金额">
+        <span class="common-input-price-label">CNY/VER</span>
+      </div>
+    </div>
+    <div class="common-input-item common-input-item-label-2 w620">
+      <label class="label-b">需求数量</label>
+      <div class="common-input-wrap">
+        <input type="text" class="common-input " placeholder="请输入购买数量">
+        <span class="common-input-price-label">VER</span>
+      </div>
+    </div>
+    <div class="common-input-item common-input-item-label-2 w620">
+      <label class="label-b">付款期限</label>
+      <div class="common-input-wrap">
+        <input type="text" class="common-input " placeholder="10-30分钟">
+        <span class="common-input-price-label">分钟</span>
+      </div>
+    </div>
+  </div>
+
+  <!--订单 -->
+  <div class="order-demo">
+    <div class="common-order-header mb20">
+      <img class="common-order-header-img" src="../images/orders/icon_releasing_3x.png" alt="">
+      <div class="status">释放中</div>
+    </div>
+    <div class="common-order-header mb20">
+      <img class="common-order-header-img" src="../images/orders/icon_appeal_3x.png" alt="">
+      <div class="status">申诉中</div>
+    </div>
+
+    <div class="common-order-header mb20">
+      <img class="common-order-header-img" src="../images/orders/icon_appeal_end_3x.png" alt="">
+      <div class="status">申诉完成</div>
+    </div>
+    <div class="common-order-header mb20">
+      <img class="common-order-header-img" src="../images/orders/icon_paid_3x.png" alt="">
+      <div class="status">订单已付款</div>
+    </div>
+    <div class="common-order-header mb20">
+      <img class="common-order-header-img" src="../images/orders/icon_checked_3x.png" alt="">
+      <div class="status">对方已付款</div>
+    </div>
+    <div class="common-order-header mb20">
+      <img class="common-order-header-img" src="../images/cancel@3x.png" alt="">
+      <div class="status">订单已取消</div>
+    </div>
+    <div class="common-order-header mb20">
+      <img class="common-order-header-img" src="../images/orders/icon_order_success3x.png" alt="">
+      <div class="status">订单已完成</div>
+    </div>
+
+    <div class="common-order-header mb20">
+      <img class="common-order-header-img" src="../images/orders/icon_paid_3x.png" alt="">
+      <div class="status">对方已付款</div>
+    </div>
+
+    <div class="common-order-header2 mb20">
+      <div class="line1">
+        <img class="common-order-header-img" src="../images/orders/icon_wait_2x.png" alt="">
+        <span class="status">等待对方支付</span>
+      </div>
+      <div class="line2">
+        剩<span class="order-status-time">14分31秒</span>自动关闭
+      </div>
+    </div>
+    <ul class="common-order-detail">
+      <li class="money"><span class="title">金额</span><span>1231.21 CNY</span></li>
+      <li><span class="title">订单编号</span><span>120312948212931023012</span></li>
+      <li><span class="title">价格</span><span>1.00 VER/CNY</span></li>
+      <li><span class="title">限额</span><span>100-1000</span></li>
+      <li><span class="title">数量</span><span>11000</span></li>
+      <li><span class="title">支付方式</span><span>现金支付</span></li>
+    </ul>
+  </div>
+
+
+  <div class="common-account-setting">
+    <div class="icon"><img src="../images/alipay1@3x.png" alt=""></div>
+    <div class="f28 c-333 word">交易密码</div>
+    <div class="common-btn-bgc-d93740 h60 w150">修改</div>
+  </div>
+  <div class="common-account-setting">
+    <div class="icon"><img src="../images/alipay1@3x.png" alt=""></div>
+    <div class="f28 c-333 word">交易密码</div>
+    <div class="common-btn-bgc-d93740 h60 w150">修改</div>
+  </div>
+  <div class="common-account-setting">
+    <div class="icon"><img src="../images/alipay1@3x.png" alt=""></div>
+    <div class="f28 c-333 word">交易密码</div>
+    <div class="common-btn-bgc-d93740 h60 w150">修改</div>
+  </div>
+  <div class="common-trade-header">
+    <img class="avatar" src="../images/icon-person/headboy1@3x.png"
+         alt="">
+    <div class="common-trade-header-info">
+       <div class="name">
+         农夫山泉s
+       </div>
+      <div class="user-info">
+         <span class="count">次数： <span>999+</span></span>
+          <span>  好评：<span>100%</span></span>
+      </div>
+    </div>
+  </div>
+  <div class="common-trade-list ">
+    <div class="common-trade-left">
+      <img src="../images/icon-person/headboy1@3x.png" alt="">
+    </div>
+    <div class="common-trade-center">
+      <div class="common-trade-center-user">
+        <h4 class="c-333 f26">农夫山泉s
+          <span>
+            <img src="../images/card1@3x.png" alt="">
+            <img src="../images/card1@3x.png" alt="">
+            <img src="../images/card1@3x.png" alt="">
+            <img src="../images/card1@3x.png" alt="">
+            <img src="../images/card1@3x.png" alt="">
+          </span>
+        </h4>
+        <h5 class="f20 c-666 f-n">
+          次数：<em>999+</em> &nbsp;|
+          好评：<em>100%</em>
+        </h5>
+        <h5 class="f20 c-666 f-n">
+          数量：<em>100000</em> &nbsp;|
+          限额：<em>10000-1000</em>
+        </h5>
+      </div>
+    </div>
+    <div class="common-trade-right">
+      <div class="common-trade-rate f28 c-d93740">
+        1.00 CNY/VER
+      </div>
+      <div class="common-btn-bgc-d93740 h60 w150">向他购买</div>
+    </div>
+  </div>
+  <div class="common-modal">
+    <div class="common-modal-header f28 c-333">确认取消订单？</div>
+    <div class="common-modal-content f24 c-999">
+      如果您已经向卖家付款，请千万不要取消交易。
+    </div>
+    <div class="common-modal-btn">
+      <button class="common-btn-bgc-d93740 w250 h80 ">确认取消</button>
+      <button class="common-btn-bgc-white w250 h80">我再想想</button>
+    </div>
+  </div>
+  <div class="common-homepage-list">
+      <div class="common-homepage-list-detail">
+        <img src="../images/identi@2x.png" alt="" class="lefticon">
+        <em class="c-333 f32">我的广告</em>
+        <a href="" class="righticon"><img src="../images/back@3x.png" alt="" ></a>
+      </div>
+  </div>
+  <div class="common-order-list">
+      <div class="common-order-title">
+        <img src="../images/order0@2x.png" alt="">
+        <em class="f30 c-333">订单编号 1238122918291231 </em>
+        <span class="f30 ">未付款</span>
+      </div>
+    <ul class="common-order-detail bg">
+      <li class="order"><span class="title">交易对象</span><span>120312948212931023012</span></li>
+      <li class="order"><span class="title">结算类型</span><span>现金支付1</span></li>
+      <li class="order"><span class="title">交易类型</span><span>100-1000</span></li>
+      <li class="order"><span class="title">数量</span><span>11000</span></li>
+      <li class="order"><span class="title">价格</span><span>1.00 VER/CNY</span></li>
+      <a href=""><img src="../images/back@2x.png" alt=""></a>
+    </ul>
+    <div class="common-order-create-info">
+      <span class="f24 c-333">创建时间：2018-05-13 11:12:41      </span>
+      <em class="f24 c-333">金额：21113CNY</em>
+    </div>
+  </div>
+  <div class="common-asset-list">
+      <div class="common-asset-left"><img src="../images/vercoin1@2x.png" alt=""></div>
+      <div class="common-asset-center">
+         <div class="common-asset-title">
+            <span class="f30 c-333 mr20">我的VER</span>
+            <button class="w150 h40 common-btn-bgc-d93740">查看账单</button>
+         </div>
+         <p class="f36 c-333">11.00000002</p>
+         <h5 class="f24 c-666">
+          可用：<em>100000</em>
+         </h5>
+        <h5 class="f24 c-666">
+          锁定：<em>10000-1000</em>
+        </h5>
+      </div>
+      <div class="common-asset-right w150">
+        <button class="common-btn-bgc-d93740 w150 h60 mb40">充值</button>
+       <!-- <button class="common-btn-bgc-27c1c3 w150 h60">提现</button>-->
+      </div>
+  </div>
+  <div class="common-bill-list">
+       <h2 class="f36">+11.00000002 ETH</h2>
+       <ul>
+         <li class="f24 c-333 "><em>类型</em><span>充值</span></li>
+         <li class="f24 c-333"><em>时间</em><span>2018-05-13 11:12:41</span></li>
+       </ul>
+  </div>
+  <div class="common-bill-list with-drawal">
+    <h2 class="f36">+11.00000002 ETH</h2>
+    <ul>
+      <li class="f24 c-333 "><em>类型</em><p>充值</p></li>
+      <li class="f24 c-333"><em>地址</em><p>0X123DFDKA3DFIF9SDFJ29FDSJF39FJSDF2393FJDFJ9</p></li>
+      <li class="f24 c-333"><em>备注</em><p>cvxzvzcxckv12ejkl1jlk12j3l1k23j12lk3j12lk3j12kl31j2kl3j12323131232135dsfsdflksjfsldkfjslkdjlhdfsdfsasdas</p></li>
+      <li class="f24 c-333"><em>时间</em><p>2018-05-13 11:12:41</p></li>
+
+    </ul>
+  </div>
+  <div class="common-account-pay-list">
+     <div class="common-pay-list-left">
+       <img src="../images/wechat1@2x.png" alt="">
+     </div>
+    <div class="common-pay-list-center">
+       <h4 class="f30 c-333">微信</h4>
+       <span class="f22 c-999">中本聪聪局长<em>787s8agjdj8@hotmail.com</em></span>
+    </div>
+    <div class="common-pay-list-right">
+      <img src="../images/code@2x.png" alt="">
+    </div>
+  </div>
+  <footer class="common-footer">
+    <div class="common-footer-nav">
+      <div class="common-footer-nav-list">
+        <div class="common-footer-list">
+          <img src="../images/home1@3x.png" alt="">
+        </div>
+        <p class="f20 active">主页</p>
+      </div>
+      <div class="common-footer-nav-list">
+
+        <div class="common-footer-list">
+          <img src="../images/trade0@3x.png" alt="">
+        </div>
+        <p class="f20 c-c2c2c2">交易</p>
+      </div>
+      <div class="common-footer-nav-list">
+
+        <div class="common-footer-list">
+          <img src="../images/my0@3x.png" alt="">
+        </div>
+        <p class="f20 c-c2c2c2">我的</p>
+      </div>
+    </div>
+
+
+  </footer>
+  <script src="../js/common.js"></script>
+</div>
+</body>
+</html>

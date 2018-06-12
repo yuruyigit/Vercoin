@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>VERCOIN</title>
+    <script src="../js/zepto.js"></script>
+    <script src="../js/rem.js"></script>
+    <link rel="stylesheet" href="../css/normalize.css"/>
+    <link rel="stylesheet" href="../css/main.css"/>
+</head>
+<body>
+    <header class="common-header">
+      <div class="common-header-left">
+         <img src="../images/back@3x.png" alt="">
+      </div>
+      <div class="common-header-center">
+         <span class="f36 c-fff">账户设置</span>
+      </div>
+      <div class="common-header-right">
+         <img src="../images/logo@3x.png" alt="">
+      </div>
+    </header>
+    <!--账户设置绑定页面如下-->
+    <div class="account-setting-content">
+        <div class="common-account-setting">
+            <div class="icon"><img src="../images/card0@3x.png" alt=""></div>
+            <div class="f28 c-333 word">绑定银行卡</div>
+            <div class="common-btn-bgc-d93740 h60 w150">绑定</div>
+        </div>
+        <div class="common-account-setting">
+            <div class="icon"><img src="../images/alipay1@3x.png" alt=""></div>
+            <div class="f28 c-333 word">绑定支付宝</div>
+            <div class="common-btn-bgc-d93740 h60 w150">绑定</div>
+        </div>
+        <div class="common-account-setting">
+            <div class="icon"><img src="../images/wechat@3x.png" alt=""></div>
+            <div class="f28 c-333 word">绑定微信</div>
+            <div class="common-btn-bgc-d93740 h60 w150">绑定</div>
+        </div>
+    </div>
+    <!--账户设置修改页面如下-->
+  <!--  <div class="account-setting-content">
+        <div class="common-account-setting">
+            <div class="icon"><img src="../images/card0@3x.png" alt=""></div>
+            <div class="f28 c-333 word">绑定银行卡</div>
+            <div class="common-btn-bgc-d93740 h60 w150">修改</div>
+        </div>
+        <div class="common-account-setting">
+            <div class="icon"><img src="../images/alipay1@3x.png" alt=""></div>
+            <div class="f28 c-333 word">绑定支付宝</div>
+            <div class="common-btn-bgc-d93740 h60 w150">修改</div>
+        </div>
+        <div class="common-account-setting">
+            <div class="icon"><img src="../images/wechat@3x.png" alt=""></div>
+            <div class="f28 c-333 word">绑定微信</div>
+            <div class="common-btn-bgc-d93740 h60 w150">修改</div>
+        </div>
+    </div>-->
+    <!--账户设置已绑定页面如下-->
+  <!--  <div class="account-setting-content">
+        <div class="common-account-setting">
+            <div class="icon"><img src="../images/card0@3x.png" alt=""></div>
+            <div class="f28 c-333 word">绑定银行卡</div>
+            <div class=" h60 w150 bind">已绑定</div>
+        </div>
+        <div class="common-account-setting">
+            <div class="icon"><img src="../images/alipay1@3x.png" alt=""></div>
+            <div class="f28 c-333 word">绑定支付宝</div>
+            <div class=" h60 w150 bind">已绑定</div>
+        </div>
+        <div class="common-account-setting">
+            <div class="icon"><img src="../images/wechat@3x.png" alt=""></div>
+            <div class="f28 c-333 word">绑定微信</div>
+            <div class="common-btn-bgc-d93740 h60 w150">绑定</div>
+        </div>
+    </div>-->
+    <div class="common-modal" id="accountModal">
+        <div class="common-modal-header f28 c-333 next-line">您的账户尚未设置交易密码，请先设置交易密码。</div>
+        <!-- <div class="common-modal-content f24 c-999">
+             如果您已经向卖家付款，请千万不要取消交易。
+         </div>-->
+        <div class="common-modal-btn">
+            <a class="common-btn-bgc-d93740 w250 h80 " href="createtradepassword.html">去设置</a>
+            <a class="common-btn-bgc-white w250 h80" href="#">取消</a>
+        </div>
+    </div >
+    <div class="common-mask" id="accountMask"></div>
+     <script >
+         $('body').tap(function () {
+             $("#accountModal").css("display","none");
+             $(".common-mask").css({position:'relative',background:'rgba(48,48,48,1)'})
+         })
+     </script>
+</body>
+</html>

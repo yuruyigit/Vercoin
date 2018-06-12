@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>VERCOIN</title>
+    <script src="../js/zepto.js"></script>
+    <script src="../js/rem.js"></script>
+    <link rel="stylesheet" href="../css/normalize.css"/>
+    <link rel="stylesheet" href="../css/main.css"/>
+</head>
+<body>
+    <header class="common-header">
+      <div class="common-header-left">
+         <img src="../images/back@3x.png" alt="">
+      </div>
+      <div class="common-header-center">
+         <span class="f36 c-fff">我的广告</span>
+      </div>
+      <div class="common-header-right">
+         <img src="../images/logo@3x.png" alt="">
+      </div>
+    </header>
+    <div class="advertisement-list">
+        <ul class="common-tab common-tab-2 ">
+            <li id="buyAdvertise" class="active">购买广告</li>
+            <li id="sellAdvertise">出售广告</li>
+        </ul>
+    </div>
+    <!-- 购买广告显示如下页面-->
+    <div class="advertisement-content">
+        <div class="common-order-list">
+            <div class="common-order-title">
+                <img src="../images/order0@2x.png" alt="">
+                <em class="f30 c-333">广告编号 109</em>
+                <span class="f30 ">开放</span>
+            </div>
+            <ul class="common-order-detail bg">
+                <li class="order"><span class="title">价格</span><span>1.00 VER/CNY</span></li>
+                <li class="order"><span class="title">限额</span><span>10010000</span></li>
+                <li class="order"><span class="title">数量</span><span>100</span></li>
+                <li class="order"><span class="title">支付方式</span><span>现金支付/BTC/ETH</span></li>
+                <li class="order"><span class="title">创建时间</span><span>2018-05-13 11:12:41</span></li>
+                <button class="w200 h60 common-btn-bgc-white" id="shelve-advertise">下架</button>
+            </ul>
+        </div>
+        <div class="common-order-list">
+            <div class="common-order-title">
+                <img src="../images/order0@2x.png" alt="">
+                <em class="f30 c-333">广告编号 109</em>
+                <span class="f30 ">开放</span>
+            </div>
+            <ul class="common-order-detail bg">
+                <li class="order"><span class="title">价格</span><span>1.00 VER/CNY</span></li>
+                <li class="order"><span class="title">限额</span><span>100</span></li>
+                <li class="order"><span class="title">数量</span><span>100</span></li>
+                <li class="order"><span class="title">支付方式</span><span>现金支付/BTC/ETH</span></li>
+                <li class="order"><span class="title">创建时间</span><span>2018-05-13 11:12:41</span></li>
+                <button class="w200 h60 common-btn-bgc-white">下架</button>
+            </ul>
+        </div>
+        <div class="common-order-list">
+            <div class="common-order-title">
+                <img src="../images/order0@2x.png" alt="">
+                <em class="f30 c-333">广告编号 109</em>
+                <span class="f30 ">开放</span>
+            </div>
+            <ul class="common-order-detail bg">
+                <li class="order"><span class="title">价格</span><span>1.00 VER/CNY</span></li>
+                <li class="order"><span class="title">限额</span><span>100</span></li>
+                <li class="order"><span class="title">数量</span><span>100</span></li>
+                <li class="order"><span class="title">支付方式</span><span>现金支付/BTC/ETH</span></li>
+                <li class="order"><span class="title">创建时间</span><span>2018-05-13 11:12:41</span></li>
+                <button class="w200 h60 common-btn-bgc-white">下架</button>
+            </ul>
+        </div>
+        <div class="common-order-list">
+            <div class="common-order-title">
+                <img src="../images/order0@2x.png" alt="">
+                <em class="f30 c-333">广告编号 109</em>
+                <span class="f30 ">开放</span>
+            </div>
+            <ul class="common-order-detail bg">
+                <li class="order"><span class="title">价格</span><span>1.00 VER/CNY</span></li>
+                <li class="order"><span class="title">限额</span><span>1001</span></li>
+                <li class="order"><span class="title">数量</span><span>100</span></li>
+                <li class="order"><span class="title">支付方式</span><span>现金支付/BTC/ETH</span></li>
+                <li class="order"><span class="title">创建时间</span><span>2018-05-13 11:12:41</span></li>
+                <button class="w200 h60 common-btn-bgc-white">下架</button>
+            </ul>
+        </div>
+    </div>
+    <!--出售广告时显示如下页面-->
+    <div class="advertisement-content sell">
+        <div class="common-order-list">
+            <div class="common-order-title">
+                <img src="../images/order0@2x.png" alt="">
+                <em class="f30 c-333">广告编号 109</em>
+                <span class="f30 sell">开放</span>
+            </div>
+            <ul class="common-order-detail bg">
+                <li class="order"><span class="title">价格</span><span>1.00 VER/CNY</span></li>
+                <li class="order"><span class="title">限额</span><span>1001</span></li>
+                <li class="order"><span class="title">数量</span><span>100</span></li>
+                <li class="order"><span class="title">支付方式</span><span>现金支付/BTC/ETH</span></li>
+                <li class="order"><span class="title">创建时间</span><span>2018-05-13 11:12:41</span></li>
+                <button class="w200 h60 common-btn-bgc-white sell" id="shelve-advertise-sell">下架</button>
+            </ul>
+        </div>
+        <div class="common-order-list">
+            <div class="common-order-title">
+                <img src="../images/order0@2x.png" alt="">
+                <em class="f30 c-333">广告编号 109</em>
+                <span class="f30 sell">开放</span>
+            </div>
+            <ul class="common-order-detail bg">
+                <li class="order"><span class="title">价格</span><span>1.00 VER/CNY</span></li>
+                <li class="order"><span class="title">限额</span><span>100</span></li>
+                <li class="order"><span class="title">数量</span><span>100</span></li>
+                <li class="order"><span class="title">支付方式</span><span>现金支付/BTC/ETH</span></li>
+                <li class="order"><span class="title">创建时间</span><span>2018-05-13 11:12:41</span></li>
+                <button class="w200 h60 common-btn-bgc-white sell">下架</button>
+            </ul>
+        </div>
+        <div class="common-order-list">
+            <div class="common-order-title">
+                <img src="../images/order0@2x.png" alt="">
+                <em class="f30 c-333">广告编号 109</em>
+                <span class="f30 sell">开放</span>
+            </div>
+            <ul class="common-order-detail bg">
+                <li class="order"><span class="title">价格</span><span>1.00 VER/CNY</span></li>
+                <li class="order"><span class="title">限额</span><span>100</span></li>
+                <li class="order"><span class="title">数量</span><span>100</span></li>
+                <li class="order"><span class="title">支付方式</span><span>现金支付/BTC/ETH</span></li>
+                <li class="order"><span class="title">创建时间</span><span>2018-05-13 11:12:41</span></li>
+                <button class="w200 h60 common-btn-bgc-white sell">下架</button>
+            </ul>
+        </div>
+        <div class="common-order-list">
+            <div class="common-order-title">
+                <img src="../images/order0@2x.png" alt="">
+                <em class="f30 c-333">广告编号 109</em>
+                <span class="f30 sell">开放</span>
+            </div>
+            <ul class="common-order-detail bg">
+                <li class="order"><span class="title">价格</span><span>1.00 VER/CNY</span></li>
+                <li class="order"><span class="title">限额</span><span>100</span></li>
+                <li class="order"><span class="title">数量</span><span>100</span></li>
+                <li class="order"><span class="title">支付方式</span><span>现金支付/BTC/ETH</span></li>
+                <li class="order"><span class="title">创建时间</span><span>2018-05-13 11:12:41</span></li>
+                <button class="w200 h60 common-btn-bgc-white sell">下架</button>
+            </ul>
+        </div>
+    </div>
+    <div class="common-modal h288" id="modal">
+        <div class="common-modal-header f28 c-333 next-line">确定下架该广告？</div>
+       <!-- <div class="common-modal-content f24 c-999">
+            如果您已经向卖家付款，请千万不要取消交易。
+        </div>-->
+        <div class="common-modal-btn">
+            <button class="common-btn-bgc-d93740 w250 h80 " id="confirm">确认</button>
+            <button class="common-btn-bgc-white w250 h80" id="cancel">取消</button>
+        </div>
+    </div>
+    <div class="common-mask"></div>
+    <script >
+        /*购买广告时模态框*/
+        $("#shelve-advertise").tap(function () {
+            $('#modal').css({"display":"block"});
+            $('.common-mask').css({position:'fixed',background:'rgba(48,48,48,0.30)'})
+        })
+        $("#confirm").tap(function () {
+            $('#modal').css({"display":"none"});
+            $('.common-mask').css({position:'relative',background:'rgba(48,48,48,1)'})
+        })
+        $("#cancel").tap(function () {
+            $('#modal').css({"display":"none"});
+            $('.common-mask').css({position:'relative',background:'rgba(48,48,48,1)'})
+        })
+        $("#buyAdvertise").tap(function () {
+            $(".advertisement-content").css("display","block");
+            $(".advertisement-content.sell").css("display","none");
+            $(this).addClass("active");
+            $(this).siblings().removeClass("active")
+        })
+        /*出售广告时模态框*/
+        $("#shelve-advertise-sell").tap(function () {
+            $('#modal').css({"display":"block"});
+            $('.common-mask').css({position:'fixed',background:'rgba(48,48,48,0.30)'})
+        })
+        $("#sellAdvertise").tap(function () {
+            $(".advertisement-content").css("display","none");
+            $(".advertisement-content.sell").css("display","block");
+            $(this).addClass("active");
+            $(this).siblings().removeClass("active")
+        })
+    </script>
+</body>
+</html>

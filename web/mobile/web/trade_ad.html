@@ -163,7 +163,7 @@
   /**
    *@desc show the input line for eth & btc
    */
-  $(".check-coin").on("click",function(){
+  $(".check-coin").on("tap",function(){
     var checked = $(this).hasClass("checked");
     $( "."+ $(this).attr("target-name") ).css("display",checked ? "flex": 'none');
   });

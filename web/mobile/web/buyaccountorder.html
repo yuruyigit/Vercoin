@@ -4,13 +4,14 @@
     <meta charset="utf-8">
     <title>VERCOIN</title>
     <script src="../js/zepto.js"></script>
+    <script src="../js/touch.js"></script>
     <script src="../js/rem.js"></script>
     <link rel="stylesheet" href="../css/normalize.css"/>
     <link rel="stylesheet" href="../css/main.css"/>
 </head>
 <body>
     <header class="common-header">
-        <div class="common-header-left">
+        <div class="common-header-left" onClick="javascript:history.back(-1);">
             <img src="../images/back@3x.png" alt="">
         </div>
         <div class="common-header-center">
@@ -47,7 +48,7 @@
                 <span class="f22 c-999">中本聪聪局长<em>787s8agjdj8@hotmail.com</em></span>
             </div>
             <div class="common-pay-list-right">
-                <img src="../images/code@2x.png" alt="">
+                <img src="../images/code@2x.png" alt="" id="showWeiImg">
             </div>
         </div>
         <div class="common-account-pay-list">
@@ -59,7 +60,7 @@
                 <span class="f22 c-999">中本聪聪局长<em>13763275651</em></span>
             </div>
             <div class="common-pay-list-right">
-                <img src="../images/code@2x.png" alt="" id="showimg">
+                <img src="../images/code@2x.png" alt="" id="showApplyImg">
             </div>
         </div>
         <div class="common-account-pay-list">
@@ -78,15 +79,18 @@
 
         <div class="order-tip">
             <p class="f26">*若已完成付款，请务必点击“已付款”按钮，否则可能造成资金损失，由此造成的损失将由您个人承担。</p>
-            <button class="common-btn-bgc-white w300 h80  cancle" id="cancle">取消交易</button>
+            <button class="common-btn-bgc-white w300 h80  cancle" id="cancel">取消交易</button>
             <button class="common-btn-bgc-d93740 w300 h80">标记已付款</button>
         </div>
     </div>
     <div class="codeModal" id="orderModal">
         <div class="close">
-            <img src="../images/headchosen@2x.png" alt="">
+            <img src="../images/close@2x.png" alt="">
         </div>
-        <img src="../images/code@2x.png" alt="" class="show">
+        <!--微信二维码图片-->
+        <!--<img src="../images/weichatimg@2x.png" alt="" class="show">-->
+        <!--支付宝二维码图片-->
+        <img src="../images/applyimg@2x.png" alt="" class="show">
     </div >
     <div class="common-modal h332" id="modal">
         <div class="common-modal-header f28 c-333 ">确认取消订单？</div>
@@ -99,21 +103,25 @@
         </div>
     </div >
     <div class="common-mask"></div>
-    <script >
-        $("#showimg").tap(function () {
+    <script type="text/javascript">
+        $("#showApplyImg,#showWeiImg").on("tap",function () {
             $('#orderModal').css({"display":"block"});
             $('.common-mask').css({position:'fixed',background:'rgba(48,48,48,0.30)'})
         })
-        $("#cancle").tap(function () {
+        $(".close").tap(function () {
+            $('#orderModal').css({"display":"none"});
+            $('.common-mask').css({position:'relative',background:'rgba(48,48,48,1)'})
+        })
+        /*订单状态模态框*/
+        $("#cancel").on("tap",function () {
             $('#modal').css({"display":"block"});
             $('.common-mask').css({position:'fixed',background:'rgba(48,48,48,0.30)'})
         })
-        /*订单状态模态框*/
-        $("#confirm").click(function () {
+        $("#confirm").tap(function () {
             $('#modal').css({"display":"none"});
             $('.common-mask').css({position:'relative',background:'rgba(48,48,48,1)'})
         })
-        $("#thinkMore").click(function () {
+        $("#thinkMore").tap(function () {
             $('#modal').css({"display":"none"});
             $('.common-mask').css({position:'relative',background:'rgba(48,48,48,1)'})
         })

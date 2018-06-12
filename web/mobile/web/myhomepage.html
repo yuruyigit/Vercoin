@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>VERCOIN</title>
     <script src="../js/zepto.js"></script>
+    <script src="../js/touch.js"></script>
     <script src="../js/rem.js"></script>
     <link rel="stylesheet" href="../css/normalize.css"/>
     <link rel="stylesheet" href="../css/main.css"/>
@@ -16,31 +17,25 @@
     </div>
     </header>
    <!-- 用户未登录时显示如下页面-->
-    <div class="Zyn-homepage-personal">
+  <!--  <div class="Zyn-homepage-personal">
         <div class="Zyn-homepage-user">
-            <div class="left">
-                <img src="../images/head@2x.png" alt="">
-            </div>
+            <div class="left"><img src="../images/head@2x.png" alt=""></div>
             <div class="right">
                 <h2 class="c-333">请登录</h2>
                 <p class="f20 c-999">欢迎使用VERCOIN</p>
             </div>
         </div>
-    </div>
+    </div>-->
     <!--用户登录时显示如下页面-->
     <div class="Zyn-homepage-personal">
         <div class="Zyn-homepage-user">
-            <div class="left" id="userId">
-                <img src="../images/icon-person/headgirl1@2x.png" alt="">
-            </div>
+            <div class="left" id="userId"><img src="../images/icon-person/headgirl1@2x.png" alt=""></div>
             <div class="right">
                 <h2 class="c-333">HI,农夫山泉s</h2>
                 <p class="f20 c-999">UID:42312469</p>
             </div>
         </div>
     </div>
-
-
     <div class="homepage-list" >
         <div class="common-line"></div>
         <div class="common-homepage-list">
@@ -150,7 +145,7 @@
                  <span class="active"></span>
              </div>
              <div class="user-list">
-                 <img src="../images/icon-person/headgirl1@2x.png" alt="">
+                 <img src="../images/icon-person/headgirl3@2x.png" alt="">
                  <span></span>
              </div>
              <div class="user-list">
@@ -170,35 +165,38 @@
     <div class="common-mask"></div>
 </body>
 <script >
-    $("#back").tap(function () {
+    $("#back").on("click",function () {
        $('#modal').css({"display":"block"});
        $('.common-mask').css({position:'fixed',background:'rgba(48,48,48,0.30)'})
-    })
-    $("#userId").tap(function () {
+    });
+
+    $("#userId").click(function () {
         $('#userModal').css({"display":"block"});
         $('.common-mask').css({position:'fixed',background:'rgba(48,48,48,0.30)'})
     })
    /* 退出登录时模态框*/
-    $("#modalConfirm").tap(function () {
+    $("#modalConfirm").click(function () {
+        $('#modal').css({"display":"none"});
+        $('.common-mask').css({position:'relative',background:'rgba(48,48,48,1)'})
+    });
+
+    $("#modalCancel").click(function () {
         $('#modal').css({"display":"none"});
         $('.common-mask').css({position:'relative',background:'rgba(48,48,48,1)'})
     })
-    $("#modalCancel").tap(function () {
-        $('#modal').css({"display":"none"});
-        $('.common-mask').css({position:'relative',background:'rgba(48,48,48,1)'})
-    })
+
     /*用户头像模态框*/
-    $(".user-list").tap(function () {
+    $(".user-list").click(function () {
         $(this).toggleClass('active');
         $(this).siblings().removeClass('active');
         $(this).find("span").toggleClass("active");
         $(this).siblings().find("span").removeClass('active');
     })
-    $("#userModalConfirm").tap(function () {
+    $("#userModalConfirm").click(function () {
         $('#userModal').css({"display":"none"});
         $('.common-mask').css({position:'relative',background:'rgba(48,48,48,1)'})
     })
-    $("#userModalCancel").tap(function () {
+    $("#userModalCancel").click(function () {
         $('#userModal').css({"display":"none"});
         $('.common-mask').css({position:'relative',background:'rgba(48,48,48,1)'})
     })

@@ -4,13 +4,14 @@
     <meta charset="utf-8">
     <title>VERCOIN</title>
     <script src="../js/zepto.js"></script>
+    <script src="../js/touch.js"></script>
     <script src="../js/rem.js"></script>
     <link rel="stylesheet" href="../css/normalize.css"/>
     <link rel="stylesheet" href="../css/main.css"/>
 </head>
 <body>
      <header class="common-header">
-       <div class="common-header-left">
+       <div class="common-header-left" onClick="javascript:history.back(-1);">
           <img src="../images/back@3x.png" alt="">
        </div>
        <div class="common-header-center">
@@ -20,27 +21,62 @@
           <img src="../images/logo@3x.png" alt="">
        </div>
      </header>
-     <form class="modify-phone-content">
+     <div class="modify-phone-content">
          <div class="common-input-item common-input-item-label-2 w620">
              <label class="label-b">旧手机</label>
              <p class="f28 c-333">13866654812</p>
          </div>
          <div class="common-input-item common-input-item-label-2 w620">
              <label class="label-b">旧手机验证码</label>
-             <input type="text" class="common-input h80 w220" placeholder="旧手机验证码">
+             <input type="text" class="common-input h80 w220" placeholder="旧手机验证码" id="oldCode">
+             <div class="error-text"></div>
              <button class="common-btn-bgc-d93740 h80 w220" type="button">发送验证码</button>
          </div>
          <div class="common-input-item common-input-item-label-2 w620">
              <label class="label-b">新手机</label>
-             <input type="text" class="common-input h80 " placeholder="请输入新手机号码">
+             <input type="text" class="common-input h80 " placeholder="请输入新手机号码" id="phone">
+             <div class="error-text"></div>
          </div>
 
          <div class="common-input-item common-input-item-label-2 w620">
              <label class="label-b">新手机验证码</label>
-             <input type="text" class="common-input h80 w220" placeholder="新手机验证码">
+             <input type="text" class="common-input h80 w220" placeholder="新手机验证码" id="newCode">
+             <div class="error-text"></div>
              <button class="common-btn-bgc-d93740 h80 w220" type="button">发送验证码</button>
          </div>
          <button class="common-btn-bgc-d93740 w620 h80 submit">提交</button>
-     </form>
+     </div>
+     <script src="../js/common.js"></script>
+     <script type="text/javascript">
+         $(".submit").on("tap", function () {
+             var pass = 1;
+             var doms = [$("#oldCode"),$("#phone"),$("#newCode")];
+             var regCell=/^[1][3,4,5,7,8][0-9]{9}$/;
+             // show error inner func
+             function err(dom, text, isParent) {
+                 var ele = isParent ? dom.parent() : dom;
+                 ele.addClass("common-input-error").next(".error-text").text(text).show();
+             }
+             if (!doms[0].val()) {
+                 err(doms[0],"验证码不正确");
+                 pass = 0;
+             }
+             if (!doms[1].val()) {
+                 err(doms[1],"手机号不可为空");
+                 pass = 0;
+             }else {
+                 if(!(regCell.test(doms[1].val()))){
+                     err(doms[1],"请输入正确的手机号");
+                     pass = 0;
+                 }
+             }
+             if (!doms[2].val()) {
+                 err(doms[2],"验证码不正确");
+                 pass = 0;
+             }
+             // submit the form
+             if(pass) $("form").submit();
+         })
+     </script>
 </body>
 </html>

@@ -2,7 +2,6 @@
 html,body{
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
-
 body {
     color: #333333;
 }
@@ -87,10 +86,6 @@ option{
 
 .h68 {
     height: 0.34rem;
-}
-
-.h76 {
-    height: 0.38rem;
 }
 
 .h80 {
@@ -312,7 +307,7 @@ option{
 }
 .common-btn-disabled {
     background-color: #C2C2C2;
-    cursor:not-allowed;
+    cursor:no-drop;
 }
 /*myhomepage-list*/
 .common-homepage-list{
@@ -355,7 +350,7 @@ option{
     width: 100%;
     height: 0.15rem;
     background: #F9F9F9;
-   /* font-size: 0;*/
+    /* font-size: 0;*/
 }
 /* login */
 .login {
@@ -421,7 +416,6 @@ option{
     justify-content: space-between;
     border-bottom: 1px solid #F2F2F2;
     cursor: pointer;
-    margin-top:0;
 }
 
 .common-tab li {
@@ -504,9 +498,17 @@ option{
     margin-top: 0.1rem;
     display:none;
 }
+.common-input-item  .error-text{
+    position: absolute;
+    font-size: 0.14rem;
+    color:#D93740;
+    bottom: -0.2rem;
+    left: 28%;
+}
 .common-input-item {
     margin-bottom:0.2rem;
     width: 3.1rem;
+    position: relative;
 }
 .common-input-item.common-input-item-label {
     margin-bottom:0.14rem;
@@ -521,7 +523,7 @@ option{
 }
 .common-input-item-label-2 {
     border:none;
-    margin-bottom: 0.15rem;
+    margin-bottom: 0.2rem;
 }
 .common-input-item-label  .label-s {
     margin-right:0.1rem;
@@ -903,24 +905,24 @@ option{
     background: rgba(48,48,48,1);
     z-index: 999;
 }
-/* todo */
+/*Common-order*/
 .common-order-list{
-
+    display: none;
 }
 .common-order-title{
     padding: 0.1rem 0.325rem;
     position: relative;
 }
 .common-order-title img{
-     width: 0.13rem;
-     height:0.14rem;
-     margin: 0.03rem 0.1rem 0 0;
+    width: 0.13rem;
+    height:0.14rem;
+    margin: 0.03rem 0.1rem 0 0;
 }
 .common-order-title em{
     font-style: normal;
     color:#333333;
     font-size: 0.15rem;
-   
+
 }
 
 .common-order-title  span{
@@ -1189,12 +1191,6 @@ option{
     height:0.15rem;
     margin-right:0.1rem;
 }
-.common-checkbox [type="checkbox"]{
-    width: 0.15rem;
-    position: absolute;
-    top: 0;
-    opacity: 0;
-}
 .common-checkbox img {
     width:100%;
 }
@@ -1437,7 +1433,6 @@ section.order-status {
 .common-no-input-wrap span {
     margin-right:0.15rem;
 }
-
 .trade_ad .common-input-item-label-2.ad-type {
     border-bottom: 1px solid #F2F2F2;
     padding-bottom: 0.1rem;
@@ -1479,7 +1474,7 @@ section.order-status {
     display:none;
 }
 .trade_ad .common-input-error .common-input{
-   color: #D93740;
+    color: #D93740;
 }
 .trade_sell .common-btn-bgc-d93740 {
     background:#27c1c3;
@@ -1902,7 +1897,7 @@ section.order-status {
 .bind-weichat-content .common-input-item.upload .common-input {
     height: 1.415rem;
     text-align: center;
-  /*  line-height: 1.415rem;*/
+    /*  line-height: 1.415rem;*/
     text-indent: 0;
     padding-top: 0.45rem;
     color:#999999;
@@ -2010,7 +2005,6 @@ section.order-status {
     background: #fff;
     box-sizing: border-box;
 }
-
 /*出售VER订单状态页面*/
 .buy-order-content.sell p{
     margin: 0.68rem 0.325rem 0.31rem;
@@ -2019,10 +2013,4 @@ section.order-status {
 .order-tip.sell p{
     margin: 0 0 0.1rem 0;
     text-align: left;
-}
-.home-view {
-    display:none;
-}
-#home-view {
-    display:block;
 }

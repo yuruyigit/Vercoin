@@ -11,7 +11,7 @@
 <body>
 <div class="wrap forget">
   <header class="common-header">
-    <div class="common-header-left">
+    <div class="common-header-left" onClick="javascript:history.back(-1);">
       <img src="../images/back@3x.png" alt="">
     </div>
     <div class="common-header-center">
@@ -68,7 +68,7 @@
     country: doms[0]
   });
 
-  $(".submit").on("click",function(){
+  $(".submit").on("tap",function(){
     var pass = 1;
 
     var tips = [

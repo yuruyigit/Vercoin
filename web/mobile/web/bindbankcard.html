@@ -4,13 +4,14 @@
     <meta charset="utf-8">
     <title>VERCOIN</title>
     <script src="../js/zepto.js"></script>
+    <script src="../js/touch.js"></script>
     <script src="../js/rem.js"></script>
     <link rel="stylesheet" href="../css/normalize.css"/>
     <link rel="stylesheet" href="../css/main.css"/>
 </head>
 <body>
     <header class="common-header">
-      <div class="common-header-left">
+      <div class="common-header-left" onClick="javascript:history.back(-1);">
         <img src="../images/back@3x.png" alt="">
       </div>
       <div class="common-header-center">
@@ -20,35 +21,81 @@
         <img src="../images/logo@3x.png" alt="">
       </div>
      </header>
-     <div class="bind-back-card-content">
+     <div  class="bind-back-card-content"  >
          <div class="common-input-item common-input-item-label-2 w620">
              <label class="label-b">国籍</label>
              <div class="common-input-wrap">
                  <div class="triangle-down"></div>
-                 <input type="text" class="common-input" placeholder="请选择国籍">
+                 <select type="text" class="common-input">
+                     <option value="1">中国( +86 )</option>
+                     <option value="2">安道尔共和国( +376 )</option>
+                 </select>
              </div>
          </div>
          <div class="common-input-item common-input-item-label-2 w620">
              <label class="label-b">姓名</label>
-             <input type="text" class="common-input h80 " placeholder="请输入真实姓名">
+             <input type="text" class="common-input h80 " placeholder="请输入真实姓名" id="name">
+             <div class="error-text"></div>
          </div>
          <div class="common-input-item common-input-item-label-2 w620">
              <label class="label-b">开户银行</label>
-             <input type="text" class="common-input h80 " placeholder="请输入开户银行全称">
+             <input type="text" class="common-input h80 " placeholder="请输入开户银行全称" id="bank">
+             <div class="error-text"></div>
          </div>
          <div class="common-input-item common-input-item-label-2 w620">
              <label class="label-b">开户支行</label>
-             <input type="text" class="common-input h80 " placeholder="请输入开户银行支行全称">
+             <input type="text" class="common-input h80 " placeholder="请输入开户银行支行全称" id="branch">
+             <div class="error-text"></div>
          </div>
          <div class="common-input-item common-input-item-label-2 w620">
              <label class="label-b">银行卡号</label>
-             <input type="text" class="common-input h80 " placeholder="请输入银行卡号">
+             <input type="text" class="common-input h80 " placeholder="请输入银行卡号" id="card">
+             <div class="error-text"></div>
          </div>
          <div class="common-input-item common-input-item-label-2 w620">
              <label class="label-b">交易密码</label>
-             <input type="text" class="common-input h80 " placeholder="请输入交易密码">
+             <input type="password" class="common-input h80 " placeholder="请输入交易密码" id="password">
+             <div class="error-text"></div>
          </div>
-         <button class="common-btn-disabled w620 h80 submit" id="submit">确定</button>
+         <button class="common-btn-bgc-d93740 w620 h80 submit" id="submit" type="button">确定</button>
      </div>
+    <script  src="../js/common.js"></script>
+     <script type="text/javascript">
+         $(".submit").on("tap", function () {
+             var pass = 1;
+             var doms = [$("#name"),$("#bank"),$("#branch"),$("#card"),$("#password")];
+             // show error inner func
+             function err(dom, text, isParent) {
+                 var ele = isParent ? dom.parent() : dom;
+                 ele.addClass("common-input-error").next(".error-text").text(text).show();
+             }
+             if (!doms[0].val()) {
+                 err(doms[0],"真实姓名不可为空");
+                 pass = 0;
+             }else{
+                 if(doms[0].val().length < 2 || doms[0].val().length > 20){
+                     err(doms[0],"姓名长度为2-20之间");
+                     pass = 0;
+                 }
+             }
+             if (!doms[1].val()) {
+                 err(doms[1],"开户银行不能为空");
+                 pass = 0;
+             }
+             if (!doms[2].val()) {
+                 err(doms[2],"开户支行不能为空");
+                 pass = 0;
+             }
+             if (!doms[3].val()) {
+                 err(doms[3],"银行卡号不能为空");
+                 pass = 0;
+             }
+             if (!doms[4].val()) {
+                 err(doms[4],"交易密码不正确");
+                 pass = 0;
+             }
+
+         })
+     </script>
 </body>
 </html>

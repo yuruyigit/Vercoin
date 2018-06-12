@@ -5,13 +5,14 @@
   <title>用户注册</title>
   <script src="../js/rem.js"></script>
   <script src="../js/zepto.js"></script>
+  <script src="../js/touch.js"></script>
   <link rel="stylesheet" href="../css/normalize.css"/>
   <link rel="stylesheet" href="../css/main.css"/>
 </head>
 <body>
 <div class="wrap register">
   <header class="common-header">
-    <div class="common-header-left">
+    <div class="common-header-left" onClick="javascript:history.back(-1);">
       <img src="../images/back@3x.png" alt="">
     </div>
     <div class="common-header-center">
@@ -69,7 +70,6 @@
 
     <div class="common-user-license">
       <div class="common-checkbox" data-target="submit">
-        <input type="checkbox" id="check"/>
         <img src="../images/checkbox@3x.png" alt="">
       </div>
       我已阅读并同意<a href="">《用户协议》</a>

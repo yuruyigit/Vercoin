@@ -5,13 +5,14 @@
   <title>登录</title>
   <script src="../js/rem.js"></script>
   <script src="../js/zepto.js"></script>
+  <script src="../js/touch.js"></script>
   <link rel="stylesheet" href="../css/normalize.css"/>
   <link rel="stylesheet" href="../css/main.css"/>
 </head>
 <body>
 <div class="wrap login">
   <header class="common-header">
-    <div class="common-header-left">
+    <div class="common-header-left" onClick="javascript:history.back(-1);">
       <img src="../images/back@3x.png" alt="">
     </div>
     <div class="common-header-center">
@@ -45,11 +46,12 @@
     <a href="#" class="forget mt40">忘记登录密码？</a>
   </form>
 </div>
+
 <script src="../js/common.js"></script>
 
 <script>
 
-  $(".submit").on("click", function () {
+  $(".submit").on("tap", function () {
     var pass = 1;
     var doms = [$("#user"),$("#pass"),$("#code")];
     // show error inner func
@@ -75,7 +77,7 @@
       pass = 0;
     }
     // submit the form
-    if(pass) $(".form").submit();
+    if(pass) $("form").submit();
   })
 
 </script>

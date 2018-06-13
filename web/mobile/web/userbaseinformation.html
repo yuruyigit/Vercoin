@@ -83,15 +83,15 @@
     </div >
     <div class="common-mask"></div>
     <script >
-         $("#editSummary").tap(function () {
+         $("#editSummary").click(function () {
              $('#summary-modal').css("display","block");
              $('.common-mask').css({position:'fixed',background:'rgba(48,48,48,0.30)'})
          })
-        $("#save").tap(function () {
+        $("#save").click(function () {
             $('#summary-modal').css("display","none");
             $('.common-mask').css({position:'relative',background:'rgba(48,48,48,0.30)'})
         })
-         $("#cancel").tap(function () {
+         $("#cancel").click(function () {
              $('#summary-modal').css("display","none");
              $('.common-mask').css({position:'relative',background:'rgba(48,48,48,0.30)'})
          })

@@ -1772,7 +1772,6 @@ section.order-status {
     border-right: 0;
 }
 .user-base-info-list{
-    padding: 0 0 0 0.325rem;
     overflow: hidden;
 }
 .user-base-info-left{
@@ -1803,7 +1802,7 @@ section.order-status {
     width: 100%;
 }
 #summary-modal{
-    height: 2.1rem;
+    padding-bottom: 0.3rem;
 }
 .common-modal-header.summary{
     overflow: hidden;
@@ -1825,6 +1824,8 @@ section.order-status {
     box-sizing: border-box;
     border: 1px solid #C2C2C2;
     border-radius: 2px 0 0 2px;
+    color:#999;
+    padding:0.1rem;
 }
 /*身份认证页面*/
 .identity-content{
@@ -2025,4 +2026,7 @@ section.order-status {
 }
 #home-view {
     display:block;
+}
+#infoDetail {
+    margin-top:0.3rem;
 }

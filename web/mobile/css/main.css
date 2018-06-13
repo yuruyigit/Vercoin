@@ -508,6 +508,13 @@ option{
     margin-bottom:0.2rem;
     width: 3.1rem;
 }
+.common-input-item .error-text{
+    position: absolute;
+    font-size: 0.14rem;
+    color: #D93740;
+    bottom:-0.2rem;
+    left: 29%;
+}
 .common-input-item.common-input-item-label {
     margin-bottom:0.14rem;
 }
@@ -521,12 +528,14 @@ option{
 }
 .common-input-item-label-2 {
     border:none;
-    margin-bottom: 0.15rem;
+    margin-bottom: 0.2rem;
+    position: relative;
 }
 .common-input-item-label  .label-s {
     margin-right:0.1rem;
     line-height:0.34rem;
 }
+
 .common-input-item-label-2 .label-b {
     line-height:0.4rem;
     height:0.4rem;

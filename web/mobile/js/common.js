@@ -125,6 +125,11 @@ $(".common-input-item input").on("focus" ,function(){
   $(this).parent().removeClass("common-input-bottom-error").next(".common-error-text").hide();
 });
 
+$(".common-input-item input").on("focus" ,function(){
+  $(this).removeClass("common-input-error").siblings(".error-text").hide();
+  $(this).parent().removeClass("common-input-error").next(".error-text").hide();
+});
+
 }
 
 

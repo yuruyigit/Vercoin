@@ -58,7 +58,7 @@
   var doms = [
     $("#countriesId"),$("#cell"),$("#code"),$("#npass")
   ];
-  doms[0].on("tap",function(){
+  doms[0].on("click",function(){
     $(".common-error-text").eq(0).hide()
   });
   window.GETCODE({
@@ -68,7 +68,7 @@
     country: doms[0]
   });
 
-  $(".submit").on("tap",function(){
+  $(".submit").on("click",function(){
     var pass = 1;
 
     var tips = [

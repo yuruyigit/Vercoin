@@ -1318,6 +1318,8 @@ option{
 .forget .common-form  > button{
     margin-top: 0.25rem;
 }
+.cardv .common-error-text,
+.auth .common-error-text,
 .forget .common-error-text{
     padding-left: 0.84rem;
     font-size: 0.13rem;

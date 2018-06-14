@@ -9,11 +9,10 @@ $(function () {
     country: $("#countriesId")
   });
 
-
   /**
    * @desc submit the form
    */
-  $(".submit").on("click", function () {
+  $(".submit").on("tap", function () {
     if ($(this).hasClass("common-btn-disabled")) return false;
     var _err_dom = "<div class='common-error-text'> </div>";
 

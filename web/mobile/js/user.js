@@ -35,12 +35,12 @@ window.addEventListener("hashchange", function () {
 /**
  * @点击退出
  */
-$(".logout").on("click", function () {
+$(".logout").on("tap", function () {
   $('#modal').css({"display": "block"});
   $('.common-mask').css({position: 'fixed', background: 'rgba(48,48,48,0.30)'})
 });
 
-$(".logout-btn").on("click", function () {
+$(".logout-btn").on("tap", function () {
   $('#modal').css({"display": "none"});
   $('.common-mask').css({position: 'relative', background: 'rgba(48,48,48,1)'})
   if ($(this).attr("id") === 'modalConfirm') {
@@ -53,13 +53,13 @@ $(".logout-btn").on("click", function () {
  * @desc 用户选择头像
  */
 // change avatar
-$("#avatar").click(function () {
+$("#avatar").tap(function () {
   $('#userModal').css({"display": "block"});
   $('.common-mask').css({position: 'fixed', background: 'rgba(48,48,48,0.30)'})
 });
 
 // select user avatar
-$(".user-list").click(function () {
+$(".user-list").tap(function () {
   var src = $(this).find("img").attr("src");
   $("#avatar img").attr("src", src);
   $("#profile").val(src.split("web/")[1]);
@@ -69,7 +69,7 @@ $(".user-list").click(function () {
 
 });
 
-$(".avatar-btn").on("click", function () {
+$(".avatar-btn").on("tap", function () {
   $('#userModal').css({"display": "none"});
   $('.common-mask').css({position: 'relative', background: 'rgba(48,48,48,1)'});
   if ($(this).attr("id") === "userModalConfirm") {
@@ -88,18 +88,18 @@ function sumModal(dis,pos){
   $('.common-mask').css({position: pos, background: 'rgba(48,48,48,0.30)'})
 }
 
-$("#editSummary").click(function () {
+$("#editSummary").tap(function () {
   sumModal("block","fixed")
 });
 
-$("#save").click(function () {
+$("#save").tap(function () {
   sumModal("none","relative");
   $("#introduce").val($("#introduceInput").val());
   $("#userForm").submit();
   localStorage.mbchangeuser = 1;
 });
 
-$("#cancel").click(function () {
+$("#cancel").tap(function () {
   sumModal("none","relative")
 });
 

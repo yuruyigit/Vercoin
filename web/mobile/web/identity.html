@@ -1,114 +1,119 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8">
-    <title>VERCOIN</title>
-    <script src="../js/zepto.js"></script>
-    <script src="../js/touch.js"></script>
-    <script src="../js/rem.js"></script>
-    <link rel="stylesheet" href="../css/normalize.css"/>
-    <link rel="stylesheet" href="../css/main.css"/>
+  <meta charset="utf-8">
+  <title>VERCOIN</title>
+  <script src="../js/zepto.js"></script>
+  <script src="../js/touch.js"></script>
+  <script src="../js/rem.js"></script>
+  <link rel="stylesheet" href="../css/normalize.css"/>
+  <link rel="stylesheet" href="../css/main.css"/>
 </head>
 <body>
-    <header class="common-header">
-      <div class="common-header-left" onClick="javascript:history.back(-1);">
-         <img src="../images/back@3x.png" alt="">
-      </div>
-      <div class="common-header-center">
-         <span class="f36 c-fff">身份认证</span>
-      </div>
-      <div class="common-header-right">
-         <img src="../images/logo@3x.png" alt="">
-      </div>
-    </header>
-    <!--身份认证页面如下-->
-    <div class="identity-content">
-        <div class="common-input-item common-input-item-label-2 w620">
-            <label class="label-b">国籍</label>
-            <div class="common-input-wrap">
-                <div class="triangle-down"></div>
-                <select class="common-input">
-                    <option value="1">中国(+86)</option>
-                    <option value="1">英国(+16)</option>
-                    <option value="1">美国(+26)</option>
-                </select>
-            </div>
-        </div>
-        <div class="common-input-item common-input-item-label-2 w620">
-            <label class="label-b">姓名</label>
-            <input type="text" class="common-input h80 " placeholder="请输入手机号" id="name">
-            <div class="error-text"></div>
-        </div>
-        <div class="common-input-item common-input-item-label-2 w620">
-            <label class="label-b">身份证号</label>
-            <input type="text" class="common-input h80 " placeholder="请输入手机号" id="idCard">
-            <div class="error-text"></div>
-        </div>
-        <button class="common-btn-bgc-d93740 w620 h80 mt50 submit" id="idSubmit">提交</button>
+<header class="common-header">
+  <div class="common-header-left" onClick="javascript:history.back(-1);">
+    <img src="../images/back@3x.png" alt="">
+  </div>
+  <div class="common-header-center">
+    <span class="f36 c-fff">身份认证</span>
+  </div>
+  <div class="common-header-right">
+    <img src="../images/logo@3x.png" alt="">
+  </div>
+</header>
+<!--身份认证页面如下-->
+<div class="identity-content">
+  <div class="common-input-item common-input-item-label-2 w620">
+    <label class="label-b">国籍</label>
+    <div class="common-input-wrap">
+      <div class="triangle-down"></div>
+      <select class="common-input">
+        <option value="1">中国(+86)</option>
+        <option value="1">英国(+16)</option>
+        <option value="1">美国(+26)</option>
+      </select>
     </div>
-    <!--身份认证展示页面如下-->
-    <div class="identity-content show">
-        <div class="identity-content-list mb60">
-            <div class="identity-list-left f28 c-333">国家</div>
-            <div class="identity-list-right f28 c-333">中国</div>
-        </div>
-        <div class="identity-content-list mb60">
-            <div class="identity-list-left f28 c-333">姓名</div>
-            <div class="identity-list-right f28 c-333">张**</div>
-        </div>
-        <div class="identity-content-list mb60">
-            <div class="identity-list-left f28 c-333">身份证号</div>
-            <div class="identity-list-right f28 c-333">3100000**********</div>
-        </div>
+  </div>
+  <div class="common-input-item common-input-item-label-2 w620">
+    <label class="label-b">姓名</label>
+    <input type="text" class="common-input h80 " placeholder="请输入手机号" id="name">
+    <div class="error-text"></div>
+  </div>
+  <div class="common-input-item common-input-item-label-2 w620">
+    <label class="label-b">身份证号</label>
+    <input type="text" class="common-input h80 " placeholder="请输入手机号" id="idCard">
+    <div class="error-text"></div>
+  </div>
+  <button class="common-btn-bgc-d93740 w620 h80 mt50 submit" id="idSubmit">提交</button>
+</div>
+<!--身份认证展示页面如下-->
+<!--
+<div class="identity-content show">
+    <div class="identity-content-list mb60">
+        <div class="identity-list-left f28 c-333">国家</div>
+        <div class="identity-list-right f28 c-333">中国</div>
     </div>
-    <div class="common-modal" id="identityModal">
-        <div class="common-modal-header f28 c-333 next-line">身份认证信息提交后将不可修改，确认提交？</div>
-        <!-- <div class="common-modal-content f24 c-999">
-             如果您已经向卖家付款，请千万不要取消交易。
-         </div>-->
-        <div class="common-modal-btn">
-            <button class="common-btn-bgc-d93740 w250 h80 " id="confirm">确认</button>
-            <button class="common-btn-bgc-white w250 h80" id="cancel">取消</button>
-        </div>
-    </div >
-    <div class="common-mask"></div>
-    <script src="../js/common.js"></script>
-    <script type="text/javascript">
-         /* $("#idSubmit").tap(function () {
-              $('#identityModal').css("display","block");
-              $('.common-mask').css({position:'fixed',background:'rgba(48,48,48,0.30)'})
-          })
-          $("#confirm").tap(function () {
-              $('#identityModal').css("display","none");
-              $('.common-mask').css({position:'relative',background:'rgba(48,48,48,1)'})
-          })
-          $("#cancel").tap(function () {
-              $('#identityModal').css("display","none");
-              $('.common-mask').css({position:'relative',background:'rgba(48,48,48,1)'})
-          })*/
-          /*字段验证*/
-          $(".submit").on("click", function () {
-              var pass = 1;
-              var doms = [$("#name"),$("#idCard")];
-              // show error inner func
-              function err(dom, text, isParent) {
-                  var ele = isParent ? dom.parent() : dom;
-                  ele.addClass("common-input-error").next(".error-text").text(text).show();
-              }
-              if (!doms[0].val()) {
-                  err(doms[0],"该字段不能为空");
-                  pass = 0;
-              }else {
-                  if(doms[0].val().length < 6 || doms[0].val().length > 20){
-                      err(doms[0],"姓名长度为（2-20）之间");
-                      pass = 0;
-                  }
-              }
-              if (!doms[1].val()) {
-                  err(doms[1],"该字段不能为空");
-                  pass = 0;
-              }
-          })
-    </script>
+    <div class="identity-content-list mb60">
+        <div class="identity-list-left f28 c-333">姓名</div>
+        <div class="identity-list-right f28 c-333">张**</div>
+    </div>
+    <div class="identity-content-list mb60">
+        <div class="identity-list-left f28 c-333">身份证号</div>
+        <div class="identity-list-right f28 c-333">3100000**********</div>
+    </div>
+</div>
+-->
+<div class="common-modal" id="identityModal">
+  <div class="common-modal-header f28 c-333 next-line">身份认证信息提交后将不可修改，确认提交？</div>
+  <!-- <div class="common-modal-content f24 c-999">
+       如果您已经向卖家付款，请千万不要取消交易。
+   </div>-->
+  <div class="common-modal-btn">
+    <button class="common-btn-bgc-d93740 w250 h80 " id="confirm">确认</button>
+    <button class="common-btn-bgc-white w250 h80" id="cancel">取消</button>
+  </div>
+</div>
+<div class="common-mask"></div>
+<script src="../js/common.js"></script>
+<script type="text/javascript">
+  $("#idSubmit").tap(function () {
+       $('#identityModal').css("display","block");
+       $('.common-mask').css({position:'fixed',background:'rgba(48,48,48,0.30)'})
+   })
+   $("#confirm").tap(function () {
+       $('#identityModal').css("display","none");
+       $('.common-mask').css({position:'relative',background:'rgba(48,48,48,1)'})
+   })
+   $("#cancel").tap(function () {
+       $('#identityModal').css("display","none");
+       $('.common-mask').css({position:'relative',background:'rgba(48,48,48,1)'})
+   })
+/*
+  $(".submit").on("click", function () {
+    var pass = 1;
+    var doms = [$("#name"), $("#idCard")];
+
+    // show error inner func
+    function err(dom, text, isParent) {
+      var ele = isParent ? dom.parent() : dom;
+      ele.addClass("common-input-error").next(".error-text").text(text).show();
+    }
+
+    if (!doms[0].val()) {
+      err(doms[0], "该字段不能为空");
+      pass = 0;
+    } else {
+      if (doms[0].val().length < 6 || doms[0].val().length > 20) {
+        err(doms[0], "姓名长度为（2-20）之间");
+        pass = 0;
+      }
+    }
+    if (!doms[1].val()) {
+      err(doms[1], "该字段不能为空");
+      pass = 0;
+    }
+  })
+  */
+</script>
 </body>
 </html>

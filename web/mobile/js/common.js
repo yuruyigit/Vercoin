@@ -77,14 +77,14 @@ window.onload = function() {
 /**
  * @description prev page
  */
-$(".common-header-left").on("click", function () {
+$(".common-header-left").on("tap", function () {
   window.history.go(-1);
 });
 
 /**
  * @description checkbox
  */
-$(".common-checkbox").on("click", function () {
+$(".common-checkbox").on("tap", function () {
   var t = $(this);
   var target = t.data("target") ? $("." + t.data("target")) : '';
   var checked = t.hasClass("checked");
@@ -103,7 +103,7 @@ $(".common-checkbox").on("click", function () {
 /**
  * @description the  custom radio
  */
-$(".common-radio").on("click", function () {
+$(".common-radio").on("tap", function () {
   $(this).toggleClass("selected")
 });
 
@@ -111,7 +111,7 @@ $(".common-radio").on("click", function () {
 /**
  * @description the custom tabs
  */
-$(".common-tab").on("click", "li", function () {
+$(".common-tab").on("tap", "li", function () {
   $(".common-tab li").removeClass("active");
   $(this).addClass("active");
 });

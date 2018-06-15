@@ -30,6 +30,9 @@ input, button ,select{
 textarea:focus,div:focus,select:focus{
     outline: none;
 }
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px white inset !important;
+}
 option{
     padding: 0;
 }
@@ -1862,7 +1865,7 @@ section.order-status {
 }
 .identity-list-left{
     float: left;
-    width: 0.56rem;
+    width:0.7rem;
     margin-right: 0.375rem;
 }
 .identity-list-right{
@@ -2045,6 +2048,7 @@ section.order-status {
 #infoDetail {
     margin-top:0.3rem;
 }
+
 form.payment .common-input{
     font-size: 0.13rem;
 }
@@ -2097,7 +2101,17 @@ form.payment button.upload{
     color:#333;
 }
 .common-trade-center-user h5 span ,
-.common-trade-center-user h5 em
-{
-    font-size:0.1rem;
+.common-trade-center-user h5 em {
+    font-size: 0.1rem;
+}
+#infoTabs{
+    margin-bottom: 0.49rem;
+}
+/*用户协议*/
+.indent{
+    padding-left: 0;
+    text-indent: 0.2rem;
+}
+.agree-content p{
+    font-weight: normal;
 }

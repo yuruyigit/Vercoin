@@ -1,6 +1,7 @@
 /**
  * @close the modal
  */
+
 ;$("#cancel").on("tap", function () {
   $('#accountModal').css("display", "none");
   $('.common-mask').css({

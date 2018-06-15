@@ -130,7 +130,9 @@ option{
 .mt80 {
     margin-top: 0.4rem;
 }
-
+.mb0 {
+    margin-bottom: 0;
+}
 .mb20 {
     margin-bottom: 0.1rem;
 }
@@ -827,9 +829,11 @@ option{
     top: 0.03rem;
     margin-right: 0.02rem;
 }
+.common-trade-right {
+    font-size:0;
+}
 .common-trade-right .common-btn-bgc-d93740{
     display: block;
-    margin-left: 0.2rem;
 }
 /*Modal*/
 .common-modal{
@@ -1447,6 +1451,7 @@ section.order-status {
 }
 .common-no-input-wrap span {
     margin-right:0.15rem;
+    font-size:0.13rem;
 }
 
 .trade_ad .common-input-item-label-2.ad-type {
@@ -1480,10 +1485,9 @@ section.order-status {
     margin-right:0;
     position: relative;
     top: 1px;
+    font-size:0.13rem;
 }
-.trade_ad .common-radio.selected {
-    margin-right:0.08rem;
-}
+
 .trade_ad .trade-btc-wrap ,
 .trade_ad .trade-eth-wrap
 {
@@ -2040,4 +2044,60 @@ section.order-status {
 }
 #infoDetail {
     margin-top:0.3rem;
+}
+form.payment .common-input{
+    font-size: 0.13rem;
+}
+form.payment .label-b {
+    font-size: 0.13rem;
+    font-weight: 400;
+}
+
+form.payment button.upload{
+    font-size: 0.12rem;
+    background-image: linear-gradient(15deg, #EE6874 0%, #D93740 54%);
+}
+
+.qrcode-wrap {
+    min-height: 1rem;
+    color: #C2C2C2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#qrcodeShow {
+    padding: 0.18rem 0;
+    text-align: center;
+}
+
+#qrcodeShow img {
+    width:60%;
+}
+
+#infoTabs {
+    padding-bottom:0.4rem;
+}
+
+.trade_ad {
+    padding-bottom:0.6rem;
+    font-size:0.13rem;
+}
+.trade_ad .label-b,
+.trade_ad .common-input
+{
+    font-size:0.13rem;
+}
+.real-radio {
+    display:none;
+}
+
+.common-trade-center-user a {
+    color:#333;
+}
+.common-trade-center-user h5 span ,
+.common-trade-center-user h5 em
+{
+    font-size:0.1rem;
 }

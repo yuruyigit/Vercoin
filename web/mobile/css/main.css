@@ -1861,7 +1861,7 @@ section.order-status {
 }
 .identity-list-left{
     float: left;
-    width: 0.56rem;
+    width:0.7rem;
     margin-right: 0.375rem;
 }
 .identity-list-right{
@@ -2046,4 +2046,12 @@ section.order-status {
 }
 #infoTabs{
     margin-bottom: 0.49rem;
+}
+/*用户协议*/
+.indent{
+    padding-left: 0;
+    text-indent: 0.2rem;
+}
+.agree-content p{
+    font-weight: normal;
 }

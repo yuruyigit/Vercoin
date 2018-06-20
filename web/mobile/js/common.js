@@ -104,10 +104,13 @@ $(".common-checkbox").on("tap", function () {
 /**
  * @description the  custom radio
  */
-$(".common-radio").on("tap", function () {
-  $(this).addClass("selected").siblings(".common-radio").removeClass("selected");
-});
+if(window.location.href.indexOf("my/tradeOrder") < 0 ){
+  $(".common-radio").on("tap", function () {
+    $(this).addClass("selected").siblings(".common-radio").removeClass("selected");
+  });
+}
 
+// $(".common-radio").off();
 
 /**
  * @description the custom tabs

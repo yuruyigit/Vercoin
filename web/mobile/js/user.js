@@ -4,15 +4,31 @@
 
 function loadRouter(){
   if (window.location.href.indexOf("#") > -1) {
+    var router = window.location.href.split("#")[1];
+    var routers = {
+      infoDetail: 1 ,
+      assets: 2
+    };
     $("header").hide();
-    $("header").eq(1).show();
-    $("#infoTabs").hide();
-    $("#infoDetail").show();
+    $("header").eq(routers[router]).show();
+    if(router === 'infoDetail'){
+      $("#myAssets").hide();
+      $("#infoTabs").hide();
+      $("#infoDetail").show();
+    }else {
+      $("#myAssets").show();
+      $("#infoTabs").hide();
+      $("#infoDetail").hide();
+      $("form").hide();
+    }
+
     $("footer").hide();
+
   } else {
-    // default details hide
+    $("form").show();
     $("#infoTabs").show();
     $("#infoDetail").hide();
+    $("#myAssets").hide();
     $("footer").show();
     $("header").hide();
     $("header").eq(0).show();

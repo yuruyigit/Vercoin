@@ -297,6 +297,9 @@ option{
     color: #fff;
     background-color: #d93740;
 }
+.common-btn-bgc-d93740.upload{
+    font-size: 0.12rem;
+}
 .common-btn-simple {
     background:#fff;
     color: #333333;
@@ -843,7 +846,9 @@ option{
 .common-trade-center-user h5 em{
     font-style: normal;
 }
-
+.common-trade-center-user span .pay-type{
+    display: inline-block;
+}
 .common-trade-center-user span img{
     width: 0.13rem;
     position: relative;
@@ -1144,7 +1149,7 @@ option{
     margin: 0;
     position: absolute;
     bottom:0;
-    left: 25%;
+    left:40%;
 }
 .Zyn-index-asset h3{
     margin: 0 0 0.05rem;

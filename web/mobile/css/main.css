@@ -133,7 +133,9 @@ option{
 .mt80 {
     margin-top: 0.4rem;
 }
-
+.mb0 {
+    margin-bottom: 0;
+}
 .mb20 {
     margin-bottom: 0.1rem;
 }
@@ -679,7 +681,14 @@ option{
     width:0.82rem;
     display:inline-block;
 }
-.common-form, .register-demo,.forget-demo {
+
+.common-form, .common-div {
+    width:3.1rem;
+    margin: 0 auto;
+    font-size: 0;
+}
+
+.common-form {
     margin-left:auto;
     margin-right:auto;
     width:3.1rem;
@@ -838,6 +847,9 @@ option{
     position: relative;
     top: 0.03rem;
     margin-right: 0.02rem;
+}
+.common-trade-right {
+    font-size:0;
 }
 .common-trade-right .common-btn-bgc-d93740{
     display: block;
@@ -1197,6 +1209,7 @@ option{
     margin: 0 auto;
     width: 3.1rem;
     margin-top:0.4rem;
+    margin-bottom:0.3rem;
 }
 .common-user-license {
     height:0.15rem;
@@ -1302,8 +1315,9 @@ option{
     display: inline-block;
     padding-right:0.04rem;
 }
-.common-trade-header-info .user-info .count {
-    border-right:2px solid #666666;
+.common-trade-header-info .user-info .ratings {
+    border-left: 2px solid #666666;
+    padding-left: 0.1rem;
 }
 .trade-content {
     border-top: 1px solid  #F2F2F2;
@@ -1311,6 +1325,7 @@ option{
     padding-left:0.325rem;
     padding-top:0.15rem;
     padding-bottom: 0.05rem;
+    margin:0;
 }
 
 .trade-content li {
@@ -1463,6 +1478,7 @@ section.order-status {
 }
 .common-no-input-wrap span {
     margin-right:0.15rem;
+    font-size:0.13rem;
 }
 
 .trade_ad .common-input-item-label-2.ad-type {
@@ -1496,10 +1512,9 @@ section.order-status {
     margin-right:0;
     position: relative;
     top: 1px;
+    font-size:0.13rem;
 }
-.trade_ad .common-radio.selected {
-    margin-right:0.08rem;
-}
+
 .trade_ad .trade-btc-wrap ,
 .trade_ad .trade-eth-wrap
 {
@@ -1556,7 +1571,7 @@ section.order-status {
 }
 .withdrawal-content-title{
     padding:0.3rem 0 0.15rem 0.325rem;
-    border-bottom: 2px solid #f2f2f2;
+    border-bottom: 1px solid #f2f2f2;
 }
 .withdrawal-content-title h3{
     margin: 0 0 0.1rem 0;
@@ -1569,12 +1584,11 @@ section.order-status {
 }
 .withdrawal-content-form{
     padding: 0.2rem 0 0 0.325rem;
-    border-bottom: 2px solid #f2f2f2;
 }
 .withdrawal-content-form button {
-    position: absolute;
-    bottom:-0.6rem;
-    left:0.325rem;
+    /*position: absolute;*/
+    /*bottom:-0.6rem;*/
+    /*left:0.325rem;*/
 }
 .withdrawal-content-form .common-input-item p{
     word-wrap: break-word;
@@ -1609,7 +1623,7 @@ section.order-status {
     padding-top:0.05rem;
 }
 .trade form > button {
-    margin-top: 0.05rem;
+
 }
 .trade form > div {
     font-size:0.13rem;
@@ -1686,7 +1700,7 @@ section.order-status {
     margin: 0.4rem auto 0.3rem;
 }
 .charge-tip{
-    border-top: 2px solid #f2f2f2;
+    /*border-top: 1px solid #f2f2f2;*/
     padding: 0.15rem 0.3rem 0.36rem 0.335rem;
 }
 .charge-tip h3,p{
@@ -2057,6 +2071,62 @@ section.order-status {
 #infoDetail {
     margin-top:0.3rem;
 }
+
+form.payment .common-input{
+    font-size: 0.13rem;
+}
+form.payment .label-b {
+    font-size: 0.13rem;
+    font-weight: 400;
+}
+
+form.payment button.upload{
+    font-size: 0.12rem;
+    background-image: linear-gradient(15deg, #EE6874 0%, #D93740 54%);
+}
+
+.qrcode-wrap {
+    min-height: 1rem;
+    color: #C2C2C2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#qrcodeShow {
+    padding: 0.18rem 0;
+    text-align: center;
+}
+
+#qrcodeShow img {
+    width:60%;
+}
+
+#infoTabs {
+    padding-bottom:0.4rem;
+}
+
+.trade_ad {
+    padding-bottom:0.6rem;
+    font-size:0.13rem;
+}
+.trade_ad .label-b,
+.trade_ad .common-input
+{
+    font-size:0.13rem;
+}
+.real-radio {
+    display:none;
+}
+
+.common-trade-center-user a {
+    color:#333;
+}
+.common-trade-center-user h5 span ,
+.common-trade-center-user h5 em {
+    font-size: 0.1rem;
+}
 #infoTabs{
     margin-bottom: 0.49rem;
 }
@@ -2067,4 +2137,25 @@ section.order-status {
 }
 .agree-content p{
     font-weight: normal;
+}
+
+/* copy */
+.copy{
+    position:absolute; z-index: -1; opacity: 0;
+}
+
+.wallets .charge  {
+    border-bottom: 1px solid #f2f2f2;
+}
+
+#qrcodeCanvas {
+    width:100%;
+}
+
+#qrcodeCanvas canvas {
+    width:100%;
+}
+
+form.withdrawal-content input[type="text"] {
+    border-color:#C2C2C2;
 }

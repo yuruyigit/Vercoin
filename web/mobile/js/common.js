@@ -86,6 +86,7 @@ $(".common-header-left").on("tap", function () {
  */
 $(".common-checkbox").on("tap", function () {
   var t = $(this);
+  if(t.hasClass("fix")) return;
   var target = t.data("target") ? $("." + t.data("target")) : '';
   var checked = t.hasClass("checked");
   var src = t.find("img").attr("src"),dsrc;
@@ -103,10 +104,13 @@ $(".common-checkbox").on("tap", function () {
 /**
  * @description the  custom radio
  */
-$(".common-radio").on("tap", function () {
-  $(this).toggleClass("selected")
-});
+if(window.location.href.indexOf("my/tradeOrder") < 0 ){
+  $(".common-radio").on("tap", function () {
+    $(this).addClass("selected").siblings(".common-radio").removeClass("selected");
+  });
+}
 
+// $(".common-radio").off();
 
 /**
  * @description the custom tabs
@@ -123,13 +127,11 @@ $(".common-tab").on("tap", "li", function () {
 $(".common-input-item input").on("focus" ,function(){
   $(this).removeClass("common-input-bottom-error").siblings(".common-error-text").hide();
   $(this).parent().removeClass("common-input-bottom-error").next(".common-error-text").hide();
-});
 
-$(".common-input-item input").on("focus" ,function(){
   $(this).removeClass("common-input-error").siblings(".error-text").hide();
   $(this).parent().removeClass("common-input-error").next(".error-text").hide();
 });
 
-}
+};
 
 

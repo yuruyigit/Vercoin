@@ -207,6 +207,8 @@ option{
 .f-n {
     font-weight: normal;
 }
+
+
 .c-333 {
     color: #333;
 }
@@ -449,6 +451,7 @@ option{
 /* 3个tab */
 .common-tab-3 {
     padding: 0 0.13rem;
+    margin-bottom: 0;
 }
 
 .common-tab-3 li {
@@ -817,8 +820,14 @@ option{
 .common-trade-center-user{
     height: 0.5rem;
 }
+.common-trade-center-user a{
+    color:#333;
+}
 .common-trade-center-user h4,h5{
     margin: 0;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
 }
 .common-trade-center-user h5 em{
     font-style: normal;
@@ -832,7 +841,11 @@ option{
 }
 .common-trade-right .common-btn-bgc-d93740{
     display: block;
-    margin-left: 0.2rem;
+   /* margin-left: 0.2rem;*/
+}
+.common-trade-right .common-btn-bgc-27c1c3{
+    display: block;
+  /*  margin-left: 0.2rem;*/
 }
 /*Modal*/
 .common-modal{

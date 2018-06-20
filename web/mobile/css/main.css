@@ -210,7 +210,9 @@ option{
     font-weight: normal;
 }
 
-
+.f-light{
+    font-weight: 400;
+}
 .c-333 {
     color: #333;
 }

@@ -686,7 +686,7 @@ option{
 
 .common-form, .common-div {
     width:3.1rem;
-    margin: 0 auto;
+    margin: 0.4rem auto 0;
     font-size: 0;
 }
 
@@ -1203,6 +1203,9 @@ option{
     margin-bottom: 0.49rem;
 }
 .common-homepage-list.login{
+    font-size: 0;
+}
+.common-homepage-list.setting{
     font-size: 0;
 }
 .common-h1 {
@@ -2105,9 +2108,9 @@ form.payment button.upload{
     width:60%;
 }
 
-#infoTabs {
+/*#infoTabs {
     padding-bottom:0.4rem;
-}
+}*/
 
 .trade_ad {
     padding-bottom:0.6rem;

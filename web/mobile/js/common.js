@@ -73,64 +73,64 @@ window.GETCODE = function (config) {
   })
 };
 
-window.onload = function() {
-/**
- * @description prev page
- */
-$(".common-header-left").on("tap", function () {
-  window.history.go(-1);
-});
-
-/**
- * @description checkbox
- */
-$(".common-checkbox").on("tap", function () {
-  var t = $(this);
-  if(t.hasClass("fix")) return;
-  var target = t.data("target") ? $("." + t.data("target")) : '';
-  var checked = t.hasClass("checked");
-  var src = t.find("img").attr("src"),dsrc;
-  if(checked){
-    dsrc = src.replace("checkbox1","checkbox")
-  }else {
-    dsrc = src.replace("checkbox","checkbox1")
-  }
-  t.toggleClass("checked").find("img").attr("src", dsrc);
-  // if the user license
-  if (target) target.toggleClass("common-btn-disabled").toggleClass(target.data("class"));
-});
-
-
-/**
- * @description the  custom radio
- */
-if(window.location.href.indexOf("my/tradeOrder") < 0 ){
-  $(".common-radio").on("tap", function () {
-    $(this).addClass("selected").siblings(".common-radio").removeClass("selected");
+window.onload = function () {
+  /**
+   * @description prev page
+   */
+  $(".common-header-left").on("tap", function () {
+    window.history.go(-1);
   });
-}
+  if (window.location.href.indexOf("my/tradeOrder") < 0) {
+    /**
+     * @description checkbox
+     */
+    $(".common-checkbox").on("tap", function () {
+      var t = $(this);
+      if (t.hasClass("fix")) return;
+      var target = t.data("target") ? $("." + t.data("target")) : '';
+      var checked = t.hasClass("checked");
+      var src = t.find("img").attr("src"), dsrc;
+      if (checked) {
+        dsrc = src.replace("checkbox1", "checkbox")
+      } else {
+        dsrc = src.replace("checkbox", "checkbox1")
+      }
+      t.toggleClass("checked").find("img").attr("src", dsrc);
+      // if the user license
+      if (target) target.toggleClass("common-btn-disabled").toggleClass(target.data("class"));
+    });
+
+
+    /**
+     * @description the  custom radio
+     */
+
+    $(".common-radio").on("tap", function () {
+      $(this).addClass("selected").siblings(".common-radio").removeClass("selected");
+    });
+  }
 
 // $(".common-radio").off();
 
-/**
- * @description the custom tabs
- */
-$(".common-tab").on("tap", "li", function () {
-  $(".common-tab li").removeClass("active");
-  $(this).addClass("active");
-});
+  /**
+   * @description the custom tabs
+   */
+  $(".common-tab").on("tap", "li", function () {
+    $(".common-tab li").removeClass("active");
+    $(this).addClass("active");
+  });
 
 
-/** todo
- * @description input focus hide the error tip
- */
-$(".common-input-item input").on("focus" ,function(){
-  $(this).removeClass("common-input-bottom-error").siblings(".common-error-text").hide();
-  $(this).parent().removeClass("common-input-bottom-error").next(".common-error-text").hide();
+  /** todo
+   * @description input focus hide the error tip
+   */
+  $(".common-input-item input").on("focus", function () {
+    $(this).removeClass("common-input-bottom-error").siblings(".common-error-text").hide();
+    $(this).parent().removeClass("common-input-bottom-error").next(".common-error-text").hide();
 
-  $(this).removeClass("common-input-error").siblings(".error-text").hide();
-  $(this).parent().removeClass("common-input-error").next(".error-text").hide();
-});
+    $(this).removeClass("common-input-error").siblings(".error-text").hide();
+    $(this).parent().removeClass("common-input-error").next(".error-text").hide();
+  });
 
 };
 

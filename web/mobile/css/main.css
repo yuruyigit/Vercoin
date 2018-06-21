@@ -2166,6 +2166,19 @@ form.payment button.upload{
     width:100%;
 }
 
-form.withdrawal-content input[type="text"] {
+form.withdrawal-content input {
     border-color:#C2C2C2;
+}
+
+div.common-input-error input.common-input {
+    color: #D93740;
+}
+
+.trade .common-error-text {
+    margin-top: -0.1rem;
+    margin-bottom: 0.1rem;
+}
+
+#home-view .pay-type {
+    display: inline-block;
 }

@@ -1062,6 +1062,11 @@ option{
     margin: 0;
     font-size: 0.11rem;
 }
+.common-pay-list-center p.bank{
+    margin: 0;
+    font-size: 0.11rem;
+    text-align: left;
+}
 .common-pay-list-center p em{
     font-style: normal;
     margin-left: 0.05rem;

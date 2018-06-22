@@ -1016,6 +1016,7 @@ option{
 }
 .common-bill-list ul{
     padding: 0;
+    margin: 0;
 }
 .common-bill-list ul li{
     margin-bottom: 0.03rem;
@@ -1980,6 +1981,10 @@ section.order-status {
 }
 .buy-order-content p{
     margin:0.7rem auto 0;
+    text-align: center;
+}
+.buy-order-content p.buy-wait{
+    margin:0.7rem auto 0.5rem;
     text-align: center;
 }
 .buy-order-content .common-order-detail li{

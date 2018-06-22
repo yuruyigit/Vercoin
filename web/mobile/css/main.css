@@ -819,7 +819,7 @@ option{
     margin:0 0.13rem;
     display: flex;
     justify-content: space-between;
-    border-bottom: 2px solid #f2f2f2;
+    border-bottom: 1px solid #f2f2f2;
 }
 .common-trade-left{
     width: 0.3rem;
@@ -977,7 +977,7 @@ option{
     padding:0.3rem 0.26rem 0.3rem 0.3rem;
     display: flex;
     justify-content: space-between;
-    border-bottom: 2px solid #F2F2F2;
+    border-bottom: 1px solid #F2F2F2;
 }
 .common-asset-left{
     width: 0.23rem;
@@ -989,15 +989,19 @@ option{
 }
 .common-asset-center {
     margin-left: -0.3rem;
+    position: relative;
+    left: -0.08rem;
 }
 .common-asset-center p{
     margin: 0.09rem 0 0.09rem 0;
+    font-weight:500;
 }
 .common-asset-center h5{
     margin: 0;
 }
 .common-asset-center h5 em{
     font-style: normal;
+    font-weight:400;
 }
 .common-asset-right{
     padding-top: 0.13rem;
@@ -1005,17 +1009,18 @@ option{
 /*Common-bill*/
 .common-bill-list{
     padding: 0.1rem 0.2225rem 0.1rem 0.325rem;
+    border-bottom:0.15rem solid #F9F9F9;
 }
 .common-bill-list.with-drawal h2{
     color:#13C1C4;
 }
 .common-bill-list h2{
     margin: 0 0 0.1rem 0;
-    color: #D83A40;
     font-weight: bold;
 }
 .common-bill-list ul{
     padding: 0;
+    margin:0;
 }
 .common-bill-list ul li{
     margin-bottom: 0.03rem;
@@ -1148,8 +1153,10 @@ option{
 .Zyn-index-list-detail span{
     margin: 0;
     position: absolute;
-    bottom:0;
-    left:40%;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
 }
 .Zyn-index-asset h3{
     margin: 0 0 0.05rem;
@@ -1174,7 +1181,7 @@ option{
 .Zyn-index-advertisement h3{
     margin: 0;
     padding: 0.08rem 0 0.08rem 0.13rem;
-    border-bottom: 2px solid #f2f2f2;
+    border-bottom: 1px solid #f2f2f2;
     border-top:0.05rem solid #f9f9f9;
 }
 /*Myhomepage*/
@@ -2181,4 +2188,24 @@ div.common-input-error input.common-input {
 
 #home-view .pay-type {
     display: inline-block;
+}
+
+.common-form-s  label{
+    font-size:0.13rem;
+}
+
+.common-form-s .common-input{
+    font-size:0.13rem;
+    border: 1px solid #C2C2C2;
+    border-radius: 2px 0 0 2px;
+}
+
+.common-form-s .common-error-text{
+    padding-left: 0.84rem;
+    font-size: 0.13rem;
+    margin-top: -0.1rem;
+    margin-bottom: 0.05rem;
+}
+.common-form-s button.common-btn-bgc-d93740 {
+    border-radius:0;
 }

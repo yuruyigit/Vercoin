@@ -1067,6 +1067,11 @@ option{
     margin: 0;
     font-size: 0.11rem;
 }
+.common-pay-list-center p.bank{
+    margin: 0;
+    font-size: 0.11rem;
+    text-align: left;
+}
 .common-pay-list-center p em{
     font-style: normal;
     margin-left: 0.05rem;
@@ -1982,6 +1987,10 @@ section.order-status {
 }
 .buy-order-content p{
     margin:0.7rem auto 0;
+    text-align: center;
+}
+.buy-order-content p.buy-wait{
+    margin:0.7rem auto 0.5rem;
     text-align: center;
 }
 .buy-order-content .common-order-detail li{

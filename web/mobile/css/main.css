@@ -645,7 +645,7 @@ option{
     border-bottom: 0;
     padding: 0.1rem 0.325rem 0.1rem 0.32rem;
 }
-.common-order-detail.bg a{
+.common-order-detail.bg .link{
     width: 0.08rem;
     height: 0.17rem;
     display: block;
@@ -654,7 +654,7 @@ option{
     top:50%;
     margin-top: -0.085rem;
 }
-.common-order-detail button{
+.common-order-detail .button{
     position: absolute;
     right:0.325rem;
     top:50%;
@@ -2236,4 +2236,8 @@ div.common-input-error input.common-input {
 }
 .eva-list.selected .f26 {
     color:#D93740;
+}
+.data-frame {
+    width:100%;
+    border:none;
 }

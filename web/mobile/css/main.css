@@ -2026,9 +2026,7 @@ section.order-status {
     height: 0.4rem;
     margin: 0.2rem 0 0.1rem;
 }
-.buy-order-content .eva-content .eva-list div.eva{
-    color: #D93740;
-}
+
 .buy-order-content button.submit{
     margin: 1.245rem 0 0 0.325rem;
 }
@@ -2209,12 +2207,29 @@ div.common-input-error input.common-input {
     border-radius: 2px 0 0 2px;
 }
 
-.common-form-s .common-error-text{
+.trade_ad .common-error-text,
+.common-form-s .common-error-text {
     padding-left: 0.84rem;
     font-size: 0.13rem;
     margin-top: -0.1rem;
     margin-bottom: 0.05rem;
 }
+.trade_ad .common-error-text {
+    margin-top: -0.15rem;
+}
 .common-form-s button.common-btn-bgc-d93740 {
     border-radius:0;
+}
+
+.eva-list  .img1 {
+    display:none;
+}
+.eva-list.selected .img0{
+     display:none;
+ }
+.eva-list.selected .img1{
+    display:block;
+}
+.eva-list.selected .f26 {
+    color:#D93740;
 }

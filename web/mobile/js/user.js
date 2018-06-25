@@ -16,6 +16,18 @@ function loadRouter(){
       $("#infoTabs").hide();
       $("#infoDetail").show();
     }else {
+      // 进入我的资产页面
+
+      // check用户有没有设置资金密码和实名
+      if($("#modal-asset").length){
+        $("#modal-asset").show()
+        $('.common-mask').css({position: 'fixed', background: 'rgba(48,48,48,0.30)'})
+      }
+      if($("#modal1").length){
+        $("#modal1").show()
+        $('.common-mask').css({position: 'fixed', background: 'rgba(48,48,48,0.30)'})
+      }
+
       $("#myAssets").show();
       $("#infoTabs").hide();
       $("#infoDetail").hide();

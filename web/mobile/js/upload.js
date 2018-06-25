@@ -49,7 +49,9 @@ $(".submit").on("tap", function () {
   }
 
   if (pass.val()) {
-    // todo
+    if(pass.val().length > 20 || pass.val().length < 6){
+      e(2, "密码长度为6到20位之间");
+    }
   } else {
     e(2, "交易密码不能为空");
   }

@@ -1308,6 +1308,7 @@ option{
 .common-radio.selected {
     background-image: url("../images/radio1@3x.png");
 }
+
 .common-trade-header {
     height:0.8rem;
     padding: 0.15rem 0 0.15rem 0.325rem;

@@ -278,7 +278,6 @@ option{
     width: 3.75rem;
     max-width: 3.75rem;
     min-height: 6rem;
-    padding-bottom: 0.5rem;
     position: relative;
     font-size: 0;
 }
@@ -493,10 +492,14 @@ option{
     padding:0;
     border: 1px solid #F2F2F2;
     color:#333333;
-    flex:1;
+    -webkit-box-flex: 1;      /* OLD - iOS 6-, Safari 3.1-6 */
+    -moz-box-flex: 1;         /* OLD - Firefox 19- */
+    -webkit-flex: 1;          /* Chrome */
+    -ms-flex: 1;
     box-sizing: border-box;
     text-indent: 0.14rem;
     border-radius: 2px 0 0 2px;
+    max-width: 100%;
 }
 
 .common-input-bottom {
@@ -537,7 +540,12 @@ option{
 .common-input-item-label,
 .common-input-item-label-2
 {
-    display:flex;
+    display: -webkit-box; /* Chrome 4+, Safari 3.1, iOS Safari 3.2+ */
+    display: -moz-box; /* Firefox 17- */
+    display: -webkit-flex; /* Chrome 21+, Safari 6.1+, iOS Safari 7+, Opera 15/16 */
+    display: -moz-flex; /* Firefox 18+ */
+    display: -ms-flexbox; /* IE 10 */
+    display: flex; /* Chrome 29+, Firefox 22+, IE 11+, Opera 12.1/17/18, Android 4.4+ */
     font-size:0.14rem;
     border-bottom:1px solid #F2F2F2;
     box-sizing: border-box;
@@ -556,6 +564,8 @@ option{
     line-height:0.4rem;
     height:0.4rem;
     width:0.84rem;
+    display:block;
+    font-size:0.13rem;
 }
 .common-input-item-label  .common-input-bottom {
     border-bottom:1px solid #fff;
@@ -570,7 +580,12 @@ option{
 .common-input-wrap-bottom
 {
     flex:1;
-    display:flex;
+    display: box;              /* OLD - Android 4.4- */
+    display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;      /* TWEENER - IE 10 */
+    display: -webkit-flex;     /* NEW - Chrome */
+    display: flex;
     position:relative;
     box-sizing: border-box;
 }
@@ -1414,6 +1429,7 @@ option{
     -webkit-appearance: none;
     background-color: transparent;
     outline: none;
+    font-size:0.13rem;
 }
 /* 订单 */
 section.order-status {
@@ -1562,6 +1578,8 @@ section.order-status {
     background: #fff;
     color: #D93740;
     border: 1px solid #D93740;
+    border-radius:1px;
+    line-height:0.2rem;
 }
 .common-asset-center{
     font-size: 0;
@@ -1716,11 +1734,13 @@ section.order-status {
 .charge-content .charge-address span{
     display: block;
     text-align: center;
+    width:100%;
 }
 .charge-content .charge-address{
-    padding: 0 0.42rem;
+    /*padding: 0 0.42rem;*/
     font-size: 0;
     text-align: center;
+    width:100%;
 }
 .charge-content .charge-address button{
     margin: 0.4rem auto 0.3rem;
@@ -1774,9 +1794,8 @@ section.order-status {
     line-height: 0.4rem;
     font-weight: 400;
 }
-.modify-phone-content .common-input-item  .label-b{
-    margin-right: 0.05rem;
-}
+
+
 .modify-phone-content .submit{
     margin-top: 0.25rem;
 }
@@ -2241,3 +2260,21 @@ div.common-input-error input.common-input {
     width:100%;
     border:none;
 }
+.code-sending {
+    background: #ccc !important;
+}
+.common-input-item-label-2 .common-input {
+    font-size:0.13rem;
+}
+.common-account-setting > a {
+    font-size:0.12rem;
+}
+/*.wrap-calc .common-input-price-label{*/
+    /*position:absolute;*/
+    /*right:0;*/
+/*}*/
+/*.wrap-calc input{*/
+    /*position:absolute;*/
+    /*left:0;*/
+    /*width:100px !important;*/
+/*}*/

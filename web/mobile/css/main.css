@@ -36,17 +36,6 @@ input:-webkit-autofill {
 input,textarea{
     -webkit-appearance: none;
 }
-body{
-
-    -webkit-user-select: none;
-
-    -moz-user-select: none;
-
-    -ms-user-select: none;
-
-    user-select: none;
-
-}
 option{
     padding: 0;
 }
@@ -988,6 +977,9 @@ option{
     color: #D83A40;
     position: absolute;
     right: 0.325rem;
+}
+.common-order-title  span.sell{
+    color: #13C1C4;
 }
 /*Common-asset*/
 .common-asset-list{

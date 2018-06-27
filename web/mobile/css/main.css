@@ -345,7 +345,7 @@ option{
 .common-homepage-list-detail .lefticon{
     width: 0.15rem;
     height: 0.15rem;
-    margin: 0.05rem 0.19rem 0 0;
+    margin: 0.04rem 0.19rem 0 0;
 }
 .common-homepage-list-detail em{
     font-style: normal;
@@ -2278,4 +2278,16 @@ div.common-input-error input.common-input {
 }
 .check-coin .img1 {
     display:none;
+}
+.wrap-calc {
+    width:2.26rem;
+}
+.wrap-calc .common-input-price-label {
+    position:absolute;
+    right:0;
+}
+.wrap-calc input {
+    position:absolute;
+    left:0;
+    height:100%;
 }

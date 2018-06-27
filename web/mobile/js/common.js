@@ -75,6 +75,14 @@ window.GETCODE = function (config) {
 };
 
 window.onload = function () {
+
+
+  $(".common-homepage-list-detail").on("tap", function(){
+    if(!$(this).hasClass("logout")){
+      window.location = $(this).attr("href")
+    }
+  })
+
   /**
    * @description prev page
    */

@@ -2276,12 +2276,6 @@ div.common-input-error input.common-input {
 .common-account-setting > a {
     font-size:0.12rem;
 }
-/*.wrap-calc .common-input-price-label{*/
-    /*position:absolute;*/
-    /*right:0;*/
-/*}*/
-/*.wrap-calc input{*/
-    /*position:absolute;*/
-    /*left:0;*/
-    /*width:100px !important;*/
-/*}*/
+.check-coin .img1 {
+    display:none;
+}

@@ -89,7 +89,7 @@ $("#avatar").tap(function () {
 // select user avatar
 $(".user-list").tap(function () {
   var src = $(this).find("img").attr("src");
-  $("#avatar img").attr("src", src);
+  //$("#avatar img").attr("src", src);
   $("#profile").val(src.split("web/")[1]);
   $(this).toggleClass('active').siblings().removeClass('active');
   $(this).find("span").toggleClass("active");

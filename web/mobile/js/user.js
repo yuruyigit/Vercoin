@@ -2,6 +2,37 @@
  * @desc 自定义路由 切换个人信息列表和个人信息tab
  */
 
+$("#confirm1").on("click", function(){
+  $("#modal-asset").hide()
+  $(".common-mask").css({
+    "position": 'relative',
+    "background": 'rgba(48,48,48,1)'
+  })
+});
+
+$("#closeFundModal").on("click", function(){
+  $("#modal1").hide()
+  $(".common-mask").css({
+    "position": 'relative',
+    "background": 'rgba(48,48,48,1)'
+  })
+})
+
+$(".operate").on("click",function(e){
+  e.preventDefault();
+  if($("#modal-asset").length){
+    $("#modal-asset").show()
+    $('.common-mask').css({position: 'fixed', background: 'rgba(48,48,48,0.30)'})
+    return;
+  }
+  if($("#modal1").length){
+    $("#modal1").show()
+    $('.common-mask').css({position: 'fixed', background: 'rgba(48,48,48,0.30)'})
+    return;
+  }
+  window.location = $(this).attr("href")
+});
+
 function loadRouter(){
   if (window.location.href.indexOf("#") > -1) {
     var router = window.location.href.split("#")[1];
@@ -19,14 +50,14 @@ function loadRouter(){
       // 进入我的资产页面
 
       // check用户有没有设置资金密码和实名
-      if($("#modal-asset").length){
-        $("#modal-asset").show()
-        $('.common-mask').css({position: 'fixed', background: 'rgba(48,48,48,0.30)'})
-      }
-      if($("#modal1").length){
-        $("#modal1").show()
-        $('.common-mask').css({position: 'fixed', background: 'rgba(48,48,48,0.30)'})
-      }
+      // if($("#modal-asset").length){
+      //   $("#modal-asset").show()
+      //   $('.common-mask').css({position: 'fixed', background: 'rgba(48,48,48,0.30)'})
+      // }
+      // if($("#modal1").length){
+      //   $("#modal1").show()
+      //   $('.common-mask').css({position: 'fixed', background: 'rgba(48,48,48,0.30)'})
+      // }
 
       $("#myAssets").show();
       $("#infoTabs").hide();
@@ -63,12 +94,12 @@ window.addEventListener("hashchange", function () {
 /**
  * @点击退出
  */
-$(".logout").on("tap", function () {
+$(".logout").on("click", function () {
   $('#modal').css({"display": "block"});
   $('.common-mask').css({position: 'fixed', background: 'rgba(48,48,48,0.30)'})
 });
 
-$(".logout-btn").on("tap", function () {
+$(".logout-btn").on("click", function () {
   $('#modal').css({"display": "none"});
   $('.common-mask').css({position: 'relative', background: 'rgba(48,48,48,1)'})
   if ($(this).attr("id") === 'modalConfirm') {
@@ -81,13 +112,13 @@ $(".logout-btn").on("tap", function () {
  * @desc 用户选择头像
  */
 // change avatar
-$("#avatar").tap(function () {
+$("#avatar").click(function () {
   $('#userModal').css({"display": "block"});
   $('.common-mask').css({position: 'fixed', background: 'rgba(48,48,48,0.30)'})
 });
 
 // select user avatar
-$(".user-list").tap(function () {
+$(".user-list").click(function () {
   var src = $(this).find("img").attr("src");
   //$("#avatar img").attr("src", src);
   $("#profile").val(src.split("web/")[1]);
@@ -97,7 +128,7 @@ $(".user-list").tap(function () {
 
 });
 
-$(".avatar-btn").on("tap", function () {
+$(".avatar-btn").on("click", function () {
   $('#userModal').css({"display": "none"});
   $('.common-mask').css({position: 'relative', background: 'rgba(48,48,48,1)'});
   if ($(this).attr("id") === "userModalConfirm") {
@@ -116,18 +147,18 @@ function sumModal(dis,pos){
   $('.common-mask').css({position: pos, background: 'rgba(48,48,48,0.30)'})
 }
 
-$("#editSummary").tap(function () {
+$("#editSummary").click(function () {
   sumModal("block","fixed")
 });
 
-$("#save").tap(function () {
+$("#save").click(function () {
   sumModal("none","relative");
   $("#introduce").val($("#introduceInput").val());
   $("#userForm").submit();
   localStorage.mbchangeuser = 1;
 });
 
-$("#cancel").tap(function () {
+$("#cancel").click(function () {
   sumModal("none","relative")
 });
 

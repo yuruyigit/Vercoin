@@ -1,7 +1,7 @@
 /**
  * @close the modal
  */
-$("#cancel").on("tap", function () {
+$("#cancel").on("click", function () {
   $('.common-modal').css("display", "none");
   $('.common-mask').css({
     position: 'relative',
@@ -12,8 +12,9 @@ $("#cancel").on("tap", function () {
 /**
  * @click the button upload the qrcode
  */
-$(".upload").on("tap", function (e) {
-  e.preventDefault();
+$("#changeQR").on("click", function () {
+  //e.preventDefault();
+  console.log(1111)
   $("#i_pic_file").click();
   $(".common-error-text").eq(3).hide()
 });
@@ -21,7 +22,8 @@ $(".upload").on("tap", function (e) {
 /**
  * @check and submit the form
  */
-$(".submit").on("tap", function () {
+$(".submit").on("click", function () {
+  console.log(1111)
   var name = $("#realName"),
     pay = $("#payment"),
     pass = $("#fundPassword"),
@@ -56,7 +58,7 @@ $(".submit").on("tap", function () {
     e(2, "交易密码不能为空");
   }
 
-  if (file.val()) {
+  if (file[0].files[0]) {
     var allowdTypes = ["image/jpeg", 'image/jpg', 'image/png']
     if (allowdTypes.indexOf(file[0].files[0].type) === -1) {
       e(3, "请选择正确格式的图片");
@@ -66,6 +68,7 @@ $(".submit").on("tap", function () {
     e(3, "二维码图片不能为空");
   }
 
+  console.log(valid)
   if (valid) $("form").submit()
 
 });

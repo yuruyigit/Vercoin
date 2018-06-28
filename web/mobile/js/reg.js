@@ -12,7 +12,7 @@ $(function () {
   /**
    * @desc submit the form
    */
-  $(".submit").on("tap", function () {
+  $(".submit").on("click", function () {
     if ($(this).hasClass("common-btn-disabled")) return false;
 
     // define args

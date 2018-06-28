@@ -8,6 +8,7 @@ window.GETCODE = function (config) {
   var regCell = /^\d{8,}$/, // 手机正则
     // 邮箱正则
     regEmail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/,
+
     // 页面地址
     addr = $("form").attr("action"),
 
@@ -73,8 +74,8 @@ window.GETCODE = function (config) {
     });
   })
 };
+
 window.onload = function () {
-  console.log("load")
   $(".common-homepage-list-detail").on("tap", function(){
     if(!$(this).hasClass("logout")){
       window.location = $(this).attr("href")

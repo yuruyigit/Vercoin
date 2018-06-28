@@ -73,22 +73,14 @@ window.GETCODE = function (config) {
     });
   })
 };
-
 window.onload = function () {
-
-
+  console.log("load")
   $(".common-homepage-list-detail").on("tap", function(){
     if(!$(this).hasClass("logout")){
       window.location = $(this).attr("href")
     }
-  })
-
-  /**
-   * @description prev page
-   */
-  $(".common-header-left").on("tap", function () {
-    window.history.go(-1);
   });
+
   if (window.location.href.indexOf("my/tradeOrder") < 0) {
     /**
      * @description checkbox

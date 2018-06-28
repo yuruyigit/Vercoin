@@ -19,6 +19,7 @@ $(function () {
     var pass = 1;
     var regxCode = /^\d{6}$/;
     var regxCell = /^\d{6,20}$/; // todo
+    var regxChina = /^1[34578]\d{9}$/;
     var doms = [
       $("#user"), $("#cell"), $("#code"), $("#pass"), $("#repass")
     ];
@@ -50,11 +51,17 @@ $(function () {
           if (!regxCell.test(dom.val())) {
             err(dom, "请输入正确的手机号", 1);
           }
+          if(parseInt($("#countriesId").val()) === 1){
+            if (!regxChina.test(dom.val())) {
+              err(dom, "请输入正确的手机号", 1);
+            }
+          }
         }
         if (index === 2) {
           if (!regxCode.test(dom.val())) {
             err(dom, "验证码为6位数字", 1);
           }
+
         }
         if (index >= 3) {
           if (dom.val().length < 6 || dom.val().length > 20) {

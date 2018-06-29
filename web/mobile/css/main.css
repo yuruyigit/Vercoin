@@ -780,6 +780,7 @@ option{
     right:0;
     z-index:99;
     background: #fff;
+    font-size:0;
 }
 .common-footer-nav{
     width: 100%;

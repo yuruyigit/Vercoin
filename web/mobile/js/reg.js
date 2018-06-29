@@ -12,7 +12,8 @@ $(function () {
   /**
    * @desc submit the form
    */
-  $(".submit").on("click", function () {
+  $(".submit").on("click", function (e) {
+    e.preventDefault();
     if ($(this).hasClass("common-btn-disabled")) return false;
 
     // define args
@@ -21,7 +22,7 @@ $(function () {
     var regxCell = /^\d{6,20}$/; // todo
     var regxChina = /^1[34578]\d{9}$/;
     var doms = [
-      $("#user"), $("#cell"), $("#code"), $("#pass"), $("#repass")
+      $("#username"), $("#cell"), $("#vcode"), $("#passwordPlain"), $("#rePasswordPlain")
     ];
 
     var tips = [
@@ -34,7 +35,6 @@ $(function () {
       ele.addClass("common-input-bottom-error").next(".common-error-text").text(text).show();
       pass = 0;
     }
-
 
     // check if empty
     doms.forEach(function (dom, index) {
@@ -78,7 +78,6 @@ $(function () {
     });
     // submit the form
     if (pass) {
-      console.log("pass")
       $("form").submit();
     }
   });

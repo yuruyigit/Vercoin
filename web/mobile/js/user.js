@@ -112,21 +112,21 @@ $(".logout-btn").on("click", function () {
  * @desc 用户选择头像
  */
 // change avatar
-$("#avatar").click(function () {
+$("#avatar").on("click", function () {
   $('#userModal').css({"display": "block"});
   $('.common-mask').css({position: 'fixed', background: 'rgba(48,48,48,0.30)'})
 });
 
 // select user avatar
-$(".user-list").click(function () {
+$(".user-list").on("click",function () {
   var src = $(this).find("img").attr("src");
   //$("#avatar img").attr("src", src);
   $("#profile").val(src.split("web/")[1]);
   $(this).toggleClass('active').siblings().removeClass('active');
   $(this).find("span").toggleClass("active");
   $(this).siblings().find("span").removeClass('active');
-
 });
+
 
 $(".avatar-btn").on("click", function () {
   $('#userModal').css({"display": "none"});

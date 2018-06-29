@@ -16,7 +16,18 @@ $("#closeFundModal").on("click", function(){
     "position": 'relative',
     "background": 'rgba(48,48,48,1)'
   })
-})
+});
+
+$(".show-bill").on("click", function(e){
+  e.preventDefault();
+  if($("#modal-asset").length){
+    return;
+  }
+  if($("#modal1").length){
+   return;
+  }
+  window.location = $(this).attr("href")
+});
 
 $(".operate").on("click",function(e){
   e.preventDefault();
@@ -38,7 +49,8 @@ function loadRouter(){
     var router = window.location.href.split("#")[1];
     var routers = {
       infoDetail: 1 ,
-      assets: 2
+      assets: 2,
+      bill: 3
     };
     $("header").hide();
     $("header").eq(routers[router]).show();
@@ -46,7 +58,13 @@ function loadRouter(){
       $("#myAssets").hide();
       $("#infoTabs").hide();
       $("#infoDetail").show();
-    }else {
+    }
+    if(router === 'bill'){
+      $("#myAssets").hide();
+      $("#infoTabs").hide();
+      $("form").hide()
+    }
+    else {
       // 进入我的资产页面
 
       // check用户有没有设置资金密码和实名

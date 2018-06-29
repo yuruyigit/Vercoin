@@ -58,14 +58,14 @@ $(".submit").on("click", function () {
     e(2, "交易密码不能为空");
   }
 
-  if (file[0].files.length) {
-    var allowdTypes = ["image/jpeg", 'image/jpg', 'image/png']
-    if (allowdTypes.indexOf(file[0].files[0].type) === -1) {
-      e(3, "请选择正确格式的图片");
-    }
-  } else {
-    e(3, "二维码图片不能为空");
-  }
+  // if (file[0].files.length) {
+  //   var allowdTypes = ["image/jpeg", 'image/jpg', 'image/png']
+  //   if (allowdTypes.indexOf(file[0].files[0].type) === -1) {
+  //     e(3, "请选择正确格式的图片");
+  //   }
+  // } else {
+  //   e(3, "二维码图片不能为空");
+  // }
 
   console.log(valid)
   if (valid) $("form").submit()

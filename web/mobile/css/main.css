@@ -2292,3 +2292,16 @@ div.common-input-error input.common-input {
     left:0;
     height:100%;
 }
+.eva-list .img1 {
+    display:none;
+}
+
+.eva-list.selected .img0 {
+    display:none;
+}
+.eva-list.selected .img1 {
+    display:block;
+}
+.eva-list.selected  .f26 {
+    color:#D93740;
+}

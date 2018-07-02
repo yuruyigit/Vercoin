@@ -23,7 +23,6 @@ $("#changeQR").on("click", function () {
  * @check and submit the form
  */
 $(".submit").on("click", function () {
-  console.log(1111)
   var name = $("#realName"),
     pay = $("#payment"),
     pass = $("#fundPassword"),
@@ -51,9 +50,9 @@ $(".submit").on("click", function () {
   }
 
   if (pass.val()) {
-    if(pass.val().length > 20 || pass.val().length < 6){
-      e(2, "密码长度为6到20位之间");
-    }
+    // if(pass.val().length > 20 || pass.val().length < 6){
+    //     //   e(2, "密码长度为6到20位之间");
+    //     // }
   } else {
     e(2, "交易密码不能为空");
   }
@@ -67,7 +66,7 @@ $(".submit").on("click", function () {
   //   e(3, "二维码图片不能为空");
   // }
 
-  console.log(valid)
+
   if (valid) $("form").submit()
 
 });
@@ -77,7 +76,7 @@ $(".submit").on("click", function () {
  *@upload the qrcode
  */
 $("input#i_pic_file").on("change", function () {
-  console.log("change")
+
   var iPicFile = $("input#i_pic_file")[0].files[0];
   var type = $("input#type").val();
   if (iPicFile) {

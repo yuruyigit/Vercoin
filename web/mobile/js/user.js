@@ -55,11 +55,13 @@ function loadRouter(){
     $("header").hide();
     $("header").eq(routers[router]).show();
     if(router === 'infoDetail'){
+      console.log("detail")
       $("#myAssets").hide();
       $("#infoTabs").hide();
       $("#infoDetail").show();
     }
-    if(router === 'bill'){
+    else if(router === 'bill'){
+      console.log("bill")
       $("#myAssets").hide();
       $("#infoTabs").hide();
       $("form").hide()
@@ -167,6 +169,9 @@ function sumModal(dis,pos){
 
 $("#editSummary").click(function () {
   sumModal("block","fixed")
+  $("#introduceInput").val(
+    $(".summary textarea").val()
+  )
 });
 
 $("#save").click(function () {

@@ -2305,3 +2305,21 @@ div.common-input-error input.common-input {
 .eva-list.selected  .f26 {
     color:#D93740;
 }
+.mask-pay-type {
+    width: 2.4rem;
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.mask-pay-type #mask-pay-type-img {
+    width:100%;
+}
+
+.mask-pay-type .close{
+    position: absolute;
+    width: 0.22rem;
+    right: -0.42rem;
+    top: -0.36rem;
+}

@@ -2,12 +2,54 @@ $(function () {
   /**
    * @dec get the vcode
    */
-  window.GETCODE({
-    btn: $("#sendCode"),
-    input: $("#cell"),
-    api: '/sendSms',
-    country: $("#countriesId")
+  var btn = $("#sendCode");
+  btn.on("click", function (e) {
+    e.preventDefault();
+    if ($(this).attr("data-sending") === '1') {
+      return false;
+    }
+    var regCell = /^\d{6,20}$/;
+    var cell = $("#cell");
+    if (cell.val()) {
+      if (!regCell.test(cell.val())) {
+        $(".common-error-text").eq(1).text("请输入正确的手机号").show()
+        return false;
+      }
+    } else {
+      $(".common-error-text").eq(1).text("手机号不可为空").show()
+      return false;
+    }
+    var datas = {}
+    datas.cell = cell.val();
+    datas.countriesId = $("#countriesId").val();
+    $.ajax({
+      method: "post",
+      url: "/sendSms/register",
+      data: datas,
+      success: function (data, status, xhr) {
+        if(parseInt(data.code) === 10000){
+          btn.attr("data-sending", '1').addClass("code_sending");
+          var time = 120;
+          var renderText = setInterval(function () {
+            if (time) {
+              btn.text(--time + "s后再次获取")
+            } else {
+              window.clearInterval(renderText);
+              btn.attr("data-sending", '0').text("发送验证码").removeClass("code_sending")
+            }
+          }, 1000)
+        }
+        if (parseInt(data.code) === 99998){
+          $(".common-error-text").eq(1).text("手机号码已注册").show()
+        }
+      },
+      error: function (data, status, xhr) {
+        alert("获取验证码失败，请稍后再试")
+      }
+    });
   });
+
+
 
   /**
    * @desc submit the form

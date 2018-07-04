@@ -841,16 +841,23 @@ option{
     display: flex;
     justify-content: space-between;
     border-bottom: 1px solid #f2f2f2;
+    position: relative;
+    display: block;
 }
 .common-trade-left{
     width: 0.3rem;
     height: 0.5rem;
+    left: 0;
 }
 .common-trade-left img{
     width: 100%;
 }
 .common-trade-center{
-    width: 1.98rem;
+    /*width: 1.98rem;*/
+    width: 2.2rem;
+    left: 0.4rem;
+    top: 0.12rem;
+    position: absolute;
 }
 .common-trade-center-user{
     height: 0.5rem;
@@ -878,15 +885,30 @@ option{
 }
 .common-trade-right {
     font-size:0;
+    /*width: 1rem;*/
+    right: 0;
+    position: absolute;
+    top: 0.12rem;
+    width:100%;
+}
+.common-trade-right .common-trade-rate {
+    text-align:right;
 }
 .common-trade-right .common-btn-bgc-d93740{
     display: block;
-   /* margin-left: 0.2rem;*/
+    margin-left: 0.2rem;
+    float: right;
+    font-size: 0.12rem;
 }
 .common-trade-right .common-btn-bgc-27c1c3{
     display: block;
-  /*  margin-left: 0.2rem;*/
+    margin-left: 0.2rem;
+    float: right;
+    font-size: 0.12rem;
 }
+/*.common-trade-center-user  .f-light{*/
+    /*transform: scale(0.90) translateX(-6%);*/
+/*}*/
 /*Modal*/
 .common-modal{
     width: 3.1rem;

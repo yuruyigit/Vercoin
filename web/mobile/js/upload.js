@@ -90,6 +90,7 @@ $("input#i_pic_file").on("change", function () {
       processData: false,
       contentType: false,
       success: function (data) {
+        console.log(data)
         if (data != null && data.code == "10000") {
           var img = $("#i_img_container_Id").val() + data.uploadImg;
           $("input#uploadImg").val(data.uploadImg);
@@ -101,7 +102,10 @@ $("input#i_pic_file").on("change", function () {
         }
       },
       error: function (jqXHR, textStatus, errorMessage) {
-        alert("图片上传失败！错误：" + textStatus + ", " + errorMessage);
+        console.log("图片上传失败！错误：" + textStatus + ", " + errorMessage);
+        if(errorMessage.indexOf("Too Large") > -1){
+          alert("上传图片尺寸太大")
+        }
       }
     });
   }

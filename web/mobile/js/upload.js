@@ -50,11 +50,11 @@ $(".submit").on("click", function () {
   }
 
   if (pass.val()) {
-    // if(pass.val().length > 20 || pass.val().length < 6){
-    //     //   e(2, "密码长度为6到20位之间");
-    //     // }
+    if(pass.val().length > 20 || pass.val().length < 6){
+          e(2, "交易密码不正确");
+     }
   } else {
-    e(2, "交易密码不能为空");
+    e(2, "交易密码不正确");
   }
 
   // if (file[0].files.length) {

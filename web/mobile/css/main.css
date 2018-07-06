@@ -879,9 +879,12 @@ option{
 }
 .common-trade-center-user span img{
     width: 0.13rem;
+    height: 0.13rem;
     position: relative;
     top: 0.03rem;
     margin-right: 0.02rem;
+    vertical-align: middle;
+    float: left;
 }
 .common-trade-right {
     font-size:0;
@@ -1259,6 +1262,9 @@ option{
 .Zyn-homepage-user .right h2{
     margin: 0.02rem 0 0.03rem 0;
     font-size: 0.22rem;
+    max-width: 1.7rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 .Zyn-homepage-user .right p{
     margin: 0;
@@ -1423,6 +1429,8 @@ option{
 .trade-content .price .pay-types img {
     width:0.13rem;
     vertical-align: baseline;
+    float: left;
+    margin-right: 3px;
 }
 /* 忘记登录密码  */
 .forget .common-form  > button{

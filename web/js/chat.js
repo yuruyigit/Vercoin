@@ -70,7 +70,7 @@ if("undefined" == typeof io){
  */
 //$$ = io.connect('http://13.209.66.231:9092');
  $$ = io.connect('https://10.106.0.4:10043');
-//$$ = io.connect('https://192.168.0.101:10043');
+$$ = io.connect('https://192.168.0.101:10043');
 /**
  * @连接上socket服务器
  */
